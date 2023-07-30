@@ -1,0 +1,114 @@
+﻿@page "/create"
+@using System.Xml.Linq
+@using System.Linq
+@using System.Collections.Generic
+@using System.IO
+@using System.Xml
+@using System.Text;
+<PageTitle>Maak</PageTitle>
+
+<Style />
+
+<style>
+	.choice {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.submit {
+		width: 50%;
+		height: 10%;
+		background-color: lightgray;
+		color: black;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	h2 {
+		padding: 10px 20px;
+		padding-left: 0px;
+	}
+</style>
+
+
+<div class="indexdiv">
+
+<h3>Maak een vragenlijst</h3>
+
+<div>
+	<label>Niveau:</label>
+	<input type="number" @bind="niveau" />
+</div>
+
+<div>
+	<label>Header:</label>
+	<input type="text" @bind="header" />
+</div>
+
+<div>
+	<label>Keuzes:</label>
+	<div>
+		<input type="text" @bind="choiceA" placeholder="Keuze A" /><br />
+		<input type="text" @bind="choiceB" placeholder="Keuze B" /><br />
+		<input type="text" @bind="choiceC" placeholder="Keuze C" /><br />
+		<input type="text" @bind="choiceD" placeholder="Keuze D" />
+	</div>
+</div>
+
+<div>
+	<label>Antwoord:</label>
+	<input type="text" @bind="answer" />
+</div>
+
+<button @onclick="SaveQuestion">Save Question</button>
+
+@code {
+	private int niveau;
+	private string header;
+	private string choiceA;
+	private string choiceB;
+	private string choiceC;
+	private string choiceD;
+	private string answer;
+
+	private async Task SaveQuestion()
+	{
+		XDocument doc = new XDocument(
+			new XElement("vraag",
+				new XElement("guid", Guid.NewGuid()),
+				new XElement("niveau", niveau),
+				new XElement("header", header),
+				new XElement("keuzes",
+					new XElement("A", choiceA),
+					new XElement("B", choiceB),
+					new XElement("C", choiceC),
+					new XElement("D", choiceD)
+				),
+				new XElement("antwoord", answer)
+			)
+		);
+
+		string xmlString = doc.ToString();
+		byte[] xmlBytes = Encoding.UTF8.GetBytes(xmlString);
+
+		// Adjust the file path and name according to your server setup
+		string filePath = "wwwroot/questions/question.xml";
+
+		using (FileStream fileStream = File.Create(filePath))
+		{
+			await fileStream.WriteAsync(xmlBytes);
+		}
+	}
+}
+
+</div>
+
+
+
+@*<GenerateTest path="Data\\AI.xml" />*@

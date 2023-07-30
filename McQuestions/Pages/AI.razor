@@ -1,0 +1,93 @@
+﻿@page "/ai"
+@using System.Xml.Linq
+@using System.Linq
+@using System.Collections.Generic
+@using System.IO
+<PageTitle>AI Tests</PageTitle>
+
+<Style />
+<style>
+	.choice {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.submit {
+		width: 50%;
+		height: 10%;
+		background-color: lightgray;
+		color: black;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	h2 {
+		padding: 10px 20px;
+		padding-left: 0px;
+	}
+</style>
+
+@code {
+	//[Parameter]
+	//public string path { get; set; }
+
+	private string nameQuestionnaire;
+	private List<XElement> xmlQuestions;
+	private List<(string, string)> selectedAnswers;
+	private int currentQuestionIndex;
+	private int score;
+	private string qId;
+	private string answer;
+	private string submitButtonText;
+
+	protected override void OnInitialized()
+	{
+		Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
+		string fullpath = Path.Combine(Directory.GetCurrentDirectory(), "Data\\C-Sharp.xml");
+		var xmlString = File.ReadAllText(fullpath);
+		var rootElement = XElement.Parse(xmlString);
+
+		nameQuestionnaire = rootElement.Element("name").Value;
+		xmlQuestions = rootElement.Elements("vraag").Distinct().ToList();
+
+		//xmlQuestions = rootElement.Elements("question").ToList();
+		int volgNummer = 1;
+		foreach (var question in xmlQuestions)
+		{
+			question.Element("guid").Value = volgNummer.ToString();
+			volgNummer++;
+		}
+
+		selectedAnswers = new List<(string, string)>();
+		currentQuestionIndex = 0;
+		score = 0;
+		submitButtonText = "Choose an answer";
+		answer = "";
+	}
+
+	void Select()
+	{
+		var newList = xmlQuestions.ToList();
+	}
+
+}
+<div class="indexdiv">
+<p>C# Questionnaire:</p>
+<p>Total questions Level 1: @xmlQuestions.Where(q => q.Element("niveau").Value == "1").Count()</p>
+<p>Total questions Level 2: @xmlQuestions.Where(q => q.Element("niveau").Value == "2").Count()</p>
+<p>Total questions Level 3: @xmlQuestions.Where(q => q.Element("niveau").Value == "3").Count()</p>
+<p>Total questions Level 4: @xmlQuestions.Where(q => q.Element("niveau").Value == "4").Count()</p>
+<p>Total questions Level 5: @xmlQuestions.Where(q => q.Element("niveau").Value == "5").Count()</p>
+<p>Now we're in business. We have 20 questions for each level of knowledge. </p>
+<p>We now can write code to select questions randomly from each level.</p>
+<p>We also need code for merging two or more xml files and write code to select and </p>
+<p>create custom questionnaires. </p>
+
+</div>
+@*<GenerateTest path="Data\\AI.xml" />*@

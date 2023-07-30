@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<vragenset>Intake</vragenset>
+	<vraag>
+		<disabled></disabled>
+		<guid>22597137-de62-4762-84b5-20ce1cc0b473</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Browser, www, internet</onderwerp>
+		<header>
+			<regel>Chrome is de browser van</regel>
+		</header>
+		<keuzes>
+			<A>Mozilla</A>
+			<B>Microsoft</B>
+			<C>Google</C>
+			<D>Facebook</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>5e78a300-7c30-4bb8-bd36-f766c114f180</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Ik heb snel door hoe een app werkt.</regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>vaak</C>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>aa7afe48-03d0-4b7b-9ce1-6427cc64ae40</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Browser, www, internet</onderwerp>
+		<header>
+			<regel>FireFox is de browser van</regel>
+		</header>
+		<keuzes>
+			<A>Mozilla</A>
+			<B>Microsoft</B>
+			<C>Google</C>
+			<D>Facebook</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>99404053-8aee-4a9b-b5e8-1f7bbf47aee5</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>De naam Bill Gates is verbonden aan</regel>
+		</header>
+		<keuzes>
+			<A>Microsoft</A>
+			<B>IBM</B>
+			<C>Amazon</C>
+			<D>Apple</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>78e506dd-fced-498c-9f4c-4cc414c72fbf</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Anderen vragen mij om hulp als ze met technische dingen worstelen.</regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>vaak</C>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>dfbfed96-cdaf-42ae-9591-ca98a64262c5</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Browser, www, internet</onderwerp>
+		<header>
+			<regel>De begrippen 'World wide web' en 'internet' betekenen hetzelfde</regel>
+		</header>
+		<keuzes>
+			<A>Ja</A>
+			<B>Nee</B>
+			<C>Dat hangt ervan af</C>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>f79aa83b-553d-42c8-a1a1-de74eb853fe1</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Ik weet meestal precies wat ik wil als ik hardware ga kopen.</regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>vaak</C>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>1ff447f8-bd02-4b3f-8ff5-719788431267</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Browser, www, internet</onderwerp>
+		<header>
+			<regel>Edge is de browser van</regel>
+		</header>
+		<keuzes>
+			<A>Mozilla</A>
+			<B>Microsoft</B>
+			<C>Google</C>
+			<D>Facebook</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>b5a499f1-cd7e-4cf4-8cc0-d3770f452a56</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>De naam Steve Jobs is verbonden aan</regel>
+		</header>
+		<keuzes>
+			<A>Microsoft</A>
+			<B>IBM</B>
+			<C>Amazon</C>
+			<D>Apple</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>f1f5000a-6f66-4b53-b1d7-7e75e71c09f6</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Ik wil graag het beste uit mijn mobieltje of pc halen.</regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>vaak</C>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>6741a203-48de-4b2f-bd66-c777fd7be461</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>De naam Jeff Bezos is verbonden aan</regel>
+		</header>
+		<keuzes>
+			<A>Microsoft</A>
+			<B>IBM</B>
+			<C>Amazon</C>
+			<D>Apple</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>1a53f1e6-3f9a-456f-a039-9ea0bf5afe6a</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>In mijn vrije tijd ben ik vaak uren met een pc bezig.</regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>vaak</C>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<!--	
+	<vraag>
+		<disabled></disabled><guid></guid><volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Logo's.</regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>best vaak</C>
+			<D>heel vaak</D>
+			<E>altijd</E>
+		</keuzes>
+		<antwoord>D</antwoord><userantwoord></userantwoord><show>none</show><uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled><guid></guid><volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Heb je speciale aanpassingen nodig?</regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>best vaak</C>
+			<D>heel vaak</D>
+			<E>altijd</E>
+		</keuzes>
+		<antwoord>D</antwoord><userantwoord></userantwoord><show>none</show><uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled><guid></guid><volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>wat vind je belangrijk voor een fijne werkplek?</regel>
+		</header>
+		<keuzes>
+			<A></A>
+			<B>soms</B>
+			<C>best vaak</C>
+			<D>heel vaak</D>
+			<E>altijd</E>
+		</keuzes>
+		<antwoord>D</antwoord><userantwoord></userantwoord><show>none</show><uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled><guid></guid><volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>zit je graag in het midden of liever wat meer van het midden af?</regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>best vaak</C>
+			<D>heel vaak</D>
+			<E>altijd</E>
+		</keuzes>
+		<antwoord>D</antwoord><userantwoord></userantwoord><show>none</show><uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled><guid></guid><volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel></regel>
+		</header>
+		<keuzes>
+			<A>Facebook, Twitter, Instagram, </A>
+			<B>Amazon, Orion, IBM</B>
+			<C>best vaak</C>
+			<D>heel vaak</D>
+			<E>altijd</E>
+		</keuzes>
+		<antwoord>D</antwoord><userantwoord></userantwoord><show>none</show><uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled><guid></guid><volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel></regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>best vaak</C>
+			<D>heel vaak</D>
+			<E>altijd</E>
+		</keuzes>
+		<antwoord>D</antwoord><userantwoord></userantwoord><show>none</show><uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled><guid></guid><volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel></regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>best vaak</C>
+			<D>heel vaak</D>
+			<E>altijd</E>
+		</keuzes>
+		<antwoord>D</antwoord><userantwoord></userantwoord><show>none</show><uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled><guid></guid><volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel></regel>
+		</header>
+		<keuzes>
+			<A>zelden tot nooit</A>
+			<B>soms</B>
+			<C>best vaak</C>
+			<D>heel vaak</D>
+			<E>altijd</E>
+		</keuzes>
+		<antwoord>D</antwoord><userantwoord></userantwoord><show>none</show><uitleg></uitleg>
+	</vraag>
+-->
+</root>

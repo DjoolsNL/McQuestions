@@ -1,0 +1,83 @@
+﻿Wat is McQuestions?
+De 'Mc' staat voor multiple choice. De schrijfwijze 'McQuestions' oogt beter en ligt makkelijker in het geheugen dan MCQuestions.
+
+McQuestions is een verzameling vragensets die ontworpen is om kennis in kaart te brengen en over te dragen. In het hier uitgewerkte voorbeeld gaat het specifiek om kennis op het gebied van de ICT maar McQuestions kan ook meerwaarde hebben in allerlei andere branches.
+
+Voor een opleider in de ICT kunnen de hier uitgewerkte vragensets als volgt gebruikt worden.
+1.	Meten is weten. Bij de intake kan zo een goede beoordeling gemaakt worden of iemand geschikt is voor een opleidingstraject.
+2.	Bij aanvang van een traject kan gemeten worden waar een cursist qua kennis van een specifieke gebieden staat. Hiaten in de kennis worden zichtbaar zodat cursist en begeleider gericht kunnen sturen op kennisverwerving. Met tussentijdse metingen kan de progressie heel nauw gemonitord worden. 
+
+3.	Progressie kan na afloop van een traject individueel en collectief zichtbaar worden gemaakt. Er wordt met een nulmeting gestart en er vindt een eindmeting plaats.
+
+4.	Door heel precies iemands vaardigheden vast te leggen kun je ook heel gericht gaan zoeken naar een baan want je weet wat voor vlees je in de kuip hebt.
+
+5. Elke cursist krijgt zijn eigen leeromgeving. Dit wordt gecombineerd met het gebruik van AI.  
+
+
+Draait natuurlijk om de kwaliteit van de vragen:
+1. level moet kloppen
+2. onderwerp moet kloppen
+3. vraagstelling moet duidelijk zijn
+4. Antwoorden moeten duidelijk zijn en geen aanwijzingen geven.
+
+Mogelijkheid om vragenlijsten online te creeren en te bewerken. Bijvoorbeeld
+een evaluatievragenlijst die na afloop traject door cursist kan worden ingevuld. 
+
+Mogelijkheid om vragenlijsten te combineren en vragen op onderwerp en niveau te selecteren.
+bijzondere vragenlijsten:
+1. wat zijn je optimale werkomstandigheden?
+2. welke richting, rol, functie in de ict lijkt je wel wat, waar liggen voorkeuren en afkeuren?
+3. Ja JIJ. vragenlijst oplossingen
+4. Verwachtingen, huisregels, organisatiecultuur
+5. pesten en ongewenst gedrag
+6. evaluatie vragenlijsten
+7. 
+
+Technische Vragenlijsten:
+1. C#
+2. Javascript
+3. Typescript
+4. Java
+5. Python
+6. PHP
+7. Databases
+
+Etc. Kunnen steeds verfijnder gemaakt worden. Moeten wel worden bijgehouden. Dus niet te ambitieus van stapel lopen
+qua hoeveel verschillende talen.
+
+We kunnen ook vragenlijsten bedenken voor werkgevers die op zoek zijn naar personeel.
+
+
+Komen we op een soort van introductiedag voor elke cursist die aan een traject begint. 
+Samen zet je de eerste stappen. zowel administratief als met het oog op je persoonlijke ontwikkeling in de komende maanden.
+
+Dit is maar een demo geschreven in blazor omdat ik daar het handigst in ben maar de demo kan door iemand met verstand van Angular in een handomdraai omgeschreven worden. 
+
+De demo laat wel de potentie van het idee zien voor BEE/gemeente/UWV
+
+Elke cursist moet in zijn eigen testomgeving krijgen waar de resultaten van zijn tests zijn vastgelegd en waar hij kan oefenen. Als je nu ook nog bijvoorbeeld chatGPT zou integreren dan kan de cursist meteen aan de slag om die AI te gebruiken om eindeloos verder te leren. Dan is zo'n C# vragenlijst + AI de ideale manier om te leren.
+
+Dit is mijn visie en voorstel aan BEE. 
+
+Leren en opleiden in het tijdperk van AI gaat op belangrijke onderdelen anders worden. Wie daarin niet meegaat verliest de slag. Er is geen toekomst voor organisaties die de boot missen.
+
+Om te beginnen ontbreekt het binnen de reintegratie aan methodologie. Dat was 20 jaar geleden al zo en dat is nog steeds zo.  
+
+McQuestions.nl
+
+Vragensets waar je uit kunt putten om specifieke kennis te meten of om specifieke informatie te achterhalen.
+
+
+nog wat thema's c# en dotnet:
+
+delegates
+events
+interfaces en depedency injection
+
+architecturele kwesties
+designpatterns
+
+je laat hem de tags bedenken die relevant zijn in een tech taal. die check je dan als de cursist de conversatie met ai afsluit. hoe vond je de interactie met de mens? was het gesprek goed te begrijpen? kloppen de tags nog? nog wat slims te melden? 
+
+je vraagt ook of hij nog een vraag kan bedenken dat in het verlengde ligt van deze vraag. En laat hem die aan de user stellen. je kunt ai vragen te tellen. hoevaak is in deze sessie een vraag gesteld hoe lang waren die vragen gemiddeld. 
+

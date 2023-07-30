@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<vragenset>FrontEnd</vragenset>
+	<vraag>
+		<disabled></disabled>
+		<guid>a91ab859-d674-43b5-a03d-db60aca22395</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>What does HTML stand for?</regel>
+		</header>
+		<keuzes>
+			<A>HyperText Markup Language</A>
+			<B>Home Tool Markup Language</B>
+			<C>Hyperlink and Text Markup Language</C>
+			<D>High-Level Machine Language</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>8d5ae14d-9cce-45c5-b253-3a274b3adc98</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Which tag is used to define a paragraph in HTML?</regel>
+		</header>
+		<keuzes>
+			<A>&lt;div&gt;</A>
+			<B>&lt;span&gt;</B>
+			<C>&lt;p&gt;</C>
+			<D>&lt;section&gt;</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>54cfe36c-d4dc-4dd9-b84c-eb46c917d9e6</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Which CSS property is used to change the font color of an element?</regel>
+		</header>
+		<keuzes>
+			<A>font-size</A>
+			<B>font-style</B>
+			<C>color</C>
+			<D>text-decoration</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>7a3e426a-38c5-4c57-be41-ac8a440d5425</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>How do you select an element with the ID "myElement" in CSS?</regel>
+		</header>
+		<keuzes>
+			<A>#myElement</A>
+			<B>.myElement</B>
+			<C>element.myElement</C>
+			<D>.myElement #</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>cdd5f262-9f1c-4977-95a3-c17a7004f616</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Which tag is used to link an external CSS file to an HTML document?</regel>
+		</header>
+		<keuzes>
+			<A>&lt;meta&gt;</A>
+			<B>&lt;style&gt;</B>
+			<C>&lt;script&gt;</C>
+			<D>&lt;link&gt;</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>c7fd1843-5689-4909-b367-ee5a5065f130</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>What is the correct syntax for commenting in HTML?</regel>
+		</header>
+		<keuzes>
+			<A># This is a comment</A>
+			<B>// This is a comment</B>
+			<C>&lt;!-- This is a comment --&gt;</C>
+			<D>/* This is a comment */</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>00dee231-eaea-4a23-a19d-d8d41ec2e234</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Which CSS property is used to add spacing between elements?</regel>
+		</header>
+		<keuzes>
+			<A>margin</A>
+			<B>padding</B>
+			<C>border</C>
+			<D>background-color</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>4fda128d-b58e-4fdf-99e3-ed49fa555909</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Which tag is used to create an unordered list in HTML?</regel>
+		</header>
+		<keuzes>
+			<A>&lt;li&gt;</A>
+			<B>&lt;ul&gt;</B>
+			<C>&lt;ol&gt;</C>
+			<D>&lt;dl&gt;</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>dbd19532-0f07-41f2-a502-d416d689e250</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>What is the default display value for a &lt;div&gt; element?</regel>
+		</header>
+		<keuzes>
+			<A>inline</A>
+			<B>block</B>
+			<C>inline-block</C>
+			<D>flex</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>52f19e2b-6304-454b-af8a-7d4e36b4864e</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Which CSS property is used to control the background image of an element?</regel>
+		</header>
+		<keuzes>
+			<A>background-size</A>
+			<B>background-color</B>
+			<C>background-image</C>
+			<D>background-position</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>c469f49d-4b29-468a-a8f7-e21713ce5358</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Box Model</onderwerp>
+		<header>
+			<regel>Which CSS property is used to control the space between the content and the border of an element?</regel>
+		</header>
+		<keuzes>
+			<A>padding</A>
+			<B>margin</B>
+			<C>border</C>
+			<D>width</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "padding" property is used to control the space between the content and the border of an element in CSS. It specifies the amount of space to be added inside the element's border box. The "margin" property controls the space outside the border, the "border" property defines the border itself, and the "width" property controls the width of the content box.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>18fc6154-52f6-4fab-a675-8e17a47bb330</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Selectors</onderwerp>
+		<header>
+			<regel>Which CSS selector selects all direct child elements of a parent element?</regel>
+		</header>
+		<keuzes>
+			<A>&gt;</A>
+			<B>+</B>
+			<C>~</C>
+			<D>*</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "&gt;" selector in CSS selects all direct child elements of a parent element. It matches elements that are the immediate children of a specified parent, without selecting nested grandchildren or elements at other levels of the DOM tree. The other selectors mentioned have different meanings in CSS: "+" selects adjacent sibling elements, "~" selects all siblings, and "*" selects all elements.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>131ed800-f37d-4d9d-b74a-e243544e0b23</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Flexbox</onderwerp>
+		<header>
+			<regel>Which CSS property is used to align flex items vertically in a flex container?</regel>
+		</header>
+		<keuzes>
+			<A>align-items</A>
+			<B>justify-content</B>
+			<C>flex-direction</C>
+			<D>flex-wrap</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "align-items" property is used to align flex items vertically in a flex container in CSS. It specifies how flex items are positioned vertically within the flex container. The "justify-content" property is used for horizontal alignment, "flex-direction" controls the direction of the flex items, and "flex-wrap" controls whether the items wrap onto multiple lines or not.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>87118a40-6fe0-4bc5-a051-da600dd72516</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Grid Layout</onderwerp>
+		<header>
+			<regel>Which CSS property is used to specify the size of columns in a CSS grid layout?</regel>
+		</header>
+		<keuzes>
+			<A>grid-template-columns</A>
+			<B>grid-column</B>
+			<C>grid-gap</C>
+			<D>grid-area</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "grid-template-columns" property is used to specify the size of columns in a CSS grid layout. It defines the number and size of columns in the grid container. The "grid-column" property is used to place an item within the grid, the "grid-gap" property controls the spacing between grid items, and the "grid-area" property is used to assign a name to a grid item and specify its location in the grid.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>296bd379-e99c-45be-ad3b-0a4e4b7674ee</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Media Queries</onderwerp>
+		<header>
+			<regel>Which CSS at-rule is used to apply styles only when certain conditions, such as screen size, are met?</regel>
+		</header>
+		<keuzes>
+			<A>@media</A>
+			<B>@import</B>
+			<C>@font-face</C>
+			<D>@keyframes</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "@media" at-rule is used to apply styles only when certain conditions, such as screen size, are met. It allows you to define different styles for different media types or specific features of the output device. The other at-rules mentioned have different purposes: "@import" is used to import external style sheets, "@font-face" is used to define custom fonts, and "@keyframes" is used for defining animations.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>a29f86d9-6f37-4d3e-8913-08c72e220870</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTML Semantic Elements</onderwerp>
+		<header>
+			<regel>Which HTML element is used to define the main content of a document?</regel>
+		</header>
+		<keuzes>
+			<A>&lt;main&gt;</A>
+			<B>&lt;section&gt;</B>
+			<C>&lt;article&gt;</C>
+			<D>&lt;div&gt;</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "&lt;main&gt;" element is used to define the main content of a document in HTML. It represents the dominant content of the document and should be unique to the document, excluding any content that is repeated across a set of documents such as site navigation, header, or footer. The other elements mentioned have different semantic meanings in HTML: "&lt;section&gt;" defines a standalone section, "&lt;article&gt;" represents a self-contained composition, and "&lt;div&gt;" is a generic container without any semantic meaning.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>d42d71b7-33f3-438a-9a01-3d193676eb65</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTML Forms</onderwerp>
+		<header>
+			<regel>Which HTML input type is used to create a checkbox?</regel>
+		</header>
+		<keuzes>
+			<A>checkbox</A>
+			<B>radio</B>
+			<C>select</C>
+			<D>text</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "checkbox" input type is used to create a checkbox in HTML. It allows users to select multiple options from a list of choices. The "radio" input type is used for exclusive choices where only one option can be selected, the "select" element is used to create a dropdown menu or a list box, and the "text" input type is used for single-line text input.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>45f7b4e1-5ee2-4ed5-be92-5e4126f19642</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTML5 Semantic Elements</onderwerp>
+		<header>
+			<regel>Which HTML5 element is used to group together related form elements?</regel>
+		</header>
+		<keuzes>
+			<A>&lt;fieldset&gt;</A>
+			<B>&lt;form&gt;</B>
+			<C>&lt;input&gt;</C>
+			<D>&lt;label&gt;</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "&lt;fieldset&gt;" element is used to group together related form elements in HTML5. It creates a visual grouping of form controls and often includes a legend element to provide a caption or description for the group. The "&lt;form&gt;" element is used to create a form, the "&lt;input&gt;" element represents an input control, and the "&lt;label&gt;" element defines a label for an input element.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>f1d83835-e80a-42b5-8cd0-d59c5b02eb2f</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTML5 Audio and Video</onderwerp>
+		<header>
+			<regel>Which HTML5 element is used to embed video content?</regel>
+		</header>
+		<keuzes>
+			<A>&lt;video&gt;</A>
+			<B>&lt;source&gt;</B>
+			<C>&lt;audio&gt;</C>
+			<D>&lt;embed&gt;</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "&lt;video&gt;" element is used to embed video content in HTML5. It provides a container for video playback and supports various video formats. The "&lt;source&gt;" element is used within the "&lt;video&gt;" element to specify the video source and alternative video formats. The "&lt;audio&gt;" element is used for embedding audio content, and the "&lt;embed&gt;" element is used to embed external plugins or multimedia objects.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>a3c7a8b7-7212-42d6-bb9a-7f99908fa86f</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTML Meta Tags</onderwerp>
+		<header>
+			<regel>Which HTML meta tag is used to specify the character encoding of a document?</regel>
+		</header>
+		<keuzes>
+			<A>&lt;meta charset="utf-8"&gt;</A>
+			<B>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</B>
+			<C>&lt;meta http-equiv="refresh" content="5"&gt;</C>
+			<D>&lt;meta name="description" content="Description of the document"&gt;</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "&lt;meta charset="utf-8"&gt;" tag is used to specify the character encoding of an HTML document. It ensures that the browser displays the text and characters correctly by using the specified encoding. The other meta tags mentioned have different purposes: the viewport meta tag is used to control the viewport behavior on mobile devices, the refresh meta tag is used to automatically refresh or redirect the page, and the description meta tag is used to provide a concise description of the document for search engines and social media platforms.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>17829a9d-4017-4fba-8415-98dcac62d270</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Responsive Web Design</onderwerp>
+		<header>
+			<regel>Which CSS technique is used to create a responsive layout that adapts to different screen sizes?</regel>
+		</header>
+		<keuzes>
+			<A>Media queries</A>
+			<B>Flexbox</B>
+			<C>Grid layout</C>
+			<D>Floats</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Media queries are used to create a responsive layout that adapts to different screen sizes in CSS. They allow you to apply different styles based on the characteristics of the device or viewport, such as screen width, height, and orientation. Flexbox and grid layout are CSS techniques used for creating flexible and responsive layouts, but media queries are typically used in combination with them to achieve full responsiveness. Floats are an older technique primarily used for simple layouts and not ideal for responsive design.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>a5378d5d-4319-4a59-bbbd-3f221e51d6d4</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTTP Status Codes</onderwerp>
+		<header>
+			<regel>Which HTTP status code indicates that a resource was not found on the server?</regel>
+		</header>
+		<keuzes>
+			<A>404 Not Found</A>
+			<B>200 OK</B>
+			<C>500 Internal Server Error</C>
+			<D>302 Found</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "404 Not Found" status code indicates that a resource was not found on the server. It is a client-side error response code, indicating that the requested resource could not be found at the specified URL. The "200 OK" status code indicates a successful HTTP request, the "500 Internal Server Error" code indicates a server-side error, and the "302 Found" code is a redirect response indicating that the requested resource has been temporarily moved to a different location.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>038dc6ec-6e0c-43a8-970c-dfa2f787eec9</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>RESTful API</onderwerp>
+		<header>
+			<regel>Which HTTP method is typically used to create a new resource on the server in a RESTful API?</regel>
+		</header>
+		<keuzes>
+			<A>POST</A>
+			<B>GET</B>
+			<C>PUT</C>
+			<D>DELETE</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "POST" method is typically used to create a new resource on the server in a RESTful API. It is an HTTP method that sends data to the server to create a new resource. The "GET" method is used to retrieve data, "PUT" is used to update an existing resource, and "DELETE" is used to remove a resource from the server.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>880bf144-f173-48d0-a8ab-b70603e4d3ac</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Box Model</onderwerp>
+		<header>
+			<regel>Which CSS property is used to control the space between the content and the border of an element?</regel>
+		</header>
+		<keuzes>
+			<A>padding</A>
+			<B>margin</B>
+			<C>border</C>
+			<D>width</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "padding" CSS property is used to control the space between the content and the border of an element. It specifies the amount of space to be added inside the element's border. The "margin" property controls the space outside the border, the "border" property sets the border itself, and the "width" property controls the width of the content box.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>6f4b4070-d2f8-4855-8a8f-974134aef7ed</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Selectors</onderwerp>
+		<header>
+			<regel>Which CSS selector selects an element with a specific class?</regel>
+		</header>
+		<keuzes>
+			<A>.classname</A>
+			<B>#id</B>
+			<C>element</C>
+			<D>[attribute]</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The ".classname" selector selects an element with a specific class in CSS. It matches elements that have the specified class attribute. The "#id" selector selects an element with a specific ID, the "element" selector selects elements of a specific type, and the "[attribute]" selector selects elements that have a specific attribute.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>f05f6ddb-a70f-4b84-8a04-43c32bc1a34b</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTML Elements</onderwerp>
+		<header>
+			<regel>Which HTML element is used to define a hyperlink?</regel>
+		</header>
+		<keuzes>
+			<A>a</A>
+			<B>link</B>
+			<C>hyperlink</C>
+			<D>href</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "a" element is used to define a hyperlink in HTML. It stands for anchor and is used with the "href" attribute to specify the target URL of the link. The "link" and "hyperlink" options are not valid HTML elements, and the "href" attribute is used with the "a" element to define the target URL.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>72158d62-1c37-4c53-9f64-5f3bd0f3f32a</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTML Headings</onderwerp>
+		<header>
+			<regel>Which HTML element is used to define the largest heading?</regel>
+		</header>
+		<keuzes>
+			<A>h1</A>
+			<B>h2</B>
+			<C>h3</C>
+			<D>h4</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "h1" element is used to define the largest heading in HTML. It represents the main heading of a section or page. The "h2" element is the second-level heading, followed by "h3" for third-level, and so on. The "h4" option represents a lower-level heading and is smaller in size compared to "h1".</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>1ea177bb-33ce-432b-81c9-04bab81fff2c</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTML Lists</onderwerp>
+		<header>
+			<regel>Which HTML element is used to create an unordered list?</regel>
+		</header>
+		<keuzes>
+			<A>ul</A>
+			<B>ol</B>
+			<C>li</C>
+			<D>dl</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "ul" element is used to create an unordered list in HTML. It represents a list of items where the order of the items is not important. Each list item is defined using the "li" element within the "ul" container. The "ol" element is used for ordered lists, where the order of the items is significant. The "dl" element is used for definition lists.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>6360bf29-6fc3-4dbb-8473-a1bb3691b2ee</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>HTML Images</onderwerp>
+		<header>
+			<regel>Which HTML attribute is used to specify the source URL of an image?</regel>
+		</header>
+		<keuzes>
+			<A>src</A>
+			<B>alt</B>
+			<C>url</C>
+			<D>link</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "src" attribute is used to specify the source URL of an image in HTML. It is an abbreviation for "source" and is used within the "img" element to define the path or URL of the image file. The "alt" attribute is used to provide alternative text for the image, the "url" and "link" options are not valid attributes for specifying the image source URL.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>f703252e-1e2c-474f-b019-ba407b504c00</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Styling</onderwerp>
+		<header>
+			<regel>Which CSS property is used to change the color of text?</regel>
+		</header>
+		<keuzes>
+			<A>color</A>
+			<B>background-color</B>
+			<C>font-color</C>
+			<D>text-color</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "color" CSS property is used to change the color of text. It allows you to specify a color value, such as a color name, hexadecimal value, or RGB value, to be applied to the text content. The "background-color" property is used to change the background color of an element, not the text color. The "font-color" and "text-color" options are not valid CSS properties.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>0d2ec04b-8352-4b2f-a2ca-87f872cb85ae</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Box Model</onderwerp>
+		<header>
+			<regel>Which CSS property is used to set the space between the content and the border of an element?</regel>
+		</header>
+		<keuzes>
+			<A>padding</A>
+			<B>margin</B>
+			<C>border</C>
+			<D>spacing</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "padding" CSS property is used to set the space between the content and the border of an element. It defines the inner space within the element. The "margin" property is used to set the space between the element and its surrounding elements. The "border" property is used to define the border of an element. The "spacing" option is not a valid CSS property.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>963a14b3-677d-4e85-837c-6eedf8136d3c</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>CSS Selectors</onderwerp>
+		<header>
+			<regel>Which CSS selector selects elements with a specific class?</regel>
+		</header>
+		<keuzes>
+			<A>.class</A>
+			<B>#id</B>
+			<C>element</C>
+			<D>*[attribute]</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The ".class" CSS selector selects elements with a specific class. It is used with a dot followed by the class name, such as ".my-class", to target elements that have the specified class. The "#id" selector is used to select elements with a specific ID, the "element" selector selects elements based on their element type, and the "*[attribute]" selector selects elements with a specific attribute.</uitleg>
+	</vraag>
+</root>

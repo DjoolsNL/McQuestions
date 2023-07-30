@@ -1,0 +1,133 @@
+﻿@using System.Xml.Linq
+@using System.Linq
+@using System.Collections.Generic
+@using System.IO
+
+@code
+{
+	[CascadingParameter]
+	public List<XElement>? xmlQuestions { get; set; }
+
+	[Parameter]
+	public string naamvragenset { get; set; }
+	public int score = 0;
+
+	public double fraction;
+	public double percentage;
+	public string result; 
+
+	public string textButton = "Engage your AI teacher";
+
+	protected override void OnInitialized()
+	{
+		foreach (var question in xmlQuestions)
+		{
+			if (question.Element("antwoord").Value == question.Element("userantwoord").Value)
+			{ score++; }
+		}
+	}
+
+	private void ShowAI(string volgnummer)
+	{
+		var q = xmlQuestions.FirstOrDefault(g => g.Element("volgnummer").Value == volgnummer);
+		if (q.Element("show").Value == "none")
+		{
+			q.Element("show").Value = "flex";
+		}
+		else
+		{
+			q.Element("show").Value = "none";
+		}
+	}
+}
+
+@{
+	fraction = (double)score / (double)xmlQuestions.Count();
+	percentage = fraction * 100;
+	result = $"{percentage:0.00}%";
+}
+<p>Score: @result (@score van de @xmlQuestions.Count vragen) &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
+<hr />
+<h2>Antwoorden</h2>
+<hr />
+
+<style>
+	@foreach (var question in xmlQuestions)
+		{
+			string volgnummer = question.Element("volgnummer").Value;
+			string identifier = $"#q{volgnummer}";
+			identifier += "{ display:" + question.Element("show").Value + "; flex-direction: column }";
+			<text>@identifier</text>
+		}
+</style>
+
+<!--   TESTUITSLAG VRAGEN EN ANTWOORDEN  -->
+@foreach (var question in xmlQuestions)
+{
+	var letterJuisteAntwoord = question.Element("antwoord").Value;
+	var letterGebruikersAntwoord = question.Element("userantwoord").Value;
+	var juisteAntwoord = question.Element("keuzes").Element(letterJuisteAntwoord).Value;
+	var fouteAntwoord = question.Element("keuzes").Element(letterGebruikersAntwoord).Value;
+
+	<div>
+		<p>@question.Element("header").Value</p>
+		<p class="inspringen">
+			<span class="blauw">
+				<span class="oi oi-circle-check"></span> Het juiste antwoord: @juisteAntwoord
+			</span>
+		</p>
+
+		@if (letterGebruikersAntwoord != null && letterGebruikersAntwoord != letterJuisteAntwoord)
+		{
+			<p class="inspringen">
+				<span style="color:red">
+					<span class="oi oi-circle-x"></span>&nbsp;Jouw antwoord was fout
+				</span>
+			</p>
+		}
+
+		@{ string volgnummer = question.Element("volgnummer").Value; }
+		<button @onclick="() => ShowAI(volgnummer)" class="choice">@textButton</button>
+		@{string identifier = "q" + volgnummer;	}
+
+		<!-- PROMPTS   PROMPTS -->
+		<div id=@identifier>
+			<br />
+			<p><b>Copy the instructions and the question below and post them to your AI teacher.</b>
+				<br />
+				<b>Instructions</b>
+				<br />
+				I'm learning to code <span style="color:red">@naamvragenset</span>. Here is a multiple choice question about <span style="color:red">@naamvragenset</span>. On a scale from 1 to 5 (where 1 is beginner and 5 is senior) <span style="color:red">my level is @question.Element("niveau").Value</span>. Please consider my level when answering the question.
+				<br />
+				Tell me the correct answer and explain why it's correct.
+				<br />
+				Explain why the topic <span style="color:red">@question.Element("onderwerp").Value</span> is important in <span style="color:red">@naamvragenset</span>.
+				If possible provide a simple code example and explain the code.<br />
+				Give me a real-world scenario where such code could be useful.<br />
+				<b>Question</b><br />
+				@foreach (var regel in question.Element("header").Elements())
+				{
+					@regel.Value<br />
+				}
+				@foreach (XElement choice in question.Element("keuzes").Elements())
+				{
+					<span>@choice.Name.LocalName	&nbsp;@choice.Value</span> <br />
+				}
+
+				<br /><b>Possible prompts for further study</b><br />
+				<span><b>Instruction</b></span><br />
+				<span>Summarize your answer</span><br /><br />
+				<span><b>Instruction</b></span><br />
+				<span>Translate your answer in Dutch for a level @question.Element("niveau").Value student and explain like I'm 16 year old.</span>
+				<br /><br />
+				<span><b>Instruction</b></span><br />
+				Can you ask me another multiple choice question about <span style="color:red">@naamvragenset @question.Element("onderwerp").Value</span>
+		</p>
+	
+		</div>
+		<hr />
+	</div>
+}
+
+
+

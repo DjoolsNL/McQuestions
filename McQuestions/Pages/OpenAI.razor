@@ -1,0 +1,61 @@
+﻿@page "/openai"
+
+@using System.Net.Http
+@using System.Net.Http.Json
+@using System.Text.Json.Serialization
+@inject NavigationManager NavigationManager
+
+<h3>OpenAI Example</h3>
+
+<button @onclick="GetOpenAIResponse">Get OpenAI Response</button>
+
+<p>@responseText</p>
+
+@code {
+	private HttpClient httpClient;
+	private string responseText;
+
+	protected override void OnInitialized()
+	{
+		httpClient = new HttpClient
+			{
+				BaseAddress = new Uri(NavigationManager.BaseUri)
+			};
+
+		// Replace "YOUR_API_KEY" with your actual OpenAI API key
+		httpClient.DefaultRequestHeaders.Add("Authorization", "Bearer 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");
+	}
+
+	private async Task GetOpenAIResponse()
+	{
+		var requestBody = new
+		{
+			prompt = "Hello, OpenAI!",
+			max_tokens = 100,
+		};
+
+		var response = await httpClient.PostAsJsonAsync("https://api.openai.com/v1/engines/davinci-codex/completions", requestBody);
+
+		if (response.IsSuccessStatusCode)
+		{
+			var responseData = await response.Content.ReadFromJsonAsync<OpenAIResponse>();
+			responseText = responseData.Choices.FirstOrDefault()?.Text ?? string.Empty;
+		}
+		else
+		{
+			responseText = "Error occurred while calling the OpenAI API.";
+		}
+	}
+
+	public class OpenAIResponse
+	{
+		[JsonPropertyName("choices")]
+		public List<OpenAIChoice> Choices { get; set; }
+	}
+
+	public class OpenAIChoice
+	{
+		[JsonPropertyName("text")]
+		public string Text { get; set; }
+	}
+}

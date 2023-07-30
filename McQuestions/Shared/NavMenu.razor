@@ -1,0 +1,109 @@
+﻿<style>
+	.nav-link {
+		/*padding-bottom: 0.2rem;*/
+	}
+
+</style>
+
+<div class="top-row ps-3 navbar navbar-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="">McQuestions Demo</a>
+		<button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+	<nav class="flex-column">
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+				<span class="oi oi-home" aria-hidden="true"></span>Verkooppraatje
+			</NavLink>
+		</div>
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="Intake">
+				<span class="oi oi-plus" aria-hidden="true"></span>Intake Vragen
+			</NavLink>
+		</div>
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="General">
+				<span class="oi oi-plus" aria-hidden="true"></span>Algemene ICT Vragen
+			</NavLink>
+		</div>
+
+
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="C-Sharp">
+				<span class="oi oi-plus" aria-hidden="true"></span>C-Sharp Vragen
+			</NavLink>
+		</div>
+
+
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="FrontEnd">
+				<span class="oi oi-plus" aria-hidden="true"></span>Front-end Vragen
+			</NavLink>
+		</div>
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="Javascript">
+				<span class="oi oi-plus" aria-hidden="true"></span>Javascript Vragen
+			</NavLink>
+		</div>
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="Python">
+				<span class="oi oi-plus" aria-hidden="true"></span>Python Vragen
+			</NavLink>
+		</div>
+
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="Scrum">
+				<span class="oi oi-plus" aria-hidden="true"></span>Scrum Vragen
+			</NavLink>
+		</div>
+
+
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="Base">
+				<span class="oi oi-plus" aria-hidden="true"></span>Voorbeeld
+			</NavLink>
+		</div>
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="McDevelopment">
+				<span class="oi oi-plus" aria-hidden="true"></span>McDev
+			</NavLink>
+		</div>
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="Create">
+				<span class="oi oi-plus" aria-hidden="true"></span>Maak Vragenset
+			</NavLink>
+		</div>
+
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="LogIn">
+				<span class="oi oi-plus" aria-hidden="true"></span>Beheer Vragensets
+			</NavLink>
+		</div>
+	</nav>
+</div>
+
+@code {
+	private bool collapseNavMenu = true;
+
+	private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+	private void ToggleNavMenu()
+	{
+		collapseNavMenu = !collapseNavMenu;
+	}
+}

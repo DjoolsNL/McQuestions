@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<vragenset>Voorbeeldtest</vragenset>
+	<!-- L1 -->
+	<vraag>
+		<disabled></disabled>
+		<guid>456ee88e-c81d-4fcc-a476-33d88eabc83c</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Welke maand volgt op april en ligt voor juli in een kalenderjaar?</regel>
+		</header>
+		<keuzes>
+			<A>maart</A>
+			<B>februari</B>
+			<C>januari</C>
+			<D>mei</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>
+			Als we naar de maanden in een kalender kijken, zien we dat april vóór mei komt en juli na mei komt. Daarom ligt de maand
+			mei tussen april en juli.
+
+			Om het antwoord te bevestigen kunnen we de volgorde van de maanden in een kalender controleren:
+			januari - februari - maart - april - mei - juni - juli
+
+			Zoals je kunt zien, is mei de maand die direct tussen april en juli komt.
+
+			Daarom is het antwoord "D" (mei) correct.
+		</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>de0f51da-eb14-4978-9839-c3badbba5862</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Hoeveel protonen telt een zuurstof molecuul O2?</regel>
+		</header>
+		<keuzes>
+			<A>8</A>
+			<B>4</B>
+			<C>2</C>
+			<D>16</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>
+			Een zuurstofmolecuul (O2) bestaat uit twee zuurstofatomen die chemisch zijn gebonden. Om te bepalen hoeveel protonen een zuurstofmolecuul bevat, moeten we kijken naar het aantal protonen in één zuurstofatoom.
+
+			In het periodiek systeem der elementen heeft zuurstof (O) atoomnummer 8, wat betekent dat het 8 protonen in de kern heeft.
+
+			Aangezien een zuurkoolmolecuul O2 bestaat uit twee zuurstofatomen die samen zijn gebonden, moeten we het aantal protonen vermenigvuldigen met 2 om het totale aantal protonen in het molecuul te krijgen.
+
+			8 protonen/atoom * 2 atomen = 16 protonen
+
+			Daarom bevat een zuurstofmolecuul (O2) in totaal 16 protonen.
+
+			Het juiste antwoord is dus "D" (16).
+		</uitleg>
+	</vraag>
+</root>

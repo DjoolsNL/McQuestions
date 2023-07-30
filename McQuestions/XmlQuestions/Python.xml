@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<vragenset>Python</vragenset>
+	<vraag>
+		<disabled></disabled>
+		<guid>c0fa07e5-8eb2-4625-812b-3de6fe71352d</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Variables</onderwerp>
+		<header>
+			<regel>Which statement is used to declare a variable in Python?</regel>
+		</header>
+		<keuzes>
+			<A>x = 5</A>
+			<B>var x = 5</B>
+			<C>x := 5</C>
+			<D>let x = 5</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The statement "x = 5" is used to declare a variable in Python. Python is a dynamically-typed language, so you can simply assign a value to a variable without explicitly declaring its type. The options "var x = 5" and "let x = 5" are not valid syntax in Python. The ":=" operator is used for variable assignment in Python 3.8 and above, but it's not commonly used for variable declaration.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>c82bc08c-0d18-4d21-a979-08ad52332f80</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Lists</onderwerp>
+		<header>
+			<regel>Which method is used to add an element to the end of a Python list?</regel>
+		</header>
+		<keuzes>
+			<A>append()</A>
+			<B>insert()</B>
+			<C>extend()</C>
+			<D>push()</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "append()" method is used to add an element to the end of a Python list. It modifies the original list by adding the element as the last item. The "insert()" method is used to insert an element at a specific position in the list, the "extend()" method is used to append multiple elements to the end of a list, and the "push()" method is not a built-in method for lists in Python.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>90f6377c-6fb1-46a7-ab16-341241c8d29c</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Conditional Statements</onderwerp>
+		<header>
+			<regel>Which keyword is used to define the beginning of a conditional statement block in Python?</regel>
+		</header>
+		<keuzes>
+			<A>if</A>
+			<B>when</B>
+			<C>case</C>
+			<D>switch</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "if" keyword is used to define the beginning of a conditional statement block in Python. It is followed by a condition, and the indented block of code beneath it is executed if the condition is true. The options "when", "case", and "switch" are not keywords used for conditional statements in Python.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>508f1ed6-2eba-4f57-83c3-4f61e274b620</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Loops</onderwerp>
+		<header>
+			<regel>Which loop in Python allows you to iterate over a sequence of elements?</regel>
+		</header>
+		<keuzes>
+			<A>for</A>
+			<B>while</B>
+			<C>do-while</C>
+			<D>loop</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "for" loop in Python allows you to iterate over a sequence of elements. It is commonly used with lists, tuples, strings, or other iterable objects. The loop variable takes on each element of the sequence in each iteration. The "while" loop is a conditional loop that continues iterating until a certain condition becomes false. Python does not have a built-in "do-while" loop. The "loop" option is not a valid loop construct in Python.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>33cb309b-3de5-4565-98aa-9592f7959349</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Functions</onderwerp>
+		<header>
+			<regel>Which keyword is used to define a function in Python?</regel>
+		</header>
+		<keuzes>
+			<A>def</A>
+			<B>function</B>
+			<C>define</C>
+			<D>fun</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "def" keyword is used to define a function in Python. It is followed by the name of the function, a pair of parentheses containing optional parameters, and a colon. The function body is indented beneath the definition. The options "function", "define", and "fun" are not valid keywords for function definition in Python.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>d8185315-3684-4ad2-bf96-0064a967204f</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Dictionaries</onderwerp>
+		<header>
+			<regel>Which syntax is used to access a value in a Python dictionary given its key?</regel>
+		</header>
+		<keuzes>
+			<A>dictionary[key]</A>
+			<B>dictionary.value(key)</B>
+			<C>dictionary.get(key)</C>
+			<D>dictionary.lookup(key)</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In Python, the syntax "dictionary[key]" is used to access a value in a dictionary given its key. Dictionaries are key-value pairs, and you can use the key within square brackets to retrieve the associated value. The options "dictionary.value(key)", "dictionary.get(key)", and "dictionary.lookup(key)" are not valid syntaxes for accessing values in a dictionary in Python.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>c05536af-598e-4ef1-94e0-0b011a3dbe43</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Data Types</onderwerp>
+		<header>
+			<regel>Which data type in Python is used to store a sequence of characters?</regel>
+		</header>
+		<keuzes>
+			<A>str</A>
+			<B>int</B>
+			<C>float</C>
+			<D>list</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "str" data type in Python is used to store a sequence of characters, commonly known as a string. It represents textual data and can be enclosed in single quotes ('') or double quotes (""). The "int" data type is used to store integer numbers, the "float" data type is used to store floating-point numbers, and the "list" data type is used to store a collection of items.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>51e64bb6-f1bb-4c1f-8178-96afa8bf7a27</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Lists</onderwerp>
+		<header>
+			<regel>Which method is used to add an element to the end of a Python list?</regel>
+		</header>
+		<keuzes>
+			<A>append()</A>
+			<B>insert()</B>
+			<C>extend()</C>
+			<D>add()</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "append()" method is used to add an element to the end of a Python list. It modifies the original list by appending the element as the last item. The "insert()" method is used to insert an element at a specific position within the list. The "extend()" method is used to append multiple elements from another iterable to the list. The "add()" option is not a valid method for adding elements to a list in Python.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>8404ff41-f3f5-411d-a824-098f11c1b1ba</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Tuples</onderwerp>
+		<header>
+			<regel>Which data structure in Python is immutable?</regel>
+		</header>
+		<keuzes>
+			<A>tuple</A>
+			<B>list</B>
+			<C>dict</C>
+			<D>set</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "tuple" data structure in Python is immutable. Once created, a tuple cannot be modified. It is an ordered collection of items enclosed in parentheses and separated by commas. In contrast, a "list" is mutable and allows modifications to its elements. The "dict" (dictionary) and "set" data structures in Python are also mutable.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>3b324904-98af-4ecf-9dc7-08ad3bd16cce</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Conditional Statements</onderwerp>
+		<header>
+			<regel>Which keyword is used to define the "else" part of an "if-else" statement in Python?</regel>
+		</header>
+		<keuzes>
+			<A>else</A>
+			<B>otherwise</B>
+			<C>elsif</C>
+			<D>elif</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "else" keyword is used to define the "else" part of an "if-else" statement in Python. It is used when the condition in the "if" statement evaluates to false, and provides an alternative set of instructions to be executed. The "otherwise" and "elsif" options are not valid keywords in Python. The "elif" keyword is used to define additional conditional branches within the "if-else" statement.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>b4be8f9b-1d63-477f-ae30-8c290670a7f5</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Python Loops</onderwerp>
+		<header>
+			<regel>Which loop in Python allows you to iterate over a sequence of elements?</regel>
+		</header>
+		<keuzes>
+			<A>for</A>
+			<B>while</B>
+			<C>do-while</C>
+			<D>loop</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "for" loop in Python allows you to iterate over a sequence of elements. It is commonly used with lists, tuples, strings, or other iterable objects. The loop variable takes on each element of the sequence in each iteration. The "while" loop is a conditional loop that continues iterating until a certain condition becomes false. The "do-while" loop is not available in Python, and the "loop" option is not a valid loop construct.</uitleg>
+	</vraag>
+</root>

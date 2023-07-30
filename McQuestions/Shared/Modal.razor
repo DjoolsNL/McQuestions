@@ -1,0 +1,26 @@
+﻿@*<div class="modal-overlay" style="@($"display: {(IsOpen ? "flex" : "none")};")">
+	<div class="modal-container">
+		<!-- Modal content goes here -->
+		<h3>Modal Title</h3>
+		<p>@AIFake</p>
+		<button @onclick="CloseModal">Close</button>
+	</div>
+</div>
+
+@code {
+	[Parameter]
+	public string AIFake { get; set; }
+	private bool IsOpen { get; set; }
+
+	public void OpenModal()
+	{
+		IsOpen = true;
+		StateHasChanged();
+	}
+
+	public void CloseModal()
+	{
+		IsOpen = false;
+		StateHasChanged();
+	}
+}*@

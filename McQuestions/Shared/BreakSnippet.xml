@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Break</Title>
+      <Shortcut>Alt-B</Shortcut>
+      <Description>Creates a line break</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="LanguageCode"><![CDATA[
+        <br />
+      ]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+

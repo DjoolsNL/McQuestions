@@ -1,0 +1,367 @@
+﻿@page "/login"
+@using System.Xml.Linq
+@using System.Linq
+@using System.Collections.Generic
+@using System.IO
+@using System
+
+<PageTitle>login</PageTitle>
+<Style />
+
+<style>
+p {
+	padding:0;
+	margin:0;
+}
+input {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 4px 8px;
+	font-size: 14px;
+	width:340px;
+		
+}
+	.custom-input:focus {
+		outline: none;
+		border-color: #ccc;
+		box-shadow: none;
+	}
+
+textarea {
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+td {
+}
+
+</style>
+
+@code {
+	private string selectedOption;
+
+	private List<XElement> xmlQuestions;
+	private int currentQuestionIndex = 0;
+	private int score = 0;
+	private string answer = "";
+	private string submitButtonText = "Maak een keuze";
+	private string naamVragenSet;
+	string folderPath;
+	string[] fileNames;
+	string fileName;
+	private XElement xElement;
+	private List<Vraag> VragenLijst = new();
+	bool ReadyForBrowser;
+	bool AddGuid;
+
+	protected override void OnInitialized()
+	{
+		Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
+		folderPath = Directory.GetCurrentDirectory();
+		fileNames = Directory.GetFiles(folderPath, "XmlQuestions\\");
+	}
+
+	void OnClick(string fname)
+	{
+		// gekozen file inlezen
+		fileName = fname;
+		var xmlString = File.ReadAllText(fname);
+		xElement = XElement.Parse(xmlString);
+
+		naamVragenSet = xElement.Element("vragenset").Value;
+		xmlQuestions = xElement.Elements("vraag").ToList();
+
+		VragenLijst.Clear();
+
+		#region XML to OBJECT
+		// data uit xml wordt gebruikt om objecten Vraag te maken 
+		//foreach (var v in xmlQuestions)
+		//{
+		//	Vraag vraag = new();
+		//	vraag.guid = v.Element("guid").Value;
+		//	vraag.volgnummer = v.Element("volgnummer").Value;
+		//	vraag.niveau = v.Element("niveau").Value;
+		//	vraag.onderwerp = v.Element("onderwerp").Value;
+
+		//	foreach (var regel in v.Element("header").Elements())
+		//	{
+		//		vraag.Header.Add(regel.Value);
+		//	}
+
+		//	foreach (var keuze in v.Element("keuzes").Elements())
+		//	{
+		//		vraag.Keuzes.Add(keuze.Value);
+		//	}
+
+		//	vraag.antwoord = v.Element("antwoord").Value;
+		//	vraag.show = v.Element("show").Value;
+		//	vraag.uitleg = v.Element("uitleg").Value;
+
+		//	VragenLijst.Add(vraag);
+		//}
+		#endregion
+
+		if (AddGuid)
+		{
+			foreach (var q in xElement.Elements("vraag"))
+			{
+				Guid g = Guid.NewGuid();
+				q.Element("guid").Value = g.ToString();
+			}
+
+			xElement.Save(fname);
+		}
+		else
+		{
+			ReadyForBrowser = true;
+		}
+		
+	}
+
+	void OnSave(string fname)
+	{
+		XElement doc = new XElement("root");
+		XElement vragenset = new XElement("vragenset", xElement.Element("vragenset").Value);
+		doc.Add(vragenset);
+		//xmlQuestions.Elements().OrderBy(e => (int)e.Element("niveau"));
+
+		foreach (var item in xmlQuestions)
+		{
+			XElement vraag = new XElement("vraag", item.Elements());
+			doc.Add(vraag);
+		}
+
+		doc.Save(fname);
+	}
+
+	void OnDisable(string guid)
+	{
+		var disable = xmlQuestions.FirstOrDefault(e => e.Element("guid").Value == guid);
+
+		if (disable.Element("disabled").Value == "true")
+		{
+			disable.Element("disabled").Value = "false";
+		}
+		else
+		{
+			disable.Element("disabled").Value = "true";
+		}
+
+		XElement doc = new XElement("root");
+		XElement vragenset = new XElement("vragenset", xElement.Element("vragenset").Value);
+		doc.Add(vragenset);
+
+		foreach (var item in xmlQuestions)
+		{
+			XElement vraag = new XElement("vraag", item.Elements());
+			doc.Add(vraag);
+		}
+
+		doc.Save(fileName);
+	}
+
+	void OnDelete(string guid)
+	{
+		int del = xmlQuestions.FindIndex(e => e.Element("guid").Value == guid);
+		xmlQuestions.RemoveAt(del);
+		XElement doc = new XElement("root");
+		XElement vragenset = new XElement("vragenset", xElement.Element("vragenset").Value);
+		doc.Add(vragenset);
+
+		foreach (var item in xmlQuestions)
+		{
+			XElement vraag = new XElement("vraag", item.Elements());
+			doc.Add(vraag);
+		}
+
+		doc.Save(fileName);
+	}
+
+
+
+
+	void OnChangeAddGuid(ChangeEventArgs e)
+	{
+		if (e.Value.ToString() == "true")
+		{
+			AddGuid = true;
+		}
+			
+	}
+}
+<h2>@naamVragenSet Vragenset</h2>
+<hr />
+<div class="indexdiv">
+
+@foreach (var filename in fileNames)
+{	
+	<button @onclick="() => OnClick(filename)" class="filebutton">@Path.GetFileName(filename)</button>
+		<span>&nbsp;&nbsp;</span>
+	
+}
+</div>
+
+@*<span>
+	Voeg guid toe:
+	<label>
+		<input type="radio" name="total" value="true" @onchange="OnChangeAddGuid" /> add guid
+	</label>
+	<label>
+		<input type="radio" name="total" value="false" @onchange="OnChangeAddGuid" /> don't add guid
+	</label>
+</span>*@
+
+@if (xmlQuestions != null && ReadyForBrowser)
+{
+	<span>&nbsp:</span>
+	<hr>
+	foreach (var q in xmlQuestions)
+	{
+		string guid = q.Element("guid").Value;
+		<div class="indexdiv">
+			<button id="" @onclick="() => OnSave(fileName)">Save</button>&nbsp;
+
+			@if (q.Element("disabled").Value == "true")
+			{
+				<button id="" @onclick="() => OnDisable(guid)">Enable</button>
+				<span>&nbsp;</span>
+			}
+			else
+			{
+				<button id="" @onclick="() => OnDisable(guid)">Disable</button>
+				<span>&nbsp;</span>
+			}
+			
+			<button id="" @onclick="() => OnDelete(guid)">Delete</button>
+		</div>
+		<div class="indexdiv">
+			<table>
+				<tr>
+					<td>Disabled&nbsp;</td>
+					<td><input @bind="@q.Element("disabled").Value" /></td>
+				</tr>
+				<tr>
+					<td>Guid&nbsp;</td>
+					<td><input @bind="@q.Element("guid").Value" /></td>
+				</tr>
+				<tr>
+					<td>Volgnummer</td>
+					<td>@*<input @bind="@q.Element("volgnummer").Value" />*@</td>
+				</tr>
+				<tr>
+					<td>Niveau</td>
+					<td><input @bind="@q.Element("niveau").Value" /></td>
+				</tr>
+
+				<tr>
+					<td>Onderwerp</td>
+					<td><input @bind="@q.Element("onderwerp").Value" /></td>
+				</tr>
+
+				@foreach (var item in q.Element("header").Elements())
+				{
+					<tr>
+						<td>Vraag</td>
+						@if (item.Value.ToString().Length > 40)
+						{
+							int w = item.Value.ToString().Length * 10;
+							int cols = 80;
+							int rows = item.Value.ToString().Length / 60;
+							<td>
+								<textarea wrap="hard" cols="@(cols)" rows="@rows" @bind="@item.Value" />
+							</td>
+						}
+						else
+						{
+							<td><input @bind="@item.Value" /></td>
+						}
+					</tr>
+				}
+				@{int teller = 1;}
+				@foreach (var item in q.Element("keuzes").Elements())
+				{
+					<tr>
+						<td>&nbsp;&nbsp;Optie</td>
+						@if (item.Value.ToString().Length > 40)
+						{
+							int w = item.Value.ToString().Length * 10;
+							int cols = 80;
+							int rows = item.Value.ToString().Length / 60;
+							<td>
+								<textarea wrap="hard" cols="@(cols)" rows="@rows" @bind="@item.Value" />
+							</td>
+						}
+						else
+						{
+							<td><input @bind="@item.Value" /></td>
+						}
+						
+					</tr>
+				}
+				<tr>
+					<td>Antwoord</td>
+					<td><input @bind="@q.Element("antwoord").Value" /></td>
+				</tr>
+
+				<tr>
+					<td>Userantwoord&nbsp</td>
+					<td>
+						@*<input @bind="@q.Element("userantwoord").Value" />*@
+					</td>
+				</tr>
+
+				<tr>
+					<td>Show</td>
+					<td><input @bind="@q.Element("show").Value" /></td>
+				</tr>
+
+				<tr>
+					<td>Uitleg</td>
+					@if (q.Element("uitleg").Value.ToString().Length > 40)
+					{
+						int cols = 80;
+						int rows = q.Element("uitleg").Value.ToString().Length/60;
+
+						<td>
+							<textarea wrap="hard" cols="@(cols)" rows="@rows" @bind="@q.Element("uitleg").Value" />
+						</td>
+					}
+					else
+					{
+						<td><input @bind="@q.Element("uitleg").Value" /></td>
+					}
+				</tr>
+			</table>
+			<hr>
+		</div>
+	}
+}
+
+@code{
+    public class Vraag
+    {
+        public Vraag()
+        {
+			Header = new();
+			Keuzes = new();
+        }
+
+        public string guid { get; set; }
+		public string volgnummer { get; set; }
+        public string niveau { get; set; }
+        public string onderwerp { get; set; }
+
+		public List<string> Header;
+		public List<string> Keuzes;
+
+		public string antwoord { get; set; }
+		public string show { get; set; }
+		public string uitleg { get; set; }
+    }
+}
+
+
+
+
+

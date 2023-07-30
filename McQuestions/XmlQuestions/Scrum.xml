@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<vragenset>Scrum Master 1</vragenset>
+	<vraag>
+		<disabled></disabled>
+		<guid>feca64de-112c-4218-a40e-fd5e57397f92</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>
+				How much work must the Developers complete for each Product Backlog item they select for a Sprint?
+			</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>All development work and at least some testing.</A>
+			<B>Enough so that each Product Backlog item they select meets the Definition of Done.</B>
+			<C>Analysis, design, programming, testing and documentation.</C>
+			<D>As much as it can fit into the Sprint.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>86cd0cc6-0fbe-4fe7-8b51-317d013d4edc</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity.</regel>
+			<regel>Which one the following answers is FALSE?</regel>
+		</header>
+		<keuzes>
+			<A>The Developers may work with the Product Owner to add or remove work if they find themselves with more or less capacity than expected.</A>
+			<B>The Sprint Backlog is fully formulated in the Sprint Planning event and does not change during the Sprint.</B>
+			<C>As a decomposition of the selected Product Backlog items, the Sprint Backlog changes and may grow as the work emerges.</C>
+			<D>The Product Owner can help clarify or optimize the Sprint when asked by the Developers.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>fc9103c6-db93-47f7-9534-dc8e5c9ce279</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>What is the typical size for a Scrum Team?</regel>
+		</header>
+		<keuzes>
+			<A>10 or fewer.</A>
+			<B>Minimum of 7.</B>
+			<C>7 plus or minus 2.</C>
+			<D>9</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>16d0ddb0-ef27-4237-b48c-cb44f3513413</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Who decides what kind of pet animal the Scrum Team should adopt as their mascotte?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>The Scrum Master</A>
+			<B>The Developers</B>
+			<C>The Product Owner</C>
+			<D>None of the above</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>
+			In Scrum, the responsibility for deciding what kind of pet animal the Scrum Team should adopt as their mascot typically falls outside the defined roles of the Scrum framework. The Scrum framework consists of three primary roles: the Scrum Master, the Product Owner, and the Development Team.
+
+			The Scrum Master is responsible for facilitating the Scrum process and ensuring that the team adheres to the Scrum principles and practices. They focus on removing any impediments that may affect the team's productivity and effectiveness.
+
+			The Product Owner is responsible for managing the product backlog, prioritizing user stories, and making decisions about what features or functionality should be included in the product. Their role is more focused on the product itself and its alignment with the business goals.
+
+			The Development Team is responsible for designing, developing, and delivering the product. They are self-organizing and cross-functional, and they collaborate to determine how the work is done.
+
+			In the given question, answer D, "None of the above," is correct because none of the defined roles in Scrum (Scrum Master, Product Owner, or Developers) have a specific responsibility for deciding the mascot of the Scrum Team. The decision regarding the mascot is typically left to the Scrum Team as a whole, allowing them to collectively decide on a pet animal that represents their team spirit and identity.
+		</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>06e3d925-e8a4-4dcd-b58b-ab315ff65fd1</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The timebox for the Sprint Review is:</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>2 hours.</A>
+			<B>1 day.</B>
+			<C>4 hours for a monthly Sprint. For shorter Sprints it is usually shorter.</C>
+			<D>4 hours and longer as needed.</D>
+			<E>As long as needed.</E>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>40ec7144-2642-4482-9524-d75f70bbecae</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Who should know the most about the progress toward a business objective or a release, and be able to explain the alternatives most clearly?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>The Developers</A>
+			<B>The Project Manager</B>
+			<C>The Scrum Master</C>
+			<D>The Product Owner</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>6ff2b51e-1fc0-4c0e-9e22-19e69bb622c9</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The Product Backlog is ordered by:</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>Items are randomly arranged.</A>
+			<B>Whatever is deemed most appropriate by the Product Owner.</B>
+			<C>Least valuable items at the top to most valuable at the bottom.</C>
+			<D>Risk, where safer items are at the top, and riskier items are at the bottom.</D>
+			<E>Size, where small items are at the top and large items are at the bottom.</E>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>1ee6a4e9-8827-4fd1-aeda-78ae9f75a0f0</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The timebox for a Daily Scrum is?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>15 minutes.</A>
+			<B>15 minutes for a 4-week sprint. For shorter Sprints it is usually shorter.</B>
+			<C>Two minutes per person.</C>
+			<D>4 hours.</D>
+			<E>The same time of day every day.</E>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>22243c84-4436-46d9-ab43-b5c895bd15b2</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Which statement best describes the Sprint Review?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>It is a demo at the end of the Sprint for everyone in the organization to check on the work done.</A>
+			<B>It is a mechanism to control Developer activity during a Sprint.</B>
+			<C>It is when the Scrum Team and stakeholders inspect the outcome of a Sprint and figure out what to do next.</C>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>74d66642-1d40-4afa-95d7-203a919df485</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The timebox for the Sprint Planning event is?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>4 hours.</A>
+			<B>Monthly.</B>
+			<C>8 hours for a monthly Sprint. For shorter Sprints it is usually shorter.</C>
+			<D>Whenever it is done.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>c275958a-25d0-4673-9cfa-cd67877671d4</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Which of the following services is appropriate for a Scrum Master in regard to the Daily Scrum?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>Lead the discussions of the Developers.</A>
+			<B>Teach the Developers to keep the Daily Scrum within the 15 minute timebox.</B>
+			<C>Ensure that all 3 questions have been answered.</C>
+			<D>All answers apply.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>24260fac-f13b-4d7d-8a93-5ff65b97041c</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Why is the Daily Scrum held at the same time and same place?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>The place can be named.</A>
+			<B>Rooms are hard to book and this lets it be booked in advance.</B>
+			<C>The consistency reduces complexity.</C>
+			<D>The Product Owner demands it.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>31564bfd-325a-40dd-9a7f-c21679c6adc4</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>During a Sprint, a Developer determines that the Scrum Team will not be able to complete the items in their forecast. Who should be present to review and adjust the Product Backlog items selected?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>The Product Owner and all stakeholders.</A>
+			<B>The Scrum Master, the project manager, and the Developers</B>
+			<C>The Product Owner and the Developers.</C>
+			<D>The Developers.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>f98f9d81-b7d8-47d3-8ac4-70d6bd290b86</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>What does it mean to say that an event has a timebox?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>The event must happen by a given time.</A>
+			<B>The event must happen at a set time.</B>
+			<C>The event must take at least a minimum amount of time.</C>
+			<D>The event can take no more than a maximum amount of time.</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>91fbfd2d-7d88-4011-a589-8007cc711ad2</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>When does a Developer become the sole owner of an item on the Sprint Backlog?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>Whenever a team member can accommodate more work.</A>
+			<B>At the Sprint Planning event.</B>
+			<C>Never. All Sprint Backlog items are "owned" by the Developers on the Scrum Team.</C>
+			<D>During the Daily Scrum.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>429ad8d6-1ed9-4724-a204-3caef532ea05</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The length of a Sprint should be:</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>Short enough to keep the business risk acceptable to the Product Owner.</A>
+			<B>Short enough to be able to synchronize the development work with other business events.</B>
+			<C>One month or less.</C>
+			<D>All of the above.</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>2fee84f0-c9ca-4ad8-841a-467d7457e7f3</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>What are two ways a Scrum Master serves to enable effective Scrum Teams?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>By keeping high value features high in the Product Backlog.</A>
+			<B>By removing impediments that hinder the Scrum Team.</B>
+			<C>By starting and ending the meetings at the proper time.</C>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>12a7cceb-2b94-4601-85bd-e8eb324651f8</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>What is the function or purpose of Management in Scrum?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>Identify and remove people that are not working hard enough.</A>
+			<B>Monitor the progress of the Developers on the Scrum Team.</B>
+			<C>Support the Product Owner with insights and information into high value product and system capabilities. Support the Scrum Master to encourage organizational change that fosters empiricism, self-management, bottom-up intelligence, and intelligent product delivery.</C>
+			<D>Continually monitor staffing levels of the Scrum Team.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>9762a069-debd-4f42-b8eb-617e605c03dd</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>An organization has decided to adopt Scrum, but management wants to change the terminology to fit with terminology already used. What will likely happen if this is done?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>Without a new vocabulary as a reminder of the change, very little change may actually happen.</A>
+			<B>The organization may not understand what has changed with Scrum and the benefits of Scrum may be lost.</B>
+			<C>Management may feel less anxious.</C>
+			<D>All of the above.</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>d78a4e90-cb44-424d-b2f6-4dc49218afaf</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>When does a Developer become accountable for the value of a Product Backlog item selected for the Sprint?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>During the Daily Scrum.</A>
+			<B>Never. The entire Scrum Team is accountable for creating value every Sprint.</B>
+			<C>Whenever a team member can accommodate more work.</C>
+			<D>At the Sprint Planning Event.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>ef0e050b-1434-4f40-b319-8987f6240ab3</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Upon what type of process control is Scrum based?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>Hybrid</A>
+			<B>Empirical</B>
+			<C>Defined</C>
+			<D>Complex</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>4813cbea-333c-40eb-a2a7-e3afd4523d9a</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Who is on the Scrum Team?</regel>
+			<regel>(choose the best three answers)</regel>
+		</header>
+		<keuzes>
+			<A>The Scrum Master, the Project Manager and the Developers.</A>
+			<B>The Product Owner, The Scrum Master en the Lead Developer.</B>
+			<C>The Developers and the Srum Master.</C>
+			<D>The Developers, The Product Owner and the Scrum Master</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>02c14eca-8ea8-4290-8a41-f95c5cc8415e</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>Which statement best describes a Product Owner's responsibility?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>Keep stakeholders from distracting the Developers.</A>
+			<B>Maximizing the value of the work the Scrum Team does.</B>
+			<C>Managing the project and ensuring that the work meets the commitments to the stakeholders.</C>
+			<D>Directing the Developers.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>4a84a6e3-a8f2-479e-896d-f58d50c6ddc6</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>When does a Sprint conclude?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>When the Sprint Retrospective is complete.</A>
+			<B>When all Product Backlog items meet their Definition of Done.</B>
+			<C>When the Product Owner decides enough has been delivered to meet the Sprint Goal.</C>
+			<D>When all the tasks are completed by the Developers.</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>1a09459c-4d40-443c-beca-76b888895d97</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>When might a Sprint be abnormally cancelled?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>When it becomes clear that not everything will be finished by the end of the Sprint.</A>
+			<B>When the Sprint Goal becomes obsolete.</B>
+			<C>When the Developers feel that the work is too hard.</C>
+			<D>When the sales department has an important new opportunity.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>ff780db6-b37d-485d-b4fb-32da73a51d72</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>When many Scrum Teams are working on a single product, what best describes the Definition of Done?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>All Scrum Teams must have a Definition of Done that makes their combined Increment valuable and useful.</A>
+			<B>Each Scrum Team uses its own, but must make their definition clear to all other teams so the differences are known.</B>
+			<C>It depends.</C>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>dc813031-2beb-428c-8bab-a01d1dc877e9</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>When does the next Sprint begin?</regel>
+			<regel>(choose the best answer)</regel>
+		</header>
+		<keuzes>
+			<A>Immediately following the next Sprint Planning.</A>
+			<B>Immediately after the conclusion of the previous Sprint.</B>
+			<C>When the Product Owner is ready.</C>
+			<D>Next Monday.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+</root>

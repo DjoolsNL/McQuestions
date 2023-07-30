@@ -1,0 +1,58 @@
+﻿@page "/mcdevelopment"
+
+
+<PageTitle>McDevelopment</PageTitle>
+<Style />
+
+<style>
+	.custom-input {
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		padding: 4px 8px;
+		font-size: 14px;
+		width: 100%;
+	}
+
+		.custom-input:focus {
+			outline: none;
+			border-color: #ccc;
+			box-shadow: none;
+		}
+
+</style>
+
+<div class="indexdiv">
+	<img src="procesmodel McQ.png" alt="My Image" />
+</div>
+
+
+<div class="indexdiv">
+	<p>Probeer onze McDev</p>
+	<img src="McDev.png" alt="My Image" />
+
+
+	<input class="custom-input" id="nameInput" type="text" @bind="name" />
+	<br /><br />
+	@if (name != null)
+	{
+		<p>Why do you say '@name'? I need a little more to work with.</p>
+	}
+	
+
+
+</div>
+
+
+
+
+@code 
+{
+	private string name;
+}
+
+
+
+
+
+
+

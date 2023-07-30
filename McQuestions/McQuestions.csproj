@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="XmlQuestions\BaseQuestions.xml" />
+    <None Remove="XmlQuestions\C-Sharp.xml" />
+    <None Remove="XmlQuestions\FrontEnd.xml" />
+    <None Remove="XmlQuestions\General - Copy.xml" />
+    <None Remove="XmlQuestions\General.xml" />
+    <None Remove="XmlQuestions\Intake.xml" />
+    <None Remove="XmlQuestions\Javascript.xml" />
+    <None Remove="XmlQuestions\Python.xml" />
+    <None Remove="XmlQuestions\Scrum.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="XmlQuestions\BaseQuestions.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\C-Sharp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\FrontEnd.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\General - Copy.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\Python.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\Scrum.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\General.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\Intake.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\Javascript.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenAI" Version="1.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+
+</Project>
