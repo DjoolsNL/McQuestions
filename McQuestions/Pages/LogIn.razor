@@ -57,9 +57,9 @@ td {
 
 	protected override void OnInitialized()
 	{
-		Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
+		Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlQuestions\\");
 		folderPath = Directory.GetCurrentDirectory();
-		fileNames = Directory.GetFiles(folderPath, "XmlQuestions\\");
+		fileNames = Directory.GetFiles(folderPath);
 	}
 
 	void OnClick(string fname)

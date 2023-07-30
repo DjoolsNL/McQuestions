@@ -10,11 +10,20 @@
 
 	[Parameter]
 	public string naamvragenset { get; set; }
+
+	[Parameter]
+	public string levelQuestions { get; set; }
 	public int score = 0;
+
+	public string folderPath;
+	string pathToFile;
+	private List<XElement> xmlTests;
 
 	public double fraction;
 	public double percentage;
 	public string result; 
+	public int sumofquestions;
+	public int sumofscore;
 
 	public string textButton = "Engage your AI teacher";
 
@@ -25,6 +34,44 @@
 			if (question.Element("antwoord").Value == question.Element("userantwoord").Value)
 			{ score++; }
 		}
+
+
+		Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlAccount\\");
+		folderPath = Directory.GetCurrentDirectory();
+		pathToFile = folderPath + "\\AccountResults.xml";
+
+		var xmlString = File.ReadAllText(pathToFile);
+		var rootElement = XElement.Parse(xmlString);
+		xmlTests = rootElement.Elements("test").ToList();
+
+		XElement doc = new XElement("root");
+		XElement test = new XElement("test");
+		XElement vragenset = new XElement("vragenset", naamvragenset);
+		XElement niveau = new XElement("niveau", levelQuestions);
+		XElement aantal = new XElement("aantal", xmlQuestions.Count().ToString());
+		XElement scoore = new XElement("score", score);
+		test.Add(vragenset, niveau, aantal, scoore);
+		xmlTests.Add(test);
+
+		foreach (var item in xmlTests)
+		{
+			XElement testt = new XElement("test", item.Elements());
+			doc.Add(testt);
+		}
+
+		doc.Save(pathToFile);
+
+		if (levelQuestions != "6")
+		{
+			// nu nog de gegevens uit xmlTests halen en weergeven 
+			var selec = xmlTests.FindAll(t => t.Element("vragenset").Value == naamvragenset && t.Element("niveau").Value == levelQuestions);
+			sumofquestions = selec.Sum(e => (int)e.Element("aantal"));
+		 
+			sumofscore = selec.Sum(e => (int)e.Element("score"));
+		}
+
+		
+
 	}
 
 	private void ShowAI(string volgnummer)
@@ -47,6 +94,17 @@
 	result = $"{percentage:0.00}%";
 }
 <p>Score: @result (@score van de @xmlQuestions.Count vragen) &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
+
+@if (levelQuestions != "6")
+{
+	fraction = (double)sumofscore / (double)sumofquestions;
+	percentage = fraction * 100;
+	result = $"{percentage:0.00}%";
+	<p>Total score: @result - (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+}
+
+
+
 <hr />
 <h2>Antwoorden</h2>
 <hr />
