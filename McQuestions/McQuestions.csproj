@@ -49,10 +49,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenAI" Version="1.7.2" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="bin\" />
   </ItemGroup>
 
