@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<test>
+		<vragenset></vragenset>
+		<niveau></niveau>
+		<aantal></aantal>
+		<score></score>
+	</test>
+</root>
