@@ -93,14 +93,14 @@
 	percentage = fraction * 100;
 	result = $"{percentage:0.00}%";
 }
-<p>Score: @result (@score van de @xmlQuestions.Count vragen) &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
+<p><b>Score: @result (@score / @xmlQuestions.Count)</b> &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
 
 @if (levelQuestions != "6")
 {
 	fraction = (double)sumofscore / (double)sumofquestions;
 	percentage = fraction * 100;
 	result = $"{percentage:0.00}%";
-	<p>Total score: @result - (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+	<p><b>Total score @naamvragenset niveau @levelQuestions: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
 }
 
 
