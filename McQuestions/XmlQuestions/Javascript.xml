@@ -1,2089 +1,2078 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<vragenset>Javascript</vragenset>
-	<vraag>
-		<disabled></disabled>
-		<guid>d3e61bdc-c576-4f55-8058-b9fd375658e9</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Basics</onderwerp>
-		<header>
-			<regel>What is JavaScript primarily used for?</regel>
-		</header>
-		<keuzes>
-			<A>Styling web pages</A>
-			<B>Creating interactive elements on websites</B>
-			<C>Managing databases</C>
-			<D>Performing server-side operations</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>JavaScript is primarily used for creating interactive elements on websites. It allows you to add behaviors and interactivity to web pages.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>8d352c48-0215-4695-9f66-c1c881a75188</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Variables</onderwerp>
-		<header>
-			<regel>Which keyword is not used to declare a variable in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>const</A>
-			<B>let</B>
-			<C>var</C>
-			<D>variable</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>"var", "let" and "const" are used, "variable" is not a keyword in JS.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>8d352c48-0215-4655-9f66-c1c881a75188</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Variables</onderwerp>
-		<header>
-			<regel>What's the function of a variable in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>A variable is used to store a function.</A>
-			<B>A variable serves as a container that allows developers to store information and manipulate it.</B>
-			<C>A variable is the fundamental building block of an interface.</C>
-			<D>A variable is used to clean up memory.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>In JavaScript, a variable is a fundamental concept that is used to store data or values. Variables serve as containers that allow developers to store information and manipulate it throughout the execution of a program. They act as placeholders to represent different types of data, such as numbers, strings, objects, arrays, and more.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>6b3b1353-d15a-4f78-9980-e6b7adf9cabd</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>HTML DOM</onderwerp>
-		<header>
-			<regel>What is the HTML DOM?</regel>
-		</header>
-		<keuzes>
-			<A>The DOM is the collection of variables created in JavaScript</A>
-			<B>The DOM is short for Dominant Scripting and refers to JS higher functions</B>
-			<C>The DOM is used to convert varibales from one type to another</C>
-			<D>The Dom is a programming interface for web documents</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>
-			The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML document as a tree-like model, where each element in the document is represented by a node in the tree. The DOM provides a way to access, manipulate, and update the content and structure of web pages dynamically.
+  <vragenset>Javascript</vragenset>
+  <vraag>
+    <disabled></disabled>
+    <guid>d3e61bdc-c576-4f55-8058-b9fd375658e9</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Basics</onderwerp>
+    <header>
+      <regel>What is JavaScript primarily used for?</regel>
+    </header>
+    <keuzes>
+      <A>Styling web pages</A>
+      <B>Creating interactive elements on websites</B>
+      <C>Managing databases</C>
+      <D>Performing server-side operations</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>JavaScript is primarily used for creating interactive elements on websites. It allows you to add behaviors and interactivity to web pages.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>8d352c48-0215-4695-9f66-c1c881a75188</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Variables</onderwerp>
+    <header>
+      <regel>Which keyword is not used to declare a variable in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>const</A>
+      <B>let</B>
+      <C>var</C>
+      <D>variable</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>"var", "let" and "const" are used, "variable" is not a keyword in JS.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>8d352c48-0215-4655-9f66-c1c881a75188</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Variables</onderwerp>
+    <header>
+      <regel>What's the function of a variable in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>A variable is used to store a function.</A>
+      <B>A variable serves as a container that allows developers to store information and manipulate it.</B>
+      <C>A variable is the fundamental building block of an interface.</C>
+      <D>A variable is used to clean up memory.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>In JavaScript, a variable is a fundamental concept that is used to store data or values. Variables serve as containers that allow developers to store information and manipulate it throughout the execution of a program. They act as placeholders to represent different types of data, such as numbers, strings, objects, arrays, and more.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>6b3b1353-d15a-4f78-9980-e6b7adf9cabd</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>HTML DOM</onderwerp>
+    <header>
+      <regel>What is the HTML DOM?</regel>
+    </header>
+    <keuzes>
+      <A>The DOM is the collection of variables created in JavaScript</A>
+      <B>The DOM is short for Dominant Scripting and refers to JS higher functions</B>
+      <C>The DOM is used to convert varibales from one type to another</C>
+      <D>The Dom is a programming interface for web documents</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML document as a tree-like model, where each element in the document is represented by a node in the tree. The DOM provides a way to access, manipulate, and update the content and structure of web pages dynamically.
 
-			When a web page is loaded in a browser, the browser parses the HTML markup and creates a DOM tree that represents the structure of the page. The DOM tree consists of various types of nodes, such as elements, text nodes, attribute nodes, and more. Elements represent HTML tags, while text nodes contain the text content within elements.
+When a web page is loaded in a browser, the browser parses the HTML markup and creates a DOM tree that represents the structure of the page. The DOM tree consists of various types of nodes, such as elements, text nodes, attribute nodes, and more. Elements represent HTML tags, while text nodes contain the text content within elements.
 
-			JavaScript is a programming language commonly used in web development. It has a close relationship with the DOM because it provides powerful methods and properties to interact with the DOM tree. Using JavaScript, you can access and manipulate the DOM elements and their properties, change the content and appearance of the web page, and respond to user interactions. JavaScript can dynamically modify the DOM by adding, removing, or modifying elements and their attributes. You can use JavaScript to select elements by their tag names, class names, or IDs, and then manipulate their properties, such as changing their content, modifying their styles, or attaching event handlers.
+JavaScript is a programming language commonly used in web development. It has a close relationship with the DOM because it provides powerful methods and properties to interact with the DOM tree. Using JavaScript, you can access and manipulate the DOM elements and their properties, change the content and appearance of the web page, and respond to user interactions. JavaScript can dynamically modify the DOM by adding, removing, or modifying elements and their attributes. You can use JavaScript to select elements by their tag names, class names, or IDs, and then manipulate their properties, such as changing their content, modifying their styles, or attaching event handlers.
 		</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>9e4af895-0dcd-446d-8ce8-256b980a5086</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Browser</onderwerp>
-		<header>
-			<regel>What is a browser console?</regel>
-		</header>
-		<keuzes>
-			<A>a browser extension to manage the security of a web page</A>
-			<B>a function to supress browser errors </B>
-			<C>a development tool that allows developers to interact with and debug web pages</C>
-			<D>a language package for a browser </D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The browser console is a development tool that allows developers to interact with and debug web pages. It provides a command-line interface where you can execute JavaScript code, view and modify the Document Object Model (DOM), inspect network requests and responses, log messages for debugging purposes, and access various other tools and features for web development.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>c61ae0de-d163-4e96-a453-236a16e049ef</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Comments</onderwerp>
-		<header>
-			<regel>What symbol is used for single-line comments in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>#</A>
-			<B>/* */</B>
-			<C>//</C>
-			<D>!</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "//" symbol is used for single-line comments in JavaScript. Anything after "//" on a line is considered a comment and is ignored by the JavaScript interpreter.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>55096a3d-d1df-42b4-b9f7-6212b2e4366f</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>Which of the following best describes an array in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>An array is a built-in function in JavaScript used for sorting elements.</A>
-			<B>An array is a data type in JavaScript used to store multiple values in a single variable.</B>
-			<C>An array is a loop construct in JavaScript used for iterating over objects.</C>
-			<D>An array is a conditional statement in JavaScript used for making decisions.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>9e4af895-0dcd-446d-8ce8-256b980a5086</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Browser</onderwerp>
+    <header>
+      <regel>What is a browser console?</regel>
+    </header>
+    <keuzes>
+      <A>a browser extension to manage the security of a web page</A>
+      <B>a function to supress browser errors </B>
+      <C>a development tool that allows developers to interact with and debug web pages</C>
+      <D>a language package for a browser </D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The browser console is a development tool that allows developers to interact with and debug web pages. It provides a command-line interface where you can execute JavaScript code, view and modify the Document Object Model (DOM), inspect network requests and responses, log messages for debugging purposes, and access various other tools and features for web development.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>c61ae0de-d163-4e96-a453-236a16e049ef</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Comments</onderwerp>
+    <header>
+      <regel>What symbol is used for single-line comments in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>#</A>
+      <B>/* */</B>
+      <C>//</C>
+      <D>!</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "//" symbol is used for single-line comments in JavaScript. Anything after "//" on a line is considered a comment and is ignored by the JavaScript interpreter.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>55096a3d-d1df-42b4-b9f7-6212b2e4366f</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>Which of the following best describes an array in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>An array is a built-in function in JavaScript used for sorting elements.</A>
+      <B>An array is a data type in JavaScript used to store multiple values in a single variable.</B>
+      <C>An array is a loop construct in JavaScript used for iterating over objects.</C>
+      <D>An array is a conditional statement in JavaScript used for making decisions.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>
 			In JavaScript, an array is a specific data structure that allows you to store multiple values of different data types in a single variable. It is one of the fundamental data types and is denoted by square brackets []. Each value in an array is called an element, and the elements are separated by commas.
 
 			Arrays are commonly used to hold collections of related data, and they provide several built-in methods for manipulating and accessing their elements.
 
 			You can access elements in an array using their index. In JavaScript, array indices start from 0.
 		</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>55096a3d-d1ff-42b4-b9f7-6212b2e4366f</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>Which method is used to remove the last element from an array in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>push()</A>
-			<B>pop()</B>
-			<C>shift()</C>
-			<D>unshift()</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "pop()" method is used to remove the last element from an array in JavaScript. It returns the removed element and updates the length of the array.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>00c7d431-4f0f-47fe-ab9d-cfda53769051</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>What is the correct way to write a JavaScript array?</regel>
-		</header>
-		<keuzes>
-			<A>[1, 2, 3]</A>
-			<B>{1, 2, 3}</B>
-			<C>"1, 2, 3"</C>
-			<D>(1, 2, 3)</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct way to write a JavaScript array is using square brackets and comma-separated values, like [1, 2, 3]. Curly braces are used for JavaScript objects, not arrays.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>51a39503-0f32-4c44-8632-c98a38c1cd08</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Functions</onderwerp>
-		<header>
-			<regel>What is a function in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>A piece of code from an external library</A>
-			<B>A hard coded test</B>
-			<C>A reusable piece of code that performs a specific task</C>
-			<D>A static class that acts as a singleton</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>In JavaScript, a function is a block of reusable code that performs a specific task or set of tasks. It allows you to encapsulate a piece of code and execute it whenever needed by invoking the function's name. Functions are a fundamental concept in JavaScript and are used extensively to organize and modularize code, making it more readable and maintainable.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>51a39503-0f32-4c44-8632-c98a38c1cd08</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Functions</onderwerp>
-		<header>
-			<regel>Which keyword is used to define a function in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>function</A>
-			<B>define</B>
-			<C>create</C>
-			<D>func</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The keyword "function" is used to define a function in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>a0a827f9-24a5-47b1-bd3e-ee1c4cf675d4</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Conditional Statements</onderwerp>
-		<header>
-			<regel>Which keyword is used to execute a block of code if a condition is true?</regel>
-		</header>
-		<keuzes>
-			<A>if</A>
-			<B>else</B>
-			<C>switch</C>
-			<D>case</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "if" keyword is used to execute a block of code if a condition is true.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>ca5f40fe-25ac-4aa1-9127-7576536af874</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Loops</onderwerp>
-		<header>
-			<regel>Which loop is used to iterate over an array in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>for loop</A>
-			<B>while loop</B>
-			<C>do-while loop</C>
-			<D>foreach loop</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "for loop" is commonly used to iterate over an array in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>da2b9227-f1de-4552-81b2-c729ceabf75f</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>How do you access the value at a specific index in an array?</regel>
-		</header>
-		<keuzes>
-			<A>array.value(index)</A>
-			<B>array(index)</B>
-			<C>array[index]</C>
-			<D>array.get(index)</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>In JavaScript, you can access the value at a specific index in an array using the square bracket notation, like "array[index]".</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>b9d94418-a68f-4db6-813a-7c4ea0951e77</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>HTML DOM</onderwerp>
-		<header>
-			<regel>Which method is used to change the text content of an HTML element?</regel>
-		</header>
-		<keuzes>
-			<A>setText()</A>
-			<B>innerHTML()</B>
-			<C>textContent()</C>
-			<D>setAttribute()</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "textContent()" method is used to change the text content of an HTML element in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>d32e8071-470d-4148-a59b-ff94a4d2de2e</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Variables Scope</onderwerp>
-		<header>
-			<regel>Which type of scope does a variable have if it is declared inside a function?</regel>
-		</header>
-		<keuzes>
-			<A>Local scope</A>
-			<B>Global scope</B>
-			<C>Function scope</C>
-			<D>Block scope</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>A variable declared inside a function has local scope, meaning it is only accessible within that function.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>ac9881e1-82f3-42e0-9818-f527ada2084b</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>JSON</onderwerp>
-		<header>
-			<regel>What does JSON stand for?</regel>
-		</header>
-		<keuzes>
-			<A>JavaScript Object Notation</A>
-			<B>Java Syntax Object Naming</B>
-			<C>JavaScript Oriented Namespace</C>
-			<D>Java Object Naming</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>JSON stands for JavaScript Object Notation.It is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. JSON is often used for transmitting data between a server and a web application</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>a4f844ed-dd92-42d1-a95d-4a9bc4504926</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Functions</onderwerp>
-		<header>
-			<regel>What keyword is used to define a function in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>def</A>
-			<B>func</B>
-			<C>function</C>
-			<D>define</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "function" keyword is used to define a function in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>373f8bcf-b0a7-430a-9ecb-4edddfe9e263</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Data Types</onderwerp>
-		<header>
-			<regel>Which data type is used to represent true or false values in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>boolean</A>
-			<B>number</B>
-			<C>string</C>
-			<D>array</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "boolean" data type is used to represent true or false values in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>49c51b06-3555-4d3e-8fbb-688c7d268bf9</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Operators</onderwerp>
-		<header>
-			<regel>Which operator is used to assign a value to a variable in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>=</A>
-			<B>==</B>
-			<C>===</C>
-			<D>+</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "=" operator is used to assign a value to a variable in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>0b2b06d5-f925-4460-b260-e900f3062dbe</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Conditional Statements</onderwerp>
-		<header>
-			<regel>Which keyword is used to execute a block of code if a condition is true?</regel>
-		</header>
-		<keuzes>
-			<A>if</A>
-			<B>else</B>
-			<C>switch</C>
-			<D>case</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "if" keyword is used to execute a block of code if a condition is true.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>d907feca-1c3a-441b-9ce5-d11c827dd0ad</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Loops</onderwerp>
-		<header>
-			<regel>Which loop is used to iterate over an array in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>for loop</A>
-			<B>while loop</B>
-			<C>do-while loop</C>
-			<D>foreach loop</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "for loop" is commonly used to iterate over an array in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>4bb8a582-9ae2-41a6-9b2f-7aa0354644c1</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>How do you access the last element of an array in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>array[last]</A>
-			<B>array[length]</B>
-			<C>array[-1]</C>
-			<D>array.pop()</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>To access the last element of an array in JavaScript, you can use the expression "array[length - 1]".</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>3233fb60-2273-4965-9b17-aa9e269bb29a</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>HTML Dom</onderwerp>
-		<header>
-			<regel>What is the correct syntax to select an element with the id "myElement" using JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>document.querySelector("#myElement")</A>
-			<B>document.getElementById("myElement")</B>
-			<C>document.getElementsByClassName("myElement")</C>
-			<D>document.getElementsByTagName("myElement")</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct syntax to select an element with the id "myElement" using JavaScript is "document.getElementById("myElement")". This method returns the element with the specified id attribute value.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>865c1896-2b67-4ef6-8488-c443c9fd01b7</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Variables</onderwerp>
-		<header>
-			<regel>Which keyword is used to declare a block-scoped variable in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>var</A>
-			<B>let</B>
-			<C>const</C>
-			<D>block</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "let" keyword is used to declare a block-scoped variable in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>f9bbaf82-525a-487b-b2a0-d3342791f036</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>HTML DOM</onderwerp>
-		<header>
-			<regel>Which method is used to change the text content of an HTML element?</regel>
-		</header>
-		<keuzes>
-			<A>innerHTML</A>
-			<B>textContent</B>
-			<C>innerText</C>
-			<D>appendChild</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "textContent" property is used to change the text content of an HTML element in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>2f3d5197-465a-4f23-b3c0-1799c253cdf4</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>HTML DOM</onderwerp>
-		<header>
-			<regel>Which method is used to create a new HTML element in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>createElement()</A>
-			<B>appendChild()</B>
-			<C>querySelector()</C>
-			<D>setAttribute()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "createElement()" method is used to create a new HTML element in JavaScript. It creates the specified HTML element node, which can then be manipulated and added to the DOM using other methods.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>c3fa70dd-ba16-4b82-a92d-dc8e912f2abe</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>Which method is used to add elements to the end of an array in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>push()</A>
-			<B>pop()</B>
-			<C>shift()</C>
-			<D>unshift()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "push()" method is used to add elements to the end of an array in JavaScript. It modifies the original array by adding one or more elements to the end.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>715c05fa-8377-4950-bc4a-156fcddd96d5</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Scope</onderwerp>
-		<header>
-			<regel>What is the scope of a variable declared with the "let" keyword in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Global scope</A>
-			<B>Function scope</B>
-			<C>Block scope</C>
-			<D>Module scope</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>A variable declared with the "let" keyword in JavaScript has block scope. It is only accessible within the block where it is defined, including any nested blocks. Block scope allows for better control and isolation of variables.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>3213086e-767b-4376-b47c-cf4ba67e4bd4</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>HTML DOM</onderwerp>
-		<header>
-			<regel>Which method is used to create a new HTML element in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>createElement()</A>
-			<B>appendChild()</B>
-			<C>removeChild()</C>
-			<D>getElementById()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "createElement()" method is used to create a new HTML element in JavaScript. It creates the specified HTML element as an object, which can then be manipulated and added to the DOM using other methods like "appendChild()".</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>1defc86f-299c-40aa-bc57-a9060c4b4f4f</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Strings</onderwerp>
-		<header>
-			<regel>Which method is used to convert a string to uppercase in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>charAt()</A>
-			<B>toLowerCase()</B>
-			<C>trim()</C>
-			<D>toUpperCase()</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "toUpperCase()" method is used to convert a string to uppercase in JavaScript. It returns a new string with all the alphabetic characters converted to uppercase.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>b880666d-4d16-4a38-aaf0-f85c1ef8abb3</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Events</onderwerp>
-		<header>
-			<regel>Which event is triggered when a user clicks on an HTML element?</regel>
-		</header>
-		<keuzes>
-			<A>click</A>
-			<B>mouseover</B>
-			<C>keydown</C>
-			<D>submit</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "click" event is triggered when a user clicks on an HTML element in JavaScript.</uitleg>
-	</vraag>	
-	<vraag>
-		<disabled></disabled>
-		<guid>3a500d48-f0f9-4621-8b1f-5eb07839d891</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Functions</onderwerp>
-		<header>
-			<regel>Which keyword is used to define a function in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>function</A>
-			<B>def</B>
-			<C>define</C>
-			<D>fun</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "function" keyword is used to define a function in JavaScript. It is followed by the name of the function and a pair of parentheses containing optional parameters. The "def" and "define" options are not valid keywords for function definition in JavaScript. The "fun" keyword is not recognized in JavaScript and does not define a function.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>14e0c1ab-b000-4652-b1e2-59c59bf6ab2c</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>Which method is used to add one or more elements to the end of an array in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>push()</A>
-			<B>pop()</B>
-			<C>shift()</C>
-			<D>unshift()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "push()" method is used to add one or more elements to the end of an array in JavaScript. It modifies the original array by appending the elements to its end. The "pop()" method removes the last element from an array, the "shift()" method removes the first element, and the "unshift()" method adds one or more elements to the beginning of an array.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>a0872ed6-ed82-42be-8429-e5e00fc34be4</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>Which method is used to add an element to the end of a JavaScript array?</regel>
-		</header>
-		<keuzes>
-			<A>push()</A>
-			<B>pop()</B>
-			<C>shift()</C>
-			<D>unshift()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "push()" method is used to add an element to the end of a JavaScript array. It modifies the original array by appending the element as the last item. The "pop()" method removes and returns the last element of an array. The "shift()" method removes and returns the first element of an array. The "unshift()" method adds an element to the beginning of an array.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>bd281fd6-d77f-441c-b192-fef153f798c2</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Loops</onderwerp>
-		<header>
-			<regel>Which loop in JavaScript allows you to iterate over a sequence of elements?</regel>
-		</header>
-		<keuzes>
-			<A>for</A>
-			<B>while</B>
-			<C>do-while</C>
-			<D>loop</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "for" loop in JavaScript allows you to iterate over a sequence of elements. It is commonly used with arrays or other iterable objects. The loop variable takes on each element of the sequence in each iteration. The "while" and "do-while" loops are conditional loops that continue iterating until a certain condition becomes false. The "loop" option is not a valid loop construct in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>0a1f3bf7-26ac-4d93-8b99-bd89d3adfd83</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Conditions</onderwerp>
-		<header>
-			<regel>Which operator is used to check for equality in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>==</A>
-			<B>===</B>
-			<C>=</C>
-			<D>!=</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "===" operator is used to check for equality in JavaScript. It is called the strict equality operator and checks if both the value and the type of the operands are the same. The "==" operator is called the loose equality operator and performs type coercion before comparing the values. The "=" operator is the assignment operator, and the "!=" operator is used to check for inequality.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>0a1f3bf7-26ac-4d93-8b89-bd89d3acfd83</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Conditions</onderwerp>
-		<header>
-			<regel>Which of the following best describes type coercion in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Type coercion is the process of explicitly converting a data type to another data type using built-in conversion functions.</A>
-			<B> Type coercion is a programming practice used by developers to enforce strict data typing in JavaScript.</B>
-			<C>Type coercion is a JavaScript feature that prevents developers from using different data types together in the same code block.</C>
-			<D>Type coercion is the automatic and implicit conversion of one data type to another by the JavaScript engine during certain operations.</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>
-			Type coercion in JavaScript refers to the process of converting one data type to another automatically and implicitly by the JavaScript engine when performing operations that involve different data types. JavaScript is a dynamically typed language, which means that variables can hold values of any data type, and type checking is done at runtime.
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>55096a3d-d1ff-42b4-b9f7-6212b2e4366f</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>Which method is used to remove the last element from an array in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>push()</A>
+      <B>pop()</B>
+      <C>shift()</C>
+      <D>unshift()</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "pop()" method is used to remove the last element from an array in JavaScript. It returns the removed element and updates the length of the array.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>00c7d431-4f0f-47fe-ab9d-cfda53769051</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>What is the correct way to write a JavaScript array?</regel>
+    </header>
+    <keuzes>
+      <A>[1, 2, 3]</A>
+      <B>{1, 2, 3}</B>
+      <C>"1, 2, 3"</C>
+      <D>(1, 2, 3)</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct way to write a JavaScript array is using square brackets and comma-separated values, like [1, 2, 3]. Curly braces are used for JavaScript objects, not arrays.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>51a39503-0f32-4c44-8632-c98a38c1cd08</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Functions</onderwerp>
+    <header>
+      <regel>What is a function in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>A piece of code from an external library</A>
+      <B>A hard coded test</B>
+      <C>A reusable piece of code that performs a specific task</C>
+      <D>A static class that acts as a singleton</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>In JavaScript, a function is a block of reusable code that performs a specific task or set of tasks. It allows you to encapsulate a piece of code and execute it whenever needed by invoking the function's name. Functions are a fundamental concept in JavaScript and are used extensively to organize and modularize code, making it more readable and maintainable.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>51a39503-0f32-4c44-8632-c98a38c1cd08</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Functions</onderwerp>
+    <header>
+      <regel>Which keyword is used to define a function in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>function</A>
+      <B>define</B>
+      <C>create</C>
+      <D>func</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The keyword "function" is used to define a function in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>a0a827f9-24a5-47b1-bd3e-ee1c4cf675d4</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Conditional Statements</onderwerp>
+    <header>
+      <regel>Which keyword is used to execute a block of code if a condition is true?</regel>
+    </header>
+    <keuzes>
+      <A>if</A>
+      <B>else</B>
+      <C>switch</C>
+      <D>case</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "if" keyword is used to execute a block of code if a condition is true.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>ca5f40fe-25ac-4aa1-9127-7576536af874</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Loops</onderwerp>
+    <header>
+      <regel>Which loop is used to iterate over an array in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>for loop</A>
+      <B>while loop</B>
+      <C>do-while loop</C>
+      <D>foreach loop</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "for loop" is commonly used to iterate over an array in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>da2b9227-f1de-4552-81b2-c729ceabf75f</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>How do you access the value at a specific index in an array?</regel>
+    </header>
+    <keuzes>
+      <A>array.value(index)</A>
+      <B>array(index)</B>
+      <C>array[index]</C>
+      <D>array.get(index)</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>In JavaScript, you can access the value at a specific index in an array using the square bracket notation, like "array[index]".</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>b9d94418-a68f-4db6-813a-7c4ea0951e77</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>HTML DOM</onderwerp>
+    <header>
+      <regel>Which method is used to change the text content of an HTML element?</regel>
+    </header>
+    <keuzes>
+      <A>setText()</A>
+      <B>innerHTML()</B>
+      <C>textContent()</C>
+      <D>setAttribute()</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "textContent()" method is used to change the text content of an HTML element in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>d32e8071-470d-4148-a59b-ff94a4d2de2e</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Variables Scope</onderwerp>
+    <header>
+      <regel>Which type of scope does a variable have if it is declared inside a function?</regel>
+    </header>
+    <keuzes>
+      <A>Local scope</A>
+      <B>Global scope</B>
+      <C>Function scope</C>
+      <D>Block scope</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>A variable declared inside a function has local scope, meaning it is only accessible within that function.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>ac9881e1-82f3-42e0-9818-f527ada2084b</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>JSON</onderwerp>
+    <header>
+      <regel>What does JSON stand for?</regel>
+    </header>
+    <keuzes>
+      <A>JavaScript Object Notation</A>
+      <B>Java Syntax Object Naming</B>
+      <C>JavaScript Oriented Namespace</C>
+      <D>Java Object Naming</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>JSON stands for JavaScript Object Notation.It is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. JSON is often used for transmitting data between a server and a web application</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>a4f844ed-dd92-42d1-a95d-4a9bc4504926</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Functions</onderwerp>
+    <header>
+      <regel>What keyword is used to define a function in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>def</A>
+      <B>func</B>
+      <C>function</C>
+      <D>define</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "function" keyword is used to define a function in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>373f8bcf-b0a7-430a-9ecb-4edddfe9e263</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Data Types</onderwerp>
+    <header>
+      <regel>Which data type is used to represent true or false values in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>boolean</A>
+      <B>number</B>
+      <C>string</C>
+      <D>array</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "boolean" data type is used to represent true or false values in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>49c51b06-3555-4d3e-8fbb-688c7d268bf9</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Operators</onderwerp>
+    <header>
+      <regel>Which operator is used to assign a value to a variable in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>=</A>
+      <B>==</B>
+      <C>===</C>
+      <D>+</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "=" operator is used to assign a value to a variable in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>0b2b06d5-f925-4460-b260-e900f3062dbe</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Conditional Statements</onderwerp>
+    <header>
+      <regel>Which keyword is used to execute a block of code if a condition is true?</regel>
+    </header>
+    <keuzes>
+      <A>if</A>
+      <B>else</B>
+      <C>switch</C>
+      <D>case</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "if" keyword is used to execute a block of code if a condition is true.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>d907feca-1c3a-441b-9ce5-d11c827dd0ad</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Loops</onderwerp>
+    <header>
+      <regel>Which loop is used to iterate over an array in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>for loop</A>
+      <B>while loop</B>
+      <C>do-while loop</C>
+      <D>foreach loop</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "for loop" is commonly used to iterate over an array in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>4bb8a582-9ae2-41a6-9b2f-7aa0354644c1</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>How do you access the last element of an array in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>array[last]</A>
+      <B>array[length]</B>
+      <C>array[-1]</C>
+      <D>array.pop()</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>To access the last element of an array in JavaScript, you can use the expression "array[length - 1]".</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>3233fb60-2273-4965-9b17-aa9e269bb29a</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>HTML Dom</onderwerp>
+    <header>
+      <regel>What is the correct syntax to select an element with the id "myElement" using JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>document.querySelector("#myElement")</A>
+      <B>document.getElementById("myElement")</B>
+      <C>document.getElementsByClassName("myElement")</C>
+      <D>document.getElementsByTagName("myElement")</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct syntax to select an element with the id "myElement" using JavaScript is "document.getElementById("myElement")". This method returns the element with the specified id attribute value.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>865c1896-2b67-4ef6-8488-c443c9fd01b7</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Variables</onderwerp>
+    <header>
+      <regel>Which keyword is used to declare a block-scoped variable in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>var</A>
+      <B>let</B>
+      <C>const</C>
+      <D>block</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "let" keyword is used to declare a block-scoped variable in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>f9bbaf82-525a-487b-b2a0-d3342791f036</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>HTML DOM</onderwerp>
+    <header>
+      <regel>Which method is used to change the text content of an HTML element?</regel>
+    </header>
+    <keuzes>
+      <A>innerHTML</A>
+      <B>textContent</B>
+      <C>innerText</C>
+      <D>appendChild</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "textContent" property is used to change the text content of an HTML element in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>2f3d5197-465a-4f23-b3c0-1799c253cdf4</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>HTML DOM</onderwerp>
+    <header>
+      <regel>Which method is used to create a new HTML element in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>createElement()</A>
+      <B>appendChild()</B>
+      <C>querySelector()</C>
+      <D>setAttribute()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "createElement()" method is used to create a new HTML element in JavaScript. It creates the specified HTML element node, which can then be manipulated and added to the DOM using other methods.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>c3fa70dd-ba16-4b82-a92d-dc8e912f2abe</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>Which method is used to add elements to the end of an array in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>push()</A>
+      <B>pop()</B>
+      <C>shift()</C>
+      <D>unshift()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "push()" method is used to add elements to the end of an array in JavaScript. It modifies the original array by adding one or more elements to the end.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>715c05fa-8377-4950-bc4a-156fcddd96d5</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Scope</onderwerp>
+    <header>
+      <regel>What is the scope of a variable declared with the "let" keyword in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Global scope</A>
+      <B>Function scope</B>
+      <C>Block scope</C>
+      <D>Module scope</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>A variable declared with the "let" keyword in JavaScript has block scope. It is only accessible within the block where it is defined, including any nested blocks. Block scope allows for better control and isolation of variables.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>3213086e-767b-4376-b47c-cf4ba67e4bd4</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>HTML DOM</onderwerp>
+    <header>
+      <regel>Which method is used to create a new HTML element in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>createElement()</A>
+      <B>appendChild()</B>
+      <C>removeChild()</C>
+      <D>getElementById()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "createElement()" method is used to create a new HTML element in JavaScript. It creates the specified HTML element as an object, which can then be manipulated and added to the DOM using other methods like "appendChild()".</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>1defc86f-299c-40aa-bc57-a9060c4b4f4f</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Strings</onderwerp>
+    <header>
+      <regel>Which method is used to convert a string to uppercase in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>charAt()</A>
+      <B>toLowerCase()</B>
+      <C>trim()</C>
+      <D>toUpperCase()</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "toUpperCase()" method is used to convert a string to uppercase in JavaScript. It returns a new string with all the alphabetic characters converted to uppercase.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>b880666d-4d16-4a38-aaf0-f85c1ef8abb3</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Events</onderwerp>
+    <header>
+      <regel>Which event is triggered when a user clicks on an HTML element?</regel>
+    </header>
+    <keuzes>
+      <A>click</A>
+      <B>mouseover</B>
+      <C>keydown</C>
+      <D>submit</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "click" event is triggered when a user clicks on an HTML element in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>3a500d48-f0f9-4621-8b1f-5eb07839d891</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Functions</onderwerp>
+    <header>
+      <regel>Which keyword is used to define a function in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>function</A>
+      <B>def</B>
+      <C>define</C>
+      <D>fun</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "function" keyword is used to define a function in JavaScript. It is followed by the name of the function and a pair of parentheses containing optional parameters. The "def" and "define" options are not valid keywords for function definition in JavaScript. The "fun" keyword is not recognized in JavaScript and does not define a function.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>14e0c1ab-b000-4652-b1e2-59c59bf6ab2c</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>Which method is used to add one or more elements to the end of an array in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>push()</A>
+      <B>pop()</B>
+      <C>shift()</C>
+      <D>unshift()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "push()" method is used to add one or more elements to the end of an array in JavaScript. It modifies the original array by appending the elements to its end. The "pop()" method removes the last element from an array, the "shift()" method removes the first element, and the "unshift()" method adds one or more elements to the beginning of an array.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>a0872ed6-ed82-42be-8429-e5e00fc34be4</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>Which method is used to add an element to the end of a JavaScript array?</regel>
+    </header>
+    <keuzes>
+      <A>push()</A>
+      <B>pop()</B>
+      <C>shift()</C>
+      <D>unshift()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "push()" method is used to add an element to the end of a JavaScript array. It modifies the original array by appending the element as the last item. The "pop()" method removes and returns the last element of an array. The "shift()" method removes and returns the first element of an array. The "unshift()" method adds an element to the beginning of an array.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>bd281fd6-d77f-441c-b192-fef153f798c2</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Loops</onderwerp>
+    <header>
+      <regel>Which loop in JavaScript allows you to iterate over a sequence of elements?</regel>
+    </header>
+    <keuzes>
+      <A>for</A>
+      <B>while</B>
+      <C>do-while</C>
+      <D>loop</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "for" loop in JavaScript allows you to iterate over a sequence of elements. It is commonly used with arrays or other iterable objects. The loop variable takes on each element of the sequence in each iteration. The "while" and "do-while" loops are conditional loops that continue iterating until a certain condition becomes false. The "loop" option is not a valid loop construct in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>0a1f3bf7-26ac-4d93-8b99-bd89d3adfd83</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Conditions</onderwerp>
+    <header>
+      <regel>Which operator is used to check for equality in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>==</A>
+      <B>===</B>
+      <C>=</C>
+      <D>!=</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "===" operator is used to check for equality in JavaScript. It is called the strict equality operator and checks if both the value and the type of the operands are the same. The "==" operator is called the loose equality operator and performs type coercion before comparing the values. The "=" operator is the assignment operator, and the "!=" operator is used to check for inequality.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>0a1f3bf7-26ac-4d93-8b89-bd89d3acfd83</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Conditions</onderwerp>
+    <header>
+      <regel>Which of the following best describes type coercion in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Type coercion is the process of explicitly converting a data type to another data type using built-in conversion functions.</A>
+      <B> Type coercion is a programming practice used by developers to enforce strict data typing in JavaScript.</B>
+      <C>Type coercion is a JavaScript feature that prevents developers from using different data types together in the same code block.</C>
+      <D>Type coercion is the automatic and implicit conversion of one data type to another by the JavaScript engine during certain operations.</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Type coercion in JavaScript refers to the process of converting one data type to another automatically and implicitly by the JavaScript engine when performing operations that involve different data types. JavaScript is a dynamically typed language, which means that variables can hold values of any data type, and type checking is done at runtime.
 
-			When you perform operations involving different data types (e.g., addition, comparison, etc.), JavaScript will try to convert one or both of the operands to a common data type to make the operation meaningful. This automatic conversion is what we call type coercion.
+When you perform operations involving different data types (e.g., addition, comparison, etc.), JavaScript will try to convert one or both of the operands to a common data type to make the operation meaningful. This automatic conversion is what we call type coercion.
 		</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>a0872ed6-ed82-42be-8429-e5e00fc34be4</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>Which method is used to add an element to the end of a JavaScript array?</regel>
-		</header>
-		<keuzes>
-			<A>push()</A>
-			<B>pop()</B>
-			<C>shift()</C>
-			<D>unshift()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "push()" method is used to add an element to the end of a JavaScript array. It modifies the original array by appending the element as the last item. The "pop()" method removes and returns the last element of an array. The "shift()" method removes and returns the first element of an array. The "unshift()" method adds an element to the beginning of an array.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>bd281fd6-d77f-441c-b192-fef153f798c2</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Loops</onderwerp>
-		<header>
-			<regel>Which loop in JavaScript allows you to iterate over a sequence of elements?</regel>
-		</header>
-		<keuzes>
-			<A>for</A>
-			<B>while</B>
-			<C>do-while</C>
-			<D>loop</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "for" loop in JavaScript allows you to iterate over a sequence of elements. It is commonly used with arrays or other iterable objects. The loop variable takes on each element of the sequence in each iteration. The "while" and "do-while" loops are conditional loops that continue iterating until a certain condition becomes false. The "loop" option is not a valid loop construct in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>0a1f3bf7-26ac-4d93-8b99-bd89d3adfd83</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Conditions</onderwerp>
-		<header>
-			<regel>Which operator is used to check for equality in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>==</A>
-			<B>===</B>
-			<C>=</C>
-			<D>!=</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "===" operator is used to check for equality in JavaScript. It is called the strict equality operator and checks if both the value and the type of the operands are the same. The "==" operator is called the loose equality operator and performs type coercion before comparing the values. The "=" operator is the assignment operator, and the "!=" operator is used to check for inequality.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>bb46674e-ca13-4cef-a991-20c55a34a93e</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>What is the difference between 'push' and 'pop' methods in JavaScript arrays?</regel>
-		</header>
-		<keuzes>
-			<A>'push' adds elements to the end of an array, while 'pop' removes the last element from an array.</A>
-			<B>'push' adds elements to the beginning of an array, while 'pop' removes the first element from an array.</B>
-			<C>'push' adds elements to an array, while 'pop' removes elements from the middle of an array.</C>
-			<D>'push' adds elements to an array, while 'pop' removes elements from the beginning and end of an array.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>'push' is used to add elements to the end of an array, increasing its length. The added elements become the last elements of the array. 'pop' is used to remove the last element from an array, reducing its length by 1. The removed element is returned by the 'pop' method.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>98c4b556-6d3a-4d6b-82e3-7f01c963fafe</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Scope</onderwerp>
-		<header>
-			<regel>What is the scope of a variable declared with the 'let' keyword?</regel>
-		</header>
-		<keuzes>
-			<A>Variables declared with 'let' have block scope and are only accessible within the block where they are defined.</A>
-			<B>Variables declared with 'let' have function scope and are accessible within the function where they are defined.</B>
-			<C>Variables declared with 'let' have global scope and can be accessed from anywhere in the program.</C>
-			<D>Variables declared with 'let' have module scope and are accessible within the module where they are defined.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Variables declared with the 'let' keyword have block scope. They are only accessible within the block where they are defined, such as within a function, loop, or conditional statement. Outside of the block, the variable is not accessible. This behavior helps to prevent variable name collisions and improves code clarity.</uitleg>
-	</vraag>
-
-	<vraag>
-		<disabled></disabled>
-		<guid>2f79ecf1-7ada-437b-915c-6da264ecaf31</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Basics</onderwerp>
-		<header>
-			<regel>Which operator is used to compare the equality of two values in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>==</A>
-			<B>===</B>
-			<C>=</C>
-			<D>!=</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "==" operator is used to compare the equality of two values in JavaScript. It performs type coercion if necessary, while the "===" operator performs strict equality comparison without type coercion.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>78e9d18e-7cef-484f-a43c-86f109b88ca8</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>HTML DOM</onderwerp>
-		<header>
-			<regel>What is the DOM (Document Object Model) in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>The DOM is a way to handle errors in JavaScript.</A>
-			<B>The DOM is a programming interface for web documents that represents the structure of an HTML or XML document as a tree-like model.</B>
-			<C>The DOM is a technique to optimize JavaScript code for better performance.</C>
-			<D>The DOM is a method to create dynamic HTML elements using JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree-like model, where each node in the tree corresponds to an element, attribute, or piece of text in the document. JavaScript can interact with the DOM to manipulate the content, structure, and styles of web pages.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>9ebb84a9-a417-4dbc-99fc-44dd389f169f</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Data Types</onderwerp>
-		<header>
-			<regel>Which of the following is not a JavaScript data type?</regel>
-		</header>
-		<keuzes>
-			<A>String</A>
-			<B>Boolean</B>
-			<C>Number</C>
-			<D>Float</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>"Float" is not a separate data type in JavaScript. JavaScript has a single data type for all numeric values, which is "Number".</uitleg>
-	</vraag>	
-	<vraag>
-		<disabled></disabled>
-		<guid>06858aeb-1aab-4a90-a871-f6b2ae6e2605</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Events</onderwerp>
-		<header>
-			<regel>What are JavaScript events?</regel>
-		</header>
-		<keuzes>
-			<A>JavaScript events are a way to handle errors in JavaScript.</A>
-			<B>JavaScript events are actions or occurrences that happen in the browser, such as a mouse click, key press, or page load.</B>
-			<C>JavaScript events are a technique to optimize JavaScript code for better performance.</C>
-			<D>JavaScript events are a method to create dynamic HTML elements using JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>JavaScript events are actions or occurrences that happen in the browser. Examples of events include mouse clicks, key presses, form submissions, page loads, and many more. JavaScript can listen for these events and execute code in response to them, enabling interactivity and dynamic behavior in web applications.</uitleg>
-	</vraag>
-
-
-
-	<vraag>
-		<disabled></disabled>
-		<guid>b6da4e48-5bb3-4189-8b61-f8fba41eb88d</guid>
-		<volgnummer></volgnummer>
-		<niveau>4</niveau>
-		<onderwerp>Functions</onderwerp>
-		<header>
-			<regel>What is the difference between function declarations and function expressions in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>There is no difference; function declarations and function expressions can be used interchangeably.</A>
-			<B>Function declarations are hoisted, while function expressions are not hoisted.</B>
-			<C>Function expressions are used for asynchronous operations, while function declarations are used for synchronous operations.</C>
-			<D>Function declarations are anonymous functions, while function expressions have a named identifier.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Function declarations are hoisted, which means they can be called before they are declared in the code. Function expressions, on the other hand, are not hoisted and cannot be called before they are defined in the code.</uitleg>
-	</vraag>	
-	<vraag>
-		<disabled></disabled>
-		<guid>e395437a-3c4c-49dd-a668-47e27c09bd5c</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Asynchronous Programming</onderwerp>
-		<header>
-			<regel>Which keyword is used to declare an asynchronous function in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>async</A>
-			<B>await</B>
-			<C>asyncFunc</C>
-			<D>asyncronous</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "async" keyword is used to declare an asynchronous function in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>6c3197a8-02ca-4ccb-9481-cd321ca528fa</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Promises</onderwerp>
-		<header>
-			<regel>Which method is used to handle the result of a Promise in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>then()</A>
-			<B>catch()</B>
-			<C>finally()</C>
-			<D>resolve()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "then()" method is used to handle the result of a Promise in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>f59959eb-9346-46f5-a0ea-c47ad66f7cdc</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Event Handling</onderwerp>
-		<header>
-			<regel>Which method is used to add an event listener to an HTML element?</regel>
-		</header>
-		<keuzes>
-			<A>addEventListener()</A>
-			<B>attachEvent()</B>
-			<C>on()</C>
-			<D>bind()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "addEventListener()" method is used to add an event listener to an HTML element in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>a039d6bb-f921-4870-aefd-6785b90dfd99</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Error Handling</onderwerp>
-		<header>
-			<regel>Which keyword is used to throw an exception in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>throw</A>
-			<B>catch</B>
-			<C>try</C>
-			<D>finally</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "throw" keyword is used to throw an exception in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>aa53d999-d3fa-4628-8b27-7739c584c15f</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Objects</onderwerp>
-		<header>
-			<regel>Which symbol is used to access a property of an object?</regel>
-		</header>
-		<keuzes>
-			<A>;</A>
-			<B>.</B>
-			<C>:</C>
-			<D>~</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The dot (.) symbol is used to access a property of an object in JavaScript.</uitleg>
-	</vraag>
-
-	<vraag>
-		<disabled></disabled>
-		<guid>4a2d17ce-5ae8-4b2d-8ad6-b8f32337e8ed</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Callbacks</onderwerp>
-		<header>
-			<regel>What is a callback function in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>A function that is called when an asynchronous operation completes</A>
-			<B>A function that returns another function</B>
-			<C>A function that is used to handle errors</C>
-			<D>A function that is called at the beginning of a program</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>A callback function in JavaScript is a function that is passed as an argument to another function and is called when an asynchronous operation completes.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>5a80ca24-9d17-49b9-b11f-a3822c39baf0</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Variables</onderwerp>
-		<header>
-			<regel>What is the result of the expression: 5 + "5" in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>10</A>
-			<B>"55"</B>
-			<C>NaN</C>
-			<D>Error</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The result of the expression 5 + "5" in JavaScript is the string "55". The + operator, when used with a string and a number, performs string concatenation instead of numerical addition.</uitleg>
-	</vraag>
-
-	<vraag>
-		<disabled></disabled>
-		<guid>d433aa95-79d2-4214-bf85-505460bfb655</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Modules</onderwerp>
-		<header>
-			<regel>Which keyword is used to export a function or variable from a module in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>export</A>
-			<B>import</B>
-			<C>require</C>
-			<D>module</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "export" keyword is used to export a function or variable from a module in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>243305cb-8d4e-4091-9106-33ef5e9d9d46</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Error Handling</onderwerp>
-		<header>
-			<regel>Which keyword is used to catch and handle exceptions in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>catch</A>
-			<B>try</B>
-			<C>finally</C>
-			<D>throw</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "catch" keyword is used to catch and handle exceptions in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>7550e25f-2e3a-4267-a0e7-13de0fbcd88a</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Strings</onderwerp>
-		<header>
-			<regel>Which method is used to concatenate two or more strings in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>concat()</A>
-			<B>join()</B>
-			<C>append()</C>
-			<D>merge()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "concat()" method is used to concatenate two or more strings in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>92885584-37f4-4326-b090-7e7fe7778e19</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Objects</onderwerp>
-		<header>
-			<regel>Which notation is used to access the properties of an object in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Dot notation (.)</A>
-			<B>Bracket notation ([])</B>
-			<C>Arrow notation (=&gt;)</C>
-			<D>Colon notation (:)</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The dot notation (.) is used to access the properties of an object in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>d62d9653-9043-449f-970c-820b45c46613</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Date and Time</onderwerp>
-		<header>
-			<regel>Which method is used to get the current date in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>getDate()</A>
-			<B>getCurrentDate()</B>
-			<C>now()</C>
-			<D>new Date()</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "new Date()" method is used to get the current date in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>ece9a839-7f8e-4270-9865-141993e69440</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Asynchronous Programming</onderwerp>
-		<header>
-			<regel>What does AJAX stand for?</regel>
-		</header>
-		<keuzes>
-			<A>Asynchronous JavaScript and XML</A>
-			<B>Application JavaScript and XML</B>
-			<C>Asynchronous JavaScript and XHTML</C>
-			<D>Application JavaScript and XHTML</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>AJAX stands for Asynchronous JavaScript and XML.</uitleg>
-	</vraag>
-
-
-
-	<vraag>
-		<disabled></disabled>
-		<guid>7d8fe9c5-3e87-4643-b66e-12802594b20b</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Local Storage</onderwerp>
-		<header>
-			<regel>Which method is used to store data in the local storage of the browser?</regel>
-		</header>
-		<keuzes>
-			<A>localStorage.setItem()</A>
-			<B>localStorage.storeData()</B>
-			<C>localStorage.save()</C>
-			<D>localStorage.store()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "localStorage.setItem()" method is used to store data in the local storage of the browser.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>7504a8e8-9620-4ed8-bb2d-006a1bfe66de</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Regular Expressions</onderwerp>
-		<header>
-			<regel>Which method is used to test if a pattern exists in a string using a regular expression in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>test()</A>
-			<B>match()</B>
-			<C>search()</C>
-			<D>find()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "test()" method is used to test if a pattern exists in a string using a regular expression in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>d571e91f-dbc9-4b4d-9c04-65a52f8924cc</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Functions</onderwerp>
-		<header>
-			<regel>What is a higher-order function in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>A function that operates on other functions, either by taking them as arguments or by returning them</A>
-			<B>A function that has a higher lexical scope than other functions</B>
-			<C>A function that uses arrow function syntax</C>
-			<D>A function that has a higher execution priority than other functions</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>A higher-order function in JavaScript is a function that operates on other functions. It can take functions as arguments, return functions, or both. Higher-order functions enable powerful functional programming techniques in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>92e114f5-a8bd-41bb-af1a-f5e5a14ab7de</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Objects</onderwerp>
-		<header>
-			<regel>What is prototypal inheritance in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>A way to create objects using the "prototype" keyword</A>
-			<B>A mechanism for objects to inherit properties and methods from other objects</B>
-			<C>A method of defining classes in JavaScript</C>
-			<D>A process of copying properties from one object to another</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Prototypal inheritance in JavaScript is a mechanism for objects to inherit properties and methods from other objects. Each object has a prototype, and it can access properties and methods defined on its prototype. This allows for code reuse and hierarchical relationships between objects.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>7218fa34-0ba0-41c9-8f14-8f1c46f0e835</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Modules</onderwerp>
-		<header>
-			<regel>What is the purpose of JavaScript modules?</regel>
-		</header>
-		<keuzes>
-			<A>To organize code into reusable and independent units</A>
-			<B>To restrict the scope of variables and functions</B>
-			<C>To enable dynamic typing in JavaScript</C>
-			<D>To provide a way to interact with the browser"s Document Object Model (DOM)</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>JavaScript modules are used to organize code into reusable and independent units. They encapsulate related variables, functions, and classes, providing a clean separation of concerns and promoting code modularity and reusability.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>cc3f0fc2-c480-48e1-8da8-d8450c09b1f8</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Objects</onderwerp>
-		<header>
-			<regel>What is the difference between dot notation and bracket notation to access object properties in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Dot notation is used for static property access, while bracket notation is used for dynamic property access</A>
-			<B>Dot notation is used for dynamic property access, while bracket notation is used for static property access</B>
-			<C>There is no difference, and both notations can be used interchangeably</C>
-			<D>Dot notation is used for object methods, while bracket notation is used for object properties</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>In JavaScript, dot notation is used for static property access, where the property name is known and fixed. Bracket notation, on the other hand, is used for dynamic property access, where the property name is determined at runtime or obtained from a variable.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>0eb3d94e-bac0-467e-9c02-2c36611aaa11</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Promises</onderwerp>
-		<header>
-			<regel>Which of the following methods is used to handle the fulfillment of a Promise in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>then()</A>
-			<B>catch()</B>
-			<C>finally()</C>
-			<D>resolve()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "then()" method is used to handle the fulfillment of a Promise in JavaScript. It takes one or two callback functions as arguments, which are executed when the Promise is fulfilled, allowing you to work with the resolved value.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>c783023d-757c-46bc-aae3-98a080037d3e</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Prototypes</onderwerp>
-		<header>
-			<regel>What is the prototype in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>An object from which other objects inherit properties</A>
-			<B>A built-in JavaScript object</B>
-			<C>A special keyword to define functions</C>
-			<D>A method to access private variables</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>In JavaScript, the prototype is an object from which other objects inherit properties. Each object has an internal reference to its prototype, and when a property is accessed on an object, JavaScript looks for the property in the object itself. If not found, it continues the search in the prototype chain until the property is found or until the end of the chain is reached.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>01b71687-056a-4e6c-9a8e-0b53594c9eda</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Higher-Order Functions</onderwerp>
-		<header>
-			<regel>What are higher-order functions in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Functions that take other functions as arguments or return functions as results</A>
-			<B>Functions that are defined using arrow syntax</B>
-			<C>Functions that can access variables from their outer scope</C>
-			<D>Functions that have access to the "this" keyword</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Higher-order functions in JavaScript are functions that take other functions as arguments or return functions as results. They allow for more flexible and powerful functional programming patterns by treating functions as first-class citizens.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>0bf78515-b17d-4fa4-a6c2-1c35b7a5a23f</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Modules</onderwerp>
-		<header>
-			<regel>What is the purpose of JavaScript modules?</regel>
-		</header>
-		<keuzes>
-			<A>To encapsulate related code and provide a way to organize and share functionality</A>
-			<B>To define CSS styles for a specific HTML element</B>
-			<C>To control the layout and design of a web page</C>
-			<D>To handle user interactions and events</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>JavaScript modules are used to encapsulate related code and provide a way to organize and share functionality. They allow for better code organization, avoid naming conflicts, and enable the reusability of code across different parts of an application or between different applications.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>eb096c31-325d-4ce7-8a85-2d3683e84c20</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Regular Expressions</onderwerp>
-		<header>
-			<regel>Which method is used to test if a pattern is found in a string using a regular expression in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>test()</A>
-			<B>match()</B>
-			<C>search()</C>
-			<D>replace()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "test()" method is used to test if a pattern is found in a string using a regular expression in JavaScript. It returns a boolean value indicating whether the pattern was found or not. The "match()" method is used to extract the matches, "search()" method is used to find the index of the first match, and "replace()" method is used to replace the matches with a new string.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>b0252223-e57d-4e01-8242-fc0f79caaad9</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Event Handling</onderwerp>
-		<header>
-			<regel>Which method is used to add an event listener to an element in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>addEventListener()</A>
-			<B>attachEvent()</B>
-			<C>on()</C>
-			<D>listen()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "addEventListener()" method is used to add an event listener to an element in JavaScript. It takes two arguments: the event type (e.g., "click", "keydown") and the event handler function, which is executed when the event is triggered on the element. The other options mentioned are either deprecated or not valid methods for adding event listeners in modern JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>9a95482a-b462-4751-8ef3-10d7edf4e03b</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Objects</onderwerp>
-		<header>
-			<regel>Which syntax is used to access a property of an object in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>object.property</A>
-			<B>object[property]</B>
-			<C>object-&gt;property</C>
-			<D>object::property</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>In JavaScript, the syntax "object[property]" is used to access a property of an object. It allows you to use a variable or an expression to dynamically access a property. The dot notation "object.property" is used when you know the property name in advance. The "-&gt;" and "::" syntaxes mentioned are not used for accessing object properties in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>503259d0-dbe2-479a-8609-3705872e6ee1</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Functions</onderwerp>
-		<header>
-			<regel>Which syntax is used to define a named function in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>function functionName() {}</A>
-			<B>function = functionName() {}</B>
-			<C>function() {}</C>
-			<D>const functionName = function() {}</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The syntax "function functionName() {}" is used to define a named function in JavaScript. It begins with the "function" keyword, followed by the name of the function, parentheses for optional parameters, and curly braces to define the function body. The other options represent different ways of defining functions in JavaScript, but the option "function functionName() {}" specifically matches the syntax for a named function.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>23777fcb-e23b-4b35-94d8-3318176f7229</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Objects</onderwerp>
-		<header>
-			<regel>Which syntax is used to access a property value of a JavaScript object?</regel>
-		</header>
-		<keuzes>
-			<A>object.property</A>
-			<B>object[property]</B>
-			<C>object.getValue()</C>
-			<D>object.getProperty()</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The syntax "object[property]" is used to access a property value of a JavaScript object. It allows you to use a variable or a string literal within square brackets to access the value of a specific property. The "object.property" syntax is used when the property name is a valid identifier without special characters. The "object.getValue()" and "object.getProperty()" options do not match the typical syntax for accessing object properties in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>0763f767-d628-4fa5-b6a2-12f40f5552c9</guid>
-		<volgnummer></volgnummer>
-		<niveau>3</niveau>
-		<onderwerp>Basics</onderwerp>
-		<header>
-			<regel>Which function is used to output data to the browser console?</regel>
-		</header>
-		<keuzes>
-			<A>print()</A>
-			<B>alert()</B>
-			<C>document.write()</C>
-			<D>console.log()</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "console.log()" function is used to output data to the browser console in JavaScript. It is commonly used for debugging and logging messages during development.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>9a435ec4-af07-450c-a423-630ffda74462</guid>
-		<volgnummer></volgnummer>
-		<niveau>3</niveau>
-		<onderwerp>Variables</onderwerp>
-		<header>
-			<regel>What are the differences between 'var', 'let', and 'const' in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>'var' is block-scoped, 'let' is function-scoped, and 'const' is globally-scoped.</A>
-			<B>'var' is globally-scoped, 'let' is block-scoped, and 'const' is function-scoped.</B>
-			<C>'var' allows reassignment, 'let' allows declaration without assignment, and 'const' does not allow reassignment.</C>
-			<D>'var' is used for primitive types, 'let' is used for objects, and 'const' is used for arrays.</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>'var' is function-scoped and allows redeclaration and reassignment. 'let' is block-scoped, allows reassignment, and does not allow redeclaration in the same scope. 'const' is also block-scoped, but it does not allow reassignment or redeclaration after initialization.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>7d47aa91-050d-4098-afe1-0508912b0521</guid>
-		<volgnummer></volgnummer>
-		<niveau>3</niveau>
-		<onderwerp>Operators</onderwerp>
-		<header>
-			<regel>What is the difference between '==' and '===' in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>'==' compares the values only, while '===' compares both values and types.</A>
-			<B>'==' compares the types only, while '===' compares both values and types.</B>
-			<C>'==' performs a deep comparison, while '===' performs a shallow comparison.</C>
-			<D>'==' is used for assignment, while '===' is used for equality checks.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>'==' compares the values of two operands and performs type coercion if necessary. It converts the operands to a common type and then compares the values. '===' compares both the values and the types of the operands without type coercion, ensuring strict equality.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>17651de0-57df-4d5b-84b7-1a6aef692911</guid>
-		<volgnummer></volgnummer>
-		<niveau>3</niveau>
-		<onderwerp>Loops</onderwerp>
-		<header>
-			<regel>What is the difference between 'for' and 'while' loops in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>'for' loops are used for a known number of iterations, while 'while' loops are used for unknown or indefinite iterations.</A>
-			<B>'for' loops always execute at least once, while 'while' loops may not execute at all if the condition is initially false.</B>
-			<C>'for' loops can only iterate over arrays, while 'while' loops can iterate over arrays and objects.</C>
-			<D>'for' loops allow more complex loop control, while 'while' loops are simpler and easier to understand.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>'for' loops are typically used when the number of iterations is known or predetermined. They consist of an initialization, a condition, and an increment/decrement expression. 'while' loops are used when the number of iterations is unknown or based on a condition. They only have a condition to check, and the loop will continue as long as the condition is true.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>ba0e4b4b-d33f-489b-967a-ed67097df253</guid>
-		<volgnummer></volgnummer>
-		<niveau>3</niveau>
-		<onderwerp>Functions</onderwerp>
-		<header>
-			<regel>What is a higher-order function in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>A higher-order function is a function that takes another function as an argument or returns a function as its result.</A>
-			<B>A higher-order function is a function that is defined with arrow syntax (=&gt;).</B>
-			<C>A higher-order function is a function that can only be called from within another function.</C>
-			<D>A higher-order function is a function that modifies the global state of the program.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>A higher-order function is a function that takes another function as an argument or returns a function as its result. It treats functions as values and allows for the composition of functions and the creation of more abstract and reusable code.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>706ba501-cfc5-45f3-9749-9a12e023b791</guid>
-		<volgnummer></volgnummer>
-		<niveau>3</niveau>
-		<onderwerp>Objects</onderwerp>
-		<header>
-			<regel>What is prototypal inheritance in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Prototypal inheritance is a mechanism in JavaScript where objects can inherit properties and methods from other objects.</A>
-			<B>Prototypal inheritance is a way to create new objects based on existing object templates.</B>
-			<C>Prototypal inheritance is a process of copying properties and methods from one object to another.</C>
-			<D>Prototypal inheritance is a method to create dynamic HTML elements using JavaScript.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Prototypal inheritance is a mechanism in JavaScript where objects can inherit properties and methods from other objects. It allows objects to be based on other objects, which can serve as prototypes. When a property or method is accessed on an object, if it is not found on the object itself, JavaScript looks up the prototype chain until it finds the property or method.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>1944edd4-f7e5-4263-97bb-0c56327e62e5</guid>
-		<volgnummer></volgnummer>
-		<niveau>3</niveau>
-		<onderwerp>Promises</onderwerp>
-		<header>
-			<regel>What are promises in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Promises are a way to handle errors in JavaScript.</A>
-			<B>Promises are a technique for making asynchronous HTTP requests to the server from JavaScript.</B>
-			<C>Promises are objects used for handling and chaining asynchronous operations in JavaScript.</C>
-			<D>Promises are a method to create dynamic HTML elements using JavaScript.</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Promises are objects used for handling and chaining asynchronous operations in JavaScript. They represent the eventual completion or failure of an asynchronous operation and allow you to attach callbacks to be executed when the operation is successful (resolved) or encounters an error (rejected). Promises help simplify asynchronous programming and provide a more readable and structured way to handle async operations.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>0fa755ce-994a-4e3d-a15b-e1df93f7d168</guid>
-		<volgnummer></volgnummer>
-		<niveau>3</niveau>
-		<onderwerp>Modules</onderwerp>
-		<header>
-			<regel>What are JavaScript modules?</regel>
-		</header>
-		<keuzes>
-			<A>JavaScript modules are a way to split a program into separate files and import/export functionality between them.</A>
-			<B>JavaScript modules are a way to optimize JavaScript code for better performance.</B>
-			<C>JavaScript modules are a technique for creating dynamic HTML elements using JavaScript.</C>
-			<D>JavaScript modules are a way to style web pages using JavaScript.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>JavaScript modules are a way to split a program into separate files and organize the codebase. They provide a mechanism for defining and exporting functionality from one file (module) and importing that functionality in another file. Modules help improve code maintainability, reusability, and encapsulation by keeping related code together and controlling the visibility of variables and functions.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>cbd2b7fd-551b-46b8-ac57-6cec9a4d16d4</guid>
-		<volgnummer></volgnummer>
-		<niveau>3</niveau>
-		<onderwerp>Error Handling</onderwerp>
-		<header>
-			<regel>How do you handle errors in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>By using try-catch statements to catch and handle exceptions.</A>
-			<B>By ignoring the errors and letting the program continue execution.</B>
-			<C>By using 'console.error()' statements to log the errors in the browser console.</C>
-			<D>By using 'alert()' to display error messages to the user.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Errors in JavaScript can be handled using try-catch statements. The code that may potentially throw an error is placed inside a 'try' block, and if an error occurs, it is caught and handled in the 'catch' block. This allows you to gracefully handle errors, log them, or perform alternative actions when something goes wrong in your code.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>64a653c0-814a-48ac-8d14-2f6a19555405</guid>
-		<volgnummer></volgnummer>
-		<niveau>4</niveau>
-		<onderwerp>Objects</onderwerp>
-		<header>
-			<regel>What is the difference between dot notation and bracket notation for accessing object properties in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>There is no difference; dot notation and bracket notation can be used interchangeably.</A>
-			<B>Dot notation is used for accessing properties with known names, while bracket notation is used for accessing properties with dynamic names or names containing special characters.</B>
-			<C>Dot notation is used for accessing properties of built-in JavaScript objects, while bracket notation is used for user-defined objects.</C>
-			<D>Dot notation is more efficient in terms of performance, while bracket notation allows for more flexibility in property access.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Dot notation is used when the property name is known and does not contain special characters. Bracket notation, however, is used when the property name is dynamic, determined at runtime, or contains special characters that are not valid for dot notation.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>c39d0745-c795-4469-830d-9d7ce6494adf</guid>
-		<volgnummer></volgnummer>
-		<niveau>4</niveau>
-		<onderwerp>Arrays</onderwerp>
-		<header>
-			<regel>What is the difference between the 'forEach' method and the 'map' method in JavaScript arrays?</regel>
-		</header>
-		<keuzes>
-			<A>The 'forEach' method modifies the original array, while the 'map' method returns a new array.</A>
-			<B>The 'forEach' method is used for synchronous operations, while the 'map' method is used for asynchronous operations.</B>
-			<C>The 'forEach' method can only iterate over arrays, while the 'map' method can iterate over arrays and objects.</C>
-			<D>There is no difference; 'forEach' and 'map' methods are two names for the same functionality.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The 'forEach' method allows you to iterate over each element of an array and perform a specified action on each element. It modifies the original array and does not return a new array. The 'map' method, on the other hand, also iterates over each element of an array but returns a new array containing the results of applying a function to each element. It does not modify the original array.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>e46811fe-a4db-4090-a8fd-ef08cdea4ada</guid>
-		<volgnummer></volgnummer>
-		<niveau>4</niveau>
-		<onderwerp>Promises</onderwerp>
-		<header>
-			<regel>What is a Promise in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>A Promise is a way to handle errors in JavaScript.</A>
-			<B>A Promise is a function that represents the eventual completion or failure of an asynchronous operation and its resulting value.</B>
-			<C>A Promise is a technique to improve the performance of JavaScript code.</C>
-			<D>A Promise is a method to create dynamic HTML elements using JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>A Promise is an object in JavaScript that represents the eventual completion or failure of an asynchronous operation. It is used for handling asynchronous operations and provides a way to handle the resulting value or error once the operation is completed.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>29aedb5a-d54d-4d34-954e-100f35cfd959</guid>
-		<volgnummer></volgnummer>
-		<niveau>4</niveau>
-		<onderwerp>Modules</onderwerp>
-		<header>
-			<regel>What are JavaScript modules?</regel>
-		</header>
-		<keuzes>
-			<A>JavaScript modules are a way to style web pages using CSS.</A>
-			<B>JavaScript modules are reusable pieces of code that encapsulate related functionality and can be exported and imported in other JavaScript files.</B>
-			<C>JavaScript modules are used for managing databases in JavaScript applications.</C>
-			<D>JavaScript modules are used for server-side operations in Node.js.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>JavaScript modules are reusable pieces of code that encapsulate related functionality. They allow you to break down your codebase into smaller, manageable units and export specific functions, objects, or values from one module to another using the 'export' and 'import' keywords.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>c28b0a78-e29c-4b84-8e30-b4c067a46467</guid>
-		<volgnummer></volgnummer>
-		<niveau>4</niveau>
-		<onderwerp>Error Handling</onderwerp>
-		<header>
-			<regel>How do you handle errors in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>You cannot handle errors in JavaScript; they always result in program termination.</A>
-			<B>You can handle errors in JavaScript using try-catch blocks.</B>
-			<C>You can handle errors in JavaScript by logging them to the console.</C>
-			<D>You can handle errors in JavaScript by restarting the program.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>In JavaScript, you can handle errors using try-catch blocks. The 'try' block contains the code that might throw an error, and the 'catch' block is used to handle the error if one occurs. By catching errors, you can prevent the program from terminating and take appropriate actions to handle the error condition.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>0e9de6e8-6e2f-48c0-bb12-d43da1430b3d</guid>
-		<volgnummer></volgnummer>
-		<niveau>4</niveau>
-		<onderwerp>AJAX</onderwerp>
-		<header>
-			<regel>What is AJAX in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>AJAX is a way to handle errors in JavaScript.</A>
-			<B>AJAX is a technique for making asynchronous HTTP requests to the server from JavaScript without reloading the entire page.</B>
-			<C>AJAX is a method to optimize JavaScript code for better performance.</C>
-			<D>AJAX is a method to create dynamic HTML elements using JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>AJAX (Asynchronous JavaScript and XML) is a technique in JavaScript for making asynchronous HTTP requests to the server from a web page. It allows you to send and receive data in the background without reloading the entire page. AJAX enables building responsive and interactive web applications by retrieving data from the server and updating parts of the page dynamically.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>b496c277-7327-4a31-b712-922f1b850429</guid>
-		<volgnummer></volgnummer>
-		<niveau>4</niveau>
-		<onderwerp>Regular Expressions</onderwerp>
-		<header>
-			<regel>What are regular expressions in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Regular expressions are a way to handle errors in JavaScript.</A>
-			<B>Regular expressions are patterns used to match and manipulate text in JavaScript.</B>
-			<C>Regular expressions are a technique to optimize JavaScript code for better performance.</C>
-			<D>Regular expressions are a method to create dynamic HTML elements using JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Regular expressions in JavaScript are patterns used to match and manipulate text. They provide a powerful and flexible way to search, validate, and extract specific patterns of characters from strings. Regular expressions are commonly used for tasks such as data validation, string manipulation, and parsing text in JavaScript applications.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>dbd327fd-c132-489f-886a-5b262393b79a</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>What is the difference between 'undefined' and 'null' in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>They are interchangeable and can be used interchangeably.</A>
-			<B>'Undefined' represents the absence of a value or an uninitialized variable, while 'null' is an assignment value that represents no value or an empty object reference.</B>
-			<C>'Undefined' is a falsy value, while 'null' is a truthy value.</C>
-			<D>'Undefined' is a primitive data type, while 'null' is an object.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>'Undefined' is used when a variable is declared but has not been assigned a value, while 'null' is used when you want to explicitly indicate that a variable has no value or an empty object reference.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>8491dfe7-4541-4c1d-8743-16816b27c6e7</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Regular Expressions</onderwerp>
-		<header>
-			<regel>Which method is used to test if a pattern exists in a string using a regular expression?</regel>
-		</header>
-		<keuzes>
-			<A>test()</A>
-			<B>match()</B>
-			<C>search()</C>
-			<D>find()</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The "test()" method is used to test if a pattern exists in a string using a regular expression in JavaScript.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>13b6dcf8-2b1c-4fea-b3d1-e2c30833fd59</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>What are closure functions in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Closure functions refer to the functions that have access to variables from an outer function that has already returned.</A>
-			<B>Closure functions are used for asynchronous operations in JavaScript.</B>
-			<C>Closure functions are used for object-oriented programming in JavaScript.</C>
-			<D>Closure functions are used for handling exceptions in JavaScript.</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>A closure function is a function that has access to variables from its outer function, even after the outer function has finished executing and returned. It "closes over" the variables it references, hence the term "closure".</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>8794d8d3-8235-4d29-b2f3-48401db66169</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>What is hoisting in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>Hoisting is a technique used to optimize JavaScript code for faster execution.</A>
-			<B>Hoisting is the process of moving all variable and function declarations to the top of their respective scopes during the compilation phase.</B>
-			<C>Hoisting is a way to handle errors in JavaScript.</C>
-			<D>Hoisting is a method to encrypt and decrypt data in JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their respective scopes during the compilation phase. This allows you to use variables and functions before they are declared in your code.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>12781dd6-1eed-4c74-9e37-446d064b53f6</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>What is the difference between '==' and '===' in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>'==' performs a strict equality comparison, while '===' performs a loose equality comparison.</A>
-			<B>'==' compares values without considering their types, while '===' compares values and types.</B>
-			<C>'==' is used for assignment, while '===' is used for comparison.</C>
-			<D>There is no difference between '==' and '==='; they can be used interchangeably.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>'==' performs type coercion, converting the operands to a common type before comparison, while '===' compares the values and types without any type coercion. It is generally recommended to use '===' for more predictable and less error-prone comparisons.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>4be4ad6a-9d33-485e-830c-a0b384c0ba6a</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>Explain the concept of event delegation in JavaScript.</regel>
-		</header>
-		<keuzes>
-			<A>Event delegation is a way to handle asynchronous events in JavaScript.</A>
-			<B>Event delegation is a pattern where a single event listener is attached to a parent element to handle events for all its child elements.</B>
-			<C>Event delegation is a technique to optimize JavaScript code for better performance.</C>
-			<D>Event delegation is a method to create dynamic HTML elements using JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Event delegation is a pattern in JavaScript where you attach a single event listener to a parent element rather than attaching individual event listeners to each child element. This way, you can handle events that bubble up from child elements, reducing the number of event listeners and improving performance.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>f5cbcdc5-f1a2-40ad-a845-6a786cbdb2a4</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>Explain the concept of prototypal inheritance in JavaScript.</regel>
-		</header>
-		<keuzes>
-			<A>Prototypal inheritance is a way to handle exceptions in JavaScript.</A>
-			<B>Prototypal inheritance is a mechanism where an object inherits properties and methods from its prototype object.</B>
-			<C>Prototypal inheritance is a technique to compress JavaScript code for faster download.</C>
-			<D>Prototypal inheritance is a method to perform encryption and decryption in JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Prototypal inheritance is a fundamental concept in JavaScript where an object inherits properties and methods from its prototype object. In other words, objects can be created based on existing objects, and they inherit behavior from their prototypes, forming a prototype chain.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>fcff2e3b-6fda-4bca-bf35-a7f875120d88</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>What are the different ways to create objects in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>There is only one way to create objects in JavaScript using the 'Object' class.</A>
-			<B>Objects can be created using object literals, constructor functions, the 'Object.create()' method, and the 'class' syntax introduced in ES6.</B>
-			<C>Objects can only be created using constructor functions in JavaScript.</C>
-			<D>Objects can be created using the 'new' keyword followed by a function.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Objects in JavaScript can be created using object literals, constructor functions, the 'Object.create()' method, and the 'class' syntax introduced in ES6. Each approach has its own syntax and use cases.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>230d910f-964b-4d1c-b196-65899f845ac0</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>Explain the concept of memoization in JavaScript.</regel>
-		</header>
-		<keuzes>
-			<A>Memoization is a way to handle errors in JavaScript.</A>
-			<B>Memoization is a technique to cache the results of expensive function calls and reuse them when the same inputs occur again.</B>
-			<C>Memoization is a method to optimize JavaScript code for better performance.</C>
-			<D>Memoization is a method to encrypt and decrypt data in JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Memoization is a technique in JavaScript where the results of expensive function calls are cached and reused when the same inputs occur again. This can significantly improve the performance of functions that are called repeatedly with the same arguments.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>4592d000-8850-49f8-b678-37dd259189ad</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>What is the Event Loop in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>The Event Loop is a way to handle asynchronous events in JavaScript.</A>
-			<B>The Event Loop is a mechanism that ensures JavaScript code executes in a single thread and handles asynchronous operations using the event queue and the call stack.</B>
-			<C>The Event Loop is a technique to optimize JavaScript code for better performance.</C>
-			<D>The Event Loop is a method to create dynamic HTML elements using JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The Event Loop is a mechanism in JavaScript that ensures the execution of JavaScript code occurs in a single thread. It manages the event queue and the call stack, allowing for the handling of asynchronous operations and non-blocking behavior.</uitleg>
-	</vraag>
-	<vraag>
-		<disabled></disabled>
-		<guid>a456c960-9133-4353-b389-044965318434</guid>
-		<volgnummer></volgnummer>
-		<niveau>5</niveau>
-		<onderwerp>Advanced Concepts</onderwerp>
-		<header>
-			<regel>What is the purpose of the 'this' keyword in JavaScript?</regel>
-		</header>
-		<keuzes>
-			<A>The 'this' keyword refers to the current function where it is used.</A>
-			<B>The 'this' keyword is used to access the properties and methods of the parent object.</B>
-			<C>The 'this' keyword is used to create new objects from a constructor function.</C>
-			<D>The 'this' keyword refers to the global object in JavaScript.</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The 'this' keyword in JavaScript is used to refer to the object that the function is a method of. It allows access to the properties and methods of the parent object within the function.</uitleg>
-	</vraag>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>a0872ed6-ed82-42be-8429-e5e00fc34be4</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>Which method is used to add an element to the end of a JavaScript array?</regel>
+    </header>
+    <keuzes>
+      <A>push()</A>
+      <B>pop()</B>
+      <C>shift()</C>
+      <D>unshift()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "push()" method is used to add an element to the end of a JavaScript array. It modifies the original array by appending the element as the last item. The "pop()" method removes and returns the last element of an array. The "shift()" method removes and returns the first element of an array. The "unshift()" method adds an element to the beginning of an array.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>bd281fd6-d77f-441c-b192-fef153f798c2</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Loops</onderwerp>
+    <header>
+      <regel>Which loop in JavaScript allows you to iterate over a sequence of elements?</regel>
+    </header>
+    <keuzes>
+      <A>for</A>
+      <B>while</B>
+      <C>do-while</C>
+      <D>loop</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "for" loop in JavaScript allows you to iterate over a sequence of elements. It is commonly used with arrays or other iterable objects. The loop variable takes on each element of the sequence in each iteration. The "while" and "do-while" loops are conditional loops that continue iterating until a certain condition becomes false. The "loop" option is not a valid loop construct in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>0a1f3bf7-26ac-4d93-8b99-bd89d3adfd83</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Conditions</onderwerp>
+    <header>
+      <regel>Which operator is used to check for equality in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>==</A>
+      <B>===</B>
+      <C>=</C>
+      <D>!=</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "===" operator is used to check for equality in JavaScript. It is called the strict equality operator and checks if both the value and the type of the operands are the same. The "==" operator is called the loose equality operator and performs type coercion before comparing the values. The "=" operator is the assignment operator, and the "!=" operator is used to check for inequality.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>bb46674e-ca13-4cef-a991-20c55a34a93e</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>What is the difference between 'push' and 'pop' methods in JavaScript arrays?</regel>
+    </header>
+    <keuzes>
+      <A>'push' adds elements to the end of an array, while 'pop' removes the last element from an array.</A>
+      <B>'push' adds elements to the beginning of an array, while 'pop' removes the first element from an array.</B>
+      <C>'push' adds elements to an array, while 'pop' removes elements from the middle of an array.</C>
+      <D>'push' adds elements to an array, while 'pop' removes elements from the beginning and end of an array.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>'push' is used to add elements to the end of an array, increasing its length. The added elements become the last elements of the array. 'pop' is used to remove the last element from an array, reducing its length by 1. The removed element is returned by the 'pop' method.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>98c4b556-6d3a-4d6b-82e3-7f01c963fafe</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Scope</onderwerp>
+    <header>
+      <regel>What is the scope of a variable declared with the 'let' keyword?</regel>
+    </header>
+    <keuzes>
+      <A>Variables declared with 'let' have block scope and are only accessible within the block where they are defined.</A>
+      <B>Variables declared with 'let' have function scope and are accessible within the function where they are defined.</B>
+      <C>Variables declared with 'let' have global scope and can be accessed from anywhere in the program.</C>
+      <D>Variables declared with 'let' have module scope and are accessible within the module where they are defined.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Variables declared with the 'let' keyword have block scope. They are only accessible within the block where they are defined, such as within a function, loop, or conditional statement. Outside of the block, the variable is not accessible. This behavior helps to prevent variable name collisions and improves code clarity.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>2f79ecf1-7ada-437b-915c-6da264ecaf31</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Basics</onderwerp>
+    <header>
+      <regel>Which operator is used to compare the equality of two values in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>==</A>
+      <B>===</B>
+      <C>=</C>
+      <D>!=</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "==" operator is used to compare the equality of two values in JavaScript. It performs type coercion if necessary, while the "===" operator performs strict equality comparison without type coercion.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>78e9d18e-7cef-484f-a43c-86f109b88ca8</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>HTML DOM</onderwerp>
+    <header>
+      <regel>What is the DOM (Document Object Model) in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>The DOM is a way to handle errors in JavaScript.</A>
+      <B>The DOM is a programming interface for web documents that represents the structure of an HTML or XML document as a tree-like model.</B>
+      <C>The DOM is a technique to optimize JavaScript code for better performance.</C>
+      <D>The DOM is a method to create dynamic HTML elements using JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree-like model, where each node in the tree corresponds to an element, attribute, or piece of text in the document. JavaScript can interact with the DOM to manipulate the content, structure, and styles of web pages.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>9ebb84a9-a417-4dbc-99fc-44dd389f169f</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Data Types</onderwerp>
+    <header>
+      <regel>Which of the following is not a JavaScript data type?</regel>
+    </header>
+    <keuzes>
+      <A>String</A>
+      <B>Boolean</B>
+      <C>Number</C>
+      <D>Float</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>"Float" is not a separate data type in JavaScript. JavaScript has a single data type for all numeric values, which is "Number".</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>06858aeb-1aab-4a90-a871-f6b2ae6e2605</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Events</onderwerp>
+    <header>
+      <regel>What are JavaScript events?</regel>
+    </header>
+    <keuzes>
+      <A>JavaScript events are a way to handle errors in JavaScript.</A>
+      <B>JavaScript events are actions or occurrences that happen in the browser, such as a mouse click, key press, or page load.</B>
+      <C>JavaScript events are a technique to optimize JavaScript code for better performance.</C>
+      <D>JavaScript events are a method to create dynamic HTML elements using JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>JavaScript events are actions or occurrences that happen in the browser. Examples of events include mouse clicks, key presses, form submissions, page loads, and many more. JavaScript can listen for these events and execute code in response to them, enabling interactivity and dynamic behavior in web applications.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>b6da4e48-5bb3-4189-8b61-f8fba41eb88d</guid>
+    <volgnummer></volgnummer>
+    <niveau>4</niveau>
+    <onderwerp>Functions</onderwerp>
+    <header>
+      <regel>What is the difference between function declarations and function expressions in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>There is no difference; function declarations and function expressions can be used interchangeably.</A>
+      <B>Function declarations are hoisted, while function expressions are not hoisted.</B>
+      <C>Function expressions are used for asynchronous operations, while function declarations are used for synchronous operations.</C>
+      <D>Function declarations are anonymous functions, while function expressions have a named identifier.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Function declarations are hoisted, which means they can be called before they are declared in the code. Function expressions, on the other hand, are not hoisted and cannot be called before they are defined in the code.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>e395437a-3c4c-49dd-a668-47e27c09bd5c</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Asynchronous Programming</onderwerp>
+    <header>
+      <regel>Which keyword is used to declare an asynchronous function in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>async</A>
+      <B>await</B>
+      <C>asyncFunc</C>
+      <D>asyncronous</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "async" keyword is used to declare an asynchronous function in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>6c3197a8-02ca-4ccb-9481-cd321ca528fa</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Promises</onderwerp>
+    <header>
+      <regel>Which method is used to handle the result of a Promise in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>then()</A>
+      <B>catch()</B>
+      <C>finally()</C>
+      <D>resolve()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "then()" method is used to handle the result of a Promise in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>f59959eb-9346-46f5-a0ea-c47ad66f7cdc</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Event Handling</onderwerp>
+    <header>
+      <regel>Which method is used to add an event listener to an HTML element?</regel>
+    </header>
+    <keuzes>
+      <A>addEventListener()</A>
+      <B>attachEvent()</B>
+      <C>on()</C>
+      <D>bind()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "addEventListener()" method is used to add an event listener to an HTML element in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>a039d6bb-f921-4870-aefd-6785b90dfd99</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Error Handling</onderwerp>
+    <header>
+      <regel>Which keyword is used to throw an exception in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>throw</A>
+      <B>catch</B>
+      <C>try</C>
+      <D>finally</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "throw" keyword is used to throw an exception in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>aa53d999-d3fa-4628-8b27-7739c584c15f</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Objects</onderwerp>
+    <header>
+      <regel>Which symbol is used to access a property of an object?</regel>
+    </header>
+    <keuzes>
+      <A>;</A>
+      <B>.</B>
+      <C>:</C>
+      <D>~</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The dot (.) symbol is used to access a property of an object in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>4a2d17ce-5ae8-4b2d-8ad6-b8f32337e8ed</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Callbacks</onderwerp>
+    <header>
+      <regel>What is a callback function in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>A function that is called when an asynchronous operation completes</A>
+      <B>A function that returns another function</B>
+      <C>A function that is used to handle errors</C>
+      <D>A function that is called at the beginning of a program</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>A callback function in JavaScript is a function that is passed as an argument to another function and is called when an asynchronous operation completes.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>5a80ca24-9d17-49b9-b11f-a3822c39baf0</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Variables</onderwerp>
+    <header>
+      <regel>What is the result of the expression: 5 + "5" in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>10</A>
+      <B>"55"</B>
+      <C>NaN</C>
+      <D>Error</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The result of the expression 5 + "5" in JavaScript is the string "55". The + operator, when used with a string and a number, performs string concatenation instead of numerical addition.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>d433aa95-79d2-4214-bf85-505460bfb655</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Modules</onderwerp>
+    <header>
+      <regel>Which keyword is used to export a function or variable from a module in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>export</A>
+      <B>import</B>
+      <C>require</C>
+      <D>module</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "export" keyword is used to export a function or variable from a module in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>243305cb-8d4e-4091-9106-33ef5e9d9d46</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Error Handling</onderwerp>
+    <header>
+      <regel>Which keyword is used to catch and handle exceptions in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>catch</A>
+      <B>try</B>
+      <C>finally</C>
+      <D>throw</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "catch" keyword is used to catch and handle exceptions in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>7550e25f-2e3a-4267-a0e7-13de0fbcd88a</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Strings</onderwerp>
+    <header>
+      <regel>Which method is used to concatenate two or more strings in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>concat()</A>
+      <B>join()</B>
+      <C>append()</C>
+      <D>merge()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "concat()" method is used to concatenate two or more strings in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>92885584-37f4-4326-b090-7e7fe7778e19</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Objects</onderwerp>
+    <header>
+      <regel>Which notation is used to access the properties of an object in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Dot notation (.)</A>
+      <B>Bracket notation ([])</B>
+      <C>Arrow notation (=&gt;)</C>
+      <D>Colon notation (:)</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The dot notation (.) is used to access the properties of an object in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>d62d9653-9043-449f-970c-820b45c46613</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Date and Time</onderwerp>
+    <header>
+      <regel>Which method is used to get the current date in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>getDate()</A>
+      <B>getCurrentDate()</B>
+      <C>now()</C>
+      <D>new Date()</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "new Date()" method is used to get the current date in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>ece9a839-7f8e-4270-9865-141993e69440</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Asynchronous Programming</onderwerp>
+    <header>
+      <regel>What does AJAX stand for?</regel>
+    </header>
+    <keuzes>
+      <A>Asynchronous JavaScript and XML</A>
+      <B>Application JavaScript and XML</B>
+      <C>Asynchronous JavaScript and XHTML</C>
+      <D>Application JavaScript and XHTML</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>AJAX stands for Asynchronous JavaScript and XML.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>7d8fe9c5-3e87-4643-b66e-12802594b20b</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Local Storage</onderwerp>
+    <header>
+      <regel>Which method is used to store data in the local storage of the browser?</regel>
+    </header>
+    <keuzes>
+      <A>localStorage.setItem()</A>
+      <B>localStorage.storeData()</B>
+      <C>localStorage.save()</C>
+      <D>localStorage.store()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "localStorage.setItem()" method is used to store data in the local storage of the browser.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>7504a8e8-9620-4ed8-bb2d-006a1bfe66de</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Regular Expressions</onderwerp>
+    <header>
+      <regel>Which method is used to test if a pattern exists in a string using a regular expression in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>test()</A>
+      <B>match()</B>
+      <C>search()</C>
+      <D>find()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "test()" method is used to test if a pattern exists in a string using a regular expression in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>d571e91f-dbc9-4b4d-9c04-65a52f8924cc</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Functions</onderwerp>
+    <header>
+      <regel>What is a higher-order function in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>A function that operates on other functions, either by taking them as arguments or by returning them</A>
+      <B>A function that has a higher lexical scope than other functions</B>
+      <C>A function that uses arrow function syntax</C>
+      <D>A function that has a higher execution priority than other functions</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>A higher-order function in JavaScript is a function that operates on other functions. It can take functions as arguments, return functions, or both. Higher-order functions enable powerful functional programming techniques in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>92e114f5-a8bd-41bb-af1a-f5e5a14ab7de</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Objects</onderwerp>
+    <header>
+      <regel>What is prototypal inheritance in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>A way to create objects using the "prototype" keyword</A>
+      <B>A mechanism for objects to inherit properties and methods from other objects</B>
+      <C>A method of defining classes in JavaScript</C>
+      <D>A process of copying properties from one object to another</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Prototypal inheritance in JavaScript is a mechanism for objects to inherit properties and methods from other objects. Each object has a prototype, and it can access properties and methods defined on its prototype. This allows for code reuse and hierarchical relationships between objects.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>7218fa34-0ba0-41c9-8f14-8f1c46f0e835</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Modules</onderwerp>
+    <header>
+      <regel>What is the purpose of JavaScript modules?</regel>
+    </header>
+    <keuzes>
+      <A>To organize code into reusable and independent units</A>
+      <B>To restrict the scope of variables and functions</B>
+      <C>To enable dynamic typing in JavaScript</C>
+      <D>To provide a way to interact with the browser"s Document Object Model (DOM)</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>JavaScript modules are used to organize code into reusable and independent units. They encapsulate related variables, functions, and classes, providing a clean separation of concerns and promoting code modularity and reusability.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>cc3f0fc2-c480-48e1-8da8-d8450c09b1f8</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Objects</onderwerp>
+    <header>
+      <regel>What is the difference between dot notation and bracket notation to access object properties in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Dot notation is used for static property access, while bracket notation is used for dynamic property access</A>
+      <B>Dot notation is used for dynamic property access, while bracket notation is used for static property access</B>
+      <C>There is no difference, and both notations can be used interchangeably</C>
+      <D>Dot notation is used for object methods, while bracket notation is used for object properties</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>In JavaScript, dot notation is used for static property access, where the property name is known and fixed. Bracket notation, on the other hand, is used for dynamic property access, where the property name is determined at runtime or obtained from a variable.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>0eb3d94e-bac0-467e-9c02-2c36611aaa11</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Promises</onderwerp>
+    <header>
+      <regel>Which of the following methods is used to handle the fulfillment of a Promise in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>then()</A>
+      <B>catch()</B>
+      <C>finally()</C>
+      <D>resolve()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "then()" method is used to handle the fulfillment of a Promise in JavaScript. It takes one or two callback functions as arguments, which are executed when the Promise is fulfilled, allowing you to work with the resolved value.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>c783023d-757c-46bc-aae3-98a080037d3e</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Prototypes</onderwerp>
+    <header>
+      <regel>What is the prototype in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>An object from which other objects inherit properties</A>
+      <B>A built-in JavaScript object</B>
+      <C>A special keyword to define functions</C>
+      <D>A method to access private variables</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>In JavaScript, the prototype is an object from which other objects inherit properties. Each object has an internal reference to its prototype, and when a property is accessed on an object, JavaScript looks for the property in the object itself. If not found, it continues the search in the prototype chain until the property is found or until the end of the chain is reached.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>01b71687-056a-4e6c-9a8e-0b53594c9eda</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Higher-Order Functions</onderwerp>
+    <header>
+      <regel>What are higher-order functions in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Functions that take other functions as arguments or return functions as results</A>
+      <B>Functions that are defined using arrow syntax</B>
+      <C>Functions that can access variables from their outer scope</C>
+      <D>Functions that have access to the "this" keyword</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Higher-order functions in JavaScript are functions that take other functions as arguments or return functions as results. They allow for more flexible and powerful functional programming patterns by treating functions as first-class citizens.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>0bf78515-b17d-4fa4-a6c2-1c35b7a5a23f</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Modules</onderwerp>
+    <header>
+      <regel>What is the purpose of JavaScript modules?</regel>
+    </header>
+    <keuzes>
+      <A>To encapsulate related code and provide a way to organize and share functionality</A>
+      <B>To define CSS styles for a specific HTML element</B>
+      <C>To control the layout and design of a web page</C>
+      <D>To handle user interactions and events</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>JavaScript modules are used to encapsulate related code and provide a way to organize and share functionality. They allow for better code organization, avoid naming conflicts, and enable the reusability of code across different parts of an application or between different applications.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>eb096c31-325d-4ce7-8a85-2d3683e84c20</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Regular Expressions</onderwerp>
+    <header>
+      <regel>Which method is used to test if a pattern is found in a string using a regular expression in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>test()</A>
+      <B>match()</B>
+      <C>search()</C>
+      <D>replace()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "test()" method is used to test if a pattern is found in a string using a regular expression in JavaScript. It returns a boolean value indicating whether the pattern was found or not. The "match()" method is used to extract the matches, "search()" method is used to find the index of the first match, and "replace()" method is used to replace the matches with a new string.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>b0252223-e57d-4e01-8242-fc0f79caaad9</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Event Handling</onderwerp>
+    <header>
+      <regel>Which method is used to add an event listener to an element in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>addEventListener()</A>
+      <B>attachEvent()</B>
+      <C>on()</C>
+      <D>listen()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "addEventListener()" method is used to add an event listener to an element in JavaScript. It takes two arguments: the event type (e.g., "click", "keydown") and the event handler function, which is executed when the event is triggered on the element. The other options mentioned are either deprecated or not valid methods for adding event listeners in modern JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>9a95482a-b462-4751-8ef3-10d7edf4e03b</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Objects</onderwerp>
+    <header>
+      <regel>Which syntax is used to access a property of an object in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>object.property</A>
+      <B>object[property]</B>
+      <C>object-&gt;property</C>
+      <D>object::property</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>In JavaScript, the syntax "object[property]" is used to access a property of an object. It allows you to use a variable or an expression to dynamically access a property. The dot notation "object.property" is used when you know the property name in advance. The "-&gt;" and "::" syntaxes mentioned are not used for accessing object properties in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>503259d0-dbe2-479a-8609-3705872e6ee1</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Functions</onderwerp>
+    <header>
+      <regel>Which syntax is used to define a named function in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>function functionName() {}</A>
+      <B>function = functionName() {}</B>
+      <C>function() {}</C>
+      <D>const functionName = function() {}</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The syntax "function functionName() {}" is used to define a named function in JavaScript. It begins with the "function" keyword, followed by the name of the function, parentheses for optional parameters, and curly braces to define the function body. The other options represent different ways of defining functions in JavaScript, but the option "function functionName() {}" specifically matches the syntax for a named function.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>23777fcb-e23b-4b35-94d8-3318176f7229</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Objects</onderwerp>
+    <header>
+      <regel>Which syntax is used to access a property value of a JavaScript object?</regel>
+    </header>
+    <keuzes>
+      <A>object.property</A>
+      <B>object[property]</B>
+      <C>object.getValue()</C>
+      <D>object.getProperty()</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The syntax "object[property]" is used to access a property value of a JavaScript object. It allows you to use a variable or a string literal within square brackets to access the value of a specific property. The "object.property" syntax is used when the property name is a valid identifier without special characters. The "object.getValue()" and "object.getProperty()" options do not match the typical syntax for accessing object properties in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>0763f767-d628-4fa5-b6a2-12f40f5552c9</guid>
+    <volgnummer></volgnummer>
+    <niveau>3</niveau>
+    <onderwerp>Basics</onderwerp>
+    <header>
+      <regel>Which function is used to output data to the browser console?</regel>
+    </header>
+    <keuzes>
+      <A>print()</A>
+      <B>alert()</B>
+      <C>document.write()</C>
+      <D>console.log()</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "console.log()" function is used to output data to the browser console in JavaScript. It is commonly used for debugging and logging messages during development.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>9a435ec4-af07-450c-a423-630ffda74462</guid>
+    <volgnummer></volgnummer>
+    <niveau>3</niveau>
+    <onderwerp>Variables</onderwerp>
+    <header>
+      <regel>What are the differences between 'var', 'let', and 'const' in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>'var' is block-scoped, 'let' is function-scoped, and 'const' is globally-scoped.</A>
+      <B>'var' is globally-scoped, 'let' is block-scoped, and 'const' is function-scoped.</B>
+      <C>'var' allows reassignment, 'let' allows declaration without assignment, and 'const' does not allow reassignment.</C>
+      <D>'var' is used for primitive types, 'let' is used for objects, and 'const' is used for arrays.</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>'var' is function-scoped and allows redeclaration and reassignment. 'let' is block-scoped, allows reassignment, and does not allow redeclaration in the same scope. 'const' is also block-scoped, but it does not allow reassignment or redeclaration after initialization.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>7d47aa91-050d-4098-afe1-0508912b0521</guid>
+    <volgnummer></volgnummer>
+    <niveau>3</niveau>
+    <onderwerp>Operators</onderwerp>
+    <header>
+      <regel>What is the difference between '==' and '===' in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>'==' compares the values only, while '===' compares both values and types.</A>
+      <B>'==' compares the types only, while '===' compares both values and types.</B>
+      <C>'==' performs a deep comparison, while '===' performs a shallow comparison.</C>
+      <D>'==' is used for assignment, while '===' is used for equality checks.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>'==' compares the values of two operands and performs type coercion if necessary. It converts the operands to a common type and then compares the values. '===' compares both the values and the types of the operands without type coercion, ensuring strict equality.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>17651de0-57df-4d5b-84b7-1a6aef692911</guid>
+    <volgnummer></volgnummer>
+    <niveau>3</niveau>
+    <onderwerp>Loops</onderwerp>
+    <header>
+      <regel>What is the difference between 'for' and 'while' loops in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>'for' loops are used for a known number of iterations, while 'while' loops are used for unknown or indefinite iterations.</A>
+      <B>'for' loops always execute at least once, while 'while' loops may not execute at all if the condition is initially false.</B>
+      <C>'for' loops can only iterate over arrays, while 'while' loops can iterate over arrays and objects.</C>
+      <D>'for' loops allow more complex loop control, while 'while' loops are simpler and easier to understand.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>'for' loops are typically used when the number of iterations is known or predetermined. They consist of an initialization, a condition, and an increment/decrement expression. 'while' loops are used when the number of iterations is unknown or based on a condition. They only have a condition to check, and the loop will continue as long as the condition is true.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>ba0e4b4b-d33f-489b-967a-ed67097df253</guid>
+    <volgnummer></volgnummer>
+    <niveau>3</niveau>
+    <onderwerp>Functions</onderwerp>
+    <header>
+      <regel>What is a higher-order function in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>A higher-order function is a function that takes another function as an argument or returns a function as its result.</A>
+      <B>A higher-order function is a function that is defined with arrow syntax (=&gt;).</B>
+      <C>A higher-order function is a function that can only be called from within another function.</C>
+      <D>A higher-order function is a function that modifies the global state of the program.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>A higher-order function is a function that takes another function as an argument or returns a function as its result. It treats functions as values and allows for the composition of functions and the creation of more abstract and reusable code.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>706ba501-cfc5-45f3-9749-9a12e023b791</guid>
+    <volgnummer></volgnummer>
+    <niveau>3</niveau>
+    <onderwerp>Objects</onderwerp>
+    <header>
+      <regel>What is prototypal inheritance in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Prototypal inheritance is a mechanism in JavaScript where objects can inherit properties and methods from other objects.</A>
+      <B>Prototypal inheritance is a way to create new objects based on existing object templates.</B>
+      <C>Prototypal inheritance is a process of copying properties and methods from one object to another.</C>
+      <D>Prototypal inheritance is a method to create dynamic HTML elements using JavaScript.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Prototypal inheritance is a mechanism in JavaScript where objects can inherit properties and methods from other objects. It allows objects to be based on other objects, which can serve as prototypes. When a property or method is accessed on an object, if it is not found on the object itself, JavaScript looks up the prototype chain until it finds the property or method.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>1944edd4-f7e5-4263-97bb-0c56327e62e5</guid>
+    <volgnummer></volgnummer>
+    <niveau>3</niveau>
+    <onderwerp>Promises</onderwerp>
+    <header>
+      <regel>What are promises in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Promises are a way to handle errors in JavaScript.</A>
+      <B>Promises are a technique for making asynchronous HTTP requests to the server from JavaScript.</B>
+      <C>Promises are objects used for handling and chaining asynchronous operations in JavaScript.</C>
+      <D>Promises are a method to create dynamic HTML elements using JavaScript.</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Promises are objects used for handling and chaining asynchronous operations in JavaScript. They represent the eventual completion or failure of an asynchronous operation and allow you to attach callbacks to be executed when the operation is successful (resolved) or encounters an error (rejected). Promises help simplify asynchronous programming and provide a more readable and structured way to handle async operations.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>0fa755ce-994a-4e3d-a15b-e1df93f7d168</guid>
+    <volgnummer></volgnummer>
+    <niveau>3</niveau>
+    <onderwerp>Modules</onderwerp>
+    <header>
+      <regel>What are JavaScript modules?</regel>
+    </header>
+    <keuzes>
+      <A>JavaScript modules are a way to split a program into separate files and import/export functionality between them.</A>
+      <B>JavaScript modules are a way to optimize JavaScript code for better performance.</B>
+      <C>JavaScript modules are a technique for creating dynamic HTML elements using JavaScript.</C>
+      <D>JavaScript modules are a way to style web pages using JavaScript.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>JavaScript modules are a way to split a program into separate files and organize the codebase. They provide a mechanism for defining and exporting functionality from one file (module) and importing that functionality in another file. Modules help improve code maintainability, reusability, and encapsulation by keeping related code together and controlling the visibility of variables and functions.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>cbd2b7fd-551b-46b8-ac57-6cec9a4d16d4</guid>
+    <volgnummer></volgnummer>
+    <niveau>3</niveau>
+    <onderwerp>Error Handling</onderwerp>
+    <header>
+      <regel>How do you handle errors in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>By using try-catch statements to catch and handle exceptions.</A>
+      <B>By ignoring the errors and letting the program continue execution.</B>
+      <C>By using 'console.error()' statements to log the errors in the browser console.</C>
+      <D>By using 'alert()' to display error messages to the user.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Errors in JavaScript can be handled using try-catch statements. The code that may potentially throw an error is placed inside a 'try' block, and if an error occurs, it is caught and handled in the 'catch' block. This allows you to gracefully handle errors, log them, or perform alternative actions when something goes wrong in your code.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>64a653c0-814a-48ac-8d14-2f6a19555405</guid>
+    <volgnummer></volgnummer>
+    <niveau>4</niveau>
+    <onderwerp>Objects</onderwerp>
+    <header>
+      <regel>What is the difference between dot notation and bracket notation for accessing object properties in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>There is no difference; dot notation and bracket notation can be used interchangeably.</A>
+      <B>Dot notation is used for accessing properties with known names, while bracket notation is used for accessing properties with dynamic names or names containing special characters.</B>
+      <C>Dot notation is used for accessing properties of built-in JavaScript objects, while bracket notation is used for user-defined objects.</C>
+      <D>Dot notation is more efficient in terms of performance, while bracket notation allows for more flexibility in property access.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Dot notation is used when the property name is known and does not contain special characters. Bracket notation, however, is used when the property name is dynamic, determined at runtime, or contains special characters that are not valid for dot notation.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>c39d0745-c795-4469-830d-9d7ce6494adf</guid>
+    <volgnummer></volgnummer>
+    <niveau>4</niveau>
+    <onderwerp>Arrays</onderwerp>
+    <header>
+      <regel>What is the difference between the 'forEach' method and the 'map' method in JavaScript arrays?</regel>
+    </header>
+    <keuzes>
+      <A>The 'forEach' method modifies the original array, while the 'map' method returns a new array.</A>
+      <B>The 'forEach' method is used for synchronous operations, while the 'map' method is used for asynchronous operations.</B>
+      <C>The 'forEach' method can only iterate over arrays, while the 'map' method can iterate over arrays and objects.</C>
+      <D>There is no difference; 'forEach' and 'map' methods are two names for the same functionality.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The 'forEach' method allows you to iterate over each element of an array and perform a specified action on each element. It modifies the original array and does not return a new array. The 'map' method, on the other hand, also iterates over each element of an array but returns a new array containing the results of applying a function to each element. It does not modify the original array.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>e46811fe-a4db-4090-a8fd-ef08cdea4ada</guid>
+    <volgnummer></volgnummer>
+    <niveau>4</niveau>
+    <onderwerp>Promises</onderwerp>
+    <header>
+      <regel>What is a Promise in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>A Promise is a way to handle errors in JavaScript.</A>
+      <B>A Promise is a function that represents the eventual completion or failure of an asynchronous operation and its resulting value.</B>
+      <C>A Promise is a technique to improve the performance of JavaScript code.</C>
+      <D>A Promise is a method to create dynamic HTML elements using JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>A Promise is an object in JavaScript that represents the eventual completion or failure of an asynchronous operation. It is used for handling asynchronous operations and provides a way to handle the resulting value or error once the operation is completed.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>29aedb5a-d54d-4d34-954e-100f35cfd959</guid>
+    <volgnummer></volgnummer>
+    <niveau>4</niveau>
+    <onderwerp>Modules</onderwerp>
+    <header>
+      <regel>What are JavaScript modules?</regel>
+    </header>
+    <keuzes>
+      <A>JavaScript modules are a way to style web pages using CSS.</A>
+      <B>JavaScript modules are reusable pieces of code that encapsulate related functionality and can be exported and imported in other JavaScript files.</B>
+      <C>JavaScript modules are used for managing databases in JavaScript applications.</C>
+      <D>JavaScript modules are used for server-side operations in Node.js.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>JavaScript modules are reusable pieces of code that encapsulate related functionality. They allow you to break down your codebase into smaller, manageable units and export specific functions, objects, or values from one module to another using the 'export' and 'import' keywords.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>c28b0a78-e29c-4b84-8e30-b4c067a46467</guid>
+    <volgnummer></volgnummer>
+    <niveau>4</niveau>
+    <onderwerp>Error Handling</onderwerp>
+    <header>
+      <regel>How do you handle errors in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>You cannot handle errors in JavaScript; they always result in program termination.</A>
+      <B>You can handle errors in JavaScript using try-catch blocks.</B>
+      <C>You can handle errors in JavaScript by logging them to the console.</C>
+      <D>You can handle errors in JavaScript by restarting the program.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>In JavaScript, you can handle errors using try-catch blocks. The 'try' block contains the code that might throw an error, and the 'catch' block is used to handle the error if one occurs. By catching errors, you can prevent the program from terminating and take appropriate actions to handle the error condition.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>0e9de6e8-6e2f-48c0-bb12-d43da1430b3d</guid>
+    <volgnummer></volgnummer>
+    <niveau>4</niveau>
+    <onderwerp>AJAX</onderwerp>
+    <header>
+      <regel>What is AJAX in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>AJAX is a way to handle errors in JavaScript.</A>
+      <B>AJAX is a technique for making asynchronous HTTP requests to the server from JavaScript without reloading the entire page.</B>
+      <C>AJAX is a method to optimize JavaScript code for better performance.</C>
+      <D>AJAX is a method to create dynamic HTML elements using JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>AJAX (Asynchronous JavaScript and XML) is a technique in JavaScript for making asynchronous HTTP requests to the server from a web page. It allows you to send and receive data in the background without reloading the entire page. AJAX enables building responsive and interactive web applications by retrieving data from the server and updating parts of the page dynamically.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>b496c277-7327-4a31-b712-922f1b850429</guid>
+    <volgnummer></volgnummer>
+    <niveau>4</niveau>
+    <onderwerp>Regular Expressions</onderwerp>
+    <header>
+      <regel>What are regular expressions in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Regular expressions are a way to handle errors in JavaScript.</A>
+      <B>Regular expressions are patterns used to match and manipulate text in JavaScript.</B>
+      <C>Regular expressions are a technique to optimize JavaScript code for better performance.</C>
+      <D>Regular expressions are a method to create dynamic HTML elements using JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Regular expressions in JavaScript are patterns used to match and manipulate text. They provide a powerful and flexible way to search, validate, and extract specific patterns of characters from strings. Regular expressions are commonly used for tasks such as data validation, string manipulation, and parsing text in JavaScript applications.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>dbd327fd-c132-489f-886a-5b262393b79a</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>What is the difference between 'undefined' and 'null' in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>They are interchangeable and can be used interchangeably.</A>
+      <B>'Undefined' represents the absence of a value or an uninitialized variable, while 'null' is an assignment value that represents no value or an empty object reference.</B>
+      <C>'Undefined' is a falsy value, while 'null' is a truthy value.</C>
+      <D>'Undefined' is a primitive data type, while 'null' is an object.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>'Undefined' is used when a variable is declared but has not been assigned a value, while 'null' is used when you want to explicitly indicate that a variable has no value or an empty object reference.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>8491dfe7-4541-4c1d-8743-16816b27c6e7</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Regular Expressions</onderwerp>
+    <header>
+      <regel>Which method is used to test if a pattern exists in a string using a regular expression?</regel>
+    </header>
+    <keuzes>
+      <A>test()</A>
+      <B>match()</B>
+      <C>search()</C>
+      <D>find()</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The "test()" method is used to test if a pattern exists in a string using a regular expression in JavaScript.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>13b6dcf8-2b1c-4fea-b3d1-e2c30833fd59</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>What are closure functions in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Closure functions refer to the functions that have access to variables from an outer function that has already returned.</A>
+      <B>Closure functions are used for asynchronous operations in JavaScript.</B>
+      <C>Closure functions are used for object-oriented programming in JavaScript.</C>
+      <D>Closure functions are used for handling exceptions in JavaScript.</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>A closure function is a function that has access to variables from its outer function, even after the outer function has finished executing and returned. It "closes over" the variables it references, hence the term "closure".</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>8794d8d3-8235-4d29-b2f3-48401db66169</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>What is hoisting in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>Hoisting is a technique used to optimize JavaScript code for faster execution.</A>
+      <B>Hoisting is the process of moving all variable and function declarations to the top of their respective scopes during the compilation phase.</B>
+      <C>Hoisting is a way to handle errors in JavaScript.</C>
+      <D>Hoisting is a method to encrypt and decrypt data in JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their respective scopes during the compilation phase. This allows you to use variables and functions before they are declared in your code.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>12781dd6-1eed-4c74-9e37-446d064b53f6</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>What is the difference between '==' and '===' in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>'==' performs a strict equality comparison, while '===' performs a loose equality comparison.</A>
+      <B>'==' compares values without considering their types, while '===' compares values and types.</B>
+      <C>'==' is used for assignment, while '===' is used for comparison.</C>
+      <D>There is no difference between '==' and '==='; they can be used interchangeably.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>'==' performs type coercion, converting the operands to a common type before comparison, while '===' compares the values and types without any type coercion. It is generally recommended to use '===' for more predictable and less error-prone comparisons.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>4be4ad6a-9d33-485e-830c-a0b384c0ba6a</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>Explain the concept of event delegation in JavaScript.</regel>
+    </header>
+    <keuzes>
+      <A>Event delegation is a way to handle asynchronous events in JavaScript.</A>
+      <B>Event delegation is a pattern where a single event listener is attached to a parent element to handle events for all its child elements.</B>
+      <C>Event delegation is a technique to optimize JavaScript code for better performance.</C>
+      <D>Event delegation is a method to create dynamic HTML elements using JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Event delegation is a pattern in JavaScript where you attach a single event listener to a parent element rather than attaching individual event listeners to each child element. This way, you can handle events that bubble up from child elements, reducing the number of event listeners and improving performance.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>f5cbcdc5-f1a2-40ad-a845-6a786cbdb2a4</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>Explain the concept of prototypal inheritance in JavaScript.</regel>
+    </header>
+    <keuzes>
+      <A>Prototypal inheritance is a way to handle exceptions in JavaScript.</A>
+      <B>Prototypal inheritance is a mechanism where an object inherits properties and methods from its prototype object.</B>
+      <C>Prototypal inheritance is a technique to compress JavaScript code for faster download.</C>
+      <D>Prototypal inheritance is a method to perform encryption and decryption in JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Prototypal inheritance is a fundamental concept in JavaScript where an object inherits properties and methods from its prototype object. In other words, objects can be created based on existing objects, and they inherit behavior from their prototypes, forming a prototype chain.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>fcff2e3b-6fda-4bca-bf35-a7f875120d88</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>What are the different ways to create objects in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>There is only one way to create objects in JavaScript using the 'Object' class.</A>
+      <B>Objects can be created using object literals, constructor functions, the 'Object.create()' method, and the 'class' syntax introduced in ES6.</B>
+      <C>Objects can only be created using constructor functions in JavaScript.</C>
+      <D>Objects can be created using the 'new' keyword followed by a function.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Objects in JavaScript can be created using object literals, constructor functions, the 'Object.create()' method, and the 'class' syntax introduced in ES6. Each approach has its own syntax and use cases.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>230d910f-964b-4d1c-b196-65899f845ac0</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>Explain the concept of memoization in JavaScript.</regel>
+    </header>
+    <keuzes>
+      <A>Memoization is a way to handle errors in JavaScript.</A>
+      <B>Memoization is a technique to cache the results of expensive function calls and reuse them when the same inputs occur again.</B>
+      <C>Memoization is a method to optimize JavaScript code for better performance.</C>
+      <D>Memoization is a method to encrypt and decrypt data in JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Memoization is a technique in JavaScript where the results of expensive function calls are cached and reused when the same inputs occur again. This can significantly improve the performance of functions that are called repeatedly with the same arguments.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>4592d000-8850-49f8-b678-37dd259189ad</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>What is the Event Loop in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>The Event Loop is a way to handle asynchronous events in JavaScript.</A>
+      <B>The Event Loop is a mechanism that ensures JavaScript code executes in a single thread and handles asynchronous operations using the event queue and the call stack.</B>
+      <C>The Event Loop is a technique to optimize JavaScript code for better performance.</C>
+      <D>The Event Loop is a method to create dynamic HTML elements using JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The Event Loop is a mechanism in JavaScript that ensures the execution of JavaScript code occurs in a single thread. It manages the event queue and the call stack, allowing for the handling of asynchronous operations and non-blocking behavior.</uitleg>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>a456c960-9133-4353-b389-044965318434</guid>
+    <volgnummer></volgnummer>
+    <niveau>5</niveau>
+    <onderwerp>Advanced Concepts</onderwerp>
+    <header>
+      <regel>What is the purpose of the 'this' keyword in JavaScript?</regel>
+    </header>
+    <keuzes>
+      <A>The 'this' keyword refers to the current function where it is used.</A>
+      <B>The 'this' keyword is used to access the properties and methods of the parent object.</B>
+      <C>The 'this' keyword is used to create new objects from a constructor function.</C>
+      <D>The 'this' keyword refers to the global object in JavaScript.</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The 'this' keyword in JavaScript is used to refer to the object that the function is a method of. It allows access to the properties and methods of the parent object within the function.</uitleg>
+  </vraag>
 </root>

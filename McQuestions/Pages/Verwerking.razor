@@ -6,13 +6,18 @@
 @code
 {
 	[CascadingParameter]
-	public List<XElement>? xmlQuestions { get; set; }
+	public List<XElement>? xmlQuestionsSelection { get; set; }
+	List<XElement> LocalxmlQuestionsSelection;
 
 	[Parameter]
-	public string naamvragenset { get; set; }
+	public string naamVragenSet { get; set; }
 
 	[Parameter]
 	public string levelQuestions { get; set; }
+
+	[Parameter]
+	public bool show { get; set; }
+
 	public int score = 0;
 
 	public string folderPath;
@@ -29,12 +34,12 @@
 
 	protected override void OnInitialized()
 	{
-		foreach (var question in xmlQuestions)
+		LocalxmlQuestionsSelection = xmlQuestionsSelection;
+		foreach (var question in xmlQuestionsSelection)
 		{
 			if (question.Element("antwoord").Value == question.Element("userantwoord").Value)
 			{ score++; }
 		}
-
 
 		Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlAccount\\");
 		folderPath = Directory.GetCurrentDirectory();
@@ -46,9 +51,9 @@
 
 		XElement doc = new XElement("root");
 		XElement test = new XElement("test");
-		XElement vragenset = new XElement("vragenset", naamvragenset);
+		XElement vragenset = new XElement("vragenset", naamVragenSet);
 		XElement niveau = new XElement("niveau", levelQuestions);
-		XElement aantal = new XElement("aantal", xmlQuestions.Count().ToString());
+		XElement aantal = new XElement("aantal", xmlQuestionsSelection.Count().ToString());
 		XElement scoore = new XElement("score", score);
 		test.Add(vragenset, niveau, aantal, scoore);
 		xmlTests.Add(test);
@@ -64,19 +69,16 @@
 		if (levelQuestions != "6")
 		{
 			// nu nog de gegevens uit xmlTests halen en weergeven 
-			var selec = xmlTests.FindAll(t => t.Element("vragenset").Value == naamvragenset && t.Element("niveau").Value == levelQuestions);
+			var selec = xmlTests.FindAll(t => t.Element("vragenset").Value == naamVragenSet && t.Element("niveau").Value == levelQuestions);
 			sumofquestions = selec.Sum(e => (int)e.Element("aantal"));
 		 
 			sumofscore = selec.Sum(e => (int)e.Element("score"));
 		}
-
-		
-
 	}
 
 	private void ShowAI(string volgnummer)
 	{
-		var q = xmlQuestions.FirstOrDefault(g => g.Element("volgnummer").Value == volgnummer);
+		var q = LocalxmlQuestionsSelection.FirstOrDefault(g => g.Element("volgnummer").Value == volgnummer);
 		if (q.Element("show").Value == "none")
 		{
 			q.Element("show").Value = "flex";
@@ -88,29 +90,37 @@
 	}
 }
 
-@{
-	fraction = (double)score / (double)xmlQuestions.Count();
-	percentage = fraction * 100;
-	result = $"{percentage:0.00}%";
-}
-<p><b>Score: @result (@score / @xmlQuestions.Count)</b> &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
 
-@if (levelQuestions != "6")
+
+@if (xmlQuestionsSelection.Count() != 0)
 {
-	fraction = (double)sumofscore / (double)sumofquestions;
+	fraction = (double)score / (double)xmlQuestionsSelection.Count();
 	percentage = fraction * 100;
 	result = $"{percentage:0.00}%";
-	<p><b>Total score @naamvragenset niveau @levelQuestions: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+
+	if (levelQuestions != "6")
+	{
+		<p><b>Score: @result</b> (@score / @xmlQuestionsSelection.Count) &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
+		fraction = (double)sumofscore / (double)sumofquestions;
+		percentage = fraction * 100;
+		result = $"{percentage:0.00}%";
+		<p><b>Total score @naamVragenSet niveau @levelQuestions: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+
+		<hr />
+		<h2>Antwoorden</h2>
+		<hr />
+	}
+
 }
 
 
 
-<hr />
-<h2>Antwoorden</h2>
-<hr />
+
+
+
 
 <style>
-	@foreach (var question in xmlQuestions)
+	@foreach (var question in xmlQuestionsSelection)
 		{
 			string volgnummer = question.Element("volgnummer").Value;
 			string identifier = $"#q{volgnummer}";
@@ -120,7 +130,7 @@
 </style>
 
 <!--   TESTUITSLAG VRAGEN EN ANTWOORDEN  -->
-@foreach (var question in xmlQuestions)
+@foreach (var question in xmlQuestionsSelection)
 {
 	var letterJuisteAntwoord = question.Element("antwoord").Value;
 	var letterGebruikersAntwoord = question.Element("userantwoord").Value;
@@ -155,11 +165,11 @@
 				<br />
 				<b>Instructions</b>
 				<br />
-				I'm learning to code <span style="color:red">@naamvragenset</span>. Here is a multiple choice question about <span style="color:red">@naamvragenset</span>. On a scale from 1 to 5 (where 1 is beginner and 5 is senior) <span style="color:red">my level is @question.Element("niveau").Value</span>. Please consider my level when answering the question.
+				I'm learning to code <span style="color:red">@naamVragenSet</span>. Here is a multiple choice question about <span style="color:red">@naamVragenSet</span>. On a scale from 1 to 5 (where 1 is beginner and 5 is senior) <span style="color:red">my level is @question.Element("niveau").Value</span>. Please consider my level when answering the question.
 				<br />
 				Tell me the correct answer and explain why it's correct.
 				<br />
-				Explain why the topic <span style="color:red">@question.Element("onderwerp").Value</span> is important in <span style="color:red">@naamvragenset</span>.
+				Explain why the topic <span style="color:red">@question.Element("onderwerp").Value</span> is important in <span style="color:red">@naamVragenSet</span>.
 				If possible provide a simple code example and explain the code.<br />
 				Give me a real-world scenario where such code could be useful.<br />
 				<b>Question</b><br />
@@ -179,12 +189,17 @@
 				<span>Translate your answer in Dutch for a level @question.Element("niveau").Value student and explain like I'm 16 year old.</span>
 				<br /><br />
 				<span><b>Instruction</b></span><br />
-				Can you ask me another multiple choice question about <span style="color:red">@naamvragenset @question.Element("onderwerp").Value</span>
+				Can you ask me another multiple choice question about <span style="color:red">@naamVragenSet @question.Element("onderwerp").Value</span>
 		</p>
 	
 		</div>
 		<hr />
 	</div>
+}
+
+@{
+
+	
 }
 
 

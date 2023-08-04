@@ -1,9 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<test>
-		<vragenset></vragenset>
-		<niveau></niveau>
-		<aantal></aantal>
-		<score></score>
+		<vragenset>C#</vragenset>
+		<niveau>1</niveau>
+		<aantal>5</aantal>
+		<score>3</score>
+	</test>
+	<test>
+		<vragenset>C#</vragenset>
+		<niveau>1</niveau>
+		<aantal>5</aantal>
+		<score>5</score>
 	</test>
 </root>

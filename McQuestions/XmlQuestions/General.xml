@@ -1,153 +1,143 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<vragenset>Algemene ICT</vragenset>
-	<vraag>
-		<disabled></disabled>
-		<guid>0ba565c2-0cfd-470d-bcc1-0b58679f22ea</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Developer Tools</onderwerp>
-		<header>
-			<regel>What does the term 'IDE' stand for?</regel>
-		</header>
-		<keuzes>
-			<A>Integrated Development Environment</A>
-			<B>Interactive Development Environment</B>
-			<C>Interface Design Environment</C>
-			<D>Internet Development Environment</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is A: Integrated Development Environment.
+  <vragenset>Algemene ICT</vragenset>
+  <vraag>
+    <disabled></disabled>
+    <guid>0ba565c2-0cfd-470d-bcc1-0b58679f22ea</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Developer Tools</onderwerp>
+    <header>
+      <regel>What does the term 'IDE' stand for?</regel>
+    </header>
+    <keuzes>
+      <A>Integrated Development Environment</A>
+      <B>Interactive Development Environment</B>
+      <C>Interface Design Environment</C>
+      <D>Internet Development Environment</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is A: Integrated Development Environment.
 
 An Integrated Development Environment (IDE) is a software application that provides a comprehensive set of tools and features to aid programmers in writing, testing, and debugging code for software development. It typically includes a code editor, a compiler or interpreter, a debugger, and other helpful features like code completion, project management, and version control integration.</uitleg>
-		<prompt1>Het juiste antwoord is A: Geïntegreerde Ontwikkelomgeving.
-
-			Een Geïntegreerde Ontwikkelomgeving (IDE) is een softwaretoepassing die een uitgebreide set tools en functies biedt om programmeurs te helpen bij het schrijven, testen en debuggen van code voor softwareontwikkeling. Het omvat meestal een code-editor, een compiler of interpreter, een debugger, en andere handige functies zoals code-aanvulling, projectbeheer en integratie van versiebeheer.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>ce2ad38e-0572-4a10-94b7-4989c8a61a2b</guid>
-		<volgnummer>Control structures</volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What is the purpose of the 'if' statement in programming?</regel>
-		</header>
-		<keuzes>
-			<A>It declares a loop</A>
-			<B>It defines a method</B>
-			<C>It checks a condition and executes code based on the result</C>
-			<D>It prints text on the console</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is C. 
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>ce2ad38e-0572-4a10-94b7-4989c8a61a2b</guid>
+    <volgnummer>Control structures</volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What is the purpose of the 'if' statement in programming?</regel>
+    </header>
+    <keuzes>
+      <A>It declares a loop</A>
+      <B>It defines a method</B>
+      <C>It checks a condition and executes code based on the result</C>
+      <D>It prints text on the console</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is C. 
 
 Explanation:
 The 'if' statement is a fundamental control structure in programming used to make decisions based on certain conditions. It allows the program to execute different blocks of code depending on whether a specific condition is true or false.
 
 Here's a concise explanation for beginners:
 In programming, the 'if' statement helps us make decisions, just like how we make decisions in everyday life. Imagine you want to go outside. Before you step out, you check the weather condition. If it's sunny, you'll take your sunglasses; if it's raining, you'll take an umbrella. The 'if' statement works similarly in code.</uitleg>
-		<prompt1>Het juiste antwoord is A.
+    <prompt1>Het juiste antwoord is A.
 Uitleg:
 Het 'if'-statement is een fundamentele controlestructuur in programmeren die wordt gebruikt om beslissingen te nemen op basis van bepaalde voorwaarden. Hiermee kan het programma verschillende codeblokken uitvoeren, afhankelijk van of een specifieke voorwaarde waar is of niet.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>adbf243b-a120-4247-862f-d837a8df0804</guid>
-		<volgnummer>Console</volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What does the 'Console.WriteLine()' method do in C#?</regel>
-		</header>
-		<keuzes>
-			<A>It reads input from the console</A>
-			<B>It displays output on the console</B>
-			<C>It performs mathematical calculations</C>
-			<D>It opens a file for writing</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is B.
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>adbf243b-a120-4247-862f-d837a8df0804</guid>
+    <volgnummer>Console</volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What does the 'Console.WriteLine()' method do in C#?</regel>
+    </header>
+    <keuzes>
+      <A>It reads input from the console</A>
+      <B>It displays output on the console</B>
+      <C>It performs mathematical calculations</C>
+      <D>It opens a file for writing</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is B.
 
 Explanation:
 In C#, the Console.WriteLine() method is used to display output on the console (command-line interface). It is commonly used to print messages, text, or the results of calculations to the console so that users can see the output.</uitleg>
-		<prompt1>Het juiste antwoord is B.
+    <prompt1>Het juiste antwoord is B.
 
 Uitleg:
 In C# wordt de Console.WriteLine() methode gebruikt om output op de console (command-line interface) weer te geven. Het wordt vaak gebruikt om berichten, tekst of de resultaten van berekeningen op de console af te drukken, zodat gebruikers de uitvoer kunnen zien.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>ae5ff180-3a43-49dd-9b9a-3ca4aad3e8ed</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>HTML</onderwerp>
-		<header>
-			<regel>What does the acronym "HTML" stand for?</regel>
-		</header>
-		<keuzes>
-			<A>Hyperlink and Text Markup Language</A>
-			<B>High-Level Programming Language</B>
-			<C>Hypertext Markup Language</C>
-			<D>Home Tool Markup Language</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is C. 
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>ae5ff180-3a43-49dd-9b9a-3ca4aad3e8ed</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>HTML</onderwerp>
+    <header>
+      <regel>What does the acronym "HTML" stand for?</regel>
+    </header>
+    <keuzes>
+      <A>Hyperlink and Text Markup Language</A>
+      <B>High-Level Programming Language</B>
+      <C>Hypertext Markup Language</C>
+      <D>Home Tool Markup Language</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is C. 
 
 Explanation:
 HTML stands for "Hypertext Markup Language." It is the standard markup language used for creating and structuring content on webpages. HTML uses a system of tags and attributes to define the structure and presentation of web content, such as text, images, links, and multimedia. It allows web browsers to interpret and display the content correctly to users.
 
 In simpler terms, HTML provides the building blocks that allow web developers to create webpages and define how different elements should be displayed on a website. It forms the backbone of the web and is an essential language for anyone involved in web development.</uitleg>
-		<prompt1>Het juiste antwoord is C.
+    <prompt1>Het juiste antwoord is C.
 
 			Uitleg:
 			HTML staat voor "Hypertext Markup Language". Het is de standaard opmaaktaal die wordt gebruikt voor het maken en structureren van inhoud op webpagina's. HTML maakt gebruik van een systeem van tags en attributen om de structuur en presentatie van webinhoud te definiëren, zoals tekst, afbeeldingen, links en multimedia. Het stelt webbrowsers in staat om de inhoud correct te interpreteren en weer te geven aan gebruikers.
 
 			In eenvoudigere bewoordingen, HTML levert de bouwstenen waarmee webontwikkelaars webpagina's kunnen maken en kunnen bepalen hoe verschillende elementen op een website worden weergegeven. Het vormt de ruggengraat van het web en is een essentiële taal voor iedereen die betrokken is bij webontwikkeling.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>9c9e0fe3-cd5d-42cd-89b4-99846a9d13bf</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>CSS</onderwerp>
-		<header>
-			<regel>What does the acronym "CSS" stand for?</regel>
-		</header>
-		<keuzes>
-			<A>Cascading Style Sheets</A>
-			<B>Computer Science and Software</B>
-			<C>Client-Side Scripting</C>
-			<D>Common Source System</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is A. 
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>9c9e0fe3-cd5d-42cd-89b4-99846a9d13bf</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>CSS</onderwerp>
+    <header>
+      <regel>What does the acronym "CSS" stand for?</regel>
+    </header>
+    <keuzes>
+      <A>Cascading Style Sheets</A>
+      <B>Computer Science and Software</B>
+      <C>Client-Side Scripting</C>
+      <D>Common Source System</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is A. 
 
 Explanation:
 CSS stands for "Cascading Style Sheets." It is a style sheet language used in web development to control the presentation and layout of HTML documents. CSS is responsible for defining how elements on a webpage should be displayed, including aspects such as colors, fonts, spacing, positioning, and more.
@@ -155,7 +145,7 @@ CSS stands for "Cascading Style Sheets." It is a style sheet language used in we
 The term "cascading" in CSS refers to the way styles are applied in a hierarchical manner, allowing developers to define styles at different levels and have them cascade down to affect various elements. This enables efficient and consistent styling across a website.
 
 In summary, CSS complements HTML by providing a way to separate the content from its presentation, making it easier to maintain and update the visual aspects of a website. It is a crucial technology in modern web development for creating appealing and responsive webpages.</uitleg>
-		<prompt1>Het juiste antwoord is A.
+    <prompt1>Het juiste antwoord is A.
 
 Uitleg:
 CSS staat voor "Cascading Style Sheets". Het is een stijlbladtaal die wordt gebruikt in webontwikkeling om de presentatie en lay-out van HTML-documenten te beheersen. CSS is verantwoordelijk voor het definiëren van hoe elementen op een webpagina moeten worden weergegeven, inclusief aspecten zoals kleuren, lettertypen, ruimte, positionering en meer.
@@ -163,250 +153,242 @@ CSS staat voor "Cascading Style Sheets". Het is een stijlbladtaal die wordt gebr
 Het woord "cascading" in CSS verwijst naar de manier waarop stijlen hiërarchisch worden toegepast, waardoor ontwikkelaars stijlen op verschillende niveaus kunnen definiëren en deze kunnen laten doorstromen om verschillende elementen te beïnvloeden. Dit maakt efficiënte en consistente opmaak mogelijk voor een website.
 
 Samengevat, CSS vult HTML aan door een manier te bieden om de inhoud van de presentatie te scheiden, waardoor het gemakkelijker wordt om de visuele aspecten van een website te onderhouden en bij te werken. Het is een essentiële technologie in moderne webontwikkeling voor het creëren van aantrekkelijke en responsieve webpagina's.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>3a20e270-dd35-4e8d-9016-5e18b87a4e7f</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>Which programming language is widely used for web development?</regel>
-		</header>
-		<keuzes>
-			<A>Java</A>
-			<B>Python</B>
-			<C>JavaScript</C>
-			<D>C++</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is C.
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>3a20e270-dd35-4e8d-9016-5e18b87a4e7f</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>Which programming language is widely used for web development?</regel>
+    </header>
+    <keuzes>
+      <A>Java</A>
+      <B>Python</B>
+      <C>JavaScript</C>
+      <D>C++</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is C.
 
 Explanation:
 JavaScript is widely used for web development. It is a versatile and powerful programming language that is primarily used to add interactivity and dynamic features to websites. JavaScript runs on the client-side, meaning it is executed by the web browser on the user's device.</uitleg>
-		<prompt1>Het correcte antwoord is C.
+    <prompt1>Het correcte antwoord is C.
 Uitleg:
 JavaScript wordt veel gebruikt voor webontwikkeling. Het is een veelzijdige en krachtige programmeertaal die voornamelijk wordt gebruikt om interactiviteit en dynamische functies aan websites toe te voegen. JavaScript wordt aan de clientzijde uitgevoerd, wat betekent dat het wordt uitgevoerd door de webbrowser op het apparaat van de gebruiker.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>f490e858-d5e5-4b7a-bd41-0ecc2a5d63b9</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>database system</onderwerp>
-		<header>
-			<regel>What is the purpose of a database management system (DBMS)?</regel>
-		</header>
-		<keuzes>
-			<A>To perform mathematical calculations</A>
-			<B>To design user interfaces</B>
-			<C>To create web applications</C>
-			<D>To store and manage data</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is D.
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>f490e858-d5e5-4b7a-bd41-0ecc2a5d63b9</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>database system</onderwerp>
+    <header>
+      <regel>What is the purpose of a database management system (DBMS)?</regel>
+    </header>
+    <keuzes>
+      <A>To perform mathematical calculations</A>
+      <B>To design user interfaces</B>
+      <C>To create web applications</C>
+      <D>To store and manage data</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is D.
 
 Explanation:
 A Database Management System (DBMS) is a software application that allows users to interact with a database. Its primary purpose is to store, organize, retrieve, and manage data efficiently and securely.</uitleg>
-		<prompt1>Het juiste antwoord is D.
+    <prompt1>Het juiste antwoord is D.
 
 Uitleg:
 Een Database Management Systeem (DBMS) is een softwaretoepassing waarmee gebruikers kunnen communiceren met een database. Het primaire doel is om gegevens efficiënt en veilig op te slaan, te organiseren, op te halen en te beheren.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>90a07c76-ca2b-4d72-9e72-ce42d74f9911</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>operating system</onderwerp>
-		<header>
-			<regel>What is the function of an operating system?</regel>
-		</header>
-		<keuzes>
-			<A>To perform data analysis</A>
-			<B>To write programs</B>
-			<C>To browse the internet</C>
-			<D>To manage computer hardware and software resources</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is D. To manage computer hardware and software resources
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>90a07c76-ca2b-4d72-9e72-ce42d74f9911</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>operating system</onderwerp>
+    <header>
+      <regel>What is the function of an operating system?</regel>
+    </header>
+    <keuzes>
+      <A>To perform data analysis</A>
+      <B>To write programs</B>
+      <C>To browse the internet</C>
+      <D>To manage computer hardware and software resources</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is D. To manage computer hardware and software resources
 
 Explanation:
 The function of an operating system is to manage computer hardware and software resources to provide an environment for running applications and executing tasks efficiently. It serves as the intermediary between the user and the computer hardware, ensuring that various software programs can work together and utilize the hardware resources effectively.</uitleg>
-		<prompt1>Het juiste antwoord is D. 
+    <prompt1>Het juiste antwoord is D. 
 
 Uitleg:
 De functie van een besturingssysteem is om computerhardware- en softwarebronnen te beheren om een omgeving te bieden voor het efficiënt uitvoeren van toepassingen en taken. Het dient als tussenpersoon tussen de gebruiker en de computerhardware en zorgt ervoor dat verschillende softwareprogramma's kunnen samenwerken en de hardwarebronnen effectief kunnen gebruiken.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>145822f3-a2fb-4375-9237-4774e29d1197</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Networks</onderwerp>
-		<header>
-			<regel>What is the purpose of an IP address?</regel>
-		</header>
-		<keuzes>
-			<A>To uniquely identify a device on a network</A>
-			<B>To encrypt data during transmission</B>
-			<C>To display web pages</C>
-			<D>To provide virus protection</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is A.
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>145822f3-a2fb-4375-9237-4774e29d1197</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Networks</onderwerp>
+    <header>
+      <regel>What is the purpose of an IP address?</regel>
+    </header>
+    <keuzes>
+      <A>To uniquely identify a device on a network</A>
+      <B>To encrypt data during transmission</B>
+      <C>To display web pages</C>
+      <D>To provide virus protection</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is A.
 
 Explanation:
 The purpose of an IP address is to uniquely identify a device on a network, enabling it to communicate with other devices over the internet or a local network.</uitleg>
-		<prompt1>Het juiste antwoord is A.
+    <prompt1>Het juiste antwoord is A.
 
 Uitleg:
 Het doel van een IP-adres is om een apparaat op een netwerk uniek te identificeren, waardoor het kan communiceren met andere apparaten via internet of een lokaal netwerk.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>7222aa4a-2c3c-4ba8-9086-8af8c5b6ae01</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Router</onderwerp>
-		<header>
-			<regel>What is the primary function of a router?</regel>
-		</header>
-		<keuzes>
-			<A>To connect peripheral devices to a computer</A>
-			<B>To store and manage data</B>
-			<C>To forward network traffic between different networks</C>
-			<D>To execute computer programs</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is C.
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>7222aa4a-2c3c-4ba8-9086-8af8c5b6ae01</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Router</onderwerp>
+    <header>
+      <regel>What is the primary function of a router?</regel>
+    </header>
+    <keuzes>
+      <A>To connect peripheral devices to a computer</A>
+      <B>To store and manage data</B>
+      <C>To forward network traffic between different networks</C>
+      <D>To execute computer programs</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is C.
 
 Explanation:
 The primary function of a router is to forward network traffic between different networks. A router is a networking device that operates at the network layer (Layer 3) of the OSI model and is essential for interconnecting multiple networks, such as home networks, local area networks (LANs), or wide area networks (WANs).</uitleg>
-		<prompt1>Het juiste antwoord is C.
+    <prompt1>Het juiste antwoord is C.
 
 Uitleg:
 De belangrijkste functie van een router is het doorsturen van netwerkverkeer tussen verschillende netwerken. Een router is een netwerkapparaat dat opereert op de netwerklaag (laag 3) van het OSI-model en is essentieel voor het verbinden van meerdere netwerken, zoals thuisnetwerken, lokale netwerken (LAN's) of wide area networks (WAN's).</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>1f49634c-30bc-40ec-82e1-3304bd40da42</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Compiler</onderwerp>
-		<header>
-			<regel>What is the purpose of a compiler in programming?</regel>
-		</header>
-		<keuzes>
-			<A>To translate source code into machine code</A>
-			<B>To manage databases</B>
-			<C>To create user interfaces</C>
-			<D>To establish network connections</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is A. 
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>1f49634c-30bc-40ec-82e1-3304bd40da42</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Compiler</onderwerp>
+    <header>
+      <regel>What is the purpose of a compiler in programming?</regel>
+    </header>
+    <keuzes>
+      <A>To translate source code into machine code</A>
+      <B>To manage databases</B>
+      <C>To create user interfaces</C>
+      <D>To establish network connections</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is A. 
 
 Explanation:
 The purpose of a compiler in programming is to translate the high-level source code written by developers into machine code or low-level code that can be directly executed by the computer's hardware. This process is known as compilation.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>16b2538c-5828-4858-ba33-fbdb1fed4ce5</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp>Internet</onderwerp>
-		<header>
-			<regel>What does the acronym "URL" stand for?</regel>
-		</header>
-		<keuzes>
-			<A>Ultra Rapid Language</A>
-			<B>User Research Laboratory</B>
-			<C>Universal Routing Language</C>
-			<D>Uniform Resource Locator</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The answer is D. The acronym "URL" stands for "Uniform Resource Locator."
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>16b2538c-5828-4858-ba33-fbdb1fed4ce5</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>Internet</onderwerp>
+    <header>
+      <regel>What does the acronym "URL" stand for?</regel>
+    </header>
+    <keuzes>
+      <A>Ultra Rapid Language</A>
+      <B>User Research Laboratory</B>
+      <C>Universal Routing Language</C>
+      <D>Uniform Resource Locator</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The answer is D. The acronym "URL" stands for "Uniform Resource Locator."
 
 Explanation:
 A URL is a reference or address used to identify and locate resources on the internet. It consists of the protocol, domain name, and specific path to the resource on the World Wide Web. URLs are essential for web browsing and accessing web pages and resources on the internet.</uitleg>
-		<prompt1>Het juiste antwoord is A.
+    <prompt1>Het juiste antwoord is A.
 
 Uitleg:
 Het doel van een compiler in de programmering is om de door ontwikkelaars geschreven hoog-niveau-broncode te vertalen naar machinetaal of lage-niveau-code die rechtstreeks kan worden uitgevoerd door de hardware van de computer. Dit proces staat bekend als compilatie.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>9d0e1d1a-ea2b-42f5-b42c-70841a7c73a5</guid>
-		<volgnummer>WWW</volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What does the acronym "FTP" stand for?</regel>
-		</header>
-		<keuzes>
-			<A>File Transfer Protocol</A>
-			<B>File Type Preview</B>
-			<C>Front-End Testing Platform</C>
-			<D>Form Template Processing</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer A. 
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>9d0e1d1a-ea2b-42f5-b42c-70841a7c73a5</guid>
+    <volgnummer>WWW</volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What does the acronym "FTP" stand for?</regel>
+    </header>
+    <keuzes>
+      <A>File Transfer Protocol</A>
+      <B>File Type Preview</B>
+      <C>Front-End Testing Platform</C>
+      <D>Form Template Processing</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer A. 
 Explanation:
 The acronym "FTP" stands for "File Transfer Protocol." It is a standard network protocol used for transferring files from one host to another over a TCP-based network, such as the internet or an intranet.
 
 Here's a brief explanation:
 
 FTP allows users to upload and download files between a client (usually a computer) and a server. It is commonly used for file management tasks, such as publishing web pages, sharing files between computers, and updating files on remote servers. FTP clients are software applications that enable users to connect to FTP servers and transfer files using this protocol. FTP is widely used in web development and website hosting environments to manage files and content.</uitleg>
-		<prompt1>Het juiste antwoord is A.
+    <prompt1>Het juiste antwoord is A.
 
 Uitleg:
 Het acroniem "FTP" staat voor "File Transfer Protocol". Het is een standaard netwerkprotocol dat wordt gebruikt voor het overdragen van bestanden van de ene host naar de andere via een TCP-gebaseerd netwerk, zoals het internet of een intranet.
@@ -414,283 +396,273 @@ Het acroniem "FTP" staat voor "File Transfer Protocol". Het is een standaard net
 Hier is een korte uitleg:
 
 FTP stelt gebruikers in staat om bestanden te uploaden en te downloaden tussen een client (meestal een computer) en een server. Het wordt vaak gebruikt voor bestandsbeheertaken, zoals het publiceren van webpagina's, het delen van bestanden tussen computers en het bijwerken van bestanden op externe servers. FTP-clients zijn softwaretoepassingen waarmee gebruikers verbinding kunnen maken met FTP-servers en bestanden kunnen overdragen met behulp van dit protocol. FTP wordt veel gebruikt in webontwikkeling en websitehosting om bestanden en inhoud te beheren.</prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>224aafe3-e201-40bc-84a3-a1588b9924e7</guid>
-		<volgnummer>WWW</volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What is the purpose of a DNS server?</regel>
-		</header>
-		<keuzes>
-			<A>To compress data for storage</A>
-			<B>To translate domain names into IP addresses</B>
-			<C>To analyze network traffic</C>
-			<D>To create graphic designs</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is B.
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>224aafe3-e201-40bc-84a3-a1588b9924e7</guid>
+    <volgnummer>WWW</volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What is the purpose of a DNS server?</regel>
+    </header>
+    <keuzes>
+      <A>To compress data for storage</A>
+      <B>To translate domain names into IP addresses</B>
+      <C>To analyze network traffic</C>
+      <D>To create graphic designs</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is B.
 
 Explanation:
 The purpose of a DNS (Domain Name System) server is to translate domain names into IP addresses. DNS is a hierarchical and distributed system used on the internet to associate domain names (e.g., www.example.com) with their corresponding IP addresses (e.g., 192.0.2.1).</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>944068da-39c5-48a8-a47b-fb3536287a88</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What is the role of a cache in computing?</regel>
-		</header>
-		<keuzes>
-			<A>To encrypt sensitive information</A>
-			<B>To temporarily store data for faster access</B>
-			<C>To execute program instructions</C>
-			<D>To maintain network security</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is B.
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>944068da-39c5-48a8-a47b-fb3536287a88</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What is the role of a cache in computing?</regel>
+    </header>
+    <keuzes>
+      <A>To encrypt sensitive information</A>
+      <B>To temporarily store data for faster access</B>
+      <C>To execute program instructions</C>
+      <D>To maintain network security</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is B.
 
 Explanation:
 The role of a cache in computing is to temporarily store data or frequently accessed instructions in a location that allows for faster retrieval. A cache is a high-speed memory or storage area that sits between the central processing unit (CPU) and the main memory (RAM) in a computer system.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>22fb79c2-4dc8-4125-a233-0eed386ee026</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What is the purpose of a VPN (Virtual Private Network)?</regel>
-		</header>
-		<keuzes>
-			<A>To design user interfaces</A>
-			<B>To convert analog signals to digital signals</B>
-			<C>To create a secure, private connection over a public network</C>
-			<D>To perform complex calculations</D>
-		</keuzes>
-		<antwoord>C</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is C. 
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>22fb79c2-4dc8-4125-a233-0eed386ee026</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What is the purpose of a VPN (Virtual Private Network)?</regel>
+    </header>
+    <keuzes>
+      <A>To design user interfaces</A>
+      <B>To convert analog signals to digital signals</B>
+      <C>To create a secure, private connection over a public network</C>
+      <D>To perform complex calculations</D>
+    </keuzes>
+    <antwoord>C</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is C. 
 
 Explanation:
 The purpose of a VPN (Virtual Private Network) is to create a secure and private connection over a public network, such as the internet. It allows users to access a private network (e.g., a company's internal network) securely from a remote location.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>e8bf1b67-ecad-4b9d-992a-286f74a63a87</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What is the role of an antivirus software?</regel>
-		</header>
-		<keuzes>
-			<A>To manage network resources</A>
-			<B>To design database schemas</B>
-			<C>To write computer programs</C>
-			<D>To protect against malware and viruses</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is D.
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>e8bf1b67-ecad-4b9d-992a-286f74a63a87</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What is the role of an antivirus software?</regel>
+    </header>
+    <keuzes>
+      <A>To manage network resources</A>
+      <B>To design database schemas</B>
+      <C>To write computer programs</C>
+      <D>To protect against malware and viruses</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is D.
 
 Explanation:
 The role of antivirus software is to protect a computer system against malware and viruses. Antivirus software is a type of security software designed to detect, prevent, and remove malicious software (malware) from a computer or network.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>13deace5-c186-4183-982a-9154e37aebdd</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What is the purpose of a web browser?</regel>
-		</header>
-		<keuzes>
-			<A>To access and view websites</A>
-			<B>To store and organize data</B>
-			<C>To create 3D graphics</C>
-			<D>To debug software code</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is A.
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>13deace5-c186-4183-982a-9154e37aebdd</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What is the purpose of a web browser?</regel>
+    </header>
+    <keuzes>
+      <A>To access and view websites</A>
+      <B>To store and organize data</B>
+      <C>To create 3D graphics</C>
+      <D>To debug software code</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is A.
 
 Explanation:
 The purpose of a web browser is to access and view websites on the World Wide Web. A web browser is a software application that allows users to interact with webpages, view various types of content, and navigate the internet.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>a7991149-6aa3-48e5-9146-5cb73d68c2d2</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What is the primary function of a proxy server?</regel>
-		</header>
-		<keuzes>
-			<A>To perform data analysis</A>
-			<B>To act as an intermediary between client and server requests</B>
-			<C>To develop mobile applications</C>
-			<D>To forward network traffic between different networks</D>
-		</keuzes>
-		<antwoord>B</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is B.
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>a7991149-6aa3-48e5-9146-5cb73d68c2d2</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What is the primary function of a proxy server?</regel>
+    </header>
+    <keuzes>
+      <A>To perform data analysis</A>
+      <B>To act as an intermediary between client and server requests</B>
+      <C>To develop mobile applications</C>
+      <D>To forward network traffic between different networks</D>
+    </keuzes>
+    <antwoord>B</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is B.
 
 Explanation:
 The primary function of a proxy server is to act as an intermediary between client devices (such as computers or smartphones) and server requests. When a client makes a request to access a resource (like a website or a file) on the internet, the proxy server forwards that request on behalf of the client to the destination server.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>a9d4e5dc-ab4a-4ab1-9498-30d4a383e4bc</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What is the purpose of a backup in computing?</regel>
-		</header>
-		<keuzes>
-			<A>To manage computer networks</A>
-			<B>To compile programming code</B>
-			<C>To browse the internet</C>
-			<D>To create copies of data for safekeeping</D>
-		</keuzes>
-		<antwoord>D</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is: <D>To create copies of data for safekeeping</D>.
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>a9d4e5dc-ab4a-4ab1-9498-30d4a383e4bc</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What is the purpose of a backup in computing?</regel>
+    </header>
+    <keuzes>
+      <A>To manage computer networks</A>
+      <B>To compile programming code</B>
+      <C>To browse the internet</C>
+      <D>To create copies of data for safekeeping</D>
+    </keuzes>
+    <antwoord>D</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is: <D>To create copies of data for safekeeping</D>.
 
 Explanation:
 The purpose of a backup in computing is to create copies of data for safekeeping and disaster recovery. Backups are essential for preserving important information and ensuring that data can be restored in case of data loss, accidental deletion, hardware failure, or other emergencies.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>08e160be-4458-4914-a28b-3a9248379952</guid>
-		<volgnummer></volgnummer>
-		<niveau>1</niveau>
-		<onderwerp></onderwerp>
-		<header>
-			<regel>What is the role of a firewall in network security?</regel>
-		</header>
-		<keuzes>
-			<A>To monitor and control incoming and outgoing network traffic</A>
-			<B>To store and manage data</B>
-			<C>To create website layouts</C>
-			<D>To develop mobile applications</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is A.
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>08e160be-4458-4914-a28b-3a9248379952</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp></onderwerp>
+    <header>
+      <regel>What is the role of a firewall in network security?</regel>
+    </header>
+    <keuzes>
+      <A>To monitor and control incoming and outgoing network traffic</A>
+      <B>To store and manage data</B>
+      <C>To create website layouts</C>
+      <D>To develop mobile applications</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is A.
 
 Explanation:
 The role of a firewall in network security is to monitor and control incoming and outgoing network traffic. A firewall acts as a barrier between an internal network (such as a company's network) and the external network (usually the internet), filtering and controlling the flow of data packets to protect the internal network from unauthorized access and potential threats.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>1daaaf09-868e-46d6-84f4-0f38b3016017</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Object-Oriented Programming</onderwerp>
-		<header>
-			<regel>Which principle of object-oriented programming promotes the reusability of code?</regel>
-		</header>
-		<keuzes>
-			<A>DRY (Don't Repeat Yourself)</A>
-			<B>Encapsulation</B>
-			<C>Inheritance</C>
-			<D>Polymorphism</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>The correct answer is A. 
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>1daaaf09-868e-46d6-84f4-0f38b3016017</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Object-Oriented Programming</onderwerp>
+    <header>
+      <regel>Which principle of object-oriented programming promotes the reusability of code?</regel>
+    </header>
+    <keuzes>
+      <A>DRY (Don't Repeat Yourself)</A>
+      <B>Encapsulation</B>
+      <C>Inheritance</C>
+      <D>Polymorphism</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>The correct answer is A. 
 The "DRY" (Don't Repeat Yourself) principle of object-oriented programming promotes the reusability of code. It encourages developers to avoid duplicating code by abstracting common functionality into reusable components or functions. Encapsulation is a principle that focuses on bundling data and methods together, inheritance allows objects to inherit properties and methods from other objects, and polymorphism allows objects to take multiple forms and respond to the same method differently.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
-	
-	<vraag>
-		<disabled></disabled>
-		<guid>a0017f79-1b8f-4682-8675-976d77d32fd4</guid>
-		<volgnummer></volgnummer>
-		<niveau>2</niveau>
-		<onderwerp>Version Control Systems</onderwerp>
-		<header>
-			<regel>Which version control system is distributed and allows for offline work and local branching?</regel>
-		</header>
-		<keuzes>
-			<A>Git</A>
-			<B>Subversion (SVN)</B>
-			<C>Mercurial</C>
-			<D>Perforce</D>
-		</keuzes>
-		<antwoord>A</antwoord>
-		<userantwoord></userantwoord>
-		<show>none</show>
-		<uitleg>Correct answer is A. Git is a distributed version control system that allows for offline work and local branching. It provides a complete copy of the repository on each user's machine, allowing them to work independently and synchronize changes later. Subversion (SVN), Mercurial, and Perforce are also version control systems, but they have different characteristics and workflows compared to Git.</uitleg>
-		<prompt1></prompt1>
-		<prompt2></prompt2>
-		<prompt3></prompt3>
-		<prompt4></prompt4>
-	</vraag>
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
+  <vraag>
+    <disabled></disabled>
+    <guid>a0017f79-1b8f-4682-8675-976d77d32fd4</guid>
+    <volgnummer></volgnummer>
+    <niveau>2</niveau>
+    <onderwerp>Version Control Systems</onderwerp>
+    <header>
+      <regel>Which version control system is distributed and allows for offline work and local branching?</regel>
+    </header>
+    <keuzes>
+      <A>Git</A>
+      <B>Subversion (SVN)</B>
+      <C>Mercurial</C>
+      <D>Perforce</D>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg>Correct answer is A. Git is a distributed version control system that allows for offline work and local branching. It provides a complete copy of the repository on each user's machine, allowing them to work independently and synchronize changes later. Subversion (SVN), Mercurial, and Perforce are also version control systems, but they have different characteristics and workflows compared to Git.</uitleg>
+    <prompt1></prompt1>
+    <prompt2></prompt2>
+    <prompt3></prompt3>
+    <prompt4></prompt4>
+  </vraag>
 </root>

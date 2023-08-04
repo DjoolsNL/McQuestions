@@ -6,7 +6,7 @@
 		<guid>a91ab859-d674-43b5-a03d-db60aca22395</guid>
 		<volgnummer></volgnummer>
 		<niveau>1</niveau>
-		<onderwerp></onderwerp>
+		<onderwerp>HTML</onderwerp>
 		<header>
 			<regel>What does HTML stand for?</regel>
 		</header>
@@ -26,7 +26,7 @@
 		<guid>8d5ae14d-9cce-45c5-b253-3a274b3adc98</guid>
 		<volgnummer></volgnummer>
 		<niveau>1</niveau>
-		<onderwerp></onderwerp>
+		<onderwerp>HTML</onderwerp>
 		<header>
 			<regel>Which tag is used to define a paragraph in HTML?</regel>
 		</header>
@@ -46,7 +46,7 @@
 		<guid>54cfe36c-d4dc-4dd9-b84c-eb46c917d9e6</guid>
 		<volgnummer></volgnummer>
 		<niveau>1</niveau>
-		<onderwerp></onderwerp>
+		<onderwerp>CSS</onderwerp>
 		<header>
 			<regel>Which CSS property is used to change the font color of an element?</regel>
 		</header>
@@ -66,7 +66,7 @@
 		<guid>7a3e426a-38c5-4c57-be41-ac8a440d5425</guid>
 		<volgnummer></volgnummer>
 		<niveau>1</niveau>
-		<onderwerp></onderwerp>
+		<onderwerp>CSS</onderwerp>
 		<header>
 			<regel>How do you select an element with the ID "myElement" in CSS?</regel>
 		</header>
@@ -106,7 +106,7 @@
 		<guid>c7fd1843-5689-4909-b367-ee5a5065f130</guid>
 		<volgnummer></volgnummer>
 		<niveau>1</niveau>
-		<onderwerp></onderwerp>
+		<onderwerp>HTML</onderwerp>
 		<header>
 			<regel>What is the correct syntax for commenting in HTML?</regel>
 		</header>
@@ -126,7 +126,7 @@
 		<guid>00dee231-eaea-4a23-a19d-d8d41ec2e234</guid>
 		<volgnummer></volgnummer>
 		<niveau>1</niveau>
-		<onderwerp></onderwerp>
+		<onderwerp>CSS</onderwerp>
 		<header>
 			<regel>Which CSS property is used to add spacing between elements?</regel>
 		</header>
@@ -146,7 +146,7 @@
 		<guid>4fda128d-b58e-4fdf-99e3-ed49fa555909</guid>
 		<volgnummer></volgnummer>
 		<niveau>1</niveau>
-		<onderwerp></onderwerp>
+		<onderwerp>HTML</onderwerp>
 		<header>
 			<regel>Which tag is used to create an unordered list in HTML?</regel>
 		</header>
@@ -166,7 +166,7 @@
 		<guid>dbd19532-0f07-41f2-a502-d416d689e250</guid>
 		<volgnummer></volgnummer>
 		<niveau>1</niveau>
-		<onderwerp></onderwerp>
+		<onderwerp>HTML</onderwerp>
 		<header>
 			<regel>What is the default display value for a &lt;div&gt; element?</regel>
 		</header>
@@ -186,7 +186,7 @@
 		<guid>52f19e2b-6304-454b-af8a-7d4e36b4864e</guid>
 		<volgnummer></volgnummer>
 		<niveau>1</niveau>
-		<onderwerp></onderwerp>
+		<onderwerp>CSS</onderwerp>
 		<header>
 			<regel>Which CSS property is used to control the background image of an element?</regel>
 		</header>
@@ -204,7 +204,7 @@
 	<vraag>
 		<disabled></disabled>
 		<guid>c469f49d-4b29-468a-a8f7-e21713ce5358</guid>
-		<volgnummer></volgnummer>
+		<volgnummer>CSS</volgnummer>
 		<niveau>2</niveau>
 		<onderwerp>CSS Box Model</onderwerp>
 		<header>
@@ -346,7 +346,7 @@
 		<guid>45f7b4e1-5ee2-4ed5-be92-5e4126f19642</guid>
 		<volgnummer></volgnummer>
 		<niveau>2</niveau>
-		<onderwerp>HTML5 Semantic Elements</onderwerp>
+		<onderwerp>HTML Semantic Elements</onderwerp>
 		<header>
 			<regel>Which HTML5 element is used to group together related form elements?</regel>
 		</header>
@@ -366,9 +366,9 @@
 		<guid>f1d83835-e80a-42b5-8cd0-d59c5b02eb2f</guid>
 		<volgnummer></volgnummer>
 		<niveau>2</niveau>
-		<onderwerp>HTML5 Audio and Video</onderwerp>
+		<onderwerp>HTML Audio and Video</onderwerp>
 		<header>
-			<regel>Which HTML5 element is used to embed video content?</regel>
+			<regel>Which HTML element is used to embed video content?</regel>
 		</header>
 		<keuzes>
 			<A>&lt;video&gt;</A>
