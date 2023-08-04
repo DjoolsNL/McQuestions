@@ -12,8 +12,6 @@
 	public string levelQuestions { get; set; }
 	[Parameter]
 	public string naamVragenSet { get; set; }
-	[Parameter]
-	public bool show { get; set; }
 
 	[CascadingParameter]
 	public List<XElement>? xmlQuestionsSelection { get; set; }
@@ -23,8 +21,6 @@
 	private int score = 0;
 	private string answer = "";
 	private string submitButtonText = "Maak een keuze";
-	
-	
 
 	private int randomNumber;
 
@@ -36,64 +32,7 @@
 
 	protected override void OnInitialized()
 	{
-		//Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
-		//string fullpath = Path.Combine(Directory.GetCurrentDirectory(), pathXmlFile);
-		//var xmlString = File.ReadAllText(fullpath);
-		//var rootElement = XElement.Parse(xmlString);
-		
-		//naamVragenSet = rootElement.Element("vragenset").Value;
-		//// selecteer alleen vragen die niet disabled zijn:
-		//xmlQuestions = rootElement.Elements("vraag").Distinct().Where(e => e.Element("disabled").Value != "true").ToList();
 
-		int volgnummer = 1;
-		foreach (var question in xmlQuestionsSelection)
-		{
-			question.Element("volgnummer").Value = volgnummer.ToString();
-			volgnummer++;
-		}
-
-		// als user voor beperkt aantal vragen heeft gekozen 
-		//if (totalQuestions != 0 && levelQuestions != 0)
-		//{
-		//	if (levelQuestions == 6)
-		//	{
-		//		var ssss = xmlQuestions.ToList();
-		//		xmlQuestions.Clear();
-
-		//		for (int i = 0; i < totalQuestions; i++)
-		//		{
-		//			randomNumber = RandomHelper.Next(0, ssss.Count());
-		//			xmlQuestions.Add(ssss[randomNumber]);
-		//			ssss.RemoveAt(randomNumber);
-		//		}
-		//	}
-		//	else
-		//	{
-		//		var ssss  = xmlQuestions.FindAll(l => l.Element("niveau").Value == levelQuestions.ToString());
-		//		xmlQuestions.Clear();
-
-		//		if (ssss.Count() < totalQuestions)
-		//		{
-		//			totalQuestions = ssss.Count();
-		//			for (int i = 0; i < totalQuestions; i++)
-		//			{
-		//				randomNumber = RandomHelper.Next(0, ssss.Count());
-		//				xmlQuestions.Add(ssss[randomNumber]);
-		//				ssss.RemoveAt(randomNumber);
-		//			}
-		//		}
-		//		else
-		//		{
-		//			for (int i = 0; i < totalQuestions; i++)
-		//			{
-		//				randomNumber = RandomHelper.Next(0, ssss.Count());
-		//				xmlQuestions.Add(ssss[randomNumber]);
-		//				ssss.RemoveAt(randomNumber);
-		//			}
-		//		}
-
-		//	}
-		//}
 	}
 
 	private void HandleAnswerSelection(string choice)
@@ -192,7 +131,7 @@ else if (currentQuestionIndex == xmlQuestionsSelection.Count)
 	@*	<h2>@nameVragenSet</h2>
 	<hr />*@
 	<CascadingValue Value="xmlQuestionsSelection">
-		<Verwerking naamVragenSet="@naamVragenSet" levelQuestions="@levelQuestions.ToString()" show="@show" />
+		<Verwerking naamVragenSet="@naamVragenSet" levelQuestions="@levelQuestions.ToString()" />
 	</CascadingValue>
 
 

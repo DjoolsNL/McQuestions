@@ -15,7 +15,6 @@
     <None Remove="XmlQuestions\BaseQuestions.xml" />
     <None Remove="XmlQuestions\C-Sharp.xml" />
     <None Remove="XmlQuestions\FrontEnd.xml" />
-    <None Remove="XmlQuestions\General - Copy.xml" />
     <None Remove="XmlQuestions\General.xml" />
     <None Remove="XmlQuestions\Intake.xml" />
     <None Remove="XmlQuestions\Javascript.xml" />
@@ -34,9 +33,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="XmlQuestions\FrontEnd.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\General - Copy.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="XmlQuestions\General.xml">

@@ -7,23 +7,22 @@
 @code{
 	[Parameter]
 	public string fileName { get; set; }
-
-	public string pageTitle;
-	private int totalQ;
-	private int levelQ;
-	public string niveau;
-	private List<XElement> xmlQuestions = new();
-	XElement root;
-	int count = 0;
-	//public McObject mcObject { get; set; }
-	private int randomNumber;
-	private bool ready;
-	List<XElement> xmlQuestionsSelection = new();
-	public string naamVragenSet;
-	bool firstRun = true;
-	bool radiobuttonLevel;
+	string pageTitle;
+	string niveau;
+	string naamVragenSet;
 	string selectedOption;
-	bool show;
+	int count = 0;
+	int randomNumber;
+	public List<XElement> xmlQuestionsSelection = new();
+	List<XElement> xmlQuestions = new();
+	XElement root;
+	bool ready;
+	bool firstRun = true;
+	bool radiobuttonLevel;	
+
+
+
+
 
 
 	protected override void OnInitialized()
@@ -31,14 +30,12 @@
 
 	}
 
-
 	private void OnChangeLevel(ChangeEventArgs e)
 	{
 		selectedOption = e.Value.ToString();
 		StateHasChanged();
 		xmlQuestionsSelection.Clear();
 		niveau = e.Value.ToString();
-		levelQ = System.Convert.ToInt32(niveau);
 
 		var allEnabledQuestions = root.Elements("vraag").Distinct().Where(e => e.Element("disabled").Value != "true").ToList();
 
@@ -54,9 +51,21 @@
 		for (int i = 0; i < choice; i++)
 		{
 			randomNumber = RandomHelper.Next(0, xmlQuestions.Count());
+			xmlQuestions[randomNumber].Element("volgnummer").Value = i.ToString();
 			xmlQuestionsSelection.Add(xmlQuestions[randomNumber]);
 			xmlQuestions.RemoveAt(randomNumber);
 		}
+
+		// //
+		//int volgnummer = 1;
+		//foreach (var question in xmlQuestionsSelection)
+		//{
+		//	question.Element("volgnummer").Value = volgnummer.ToString();
+		//	volgnummer++;
+		//}
+
+
+		// ////////
 
 		ready = true;
 	}
@@ -65,7 +74,6 @@
 	{
 		return selectedOption == optionValue;
 	}
-
 }
 
 @if (fileName.StartsWith('{'))
@@ -76,9 +84,8 @@
 		StateHasChanged();
 		
 	}
-	show = false;
+
 	firstRun = false;
-	//mcObject = new(fileName);
 	xmlQuestions.Clear();
 	xmlQuestionsSelection.Clear();
 	fileName = fileName.Replace("{", "").Replace("}", "");
@@ -94,13 +101,6 @@
 <PageTitle>@pageTitle</PageTitle>
 <Style />
 
-@code {
-	private List<string> level = new List<string>
-	{
-		"1", "2", "3", "4", "5"
-
-	};
-}
 
 <span>
 	&nbsp;&nbsp; Niveau:
@@ -185,7 +185,7 @@
 {
 	<div class="indexdiv">
 		<CascadingValue Value="xmlQuestionsSelection">
-			<Uitvoering naamVragenSet="@naamVragenSet" levelQuestions="@niveau" show="@show" />
+			<Uitvoering naamVragenSet="@naamVragenSet" levelQuestions="@niveau" />
 		</CascadingValue>
 	</div>
 }

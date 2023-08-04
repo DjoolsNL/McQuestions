@@ -1,7 +1,34 @@
 ﻿@page "/cv"
-
+@using System.Xml.Linq
+@using System.Linq
+@using System.Collections.Generic
+@using System.IO
 <PageTitle>Profile</PageTitle>
 <Style />
+
+@code 
+{
+	private string name;
+	public string folderPath;
+	string pathToFile;
+	private List<XElement> xmlTests;
+	private List<string> sets;
+
+	protected override void OnInitialized()
+	{
+		Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlAccount\\");
+		folderPath = Directory.GetCurrentDirectory();
+		pathToFile = folderPath + "\\AccountResults.xml";
+		var xmlString = File.ReadAllText(pathToFile);
+		var rootElement = XElement.Parse(xmlString);
+		xmlTests = rootElement.Elements("test").ToList();
+		sets = xmlTests.Select(element => element.Element("vragenset").Value).Distinct().ToList();
+	}
+
+	// per set een opsomming per niveau 
+	// dus per niveau totaliseren totaal, tot goed en tot fout en percentage goed uitrekenen 
+}
+
 
 <style>
 b{
@@ -9,6 +36,27 @@ b{
 }
 </style>
 <div class="indexdiv">
+@foreach (var item in sets)
+{
+	var set = xmlTests.FindAll(t => t.Element("vragenset").Value == item);
+
+	var niveaus = set.Select(element => element.Element("niveau").Value).Distinct().ToList();
+
+	foreach (var niveau in niveaus)
+	{
+		var nivo = set.FindAll(t => t.Element("niveau").Value == niveau);
+		var sumofquestions = nivo.Sum(e => (int)e.Element("aantal"));
+		var sumofscore = nivo.Sum(e => (int)e.Element("score"));
+		double fraction = (double)sumofscore / (double)sumofquestions;
+		double percentage = fraction * 100;
+		string result = $"{percentage:0.00}%";
+		<p><b>Total score @item niveau @niveau: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+		<hr />
+	}
+
+}
+
+
 
 <h6>Profiel</h6>
 Jules van Nuijs

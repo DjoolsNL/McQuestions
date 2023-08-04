@@ -15,9 +15,6 @@
 	[Parameter]
 	public string levelQuestions { get; set; }
 
-	[Parameter]
-	public bool show { get; set; }
-
 	public int score = 0;
 
 	public string folderPath;
@@ -29,6 +26,8 @@
 	public string result; 
 	public int sumofquestions;
 	public int sumofscore;
+
+	DateTime currentDate  = DateTime.Today;
 
 	public string textButton = "Engage your AI teacher";
 
@@ -48,14 +47,15 @@
 		var xmlString = File.ReadAllText(pathToFile);
 		var rootElement = XElement.Parse(xmlString);
 		xmlTests = rootElement.Elements("test").ToList();
-
+		
 		XElement doc = new XElement("root");
 		XElement test = new XElement("test");
+		XElement datum = new XElement("datum", currentDate.ToString("d-M-yyyy"));
 		XElement vragenset = new XElement("vragenset", naamVragenSet);
 		XElement niveau = new XElement("niveau", levelQuestions);
 		XElement aantal = new XElement("aantal", xmlQuestionsSelection.Count().ToString());
 		XElement scoore = new XElement("score", score);
-		test.Add(vragenset, niveau, aantal, scoore);
+		test.Add(datum, vragenset, niveau, aantal, scoore);
 		xmlTests.Add(test);
 
 		foreach (var item in xmlTests)
