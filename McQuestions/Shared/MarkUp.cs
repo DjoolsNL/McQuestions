@@ -62,5 +62,9 @@ namespace McQuestions.Shared
 
 	}
 
-
+    public class DataPoint
+    {
+        public string X { get; set; }
+        public int Y { get; set; }
+    }
 }
