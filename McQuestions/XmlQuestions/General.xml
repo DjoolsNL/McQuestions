@@ -665,4 +665,1149 @@ The "DRY" (Don't Repeat Yourself) principle of object-oriented programming promo
     <prompt3></prompt3>
     <prompt4></prompt4>
   </vraag>
+	
+	
+	
+	<vraag>
+		<disabled></disabled>
+		<guid>22597137-de62-4762-84b5-20ce1cc0b473</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Hardware and Software</onderwerp>
+		<header>
+			<regel>Which of the following is an example of hardware?</regel>
+		</header>
+		<keuzes>
+			<A>Operating System</A>
+			<B>Word Processing Software</B>
+			<C>Central Processing Unit (CPU)</C>
+			<D>Web Browser</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Hardware refers to physical components of a computer system, and the CPU is a key hardware component that performs the processing tasks.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>5451237a-6bc4-4d4f-951d-1af7e71e43c3</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Data Transmission over the Internet</onderwerp>
+		<header>
+			<regel>What protocol is commonly used for secure data transmission over the internet?</regel>
+		</header>
+		<keuzes>
+			<A>HTTP</A>
+			<B>FTP</B>
+			<C>TCP</C>
+			<D>HTTPS</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>HTTPS (HyperText Transfer Protocol Secure) is commonly used for secure data transmission over the internet, encrypting the data during transit.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>dd98eb6f-e077-4467-9cfd-537bf9e8bebe</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>The Cloud in IT Infrastructure</onderwerp>
+		<header>
+			<regel>What does the term 'cloud' refer to in IT infrastructure?</regel>
+		</header>
+		<keuzes>
+			<A>A physical server located in an organization's data center</A>
+			<B>A software application that runs on a computer</B>
+			<C>A virtualized IT environment accessible over the internet</C>
+			<D>A network of interconnected computers within an organization</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In IT infrastructure, the term 'cloud' refers to a virtualized environment accessible over the internet, allowing users to access resources on-demand from anywhere.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>8a1ebe3b-5566-42a9-9475-0e26a35ac117</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Domain Names and IP Addresses</onderwerp>
+		<header>
+			<regel>What is the main purpose of a domain name?</regel>
+		</header>
+		<keuzes>
+			<A>Encrypt internet traffic</A>
+			<B>Identify the physical location of a web server</B>
+			<C>Translate into an IP address for easy website access</C>
+			<D>Provide a backup copy of a website</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>A domain name is used to provide a human-readable address for websites, and it translates into an IP address to facilitate easy website access on the internet.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>98b9fe4d-3db6-4196-9bb7-4be8cde226e2</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Search Engine Indexing and Ranking</onderwerp>
+		<header>
+			<regel>How do search engines like Google rank websites in search results?</regel>
+		</header>
+		<keuzes>
+			<A>Based on the number of keywords in the website's content</A>
+			<B>By prioritizing websites with paid advertisements</B>
+			<C>Using complex algorithms that consider various factors</C>
+			<D>Randomly selecting websites for each search query</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Search engines like Google use complex algorithms that consider various factors, such as website relevance, authority, and user experience, to rank websites in search results.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>92e0140b-4aa2-4dd4-92a6-16f2b50f12e7</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Virtual Machines in IT Environments</onderwerp>
+		<header>
+			<regel>What is a virtual machine (VM) in the context of IT environments?</regel>
+		</header>
+		<keuzes>
+			<A>A physical computer server used for hosting multiple websites</A>
+			<B>A software application that emulates a physical computer</B>
+			<C>A network of interconnected computers in a data center</C>
+			<D>A remote computer accessible over the internet</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>A virtual machine (VM) is a software application that emulates a physical computer, allowing multiple VMs to run on a single physical host.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>eaeeaa7f-2052-4b6a-baad-4376e697d100</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>The Internet of Things (IoT)</onderwerp>
+		<header>
+			<regel>What is the Internet of Things (IoT) in the context of IT?</regel>
+		</header>
+		<keuzes>
+			<A>A network of interconnected computers in a large organization</A>
+			<B>A collection of virtual machines running in the cloud</B>
+			<C>A virtualized IT infrastructure accessible over the internet</C>
+			<D>Physical devices connected to the internet, exchanging data and performing tasks</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The Internet of Things (IoT) refers to physical devices (like sensors, appliances, etc.) that are connected to the internet, enabling them to exchange data and perform tasks without human intervention.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>1c47bc99-5d10-4b05-9c31-96a12bcdb942</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Software Architecture</onderwerp>
+		<header>
+			<regel>What does the "MVC" pattern stand for in software architecture?</regel>
+		</header>
+		<keuzes>
+			<A>Model View Controller</A>
+			<B>Managed Virtual Components</B>
+			<C>Master View Creation</C>
+			<D>Model-View Collaboration</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "MVC" pattern stands for "Model View Controller" and is a software architectural pattern that separates an application into three interconnected components to improve code organization and maintainability.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>c5c15309-1e8e-4685-9f65-47aee9dfcd56</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Coding Principles</onderwerp>
+		<header>
+			<regel>What does the "DRY" principle promote in software development?</regel>
+		</header>
+		<keuzes>
+			<A>Using object-oriented programming techniques</A>
+			<B>Avoiding code duplication and promoting code reusability</B>
+			<C>Minimizing the use of external libraries</C>
+			<D>Implementing secure coding practices</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The "DRY" (Don't Repeat Yourself) principle promotes avoiding code duplication and encouraging code reusability, leading to more maintainable and efficient code.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>e614a827-96bf-4e13-aa60-5c1d9f8dbb9a</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Serverside vs. Clientside</onderwerp>
+		<header>
+			<regel>What type of interactions are typically handled on the clientside in a web application?</regel>
+		</header>
+		<keuzes>
+			<A>User authentication and data storage</A>
+			<B>Rendering web pages and displaying user interfaces</B>
+			<C>Server communication and database queries</C>
+			<D>User clicks, form submissions, and dynamic UI changes</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Clientside interactions in a web application typically involve handling user clicks, form submissions, and dynamically changing the user interface without requiring server communication.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>31b4413e-6840-4f06-a015-9232c31a8f19</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Backend vs. Frontend</onderwerp>
+		<header>
+			<regel>What are the primary roles of the backend in a web application?</regel>
+		</header>
+		<keuzes>
+			<A>Handling user interface and user interactions</A>
+			<B>Storing and managing data, business logic, and server communication</B>
+			<C>Rendering the web pages and managing client-side scripts</C>
+			<D>Optimizing website performance and design</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The backend's primary roles in a web application are storing and managing data, implementing business logic, and handling server communication.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>9c9245a2-1a0e-4fe0-b82a-8d07ce15a6ca</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Serverside vs. Clientside</onderwerp>
+		<header>
+			<regel>Where is the code executed in serverside web development?</regel>
+		</header>
+		<keuzes>
+			<A>On the client's computer (browser)</A>
+			<B>On the web server</B>
+			<C>On both the client and the server</C>
+			<D>On a remote cloud server</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In serverside web development, the code is executed on the web server, and the server generates the HTML response sent to the client's browser.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>27e1be7f-3d4c-4f27-88d3-66b7e6d70f57</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Backend vs. Frontend</onderwerp>
+		<header>
+			<regel>Which part of a web application is responsible for data processing, server communication, and business logic?</regel>
+		</header>
+		<keuzes>
+			<A>Backend</A>
+			<B>Frontend</B>
+			<C>Both Backend and Frontend</C>
+			<D>None of the above</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The backend of a web application is responsible for data processing, server communication, and implementing the application's business logic.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>4fde6a1c-cda8-4a27-912b-00f6e08b767f</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Client Side</onderwerp>
+		<header>
+			<regel>What does "client side" refer to in web development?</regel>
+		</header>
+		<keuzes>
+			<A>Code execution on the web server</A>
+			<B>Handling of user interface and user interactions</B>
+			<C>Storing and managing data in a database</C>
+			<D>Processing of requests from the internet</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In web development, "client side" refers to the handling of user interface and user interactions, which takes place on the user's device (typically in the web browser).</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>cb4d458f-ae28-4674-8eb7-9d3dcd45c077</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Serverside</onderwerp>
+		<header>
+			<regel>What does "serverside" refer to in web development?</regel>
+		</header>
+		<keuzes>
+			<A>Rendering web pages on the client's device</A>
+			<B>Storing and managing data on the user's device</B>
+			<C>Processing user interface interactions</C>
+			<D>Code execution on the web server</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In web development, "serverside" refers to code execution and data processing that occurs on the web server, which handles user requests, interacts with databases, and generates dynamic content to be sent to the client's device.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>fb16d2e3-b14f-4763-9e2e-4db5e9ac01d7</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Run Time</onderwerp>
+		<header>
+			<regel>What does "run time" refer to in computer programs?</regel>
+		</header>
+		<keuzes>
+			<A>The period when a computer is powered on and operational</A>
+			<B>The time taken to write and compile a program</B>
+			<C>The duration a program is actively executing during program operation</C>
+			<D>The time taken for a program to be downloaded from the internet</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In computer programs, "run time" refers to the duration when a program is actively executing and performing its intended operations during program execution.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>28a65ad2-cf59-4e0d-aa38-22615e3aa9e9</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Design Time</onderwerp>
+		<header>
+			<regel>What does "design time" refer to in software development?</regel>
+		</header>
+		<keuzes>
+			<A>The time when the software is designed and planned</A>
+			<B>The duration a program is actively executing during program operation</B>
+			<C>The time taken to write and compile a program</C>
+			<D>The time taken for a program to be downloaded from the internet</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In software development, "design time" refers to the phase when the software is designed, planned, and architected before actual coding and implementation take place.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>bc72a19c-7e8e-46e7-bb16-5d1b4264a4e1</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Docker</onderwerp>
+		<header>
+			<regel>What is Docker in the context of software development and deployment?</regel>
+		</header>
+		<keuzes>
+			<A>A version control system for managing code repositories</A>
+			<B>A cloud computing platform for hosting web applications</B>
+			<C>A virtualization technology for running applications in isolated containers</C>
+			<D>An integrated development environment (IDE) for software coding</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Docker is a virtualization technology that allows developers to run applications in isolated containers, making it easier to package, distribute, and deploy applications across different environments.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>829bd5f7-8a91-4d1e-8d49-44b21be98449</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Docker</onderwerp>
+		<header>
+			<regel>Why is Docker popular in the field of software development and deployment?</regel>
+		</header>
+		<keuzes>
+			<A>It provides a powerful integrated development environment (IDE) for coding.</A>
+			<B>It enables easy and efficient collaboration among developers.</B>
+			<C>It offers a cloud computing platform for hosting web applications.</C>
+			<D>It simplifies application packaging, distribution, and deployment through containerization.</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Docker is popular in the field of software development and deployment because it simplifies application packaging, distribution, and deployment through containerization. Docker allows developers to create portable, isolated containers that can run consistently across different environments, making it easier to manage applications and their dependencies.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>23e2db07-8dc6-43c1-a463-3c99380b06f6</guid>
+		<volgnummer>2</volgnummer>
+		<niveau></niveau>
+		<onderwerp>Architectural Best Practices</onderwerp>
+		<header>
+			<regel>What are architectural best practices in software development?</regel>
+		</header>
+		<keuzes>
+			<A>Writing complex and lengthy functions to reduce code duplication</A>
+			<B>Using monolithic architecture for all types of applications</B>
+			<C>Creating well-defined modules with high cohesion and low coupling</C>
+			<D>Deploying applications without testing or version control</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Architectural best practices in software development include creating well-defined modules with high cohesion (related functionality grouped together) and low coupling (minimal dependencies between modules). This promotes code maintainability, reusability, and scalability.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>34247a6d-23b2-4a43-8eb2-7d47f78e4482</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Loose Coupling</onderwerp>
+		<header>
+			<regel>What does "loose coupling" refer to in software development?</regel>
+		</header>
+		<keuzes>
+			<A>Creating strong dependencies between software modules</A>
+			<B>Designing modules with low cohesion and high coupling</B>
+			<C>Minimizing dependencies between software modules</C>
+			<D>Developing software without any dependencies</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>"Loose coupling" in software development refers to minimizing dependencies between software modules, making them less reliant on one another. This promotes flexibility, maintainability, and ease of changes in the codebase.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>ea1d867e-af38-4cdd-b5e9-8126208a69cc</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Loose Coupling</onderwerp>
+		<header>
+			<regel>Why is "loose coupling" preferable in software development?</regel>
+		</header>
+		<keuzes>
+			<A>It simplifies the development process by creating strong dependencies between modules.</A>
+			<B>It allows developers to write code with less cohesion and more coupling.</B>
+			<C>It improves code maintainability, flexibility, and scalability.</C>
+			<D>It results in a more monolithic architecture for the software.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>"Loose coupling" is preferable in software development because it improves code maintainability, flexibility, and scalability. Minimizing dependencies between modules allows for easier changes, reduces the impact of modifications, and promotes independent development and testing of components.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>c7284ef1-9a3b-4b1d-b07d-d4b3e64ef6f6</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Scalability in IT</onderwerp>
+		<header>
+			<regel>What does "scalability" refer to in the context of IT?</regel>
+		</header>
+		<keuzes>
+			<A>The ability of a system to handle a large number of concurrent users.</A>
+			<B>The physical size of a computer or server used in an IT environment.</B>
+			<C>The speed at which data is transferred over a network.</C>
+			<D>The total number of lines of code in a software application.</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In IT, "scalability" refers to the ability of a system to handle a large number of concurrent users, increasing its capacity to accommodate growing demands without significant performance degradation.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>7aa798e5-93e6-4872-b2ef-cb45e10c224f</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>SOLID Principles</onderwerp>
+		<header>
+			<regel>What do the SOLID principles represent in software development?</regel>
+		</header>
+		<keuzes>
+			<A>A set of programming languages that support object-oriented concepts.</A>
+			<B>A set of design patterns used to create graphical user interfaces.</B>
+			<C>A group of coding conventions for writing efficient algorithms.</C>
+			<D>A set of five principles that promote good object-oriented design and modular software architecture.</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The SOLID principles represent a set of five principles that promote good object-oriented design and modular software architecture, aiding in creating maintainable, flexible, and scalable code.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>352b7a8e-67fc-4eaf-968c-6c1174f00f6b</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>SOLID Principles</onderwerp>
+		<header>
+			<regel>What does the abbreviation "SOLID" stand for in software development?</regel>
+		</header>
+		<keuzes>
+			<A>Special Object-oriented Libraries for Integrated Development</A>
+			<B>Simple Object Linking and Integration Design</B>
+			<C>Secure Object Lifecycle Implementation and Deployment</C>
+			<D>Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The abbreviation "SOLID" in software development stands for "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion." These principles are guidelines for writing maintainable and flexible object-oriented code.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>d3bb98be-b70b-4e91-8ec9-8afdafe94a3b</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Single Responsibility Principle (SRP)</onderwerp>
+		<header>
+			<regel>What does the Single Responsibility Principle (SRP) in software development state?</regel>
+		</header>
+		<keuzes>
+			<A>A class should have only one instance (object) at runtime.</A>
+			<B>A class should have only one public method.</B>
+			<C>A class should be responsible for only one specific functionality.</C>
+			<D>A class should have only one private variable.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The Single Responsibility Principle (SRP) states that a class should have only one specific responsibility or functionality, meaning it should have only one reason to change. This principle promotes better code organization and maintainability.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>540572e9-d826-46e6-98dd-06ed83f17432</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Single Responsibility Principle (SRP)</onderwerp>
+		<header>
+			<regel>What are the benefits of adhering to the Single Responsibility Principle (SRP)?</regel>
+		</header>
+		<keuzes>
+			<A>Improved code readability and shorter class names.</A>
+			<B>Increased encapsulation and information hiding.</B>
+			<C>Higher code performance and faster execution.</C>
+			<D>Easier maintenance, reduced code duplication, and enhanced code reusability.</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Adhering to the Single Responsibility Principle (SRP) leads to easier maintenance, reduced code duplication, and enhanced code reusability. By having classes with a single responsibility, changes to one functionality won't affect unrelated parts of the code, making it easier to manage and maintain the codebase.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>810283aa-5a9f-4b7f-b066-845aa657b6ea</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Open-Closed Principle (OCP)</onderwerp>
+		<header>
+			<regel>What does the Open-Closed Principle (OCP) in software development state?</regel>
+		</header>
+		<keuzes>
+			<A>Classes should be open for modification and closed for extension.</A>
+			<B>Classes should be open for extension and closed for modification.</B>
+			<C>Classes should be open for inheritance and closed for encapsulation.</C>
+			<D>Classes should be open for composition and closed for aggregation.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The Open-Closed Principle (OCP) states that classes should be open for extension, allowing new functionalities to be added through inheritance or composition, but closed for modification to avoid altering existing code that already works.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>18153579-8377-4e5e-98c1-6f0512a27e8f</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Open-Closed Principle (OCP)</onderwerp>
+		<header>
+			<regel>What are the benefits of adhering to the Open-Closed Principle (OCP)?</regel>
+		</header>
+		<keuzes>
+			<A>Improved code performance and reduced memory usage.</A>
+			<B>Increased code complexity and larger class hierarchies.</B>
+			<C>Enhanced code reusability and better maintainability.</C>
+			<D>Higher security and reduced risk of software vulnerabilities.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Adhering to the Open-Closed Principle (OCP) leads to enhanced code reusability and better maintainability. By allowing new functionalities to be added through extension rather than modification, existing code remains untouched, reducing the risk of introducing bugs and making it easier to maintain and extend the software.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>72de2ed0-98e7-4263-a9d1-3669a1e54571</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Liskov Substitution Principle (LSP)</onderwerp>
+		<header>
+			<regel>What does the Liskov Substitution Principle (LSP) in software development state?</regel>
+		</header>
+		<keuzes>
+			<A>Subclasses should not be able to inherit from multiple superclasses.</A>
+			<B>Subclasses should be able to replace the objects of their parent classes without affecting the correctness of the program.</B>
+			<C>Subclasses should not override methods from their parent classes.</C>
+			<D>Subclasses should have the same method signatures as their parent classes.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The Liskov Substitution Principle (LSP) states that subclasses should be able to replace objects of their parent classes without affecting the correctness of the program. In other words, a subclass should be usable in place of its parent class without altering the desired behavior of the program.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>9ca7f3cd-d4fb-4380-8b43-dcde490019fc</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Liskov Substitution Principle (LSP)</onderwerp>
+		<header>
+			<regel>What are the benefits of adhering to the Liskov Substitution Principle (LSP)?</regel>
+		</header>
+		<keuzes>
+			<A>Increased code complexity and more challenging debugging.</A>
+			<B>Improved code reusability and reduced maintenance effort.</B>
+			<C>Higher performance and faster execution of the program.</C>
+			<D>Enhanced code security and protection against cyber threats.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Adhering to the Liskov Substitution Principle (LSP) leads to improved code reusability and reduced maintenance effort. When subclasses can seamlessly replace objects of their parent classes, it allows for easy extension of functionalities without having to modify existing code, promoting efficient and maintainable software development.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>688ce85e-ae2c-4999-8f8c-72a313876fd5</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Interface Segregation Principle (ISP)</onderwerp>
+		<header>
+			<regel>What does the Interface Segregation Principle (ISP) in software development state?</regel>
+		</header>
+		<keuzes>
+			<A>Interfaces should be used to separate different layers of the application.</A>
+			<B>Interfaces should contain only constants and no methods.</B>
+			<C>Interfaces should be kept as small as possible and should not force clients to implement methods they do not use.</C>
+			<D>Interfaces should always be implemented by abstract classes and not concrete classes.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The Interface Segregation Principle (ISP) states that interfaces should be kept as small as possible and should not force clients to implement methods they do not use. It promotes the idea of creating specific and focused interfaces, tailored to the exact requirements of the implementing classes.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>c4328700-33d2-4e0d-b83b-d26d96d29c59</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Interface Segregation Principle (ISP)</onderwerp>
+		<header>
+			<regel>What are the benefits of adhering to the Interface Segregation Principle (ISP)?</regel>
+		</header>
+		<keuzes>
+			<A>Increased code complexity and more challenging debugging.</A>
+			<B>Improved code maintainability and reduced coupling between classes.</B>
+			<C>Higher code performance and faster execution of the program.</C>
+			<D>Enhanced code security and protection against cyber threats.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Adhering to the Interface Segregation Principle (ISP) leads to improved code maintainability and reduced coupling between classes. By creating small and focused interfaces, clients are not burdened with unnecessary methods, resulting in cleaner, more modular code that is easier to understand, maintain, and extend.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>821c1713-3b92-4b38-9f8a-bc7e8300b15c</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Dependency Inversion Principle (DIP)</onderwerp>
+		<header>
+			<regel>What does the Dependency Inversion Principle (DIP) in software development state?</regel>
+		</header>
+		<keuzes>
+			<A>Higher-level modules should depend on lower-level modules.</A>
+			<B>Classes should not depend on abstractions, but abstractions should depend on classes.</B>
+			<C>Interfaces should not be used for dependency injection.</C>
+			<D>Dependencies should be tightly coupled for better performance.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The Dependency Inversion Principle (DIP) states that classes should not depend on concrete implementations (lower-level modules), but abstractions (interfaces or abstract classes). This promotes loose coupling between components and allows for easier extensibility and flexibility in the system.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>d6c74bc1-4982-49c2-960b-10a346c88d0c</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Dependency Inversion Principle (DIP)</onderwerp>
+		<header>
+			<regel>What are the benefits of adhering to the Dependency Inversion Principle (DIP)?</regel>
+		</header>
+		<keuzes>
+			<A>Increased code complexity and more challenging debugging.</A>
+			<B>Improved testability and ease of unit testing.</B>
+			<C>Higher code performance and faster execution of the program.</C>
+			<D>Enhanced code security and protection against cyber threats.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Adhering to the Dependency Inversion Principle (DIP) leads to improved testability and ease of unit testing. By depending on abstractions (interfaces or abstract classes) instead of concrete implementations, it becomes easier to create mock objects for testing, allowing for more isolated and reliable unit tests.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>ca52cd12-9c6b-4ec0-a5ab-3d10555f8b66</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Waterfall Model</onderwerp>
+		<header>
+			<regel>What is the Waterfall model of software development?</regel>
+		</header>
+		<keuzes>
+			<A>A development approach where all phases of the project are performed sequentially in a linear manner.</A>
+			<B>A development approach where multiple teams work simultaneously on different modules of the software.</B>
+			<C>A development approach that focuses on iterative development and continuous customer feedback.</C>
+			<D>A development approach that prioritizes rapid prototyping and early software delivery.</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The Waterfall model of software development is an approach where all phases of the project, such as requirements gathering, design, implementation, testing, and deployment, are performed sequentially in a linear manner. Each phase is completed before moving on to the next one.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>f8e8ef69-57c6-4a1a-8eb3-e9a60b953c8c</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Waterfall Model</onderwerp>
+		<header>
+			<regel>What are the advantages of the Waterfall model of software development?</regel>
+		</header>
+		<keuzes>
+			<A>Allows for continuous customer feedback and frequent iterations.</A>
+			<B>Minimizes the risk of project delays due to its linear approach.</B>
+			<C>Facilitates better communication and collaboration among teams.</C>
+			<D>Provides flexibility to accommodate changing requirements during development.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>One of the advantages of the Waterfall model is that it minimizes the risk of project delays. Since each phase is completed before moving to the next, there is a clear and well-defined path for the project, which can help in better time and resource management.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>2a2de2d8-570b-49f0-912e-12697f9a458a</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Waterfall Model</onderwerp>
+		<header>
+			<regel>What are the disadvantages of the Waterfall model of software development?</regel>
+		</header>
+		<keuzes>
+			<A>Difficult to manage large and complex projects due to its linear nature.</A>
+			<B>Requires frequent customer involvement, leading to increased project costs.</B>
+			<C>It is challenging to gather and finalize all requirements at the beginning of the project.</C>
+			<D>Provides little scope for feedback and changes after the development process starts.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>One of the disadvantages of the Waterfall model is that it is challenging to gather and finalize all requirements at the beginning of the project. This can lead to problems if the project scope changes or if new requirements emerge during development, as it is not designed for frequent iterations or changes once the process has started.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>167dc9f3-4a21-4e0a-81a3-e9f4dd2e7c0a</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Software Development Models</onderwerp>
+		<header>
+			<regel>Which of the following is an alternative to the Waterfall model of software development?</regel>
+		</header>
+		<keuzes>
+			<A>Agile</A>
+			<B>Spiral</B>
+			<C>V-Model</C>
+			<D>Incremental</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>One of the alternatives to the Waterfall model is the Agile approach. Agile is an iterative and incremental development methodology that promotes continuous collaboration, customer feedback, and delivering working software in short iterations.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>5d8de1e9-3201-4641-96e1-93d542e1203b</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Agile Software Development</onderwerp>
+		<header>
+			<regel>What are the characteristics of Agile software development?</regel>
+		</header>
+		<keuzes>
+			<A>Sequential and linear development approach.</A>
+			<B>Emphasis on delivering working software early and frequently.</B>
+			<C>Heavy documentation and rigid planning.</C>
+			<D>Extensive use of specialized tools and technologies.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Agile software development is characterized by an emphasis on delivering working software early and frequently through iterative and incremental development cycles. It prioritizes customer collaboration, flexibility, and responding to changing requirements over rigid planning and documentation.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>1976820f-3d8a-4a2e-aa6b-070159e8d96e</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Agile Software Development</onderwerp>
+		<header>
+			<regel>What are the benefits of Agile software development?</regel>
+		</header>
+		<keuzes>
+			<A>Higher development costs and longer time to market.</A>
+			<B>Increased risk due to less focus on customer feedback.</B>
+			<C>Improved collaboration between cross-functional teams.</C>
+			<D>Less adaptability to changing requirements.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Agile software development provides several benefits, including improved collaboration between cross-functional teams. Agile methodologies promote transparency, regular communication, and frequent collaboration between team members, leading to better understanding and alignment among stakeholders, developers, and customers.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>af8d9689-c25d-4d0f-8e1d-36bc71241d49</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Agile and Scrum</onderwerp>
+		<header>
+			<regel>What is the main difference between Agile and Scrum?</regel>
+		</header>
+		<keuzes>
+			<A>Agile is a software development framework, while Scrum is a project management methodology.</A>
+			<B>Agile emphasizes iterative development, while Scrum focuses on delivering a product increment in short cycles.</B>
+			<C>Agile involves multiple roles, events, and artifacts, while Scrum is a more flexible and lightweight approach.</C>
+			<D>Agile is suitable for large, complex projects, while Scrum is ideal for small, simple projects.</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The main difference between Agile and Scrum is that Agile is a broader software development framework that encompasses various methodologies, while Scrum is a specific project management methodology that operates within the Agile framework.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>f8ea01af-309c-4c0c-9a59-6285618c7517</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Operating Systems</onderwerp>
+		<header>
+			<regel>What is the primary function of an operating system?</regel>
+		</header>
+		<keuzes>
+			<A>Running applications and managing user interfaces.</A>
+			<B>Managing hardware resources and providing services to applications.</B>
+			<C>Performing data backup and ensuring data security.</C>
+			<D>Providing access to the internet and managing network connections.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The primary function of an operating system is to manage hardware resources and provide services to applications. It acts as an intermediary between software and hardware, enabling applications to access and use the computer's resources efficiently.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>9a8bfe28-4397-4336-b98e-0b8f1bb0de5c</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Operating Systems</onderwerp>
+		<header>
+			<regel>Which of the following are considered some of the main operating systems used in computing?</regel>
+		</header>
+		<keuzes>
+			<A>Windows, macOS, and Ubuntu</A>
+			<B>Google Chrome, Android, and iOS</B>
+			<C>Microsoft Office, Adobe Photoshop, and Mozilla Firefox</C>
+			<D>Java, C++, and Python</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Some of the main operating systems used in computing include Windows, macOS, and Ubuntu. These operating systems are commonly used on personal computers, laptops, and servers.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>3b3e6e44-75e7-467b-bb8d-929ec29f0ac7</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Linux</onderwerp>
+		<header>
+			<regel>What is Linux?</regel>
+		</header>
+		<keuzes>
+			<A>A programming language commonly used for web development.</A>
+			<B>An open-source operating system based on the Linux kernel.</B>
+			<C>A cloud computing platform provided by Microsoft.</C>
+			<D>An enterprise database management system.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Linux is an open-source operating system based on the Linux kernel. It is widely used in various devices, from servers and supercomputers to smartphones and embedded systems, due to its stability, flexibility, and customizability.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>024b0520-48de-4872-a22a-53f692e0ab40</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Kernel</onderwerp>
+		<header>
+			<regel>What is a kernel in the context of an operating system?</regel>
+		</header>
+		<keuzes>
+			<A>The graphical user interface of the operating system.</A>
+			<B>A programming language used to develop software applications.</B>
+			<C>A software component responsible for managing computer resources and acting as a bridge between hardware and software.</C>
+			<D>A hardware component responsible for processing and executing software instructions.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In the context of an operating system, a kernel is a software component responsible for managing computer resources and acting as a bridge between hardware and software. It provides essential services to software applications, enabling them to communicate with the hardware and perform tasks efficiently.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>0ee9a0de-10c1-4636-86d2-23bdef0fbbac</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Linux</onderwerp>
+		<header>
+			<regel>What are some of the pros and cons of using Linux as an operating system?</regel>
+		</header>
+		<keuzes>
+			<A>Pros: High cost of ownership, limited software availability. Cons: Open-source and high customization options.</A>
+			<B>Pros: Strong user-friendly interface, limited hardware compatibility. Cons: Broad software support and wide hardware compatibility.</B>
+			<C>Pros: Wide hardware compatibility, broad software support. Cons: Limited customization options and lower security.</C>
+			<D>Pros: Open-source and high customization options. Cons: Limited software availability and hardware compatibility.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Some of the pros of using Linux include wide hardware compatibility and broad software support. Linux works well with various hardware configurations and has a vast collection of software available. However, it may have limited customization options and lower security compared to other operating systems.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>6f54cd13-5e51-485f-9e96-0ffce43a20aa</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Windows</onderwerp>
+		<header>
+			<regel>What are some of the pros and cons of using Windows as an operating system?</regel>
+		</header>
+		<keuzes>
+			<A>Pros: High customization options, open-source. Cons: Limited software availability, less user-friendly interface.</A>
+			<B>Pros: Wide software availability, user-friendly interface. Cons: Limited hardware compatibility, closed-source.</B>
+			<C>Pros: Strong security features, limited software compatibility. Cons: Closed-source and high cost of ownership.</C>
+			<D>Pros: High hardware compatibility, wide customization options. Cons: Less user-friendly interface, limited software support.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Some of the pros of using Windows include wide software availability and a user-friendly interface. Windows supports a vast range of software applications and provides an intuitive and familiar interface to users. However, it may have limited hardware compatibility and is considered a closed-source operating system.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>189c29b3-8a2c-4af2-98c1-89f4de22daa9</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Ubuntu</onderwerp>
+		<header>
+			<regel>What are some of the pros and cons of using Ubuntu as an operating system?</regel>
+		</header>
+		<keuzes>
+			<A>Pros: Closed-source and limited software support. Cons: High customization options and strong security features.</A>
+			<B>Pros: Broad software support, high hardware compatibility. Cons: Less user-friendly interface and high cost of ownership.</B>
+			<C>Pros: Open-source and high customization options. Cons: Limited hardware compatibility and software availability.</C>
+			<D>Pros: Wide hardware compatibility, strong security features. Cons: Closed-source and less customization options.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Some of the pros of using Ubuntu include broad software support and high hardware compatibility. Ubuntu, being based on Linux, has access to a large variety of software applications and runs well on various hardware configurations. However, it may have a less user-friendly interface compared to other operating systems, and some users might find it challenging to navigate initially.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>2f6a2737-81b6-4b0c-91a4-8e3c8a8f2354</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>macOS</onderwerp>
+		<header>
+			<regel>What are some of the pros and cons of using macOS as an operating system?</regel>
+		</header>
+		<keuzes>
+			<A>Pros: Broad software support, user-friendly interface. Cons: High cost of ownership and limited hardware compatibility.</A>
+			<B>Pros: Open-source and high customization options. Cons: Limited software availability and less user-friendly interface.</B>
+			<C>Pros: Regular updates and strong security features. Cons: Limited software support and compatibility with non-Apple hardware.</C>
+			<D>Pros: Closed-source and limited software support. Cons: High customization options and strong security features.</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Some of the pros of using macOS include broad software support and a user-friendly interface. macOS benefits from a wide range of software applications that are compatible with the platform, and it is known for its intuitive and easy-to-use interface. However, it may have a high cost of ownership, as Apple products can be relatively expensive, and it has limited hardware compatibility compared to some other operating systems.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>80bea5bf-39b2-4f6c-871f-4c10d641c937</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Cross-Platform Software</onderwerp>
+		<header>
+			<regel>What is meant by "cross-platform" software?</regel>
+		</header>
+		<keuzes>
+			<A>Software that can be accessed and used from any location with an internet connection.</A>
+			<B>Software that runs only on specific hardware platforms and is not compatible with others.</B>
+			<C>Software that can be easily ported or adapted to work on multiple operating systems or platforms.</C>
+			<D>Software that is designed specifically for mobile devices like smartphones and tablets.</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>"Cross-platform" software refers to software that can be easily ported or adapted to work on multiple operating systems or platforms. This type of software is designed to be compatible with various devices and operating systems, allowing users to run the same application seamlessly across different environments.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>8f409c49-630a-47d8-9229-6650f7f3ef85</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Cross-Platform Software</onderwerp>
+		<header>
+			<regel>In the context of cross-platform software, what does "platform" refer to?</regel>
+		</header>
+		<keuzes>
+			<A>The physical location where the software is developed and maintained.</A>
+			<B>The specific device, operating system, or environment on which the software runs.</B>
+			<C>The team or group of developers responsible for creating the software.</C>
+			<D>The programming language used to code the software application.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In the context of cross-platform software, "platform" refers to the specific device, operating system, or environment on which the software runs. Cross-platform software is designed to work across different platforms, ensuring compatibility and consistent user experiences on various devices and operating systems.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>10406e1b-5740-4b5b-b7b1-7e927e3e381e</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>IT Trends</onderwerp>
+		<header>
+			<regel>Which of the following is NOT trending in IT right now?</regel>
+		</header>
+		<keuzes>
+			<A>Artificial Intelligence and Machine Learning</A>
+			<B>Blockchain and Cryptocurrencies</B>
+			<C>Virtual Reality (VR) and Augmented Reality (AR)</C>
+			<D>Printers and Fax Machines</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Printers and Fax Machines are not currently considered trending in IT. While they remain essential tools in many workplaces, they are well-established technologies that have been around for a long time and are not experiencing significant new advancements or widespread attention in the current IT landscape.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>8dc3cb4d-1f57-46a3-980f-c74a0ef68563</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Blockchain</onderwerp>
+		<header>
+			<regel>What is blockchain in the context of technology?</regel>
+		</header>
+		<keuzes>
+			<A>A decentralized network of computers used for cryptocurrency mining.</A>
+			<B>A distributed ledger technology that stores records in a chain of blocks.</B>
+			<C>An advanced encryption method used for securing sensitive data.</C>
+			<D>A virtual reality platform that allows users to interact with digital objects.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>In the context of technology, blockchain is a distributed ledger technology that stores records in a chain of blocks. It is a decentralized and transparent system that maintains a permanent and tamper-resistant record of transactions or information, which is shared across a network of computers.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>18e22c72-54bc-4f4f-9e89-83d3afbd23bf</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Distributed Ledger Technology</onderwerp>
+		<header>
+			<regel>What is distributed ledger technology?</regel>
+		</header>
+		<keuzes>
+			<A>A database system that is stored on a single centralized server.</A>
+			<B>A software framework for developing artificial intelligence applications.</B>
+			<C>A technology that enables secure peer-to-peer file sharing over the internet.</C>
+			<D>A decentralized system that maintains a synchronized and shared ledger across multiple nodes or computers.</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Distributed ledger technology is a decentralized system that maintains a synchronized and shared ledger across multiple nodes or computers. It enables transparent and secure record-keeping without the need for a central authority, making it suitable for various applications, including cryptocurrency transactions and supply chain management.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>3dd8b87a-9d9a-4cf7-a967-4b71c2321e16</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Augmented Reality</onderwerp>
+		<header>
+			<regel>What is augmented reality (AR)?</regel>
+		</header>
+		<keuzes>
+			<A>A technology that creates an entirely artificial environment, usually experienced through headsets.</A>
+			<B>A technology that overlays virtual objects and information on the real-world environment.</B>
+			<C>A technology that enhances human senses using implanted microchips and neural interfaces.</C>
+			<D>A technology that enables real-time communication and collaboration between multiple users in a shared virtual space.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Augmented reality (AR) is a technology that overlays virtual objects and information on the real-world environment. Through AR, users can experience a blended reality where computer-generated elements are superimposed on the physical world, enhancing their perception and interaction with the environment.</uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>0df4e510-6d0e-42bf-82a2-d67b3ed7198e</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Design Patterns</onderwerp>
+		<header>
+			<regel>What are the benefits of distinguishing design patterns in software development?</regel>
+		</header>
+		<keuzes>
+			<A>Design patterns provide ready-made solutions to common programming problems, reducing the need for software design.</A>
+			<B>Distinguishing design patterns helps improve code readability and maintainability.</B>
+			<C>Design patterns restrict creativity and innovation, making software development monotonous.</C>
+			<D>By using design patterns, developers can avoid the need for testing and debugging.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Distinguishing design patterns in software development provides benefits such as improved code readability and maintainability. Design patterns offer reusable and proven solutions to recurring problems, which makes code easier to understand and maintain over time. They promote good design practices and facilitate collaboration among developers by providing common vocabulary and standardized approaches to software design.</uitleg>
+	</vraag>
+
 </root>

@@ -129,7 +129,26 @@
 	&nbsp;- &nbsp;Aantal vragen:
 </span>
 
-@if (count >= 25)
+@if (count >= 50)
+{
+	<span>
+		<label>
+			<input type="radio" name="total" value="5" @onchange="OnChangeTotal" /> 5
+		</label>
+		<label>
+			<input type="radio" name="total" value="10" @onchange="OnChangeTotal" /> 10
+		</label>
+		<label>
+			<input type="radio" name="total" value="25" @onchange="OnChangeTotal" /> 25
+		</label>
+		<label>
+			<input type="radio" name="total" value="25" @onchange="OnChangeTotal" /> 50
+		</label>
+	</span>
+	count = 0;
+}
+
+@if (count < 50 && count >= 25)
 {
 	<span>	
 		<label>
@@ -140,6 +159,9 @@
 		</label>
 		<label>
 			<input type="radio" name="total" value="25" @onchange="OnChangeTotal" /> 25
+		</label>
+		<label>
+			<input type="radio" name="total" value="45" @onchange="OnChangeTotal" /> 45
 		</label>
 	</span>
 	count = 0;

@@ -12,48 +12,22 @@
 
   <ItemGroup>
     <None Remove="XmlAccount\AccountResults.xml" />
-    <None Remove="XmlQuestions\BaseQuestions.xml" />
-    <None Remove="XmlQuestions\C-Sharp.xml" />
-    <None Remove="XmlQuestions\FrontEnd.xml" />
-    <None Remove="XmlQuestions\General.xml" />
-    <None Remove="XmlQuestions\Intake.xml" />
-    <None Remove="XmlQuestions\Javascript.xml" />
-    <None Remove="XmlQuestions\Python.xml" />
-    <None Remove="XmlQuestions\Scrum.xml" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="XmlAccount\AccountResults.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\BaseQuestions.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\C-Sharp.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\FrontEnd.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\General.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\Intake.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\Javascript.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\Python.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\Scrum.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="bin\" />
+    <None Include="bin\Debug\net6.0\XmlQuestions\C-Sharp.xml" />
+    <None Include="bin\Debug\net6.0\XmlQuestions\FrontEnd.xml" />
+    <None Include="bin\Debug\net6.0\XmlQuestions\General.xml" />
+    <None Include="bin\Debug\net6.0\XmlQuestions\Intake.xml" />
+    <None Include="bin\Debug\net6.0\XmlQuestions\Javascript.xml" />
+    <None Include="bin\Debug\net6.0\XmlQuestions\Python.xml" />
+    <None Include="bin\Debug\net6.0\XmlQuestions\Scrum.xml" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿@page "/cv"
+﻿@page "/account"
 @using System.Xml.Linq
 @using System.Linq
 @using System.Collections.Generic
@@ -10,7 +10,7 @@ line{
     stroke:lightgray;
 }
 .average{
-	stroke: orange;
+	stroke: #4CAF50;
 }
 </style>
 @code 
@@ -59,27 +59,27 @@ b{
 
 		string pair = "";
 		for (int i = 0; i < aantaltests; i++)
-			{
-				int sc = Convert.ToInt32(nivo[i].Element("score").Value);
-				int antal = Convert.ToInt32(nivo[i].Element("aantal").Value);
+		{
+			int sc = Convert.ToInt32(nivo[i].Element("score").Value);
+			int antal = Convert.ToInt32(nivo[i].Element("aantal").Value);
 
-				int perc = 100 * sc/antal;
+			int perc = 100 * sc/antal;
 			int y = 200 - perc * 2;
 
 			int x = 30 + i * afstandx;
 			pair += $"{x},{y} ";
 				
 		}
-
-		var sumofquestions = nivo.Sum(e => (int)e.Element("aantal"));
+			pair = pair.TrimEnd();
+			var sumofquestions = nivo.Sum(e => (int)e.Element("aantal"));
 		var sumofscore = nivo.Sum(e => (int)e.Element("score"));
 		double fraction = (double)sumofscore / (double)sumofquestions;
 		double percentage = fraction * 100;
 		string result = $"{percentage:0.00}%";
-		<p><b>Total score @item niveau @niveau: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+		<p><br /><b><span style="color:#4CAF50;">Average test score</span> @item - niveau @niveau: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
 
 
-	<svg viewBox="0 0 580 240" xmlns="http://www.w3.org/2000/svg">
+	<svg viewBox="0 0 580 210" xmlns="http://www.w3.org/2000/svg">
     <!-- Rectangle background -->
     <rect x="30" y="0" width="500" height="200" stroke="black" stroke-width="1" fill="none" />
 
@@ -97,8 +97,6 @@ b{
 
 	@{int yyy = 200 - (int)percentage * 2; }
 	<line class="average" x1="25" y1="@yyy.ToString()" x2="530" y2="@yyy.ToString()" stroke="rgba(255, 0, 0, 0.5)" stroke-width="5" stroke-dasharray="6   4" />
-
-
 
     <text x="534" y="10"  font-size="12" fill="black">100</text>
     <text x="536" y="30"  font-size="12" fill="black">90</text>
@@ -124,10 +122,18 @@ b{
 
     <polyline points="@pair" fill="none" stroke="black" />
 
+				@{
+					string[] ss = pair.Split(" ");
+					foreach (var itmem in ss)
+					{
+						string[] sss = itmem.Split(",");
+						<circle cx="@sss[0]" cy="@sss[1]" r="5" fill="orange" />
+					}
+
+				}
+
 
 </svg>
-
-
 		<hr />
 	}
 
