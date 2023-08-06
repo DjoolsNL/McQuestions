@@ -4,6 +4,7 @@
 @using System.Collections.Generic
 @using System.IO
 @using System
+@using System.Xml;
 
 <PageTitle>Beheer</PageTitle>
 <Style />
@@ -51,9 +52,15 @@ td {
 	string[] fileNames;
 	string fileName;
 	private XElement xElement;
-	private List<Vraag> VragenLijst = new();
+	//private List<Vraag> VragenLijst = new();
 	bool ReadyForBrowser;
 	bool AddGuid;
+	int level1 = 0;
+	int level2 = 0;
+	int level3 = 0;
+	int level4 = 0;
+	int level5 = 0;
+
 
 	protected override void OnInitialized()
 	{
@@ -61,6 +68,8 @@ td {
 		folderPath = Directory.GetCurrentDirectory();
 		fileNames = Directory.GetFiles(folderPath);
 	}
+
+
 
 	void OnClick(string fname)
 	{
@@ -72,7 +81,7 @@ td {
 		naamVragenSet = xElement.Element("vragenset").Value;
 		xmlQuestions = xElement.Elements("vraag").ToList();
 
-		VragenLijst.Clear();
+		//VragenLijst.Clear();
 
 		#region XML to OBJECT
 		// data uit xml wordt gebruikt om objecten Vraag te maken 
@@ -190,16 +199,96 @@ td {
 			
 	}
 }
+
 <h2>@naamVragenSet Vragenset</h2>
 <hr />
 <div class="indexdiv">
 
-@foreach (var filename in fileNames)
+@*@foreach (var filename in fileNames)
 {	
 	<button @onclick="() => OnClick(filename)" class="filebutton">@Path.GetFileName(filename)</button>
 		<span>&nbsp;&nbsp;</span>
 	
-}
+}*@
+
+	@foreach (var filename in fileNames)
+	{
+		using (XmlReader reader = XmlReader.Create(filename))
+		{
+			while (reader.Read())
+			{
+				if (reader.NodeType == XmlNodeType.Element && reader.Name == "niveau")
+				{
+					// Read the name element's text content
+					int niveau = reader.ReadElementContentAsInt();
+					switch (niveau)
+					{
+						case 1:
+							level1++;
+							break;
+						case 2:
+							level2++;
+							break;
+						case 3:
+							level3++;
+							break;
+						case 4:
+							level4++;
+							break;
+						case 5:
+							level5++;
+							break;
+					}
+				}
+
+
+				//// Check the node type and process the XML elements accordingly
+				//switch (reader.NodeType)
+				//{
+				//	case XmlNodeType.Element:
+				//		Console.WriteLine($"Element Name: {reader.Name}");
+
+				//		break;
+				//	case XmlNodeType.Text:
+				//		Console.WriteLine($"Text: {reader.Value}");
+				//		break;
+				//		// Handle other node types if required (e.g., XmlNodeType.EndElement, XmlNodeType.Comment, etc.)
+				//}
+			}
+		}
+
+		<table style="display:inline; margin-left:25px; margin-top:30px">
+			<tr>
+				<td>
+					<button @onclick="() => OnClick(filename)" class="filebutton">@Path.GetFileName(filename)</button>
+					<span>&nbsp;&nbsp;</span>
+				</td>
+			</tr>
+			<tr>
+				<td>Niveau 1: @level1.ToString()</td>
+			</tr>
+			<tr>
+				<td>Niveau 2: @level2.ToString()</td>
+			</tr>
+			<tr>
+				<td>Niveau 3: @level3.ToString()</td>
+			</tr>
+			<tr>
+				<td>Niveau 4: @level4.ToString()</td>
+			</tr>
+			<tr>
+				<td>Niveau 5: @level5.ToString()<br />&nbsp;</td>
+			</tr>
+		</table>
+
+		level1 = 0;
+		level2 = 0;
+		level3 = 0;
+		level4 = 0;
+		level5 = 0;
+
+	}
+
 </div>
 
 @*<span>

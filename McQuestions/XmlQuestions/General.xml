@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <vragenset>Algemene ICT</vragenset>
+	<vragenset>Algemene ICT</vragenset>
   <vraag>
     <disabled></disabled>
     <guid>0ba565c2-0cfd-470d-bcc1-0b58679f22ea</guid>
@@ -1052,7 +1052,7 @@ The "DRY" (Don't Repeat Yourself) principle of object-oriented programming promo
 		<disabled></disabled>
 		<guid>23e2db07-8dc6-43c1-a463-3c99380b06f6</guid>
 		<volgnummer>2</volgnummer>
-		<niveau></niveau>
+		<niveau>2</niveau>
 		<onderwerp>Architectural Best Practices</onderwerp>
 		<header>
 			<regel>What are architectural best practices in software development?</regel>

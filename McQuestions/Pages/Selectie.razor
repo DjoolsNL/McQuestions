@@ -20,11 +20,6 @@
 	bool firstRun = true;
 	bool radiobuttonLevel;	
 
-
-
-
-
-
 	protected override void OnInitialized()
 	{
 
@@ -55,18 +50,6 @@
 			xmlQuestionsSelection.Add(xmlQuestions[randomNumber]);
 			xmlQuestions.RemoveAt(randomNumber);
 		}
-
-		// //
-		//int volgnummer = 1;
-		//foreach (var question in xmlQuestionsSelection)
-		//{
-		//	question.Element("volgnummer").Value = volgnummer.ToString();
-		//	volgnummer++;
-		//}
-
-
-		// ////////
-
 		ready = true;
 	}
 
@@ -82,7 +65,6 @@
 	{
 		selectedOption = null;
 		StateHasChanged();
-		
 	}
 
 	firstRun = false;

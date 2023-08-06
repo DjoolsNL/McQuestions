@@ -5,14 +5,22 @@
 @using System.IO
 <PageTitle>Profile</PageTitle>
 <Style />
+
 <style>
-line{
-    stroke:lightgray;
-}
-.average{
-	stroke: #4CAF50;
-}
+	line
+	{
+		stroke:lightgray;
+	}
+	.average
+	{
+		stroke: #4CAF50;
+	}
+	b
+	{
+		padding-bottom:1px;
+	}
 </style>
+
 @code 
 {
 	private string name;
@@ -32,17 +40,10 @@ line{
 
 		sets = xmlTests.Select(element => element.Element("vragenset").Value).Distinct().ToList();
 	}
-
-	// per set een opsomming per niveau 
-	// dus per niveau totaliseren totaal, tot goed en tot fout en percentage goed uitrekenen 
 }
+<h2>Jules van Nuijs</h2>
+<hr />
 
-
-<style>
-b{
-	padding-bottom:1px;
-}
-</style>
 <div class="indexdiv">
 @foreach (var item in sets)
 {
