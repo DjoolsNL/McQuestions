@@ -10,36 +10,42 @@
 <Style />
 
 <style>
-p {
-	padding:0;
-	margin:0;
-}
-input {
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	padding: 4px 8px;
-	font-size: 14px;
-	width:340px;
+	p 
+	{
+		padding:0;
+		margin:0;
+	}
+	input 
+	{
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		padding: 4px 8px;
+		font-size: 14px;
+		width:340px;
 		
-}
-	.custom-input:focus {
-		outline: none;
-		border-color: #ccc;
-		box-shadow: none;
+	}
+		.custom-input:focus 
+		{
+			outline: none;
+			border-color: #ccc;
+			box-shadow: none;
+		}
+
+	textarea 
+	{
+		font-size: 14px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
 	}
 
-textarea {
-	font-size: 14px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-}
-
-td {
-}
+	td 
+	{
+	}
 
 </style>
 
-@code {
+@code 
+{
 	private string selectedOption;
 
 	private List<XElement> xmlQuestions;
@@ -67,9 +73,8 @@ td {
 		Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlQuestions\\");
 		folderPath = Directory.GetCurrentDirectory();
 		fileNames = Directory.GetFiles(folderPath);
+		naamVragenSet = "Beheer Vragensets";
 	}
-
-
 
 	void OnClick(string fname)
 	{
@@ -78,10 +83,8 @@ td {
 		var xmlString = File.ReadAllText(fname);
 		xElement = XElement.Parse(xmlString);
 
-		naamVragenSet = xElement.Element("vragenset").Value;
+		naamVragenSet = xElement.Element("vragenset").Value + " Vragenset";
 		xmlQuestions = xElement.Elements("vraag").ToList();
-
-		//VragenLijst.Clear();
 
 		#region XML to OBJECT
 		// data uit xml wordt gebruikt om objecten Vraag te maken 
@@ -124,8 +127,7 @@ td {
 		else
 		{
 			ReadyForBrowser = true;
-		}
-		
+		}	
 	}
 
 	void OnSave(string fname)
@@ -187,29 +189,18 @@ td {
 		doc.Save(fileName);
 	}
 
-
-
-
 	void OnChangeAddGuid(ChangeEventArgs e)
 	{
 		if (e.Value.ToString() == "true")
 		{
 			AddGuid = true;
 		}
-			
 	}
 }
 
-<h2>@naamVragenSet Vragenset</h2>
+<h2>@naamVragenSet</h2>
 <hr />
 <div class="indexdiv">
-
-@*@foreach (var filename in fileNames)
-{	
-	<button @onclick="() => OnClick(filename)" class="filebutton">@Path.GetFileName(filename)</button>
-		<span>&nbsp;&nbsp;</span>
-	
-}*@
 
 	@foreach (var filename in fileNames)
 	{
@@ -219,7 +210,6 @@ td {
 			{
 				if (reader.NodeType == XmlNodeType.Element && reader.Name == "niveau")
 				{
-					// Read the name element's text content
 					int niveau = reader.ReadElementContentAsInt();
 					switch (niveau)
 					{
@@ -240,20 +230,6 @@ td {
 							break;
 					}
 				}
-
-
-				//// Check the node type and process the XML elements accordingly
-				//switch (reader.NodeType)
-				//{
-				//	case XmlNodeType.Element:
-				//		Console.WriteLine($"Element Name: {reader.Name}");
-
-				//		break;
-				//	case XmlNodeType.Text:
-				//		Console.WriteLine($"Text: {reader.Value}");
-				//		break;
-				//		// Handle other node types if required (e.g., XmlNodeType.EndElement, XmlNodeType.Comment, etc.)
-				//}
 			}
 		}
 
@@ -277,7 +253,11 @@ td {
 				<td>Niveau 4: @level4.ToString()</td>
 			</tr>
 			<tr>
-				<td>Niveau 5: @level5.ToString()<br />&nbsp;</td>
+				<td>Niveau 5: @level5.ToString()</td>
+			</tr>
+			<tr>
+				<td><b>Tot. aantal: 
+					@{int tot = level1 + level2 + level3 + level4 + level5;	}@tot.ToString()</b><br />&nbsp;</td>
 			</tr>
 		</table>
 
@@ -286,7 +266,6 @@ td {
 		level3 = 0;
 		level4 = 0;
 		level5 = 0;
-
 	}
 
 </div>

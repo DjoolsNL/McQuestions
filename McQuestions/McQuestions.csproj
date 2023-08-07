@@ -8,14 +8,20 @@
 
   <ItemGroup>
     <Content Remove="Pages\Javascript1.razor" />
+    <Content Remove="Pages\Selectie - Copy.razor" />
+    <Content Remove="Pages\Uitvoering - Copy.razor" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="XmlAccount\AccountResults.xml" />
+    <None Remove="XmlQuestions\NieuweBaan.xml" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="XmlAccount\AccountResults.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\NieuweBaan.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

@@ -4,200 +4,143 @@
 @using System.Collections.Generic
 @using System.IO
 
-@code{
-	[Parameter]
-	public string fileName { get; set; }
-	string pageTitle;
-	string niveau;
-	string naamVragenSet;
-	string selectedOption;
-	int count = 0;
-	int randomNumber;
-	public List<XElement> xmlQuestionsSelection = new();
-	List<XElement> xmlQuestions = new();
-	XElement root;
-	bool ready;
-	bool firstRun = true;
-	bool radiobuttonLevel;	
+@code {
+    [Parameter] public string FileName { get; set; }
+    string pageTitle;
+    string niveau;
+    string NaamVragenSet;
+    string selectedOption;
+    int count = 0;
+    int randomNumber;
+    List<XElement> XmlQuestionsSelection = new();
+    List<XElement> xmlQuestions = new();
+    XElement root;
+    bool ready;
+    bool firstRun = true;
+    bool radiobuttonLevel;
 
-	protected override void OnInitialized()
-	{
+    private void OnChangeLevel(ChangeEventArgs e)
+    {
+        selectedOption = e.Value.ToString();
+        StateHasChanged();
+        XmlQuestionsSelection.Clear();
+        niveau = e.Value.ToString();
 
-	}
+        var allEnabledQuestions = root.Elements("vraag")
+            .Distinct()
+            .Where(e => e.Element("disabled").Value != "true")
+            .ToList();
 
-	private void OnChangeLevel(ChangeEventArgs e)
-	{
-		selectedOption = e.Value.ToString();
-		StateHasChanged();
-		xmlQuestionsSelection.Clear();
-		niveau = e.Value.ToString();
+        xmlQuestions = allEnabledQuestions.FindAll(l => l.Element("niveau").Value == niveau);
+        count = xmlQuestions.Count();
+    }
 
-		var allEnabledQuestions = root.Elements("vraag").Distinct().Where(e => e.Element("disabled").Value != "true").ToList();
+    private void OnChangeNumberOfQuestions(ChangeEventArgs e)
+    {
+        int choice;
+        if (int.TryParse(e.Value.ToString(), out choice))
+        {
+            for (int i = 0; i < choice; i++)
+            {
+                randomNumber = RandomHelper.Next(0, xmlQuestions.Count());
+                xmlQuestions[randomNumber].Element("volgnummer").Value = i.ToString();
+                XmlQuestionsSelection.Add(xmlQuestions[randomNumber]);
+                xmlQuestions.RemoveAt(randomNumber);
+            }
+            ready = true;
+        }
+    }
 
-		xmlQuestions = allEnabledQuestions.FindAll(l => l.Element("niveau").Value == niveau);
-		count = xmlQuestions.Count();
-	}
-
-	private void OnChangeTotal(ChangeEventArgs e)
-	{
-		int choice;
-		if (int.TryParse(e.Value.ToString(), out choice)){}
-
-		for (int i = 0; i < choice; i++)
-		{
-			randomNumber = RandomHelper.Next(0, xmlQuestions.Count());
-			xmlQuestions[randomNumber].Element("volgnummer").Value = i.ToString();
-			xmlQuestionsSelection.Add(xmlQuestions[randomNumber]);
-			xmlQuestions.RemoveAt(randomNumber);
-		}
-		ready = true;
-	}
-
-	private bool IsOptionSelected(string optionValue)
-	{
-		return selectedOption == optionValue;
-	}
+    private bool IsOptionSelected(string optionValue)
+    {
+        return selectedOption == optionValue;
+    }
 }
 
-@if (fileName.StartsWith('{'))
+@if (FileName.StartsWith('{'))
 {
-	if (!firstRun)
-	{
-		selectedOption = null;
-		StateHasChanged();
-	}
+    if (!firstRun)
+    {
+        selectedOption = null;
+        StateHasChanged();
+    }
 
-	firstRun = false;
-	xmlQuestions.Clear();
-	xmlQuestionsSelection.Clear();
-	fileName = fileName.Replace("{", "").Replace("}", "");
-	Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
-	string fullpath = Path.Combine(Directory.GetCurrentDirectory() + "\\XmlQuestions\\", fileName);
-	var xmlString = File.ReadAllText(fullpath);
-	root = XElement.Parse(xmlString);
-	naamVragenSet = root.Element("vragenset").Value;
-	
-	string pageTitle = fileName.Replace(".xml", "");			
+    firstRun = false;
+    xmlQuestions.Clear();
+    XmlQuestionsSelection.Clear();
+    FileName = FileName.Replace("{", "").Replace("}", "");
+    Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
+    string fullpath = Path.Combine(Directory.GetCurrentDirectory() + "\\XmlQuestions\\", FileName);
+    var xmlString = File.ReadAllText(fullpath);
+    root = XElement.Parse(xmlString);
+    NaamVragenSet = root.Element("vragenset").Value;
+    pageTitle = FileName.Replace(".xml", "");
 }
 
 <PageTitle>@pageTitle</PageTitle>
 <Style />
 
-
 <span>
-	&nbsp;&nbsp; Niveau:
-	<label>
-		<input type="radio" id="1" name="level" value="1" @onchange="OnChangeLevel" checked="@IsOptionSelected("1")" /> 1
-	</label>
-	<label>
-		<input type="radio" id="2" name="level" value="2" @onchange="OnChangeLevel" checked="@IsOptionSelected("2")" /> 2
-	</label>
-	<label>
-		<input type="radio" id="3" name="level" value="3" @onchange="OnChangeLevel" checked="@IsOptionSelected("3")" /> 3
-	</label>
-	<label>
-		<input type="radio" id="4" name="level" value="4" @onchange="OnChangeLevel" checked="@IsOptionSelected("4")" /> 4
-	</label>
-	<label>
-		<input type="radio" id="5" name="level" value="5" @onchange="OnChangeLevel" checked="@IsOptionSelected("5")" /> 5
-	</label>
+    &nbsp;&nbsp; Niveau:
+    @for (int i = 1; i <= 5; i++)
+    {
+        <label>
+            <input type="radio" id="@i" name="level" value="@i" @onchange="OnChangeLevel" checked="@IsOptionSelected(i.ToString())" /> &nbsp;@i &nbsp;
+        </label>
+    }
 </span>
 
 <span>
-	&nbsp;&nbsp; Niveau Mix:
-	<label>
-		<input type="radio" name="level" value="6" @onchange="OnChangeLevel" /> 1-5
-	</label>
-	&nbsp;- &nbsp;Aantal vragen:
+    &nbsp;&nbsp; Niveau Mix:
+    <label>
+        <input type="radio" name="level" value="6" @onchange="OnChangeLevel" /> 1-5
+    </label>
+    &nbsp;- &nbsp;Aantal vragen:
 </span>
 
-@if (count >= 50)
-{
-	<span>
-		<label>
-			<input type="radio" name="total" value="5" @onchange="OnChangeTotal" /> 5
-		</label>
-		<label>
-			<input type="radio" name="total" value="10" @onchange="OnChangeTotal" /> 10
-		</label>
-		<label>
-			<input type="radio" name="total" value="25" @onchange="OnChangeTotal" /> 25
-		</label>
-		<label>
-			<input type="radio" name="total" value="25" @onchange="OnChangeTotal" /> 50
-		</label>
-	</span>
-	count = 0;
-}
-
-@if (count < 50 && count >= 25)
-{
-	<span>	
-		<label>
-			<input type="radio" name="total" value="5" @onchange="OnChangeTotal" /> 5
-		</label>
-		<label>
-			<input type="radio" name="total" value="10" @onchange="OnChangeTotal" /> 10
-		</label>
-		<label>
-			<input type="radio" name="total" value="25" @onchange="OnChangeTotal" /> 25
-		</label>
-		<label>
-			<input type="radio" name="total" value="45" @onchange="OnChangeTotal" /> 45
-		</label>
-	</span>
-	count = 0;
-}
-
-@if (count < 25 && count >= 10)
-{
-	<span>
-		<label>
-			<input type="radio" name="total" value="5" @onchange="OnChangeTotal" /> 5
-		</label>
-		<label>
-			<input type="radio" name="total" value="10" @onchange="OnChangeTotal" /> 10
-		</label>
-	</span>
-	count = 0;
-}
-
-@if (count < 10 && count >= 5)
-{
-	<span>
-		<label>
-			<input type="radio" name="total" value="5" @onchange="OnChangeTotal" /> 5
-		</label>
-	</span>
-	count = 0;
-}
-
-@if (count < 5 && count > 0)
-{
-	int tel = count;
-	<span>
-		<label>
-			<input type="radio" name="total" value="@count" @onchange="OnChangeTotal" /> @count
-		</label>
-	</span>
-	count = 0;
-}
+<span>
+    @if (count >= 50)
+    {
+        @for (int i = 5; i <= 50; i += 20)
+        {
+            <label>
+                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i
+            </label>
+        }
+    }
+    else if (count >= 25)
+    {
+        @for (int i = 5; i <= 45; i += 20)
+        {
+            <label>
+                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i
+            </label>
+        }
+    }
+    else if (count >= 10)
+    {
+        @for (int i = 5; i <= 10; i += 5)
+        {
+            <label>
+                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i
+            </label>
+        }
+    }
+    else if (count >= 5)
+    {
+        <label>
+            <input type="radio" name="total" value="5" @onchange="OnChangeNumberOfQuestions" /> 5
+        </label>
+    }
+</span>
 
 <hr />
 
 @if (ready)
 {
-	<div class="indexdiv">
-		<CascadingValue Value="xmlQuestionsSelection">
-			<Uitvoering naamVragenSet="@naamVragenSet" levelQuestions="@niveau" />
-		</CascadingValue>
-	</div>
+    <div class="indexdiv">
+        <CascadingValue Value="XmlQuestionsSelection">
+            <Uitvoering NaamVragenSet="@NaamVragenSet" levelQuestions="@niveau" />
+        </CascadingValue>
+    </div>
 }
-
-
-
-
-
-
-
-
