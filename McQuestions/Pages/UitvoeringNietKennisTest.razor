@@ -1,0 +1,126 @@
+﻿@using System.Xml.Linq
+@using System.Linq
+@using System.Collections.Generic
+@using System.IO
+
+@code {
+    [Parameter] public int TotalQuestions { get; set; }
+    [Parameter] public string NaamVragenSet { get; set; }
+
+    [CascadingParameter]
+    public List<XElement>? XmlQuestions { get; set; }
+
+    private int currentQuestionIndex = 0;
+    private string answer = "";
+    private string submitButtonText = "Maak een keuze";
+
+    private string McDevelopment()
+    {
+        var url = $"/mcdevelopment";
+        return url;
+    }
+
+    private void HandleAnswerSelection(string choice)
+    {
+        answer = choice;
+        submitButtonText = "Antwoord met: " + answer;
+    }
+
+    private void Submit(XElement xElementQuestion)
+    {
+        if (answer == "")
+        {
+            submitButtonText = "Maak een keuze";
+        }
+        else
+        {
+            // userantwoord wordt in de vraag gezet die naar AI gaat
+            xElementQuestion.Element("userantwoord").Value = answer;
+
+            submitButtonText = "Maak een keuze";
+            answer = "";
+
+            if (currentQuestionIndex < XmlQuestions.Count)
+            {
+                currentQuestionIndex++;
+            }
+        }
+    }
+
+    private void Exit(int number)
+    {
+        int c = XmlQuestions.Count();
+        XmlQuestions.RemoveRange(number, c - number);
+    }
+}
+
+<h2>@NaamVragenSet Vragenset</h2>
+<hr />
+
+<!-- Creates a question -->
+@if (XmlQuestions != null && currentQuestionIndex < XmlQuestions.Count)
+{
+    var currentQuestion = XmlQuestions[currentQuestionIndex];
+    int teller = 0;
+
+    <p>@(currentQuestionIndex + 1)/@XmlQuestions.Count</p>
+    <div>
+        @foreach (var regel in currentQuestion.Element("header").Elements())
+        {
+            if (teller == 0)
+            {
+                <h4>@regel.Value</h4>
+            }
+            else
+            {
+                @regel.Value
+
+                <br />
+            }
+            teller++;
+        }
+    </div>
+
+    <div>
+        <br />
+        <table>
+            @foreach (var choice in currentQuestion.Element("keuzes").Elements())
+            {
+                <tr>
+                    <td>@choice.Name&nbsp;&nbsp;</td>
+                    <td>
+                        <button @onclick="() => HandleAnswerSelection(choice.Name.LocalName)" class="choice">
+                            @choice.Value
+                        </button>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td colspan="2">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <br />
+                    <button @onclick="(args) => Submit(currentQuestion)" class="submit">@submitButtonText</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+    <!-- Tussentijds de vragenlijst afbreken met de exit knop -->
+    @*<p><button @onclick="(args) => Exit(currentQuestionIndex)" class="submit">Exit</button></p>*@
+}
+
+else if (currentQuestionIndex == XmlQuestions.Count)
+{
+    currentQuestionIndex = 0;
+    <!--
+    <h2>@nameVragenSet</h2>
+    <hr />
+    -->
+    <CascadingValue Value="XmlQuestions">
+        <VerwerkingNietKennisTest NaamVragenSet="@NaamVragenSet" />
+    </CascadingValue>
+}

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<vragenset>Python</vragenset>
+	<setinfo></setinfo>
 	<vraag>
 		<disabled></disabled>
 		<guid>c0fa07e5-8eb2-4625-812b-3de6fe71352d</guid>

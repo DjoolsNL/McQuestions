@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <vragenset>Javascript</vragenset>
+	<setinfo></setinfo>
   <vraag>
-    <disabled></disabled>
+    <disabled>false</disabled>
     <guid>d3e61bdc-c576-4f55-8058-b9fd375658e9</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>

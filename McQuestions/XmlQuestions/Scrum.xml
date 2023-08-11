@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<vragenset>Scrum Master 1</vragenset>
+	<setinfo></setinfo>
 	<vraag>
 		<disabled></disabled>
 		<guid>feca64de-112c-4218-a40e-fd5e57397f92</guid>

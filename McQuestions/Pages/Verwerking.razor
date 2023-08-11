@@ -11,13 +11,13 @@
 
 	[Parameter]	public string NaamVragenSet { get; set; }
 
-	[Parameter] public string levelQuestions { get; set; }
+	[Parameter] public string LevelQuestions { get; set; }
 
 	public int score = 0;
 
 	public string folderPath;
 	string pathToFile;
-	private List<XElement> xmlTests;
+	private List<XElement> testUitslagen;
 
 	public double fraction;
 	public double percentage;
@@ -46,36 +46,36 @@
 
 			var xmlString = File.ReadAllText(pathToFile);
 			var rootElement = XElement.Parse(xmlString);
-			xmlTests = rootElement.Elements("test").ToList();
-		
+			
 			XElement doc = new XElement("root");
+			testUitslagen = rootElement.Elements("test").ToList();		
 			XElement test = new XElement("test");
 			XElement datum = new XElement("datum", currentDate.ToString("d-M-yyyy"));
 			XElement vragenset = new XElement("vragenset", NaamVragenSet);
-			XElement niveau = new XElement("niveau", levelQuestions);
+			XElement niveau = new XElement("niveau", LevelQuestions);
 			XElement aantal = new XElement("aantal", XmlQuestionsSelection.Count().ToString());
 			XElement scoore = new XElement("score", score);
-			test.Add(datum, vragenset, niveau, aantal, scoore);
-			xmlTests.Add(test);
 
-			foreach (var item in xmlTests)
+			test.Add(datum, vragenset, niveau, aantal, scoore);
+			testUitslagen.Add(test);
+
+			foreach (var testt in testUitslagen)
 			{
-				XElement testt = new XElement("test", item.Elements());
-				doc.Add(testt);
+				XElement testtt = new XElement("test", testt.Elements());
+				doc.Add(testtt);
 			}
 
 			doc.Save(pathToFile);
 
-			if (levelQuestions != "6")
+			if (LevelQuestions != "6")
 			{
 				// nu nog de gegevens uit xmlTests halen en weergeven 
-				var selec = xmlTests.FindAll(t => t.Element("vragenset").Value == NaamVragenSet && t.Element("niveau").Value == levelQuestions);
-				sumofquestions = selec.Sum(e => (int)e.Element("aantal"));
+				var selectie = testUitslagen.FindAll(t => t.Element("vragenset").Value == NaamVragenSet && t.Element("niveau").Value == LevelQuestions);
+				sumofquestions = selectie.Sum(e => (int)e.Element("aantal"));
 		 
-				sumofscore = selec.Sum(e => (int)e.Element("score"));
+				sumofscore = selectie.Sum(e => (int)e.Element("score"));
 			}
 		}
-
 	}
 
 	private void ShowAI(string volgnummer)
@@ -98,13 +98,13 @@
 	percentage = fraction * 100;
 	result = $"{percentage:0.00}%";
 
-	if (levelQuestions != "6")
+	if (LevelQuestions != "6")
 	{
 		<p><b>Score: @result</b> (@score / @XmlQuestionsSelection.Count) &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
 		fraction = (double)sumofscore / (double)sumofquestions;
 		percentage = fraction * 100;
 		result = $"{percentage:0.00}%";
-		<p><b>Total score @NaamVragenSet niveau @levelQuestions: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+		<p><b>Total score @NaamVragenSet niveau @LevelQuestions: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
 
 		<hr />
 		<h2>Antwoorden</h2>

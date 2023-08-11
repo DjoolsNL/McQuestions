@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <vragenset>Wat voor een baan?</vragenset>
+  <vragenset>Nieuwe baan</vragenset>
+	<setinfo></setinfo>	
   <vraag>
-    <disabled></disabled>
+    <disabled>false</disabled>
     <guid>22597137-de62-4662-8445-20ce1cc0b473</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
@@ -15,43 +16,45 @@
       <B>tot 20 km</B>
       <C>tot 30 km</C>
       <D>tot 40 km</D>
-	  <E>tot 50 km</E>
-		<F>tot 75 km</F>
-		<G>tot 100 km</G>
-		<H>meer dan 100 km</H>
+      <E>tot 50 km</E>
+      <F>tot 75 km</F>
+      <G>tot 100 km</G>
+      <H>meer dan 100 km</H>
     </keuzes>
     <antwoord>C</antwoord>
     <userantwoord></userantwoord>
     <show>none</show>
     <uitleg></uitleg>
   </vraag>
+	
   <vraag>
     <disabled></disabled>
     <guid>5e78b300-7c30-4bb8-bd36-f766d114f180</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp>Vervoer</onderwerp>
+    <onderwerp>vervoer</onderwerp>
     <header>
       <regel>Hoe ga je naar je volgende baan?</regel>
     </header>
     <keuzes>
-      <A>te voet / per fiets / brommer</A>
-      <B>met auto / motor</B>
-      <C>met openbaar vervoer</C>
+      <A>lopend/fiets/brommer</A>
+      <B>auto/motor</B>
+      <C>openbaar vervoer</C>
     </keuzes>
     <antwoord>C</antwoord>
     <userantwoord></userantwoord>
     <show>none</show>
     <uitleg></uitleg>
   </vraag>
+	
   <vraag>
     <disabled></disabled>
     <guid>ab7afe48-03d0-4b7b-9ce1-6427cc64ae40</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp>uren per week</onderwerp>
+    <onderwerp>uren p/w</onderwerp>
     <header>
-      <regel>Hoeveel uur wil je per week werken?</regel>
+      <regel>Hoeveel uur per week wil je werken?</regel>
     </header>
     <keuzes>
       <A>24 of minder</A>
@@ -64,175 +67,142 @@
     <show>none</show>
     <uitleg></uitleg>
   </vraag>
+	
   <vraag>
     <disabled></disabled>
-    <guid>99407053-8aee-4a9b-b5e8-1f7bbf47aee5</guid>
+    <guid>99407053-8aee-4a9b-b2e8-1f7bbf47aee5</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp>dagen per week</onderwerp>
+    <onderwerp>zelfstandig/teamverband</onderwerp>
     <header>
-      <regel>Hoeveel dagen per week wil je werken?</regel>
+      <regel>Werk je liever zelfstandig aan taken of in teamverband</regel>
     </header>
     <keuzes>
-      <A>2</A>
-      <B>3</B>
-      <C>4</C>
-      <D>5</D>
+      <A>zelfstandig</A>
+      <B>in teamverband</B>
     </keuzes>
     <antwoord>A</antwoord>
     <userantwoord></userantwoord>
     <show>none</show>
     <uitleg></uitleg>
   </vraag>
+	
   <vraag>
     <disabled></disabled>
-    <guid>78e506dd-fced-498c-9d4c-4cc415c72fbf</guid>
+    <guid>78e306cd-fced-498c-9d4c-4cd418c72cbf</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>salaris</onderwerp>
     <header>
-      <regel>Anderen vragen mij om hulp als ze met technische dingen worstelen.</regel>
+      <regel>Hoe belangrijk is de hoogte van het salaris</regel>
     </header>
     <keuzes>
-      <A>zelden tot nooit</A>
-      <B>soms</B>
-      <C>vaak</C>
+      <A>weinig</A>
+      <B>een beetje</B>
+      <C>matig</C>
+      <D>belangrijk</D>
+      <E>erg belangrijk</E>
     </keuzes>
     <antwoord>C</antwoord>
     <userantwoord></userantwoord>
     <show>none</show>
     <uitleg></uitleg>
   </vraag>
+	
   <vraag>
     <disabled></disabled>
-    <guid>dfbfed96-cdaf-42ae-9591-ca98a64262c5</guid>
+    <guid>dfbfed96-cdaf-42ae-9661-ca98a34262c5</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp>Browser, www, internet</onderwerp>
+    <onderwerp>werksfeer</onderwerp>
     <header>
-      <regel>De begrippen 'World wide web' en 'internet' betekenen hetzelfde</regel>
+      <regel>Hoe belangrijk vind je een goede werksfeer?</regel>
     </header>
     <keuzes>
-      <A>Ja</A>
-      <B>Nee</B>
-      <C>Dat hangt ervan af</C>
+      <A>weinig</A>
+      <B>een beetje</B>
+      <C>matig</C>
+      <D>belangrijk</D>
+      <E>erg belangrijk</E>
     </keuzes>
     <antwoord>B</antwoord>
     <userantwoord></userantwoord>
     <show>none</show>
     <uitleg></uitleg>
   </vraag>
+	
   <vraag>
     <disabled>false</disabled>
-    <guid>f79aa83b-553d-42c8-a1a1-de74eb853fe1</guid>
+    <guid>f74aa83b-558c-42c8-a1b1-de74eb853fe1</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>routine/afwisseling</onderwerp>
     <header>
-      <regel>Ik weet meestal precies wat ik wil als ik hardware ga kopen.</regel>
+      <regel>Routine of afwisseling?</regel>
     </header>
     <keuzes>
-      <A>zelden tot nooit</A>
-      <B>soms</B>
-      <C>vaak</C>
+      <A>routine</A>
+      <B>afwisseling</B>
+    </keuzes>
+    <antwoord>A</antwoord>
+    <userantwoord></userantwoord>
+    <show>none</show>
+    <uitleg></uitleg>
+  </vraag>
+	
+  <vraag>
+    <disabled>false</disabled>
+    <guid>f74a853b-553d-42c8-a1b1-de74eb853fe1</guid>
+    <volgnummer></volgnummer>
+    <niveau>1</niveau>
+    <onderwerp>telewerken</onderwerp>
+    <header>
+      <regel>Hoe belangrijk vind je telewerken?</regel>
+    </header>
+    <keuzes>
+      <A>weinig belangrijk</A>
+      <B>belangrijk</B>
+      <C>zeer belangrijk</C>
     </keuzes>
     <antwoord>C</antwoord>
     <userantwoord></userantwoord>
     <show>none</show>
     <uitleg></uitleg>
   </vraag>
+	
   <vraag>
-    <disabled></disabled>
-    <guid>1ff447f8-bd02-4b3f-8ff5-719788431267</guid>
+    <disabled>false</disabled>
+    <guid>f74a853b-553d-42c8-a1b3-de74ad753fe1</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp>Browser, www, internet</onderwerp>
+    <onderwerp>ambitie</onderwerp>
     <header>
-      <regel>Edge is de browser van</regel>
+      <regel>Wil je in de nieuwe baan naar een hoger niveau doorgroeien?</regel>
     </header>
     <keuzes>
-      <A>Mozilla</A>
-      <B>Microsoft</B>
-      <C>Google</C>
-      <D>Facebook</D>
-    </keuzes>
-    <antwoord>B</antwoord>
-    <userantwoord></userantwoord>
-    <show>none</show>
-    <uitleg></uitleg>
-  </vraag>
-  <vraag>
-    <disabled></disabled>
-    <guid>b5a499f1-cd7e-4cf4-8cc0-d3770f452a56</guid>
-    <volgnummer></volgnummer>
-    <niveau>1</niveau>
-    <onderwerp></onderwerp>
-    <header>
-      <regel>De naam Steve Jobs is verbonden aan</regel>
-    </header>
-    <keuzes>
-      <A>Microsoft</A>
-      <B>IBM</B>
-      <C>Amazon</C>
-      <D>Apple</D>
-    </keuzes>
-    <antwoord>D</antwoord>
-    <userantwoord></userantwoord>
-    <show>none</show>
-    <uitleg></uitleg>
-  </vraag>
-  <vraag>
-    <disabled></disabled>
-    <guid>f1f5000a-6f66-4b53-b1d7-7e75e71c09f6</guid>
-    <volgnummer></volgnummer>
-    <niveau>1</niveau>
-    <onderwerp></onderwerp>
-    <header>
-      <regel>Ik wil graag het beste uit mijn mobieltje of pc halen.</regel>
-    </header>
-    <keuzes>
-      <A>zelden tot nooit</A>
-      <B>soms</B>
-      <C>vaak</C>
+      <A>Nee</A>
+      <B>Ja</B>
+      <C>ja maar</C>
     </keuzes>
     <antwoord>C</antwoord>
     <userantwoord></userantwoord>
     <show>none</show>
     <uitleg></uitleg>
   </vraag>
+	
   <vraag>
-    <disabled></disabled>
-    <guid>6741a203-48de-4b2f-bd66-c777fd7be461</guid>
+    <disabled>false</disabled>
+    <guid>f74a853b-553d-42d8-a1b3-de74ad733fe1</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>kansinschatting</onderwerp>
     <header>
-      <regel>De naam Jeff Bezos is verbonden aan</regel>
+      <regel>Hoe schat je nu je kansen in een baan te vinden binnen 1 jaar?</regel>
     </header>
     <keuzes>
-      <A>Microsoft</A>
-      <B>IBM</B>
-      <C>Amazon</C>
-      <D>Apple</D>
-    </keuzes>
-    <antwoord>C</antwoord>
-    <userantwoord></userantwoord>
-    <show>none</show>
-    <uitleg></uitleg>
-  </vraag>
-  <vraag>
-    <disabled></disabled>
-    <guid>1a53f1e6-3f9a-456f-a039-9ea0bf5afe6a</guid>
-    <volgnummer></volgnummer>
-    <niveau>1</niveau>
-    <onderwerp></onderwerp>
-    <header>
-      <regel>In mijn vrije tijd ben ik vaak uren met een pc bezig.</regel>
-    </header>
-    <keuzes>
-      <A>zelden tot nooit</A>
-      <B>soms</B>
-      <C>vaak</C>
+      <A>gering</A>
+      <B>redelijk</B>
+      <C>groot</C>
     </keuzes>
     <antwoord>C</antwoord>
     <userantwoord></userantwoord>

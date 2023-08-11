@@ -101,19 +101,19 @@
 <span>
     @if (count >= 50)
     {
-        @for (int i = 5; i <= 50; i += 20)
+        @for (int i = 5; i <= 50; i += 10)
         {
             <label>
-                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i
+                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i &nbsp;
             </label>
         }
     }
     else if (count >= 25)
     {
-        @for (int i = 5; i <= 45; i += 20)
+        @for (int i = 5; i <= 45; i += 10)
         {
             <label>
-                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i
+                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i &nbsp;
             </label>
         }
     }
@@ -122,14 +122,14 @@
         @for (int i = 5; i <= 10; i += 5)
         {
             <label>
-                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i
+                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i &nbsp;
             </label>
         }
     }
     else if (count >= 5)
     {
         <label>
-            <input type="radio" name="total" value="5" @onchange="OnChangeNumberOfQuestions" /> 5
+            <input type="radio" name="total" value="5" @onchange="OnChangeNumberOfQuestions" /> 5 &nbsp;
         </label>
     }
 </span>
@@ -140,7 +140,7 @@
 {
     <div class="indexdiv">
         <CascadingValue Value="XmlQuestionsSelection">
-            <Uitvoering NaamVragenSet="@NaamVragenSet" levelQuestions="@niveau" />
+            <Uitvoering NaamVragenSet="@NaamVragenSet" LevelQuestions="@niveau" />
         </CascadingValue>
     </div>
 }

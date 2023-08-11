@@ -1,0 +1,114 @@
+﻿@using System.Xml.Linq
+@using System.Linq
+@using System.Collections.Generic
+@using System.IO
+
+@code
+{
+	[CascadingParameter] public List<XElement>? XmlQuestions { get; set; }
+	[Parameter]	public string NaamVragenSet { get; set; }
+
+	public int score = 0;
+
+	public string folderPath;
+	string pathToFile;
+	private List<XElement> testUitslagen;
+
+	public double fraction;
+	public double percentage;
+	public string result; 
+	public int sumofquestions;
+	public int sumofscore;
+
+	DateTime currentDate  = DateTime.Today;
+
+	public string textButton = "Engage your AI teacher";
+
+	protected override void OnInitialized()
+	{
+		@if (XmlQuestions.Count() != 0)
+		{
+			
+			
+			XElement onderwerpen = new XElement("onderwerpen");
+
+			foreach (var question in XmlQuestions)
+			{
+				var tagOnderwerp = question.Element("onderwerp").Value;
+				var letterGebruikersAntwoord = question.Element("userantwoord").Value;
+				var gebruikersAntwoord = question.Element("keuzes").Element(letterGebruikersAntwoord).Value;
+				
+				XElement onderwerp = new XElement("onderwerp");
+				XElement tag = new XElement("tag", tagOnderwerp);
+				XElement vraag = new XElement("vraag", @question.Element("header").Value);
+				XElement antwoord = new XElement("antwoord", gebruikersAntwoord);
+				onderwerp.Add(vraag, tag, antwoord);
+				onderwerpen.Add(onderwerp);
+			}
+
+
+
+			Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlAccount\\");
+			folderPath = Directory.GetCurrentDirectory();
+			pathToFile = folderPath + "\\AccountResultsNietKennisTests.xml";
+
+			var xmlString = File.ReadAllText(pathToFile);
+			var rootElement = XElement.Parse(xmlString);
+			
+			XElement doc = new XElement("root");
+			testUitslagen = rootElement.Elements("test").ToList();		
+			XElement test = new XElement("test");
+			XElement datum = new XElement("datum", currentDate.ToString("d-M-yyyy"));
+			XElement vragenset = new XElement("vragenset", NaamVragenSet);
+			XElement aantal = new XElement("aantal", XmlQuestions.Count().ToString());
+
+
+
+			test.Add(datum, vragenset, aantal, onderwerpen);
+			testUitslagen.Add(test);
+
+			foreach (var testt in testUitslagen)
+			{
+				XElement testtt = new XElement("test", testt.Elements());
+				doc.Add(testtt);
+			}
+
+			doc.Save(pathToFile);
+		}
+	}
+}
+
+@if (XmlQuestions.Count() != 0)
+{
+		<hr />
+		<h2>Antwoorden</h2>
+		<hr />
+
+}
+
+
+<!--   TESTUITSLAG VRAGEN EN ANTWOORDEN  -->
+@if (XmlQuestions.Count() != 0)
+{
+	foreach (var question in XmlQuestions)
+	{
+		var letterGebruikersAntwoord = question.Element("userantwoord").Value;		
+		var gebruikersAntwoord = question.Element("keuzes").Element(letterGebruikersAntwoord).Value;
+
+		<div>
+			<p>@question.Element("header").Value</p>
+			<p class="inspringen">
+				<span class="blauw">
+					<span class="oi oi-circle-check"></span>&nbsp;&nbsp;Jij: &nbsp;@gebruikersAntwoord
+				</span>
+			</p>
+
+
+			<hr />
+		</div>
+	}
+}
+
+
+
+

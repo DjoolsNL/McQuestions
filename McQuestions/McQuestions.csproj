@@ -8,20 +8,50 @@
 
   <ItemGroup>
     <Content Remove="Pages\Javascript1.razor" />
-    <Content Remove="Pages\Selectie - Copy.razor" />
-    <Content Remove="Pages\Uitvoering - Copy.razor" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="XmlAccount\AccountResults.xml" />
+    <None Remove="XmlAccount\AccountResultsNietKennisTests.xml" />
+    <None Remove="XmlQuestions\C-Sharp.xml" />
+    <None Remove="XmlQuestions\FrontEnd.xml" />
+    <None Remove="XmlQuestions\General.xml" />
+    <None Remove="XmlQuestions\Intake.xml" />
+    <None Remove="XmlQuestions\Javascript.xml" />
     <None Remove="XmlQuestions\NieuweBaan.xml" />
+    <None Remove="XmlQuestions\Python.xml" />
+    <None Remove="XmlQuestions\Scrum.xml" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="XmlAccount\AccountResultsNietKennisTests.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="XmlAccount\AccountResults.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\C-Sharp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\FrontEnd.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\General.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\Intake.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\Javascript.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="XmlQuestions\NieuweBaan.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\Python.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\Scrum.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

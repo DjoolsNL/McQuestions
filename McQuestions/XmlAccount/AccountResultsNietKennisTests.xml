@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <test>
+    <datum>10-8-2023</datum>
+    <vragenset>Nieuwe baan</vragenset>
+    <aantal>10</aantal>
+    <onderwerpen>
+      <onderwerp>
+        <vraag>Wat is de maximale afstand die je wil reizen voor een nieuwe baan?</vraag>
+        <tag>afstand</tag>
+        <antwoord>tot 10 km</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe ga je naar je volgende baan?</vraag>
+        <tag>vervoer</tag>
+        <antwoord>lopend/fiets/brommer</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoeveel uur per week wil je werken?</vraag>
+        <tag>Uren p/w</tag>
+        <antwoord>24 of minder</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Werk je liever zelfstandig aan taken of in teamverband</vraag>
+        <tag>Zelfstandig/teamverband</tag>
+        <antwoord>in teamverband</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe belangrijk is de hoogte van het salaris</vraag>
+        <tag>salaris</tag>
+        <antwoord>belangrijk</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe belangrijk vind je een goede werksfeer?</vraag>
+        <tag>Werksfeer</tag>
+        <antwoord>erg belangrijk</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Routine of afwisseling?</vraag>
+        <tag>Routine/afwisseling</tag>
+        <antwoord>afwisseling</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe belangrijk vind je telewerken?</vraag>
+        <tag>Telewerken</tag>
+        <antwoord>belangrijk</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Wil je in de nieuwe baan naar een hoger niveau doorgroeien?</vraag>
+        <tag>Ambitie</tag>
+        <antwoord>Ja</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe schat je nu je kansen in een baan te vinden binnen 1 jaar?</vraag>
+        <tag>Kansinschatting</tag>
+        <antwoord>redelijk</antwoord>
+      </onderwerp>
+    </onderwerpen>
+  </test>
+  <test>
+    <datum>10-8-2023</datum>
+    <vragenset>Nieuwe baan</vragenset>
+    <aantal>10</aantal>
+    <onderwerpen>
+      <onderwerp>
+        <vraag>Wat is de maximale afstand die je wil reizen voor een nieuwe baan?</vraag>
+        <tag>Afstand</tag>
+        <antwoord>tot 10 km</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe ga je naar je volgende baan?</vraag>
+        <tag>Vervoer</tag>
+        <antwoord>lopend/fiets/brommer</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoeveel uur per week wil je werken?</vraag>
+        <tag>Uren p/w</tag>
+        <antwoord>24 of minder</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Werk je liever zelfstandig aan taken of in teamverband</vraag>
+        <tag>Zelfstandig/teamverband</tag>
+        <antwoord>in teamverband</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe belangrijk is de hoogte van het salaris</vraag>
+        <tag>Salaris</tag>
+        <antwoord>erg belangrijk</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe belangrijk vind je een goede werksfeer?</vraag>
+        <tag>Werksfeer</tag>
+        <antwoord>weinig</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Routine of afwisseling?</vraag>
+        <tag>Routine/afwisseling</tag>
+        <antwoord>routine</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe belangrijk vind je telewerken?</vraag>
+        <tag>Telewerken</tag>
+        <antwoord>zeer belangrijk</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Wil je in de nieuwe baan naar een hoger niveau doorgroeien?</vraag>
+        <tag>Ambitie</tag>
+        <antwoord>Ja</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe schat je nu je kansen in een baan te vinden binnen 1 jaar?</vraag>
+        <tag>Kansinschatting</tag>
+        <antwoord>groot</antwoord>
+      </onderwerp>
+    </onderwerpen>
+  </test>
+  <test>
+    <datum>10-8-2023</datum>
+    <vragenset>Nieuwe baan</vragenset>
+    <aantal>10</aantal>
+    <onderwerpen>
+      <onderwerp>
+        <vraag>Wat is de maximale afstand die je wil reizen voor een nieuwe baan?</vraag>
+        <tag>Afstand</tag>
+        <antwoord>tot 10 km</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe ga je naar je volgende baan?</vraag>
+        <tag>Vervoer</tag>
+        <antwoord>auto/motor</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoeveel uur per week wil je werken?</vraag>
+        <tag>Uren p/w</tag>
+        <antwoord>24 - 32</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Werk je liever zelfstandig aan taken of in teamverband</vraag>
+        <tag>Zelfstandig/teamverband</tag>
+        <antwoord>zelfstandig</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe belangrijk is de hoogte van het salaris</vraag>
+        <tag>Salaris</tag>
+        <antwoord>een beetje</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe belangrijk vind je een goede werksfeer?</vraag>
+        <tag>Werksfeer</tag>
+        <antwoord>een beetje</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Routine of afwisseling?</vraag>
+        <tag>Routine/afwisseling</tag>
+        <antwoord>afwisseling</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe belangrijk vind je telewerken?</vraag>
+        <tag>Telewerken</tag>
+        <antwoord>belangrijk</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Wil je in de nieuwe baan naar een hoger niveau doorgroeien?</vraag>
+        <tag>Ambitie</tag>
+        <antwoord>Ja</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Hoe schat je nu je kansen in een baan te vinden binnen 1 jaar?</vraag>
+        <tag>Kansinschatting</tag>
+        <antwoord>redelijk</antwoord>
+      </onderwerp>
+    </onderwerpen>
+  </test>
+  <test>
+    <datum>10-8-2023</datum>
+    <vragenset>Intake</vragenset>
+    <aantal>12</aantal>
+    <onderwerpen>
+      <onderwerp>
+        <vraag>Chrome is de browser van?</vraag>
+        <tag>Chrome</tag>
+        <antwoord>Mozilla</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Ik heb snel door hoe een app werkt.</vraag>
+        <tag>Apps makkelijk</tag>
+        <antwoord>soms</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>FireFox is de browser van</vraag>
+        <tag>FireFox</tag>
+        <antwoord>Google</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Bill Gates is verbonden aan</vraag>
+        <tag>Bill Gates</tag>
+        <antwoord>Apple</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Anderen vragen mij om hulp als ze met technische dingen worstelen.</vraag>
+        <tag>Geef technische hulp</tag>
+        <antwoord>vaak</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>De begrippen 'World wide web' en 'internet' betekenen hetzelfde</vraag>
+        <tag>Www is gelijk aan internet</tag>
+        <antwoord>Dat hangt ervan af</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Ik weet meestal precies wat ik wil als ik hardware ga kopen.</vraag>
+        <tag>Hardware kennis</tag>
+        <antwoord>vaak</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Edge is de browser van</vraag>
+        <tag>Edge</tag>
+        <antwoord>Microsoft</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>De naam Steve Jobs is verbonden aan</vraag>
+        <tag>Steve Jobs</tag>
+        <antwoord>Amazon</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>Ik wil graag het beste uit mijn mobieltje of pc halen.</vraag>
+        <tag>Max hardware</tag>
+        <antwoord>vaak</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>De naam Jeff Bezos is verbonden aan</vraag>
+        <tag>Jeff Bezos</tag>
+        <antwoord>Amazon</antwoord>
+      </onderwerp>
+      <onderwerp>
+        <vraag>In mijn vrije tijd ben ik vaak uren met een pc bezig.</vraag>
+        <tag>Achter de pc</tag>
+        <antwoord>vaak</antwoord>
+      </onderwerp>
+    </onderwerpen>
+  </test>
+</root>

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<vragenset>FrontEnd</vragenset>
+	<setinfo></setinfo>
 	<vraag>
 		<disabled></disabled>
 		<guid>a91ab859-d674-43b5-a03d-db60aca22395</guid>

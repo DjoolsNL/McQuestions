@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <vragenset>Intake</vragenset>
+    <setinfo></setinfo>
   <vraag>
     <disabled></disabled>
     <guid>22597137-de62-4762-84b5-20ce1cc0b473</guid>
@@ -8,7 +9,7 @@
     <niveau>1</niveau>
     <onderwerp>Browser, www, internet</onderwerp>
     <header>
-      <regel>Chrome is de browser van</regel>
+      <regel>Chrome is de browser van?</regel>
     </header>
     <keuzes>
       <A>Mozilla</A>
@@ -22,7 +23,7 @@
     <uitleg></uitleg>
   </vraag>
   <vraag>
-    <disabled></disabled>
+    <disabled>false</disabled>
     <guid>5e78a300-7c30-4bb8-bd36-f766c114f180</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
@@ -41,7 +42,7 @@
     <uitleg></uitleg>
   </vraag>
   <vraag>
-    <disabled></disabled>
+    <disabled>false</disabled>
     <guid>aa7afe48-03d0-4b7b-9ce1-6427cc64ae40</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
