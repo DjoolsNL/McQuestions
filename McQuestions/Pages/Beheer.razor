@@ -84,7 +84,12 @@
 		xElement = XElement.Parse(xmlString);
 
 		naamVragenSet = xElement.Element("vragenset").Value + " Vragenset";
-		xmlQuestions = xElement.Elements("vraag").ToList();
+		List<XElement> elementsList = new();
+		elementsList = xElement.Elements("vraag").ToList();
+		
+		xmlQuestions = elementsList
+			.OrderBy(element => (string)element.Element("niveau"))
+			.ToList();
 
 		#region XML to OBJECT
 		// data uit xml wordt gebruikt om objecten Vraag te maken 

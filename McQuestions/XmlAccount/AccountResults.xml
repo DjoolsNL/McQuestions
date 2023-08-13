@@ -241,4 +241,11 @@
     <aantal>5</aantal>
     <score>3</score>
   </test>
+  <test>
+    <datum>11-8-2023</datum>
+    <vragenset>Algemene ICT</vragenset>
+    <niveau>2</niveau>
+    <aantal>1</aantal>
+    <score>1</score>
+  </test>
 </root>

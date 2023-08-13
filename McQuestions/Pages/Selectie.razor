@@ -31,8 +31,68 @@
             .Where(e => e.Element("disabled").Value != "true")
             .ToList();
 
-        xmlQuestions = allEnabledQuestions.FindAll(l => l.Element("niveau").Value == niveau);
-        count = xmlQuestions.Count();
+        if (selectedOption == "6")
+        {
+            // niveau met laagste aantal is leidend voor max aantal vragen
+
+            // List<string> niveaus = allEnabledQuestions.Select(element => element.Element("niveau").Value).Distinct().ToList();
+
+            // List<int> totalsPerLevel = new List<int>();
+            // foreach (var item in niveaus)
+            // {
+            //     var totalPerLevel = allEnabledQuestions.FindAll(element => element.Element("niveau").Value == item).Count();
+            //     totalsPerLevel.Add(totalPerLevel);
+            // }
+
+            // foreach (var item in niveaus)
+            // {
+            //     var enabledQuestionsLevelSpecific = allEnabledQuestions.Where(x => x.Element("niveau").Value == item).ToList();
+            //     for (int i = 1; i <= totalsPerLevel.Min(); i++)
+            //     {
+            //         randomNumber = RandomHelper.Next(0, enabledQuestionsLevelSpecific.Count());
+            //         xmlQuestions.Add(enabledQuestionsLevelSpecific[randomNumber]);
+            //         enabledQuestionsLevelSpecific.RemoveAt(randomNumber);
+            //     }
+            // }
+
+            List<string> niveaus = allEnabledQuestions
+                .Select(vraag => vraag.Element("niveau").Value)
+                .Distinct()
+                .ToList();
+
+            List<int> totalsPerLevel = new List<int>();
+            foreach (var niveau in niveaus)
+            {
+                var totalPerLevel = allEnabledQuestions.Count(vraag => vraag.Element("niveau").Value == niveau);
+                totalsPerLevel.Add(totalPerLevel);
+            }
+
+            foreach (var niveau in niveaus)
+            {
+                var enabledQuestionsLevelSpecific = allEnabledQuestions
+                    .Where(vraag => vraag.Element("niveau").Value == niveau)
+                    .ToList();
+
+                for (int i = 1; i <= totalsPerLevel.Min(); i++)
+                {
+                    randomNumber = RandomHelper.Next(0, enabledQuestionsLevelSpecific.Count());
+                    xmlQuestions.Add(enabledQuestionsLevelSpecific[randomNumber]);
+                    enabledQuestionsLevelSpecific.RemoveAt(randomNumber);
+                }
+            }
+
+
+
+
+            count = xmlQuestions.Count();
+        }
+        else
+        {
+            xmlQuestions = allEnabledQuestions.FindAll(vraag => vraag.Element("niveau").Value == niveau);
+            count = xmlQuestions.Count();
+        }
+
+
     }
 
     private void OnChangeNumberOfQuestions(ChangeEventArgs e)
@@ -40,15 +100,16 @@
         int choice;
         if (int.TryParse(e.Value.ToString(), out choice))
         {
-            for (int i = 0; i < choice; i++)
-            {
-                randomNumber = RandomHelper.Next(0, xmlQuestions.Count());
-                xmlQuestions[randomNumber].Element("volgnummer").Value = i.ToString();
-                XmlQuestionsSelection.Add(xmlQuestions[randomNumber]);
-                xmlQuestions.RemoveAt(randomNumber);
-            }
-            ready = true;
+                for (int i = 0; i < choice; i++)
+                {
+                    randomNumber = RandomHelper.Next(0, xmlQuestions.Count());
+                    xmlQuestions[randomNumber].Element("volgnummer").Value = i.ToString();
+                    XmlQuestionsSelection.Add(xmlQuestions[randomNumber]);
+                    xmlQuestions.RemoveAt(randomNumber);
+                }
+                ready = true;
         }
+
     }
 
     private bool IsOptionSelected(string optionValue)
@@ -93,7 +154,7 @@
 <span>
     &nbsp;&nbsp; Niveau Mix:
     <label>
-        <input type="radio" name="level" value="6" @onchange="OnChangeLevel" /> 1-5
+        <input type="radio" name="level" value="6" @onchange="OnChangeLevel" checked="@IsOptionSelected("6")" /> 1-5
     </label>
     &nbsp;- &nbsp;Aantal vragen:
 </span>
@@ -110,7 +171,7 @@
     }
     else if (count >= 25)
     {
-        @for (int i = 5; i <= 45; i += 10)
+        @for (int i = 5; i <= 25; i += 10)
         {
             <label>
                 <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" /> @i &nbsp;

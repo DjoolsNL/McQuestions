@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<vragenset>Backend</vragenset>
+	<setinfo></setinfo>	
+	
+	<vraag>
+		<disabled></disabled>
+		<guid>86f095d9-0791-4a12-aeb1-67bb599a40e1</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Database Management Systems</onderwerp>
+		<header>
+			<regel>Which language is commonly used to query relational databases?</regel>
+		</header>
+		<keuzes>
+			<A>Java</A>
+			<B>HTML</B>
+			<C>SQL</C>
+			<D>Python</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>SQL (Structured Query Language) is used to query and manipulate relational databases.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>ec7a80e2-6159-45af-8784-54879e84d0eb</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Web Servers</onderwerp>
+		<header>
+			<regel>Which web server is often used in conjunction with PHP?</regel>
+		</header>
+		<keuzes>
+			<A>Tomcat</A>
+			<B>Nginx</B>
+			<C>Apache</C>
+			<D>IIS</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Apache web server is commonly used with PHP to serve web content.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>e3a5bafc-1853-4f4b-96f9-634f5d6995e2</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>APIs and Web Services</onderwerp>
+		<header>
+			<regel>What does API stand for?</regel>
+		</header>
+		<keuzes>
+			<A>Advanced Program Interface</A>
+			<B>Application Programming Interface</B>
+			<C>Automated Process Integration</C>
+			<D>Application Process Interface</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>An API (Application Programming Interface) defines interactions between different software applications.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>cbde274c-c289-426d-85b4-e1101c15892e</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Version Control</onderwerp>
+		<header>
+			<regel>Git is a popular tool used for:</regel>
+		</header>
+		<keuzes>
+			<A>Database management</A>
+			<B>Frontend development</B>
+			<C>Version control</C>
+			<D>Network security</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Git is primarily used for version control, allowing teams to manage and track changes to source code.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>dc35d997-177a-46b3-afef-6f0f18a5f65b</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Authentication and Security</onderwerp>
+		<header>
+			<regel>Which protocol is commonly used for secure data transmission over the internet?</regel>
+		</header>
+		<keuzes>
+			<A>HTTP</A>
+			<B>FTP</B>
+			<C>SMTP</C>
+			<D>HTTPS</D>
+		</keuzes>
+		<antwoord>D</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>HTTPS (Hypertext Transfer Protocol Secure) is used to ensure secure communication by encrypting data between a user's browser and the web server.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>beabfa2d-52b0-4b07-84ce-1ed08c4eb968</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Server Requests</onderwerp>
+		<header>
+			<regel>Which HTTP method is used for retrieving data from a server?</regel>
+		</header>
+		<keuzes>
+			<A>POST</A>
+			<B>PUT</B>
+			<C>GET</C>
+			<D>DELETE</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The GET method is used to request data from a server, typically to retrieve information.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>77df2baf-96e7-4281-9a8a-87a5e59e167c</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>Caching</onderwerp>
+		<header>
+			<regel>What is the purpose of browser caching in web development?</regel>
+		</header>
+		<keuzes>
+			<A>To slow down website loading times</A>
+			<B>To prevent access to the website</B>
+			<C>To improve website performance by storing resources locally</C>
+			<D>To display more advertisements</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Browser caching helps improve website performance by storing resources locally, reducing the need to fetch them from the server repeatedly.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>82f8d0ef-576f-4ac2-8312-1c0aa3c9a16a</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Database Indexing</onderwerp>
+		<header>
+			<regel>What is the main purpose of creating indexes in a database?</regel>
+		</header>
+		<keuzes>
+			<A>To enforce data integrity</A>
+			<B>To speed up data retrieval operations</B>
+			<C>To optimize memory usage</C>
+			<D>To eliminate duplicate records</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>Indexes are used to accelerate data retrieval by providing a fast lookup mechanism for frequently queried columns.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>06f8eaa9-d463-4ab2-aaab-7c8e99bb9db1</guid>
+		<volgnummer></volgnummer>
+		<niveau>2</niveau>
+		<onderwerp>Network Protocols</onderwerp>
+		<header>
+			<regel>Which protocol is used to securely transfer files over a network?</regel>
+		</header>
+		<keuzes>
+			<A>FTP</A>
+			<B>TCP</B>
+			<C>UDP</C>
+			<D>SSH</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>FTP (File Transfer Protocol) is used for transferring files over a network, while SSH provides secure remote access.</uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>e6b2e609-b78f-49e7-96d7-190f24802a14</guid>
+		<volgnummer></volgnummer>
+		<niveau>3</niveau>
+		<onderwerp>Web Application Architecture</onderwerp>
+		<header>
+			<regel>What is the purpose of the MVC pattern in web development?</regel>
+		</header>
+		<keuzes>
+			<A>To manage user authentication</A>
+			<B>To improve database performance</B>
+			<C>To separate concerns in an application</C>
+			<D>To enhance network security</D>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg>The MVC (Model-View-Controller) pattern is used to separate an application into distinct layers for better code organization and maintainability.</uitleg>
+	</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>55b44211-7e06-4f5d-8f3f-8c6e160f41f7</guid>
+  <volgnummer></volgnummer>
+  <niveau>3</niveau>
+  <onderwerp>Concurrency Control</onderwerp>
+  <header>
+    <regel>What is a critical section in concurrent programming?</regel>
+  </header>
+  <keuzes>
+    <A>A section of code that executes in isolation without interruptions</A>
+    <B>A section of code with no synchronization requirements</B>
+    <C>A section of code that must run in parallel with other sections</C>
+    <D>A section of code that is not thread-safe</D>
+  </keuzes>
+  <antwoord>A</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>A critical section is a segment of code that should be executed by only one thread at a time to prevent data corruption and synchronization issues.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>db43d123-18fc-44df-9806-aae0ef74e9ef</guid>
+  <volgnummer></volgnummer>
+  <niveau>4</niveau>
+  <onderwerp>Microservices Architecture</onderwerp>
+  <header>
+    <regel>What is a key advantage of using microservices architecture?</regel>
+  </header>
+  <keuzes>
+    <A>Increased centralized control</A>
+    <B>Higher development cost</B>
+    <C>Stronger coupling between components</C>
+    <D>Better scalability and flexibility</D>
+  </keuzes>
+  <antwoord>D</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Microservices architecture offers improved scalability and flexibility by allowing independent deployment and management of individual services.</uitleg>
+</vraag>
+
+	<vraag>
+  <disabled></disabled>
+  <guid>8afba5c8-8494-4f62-9d2e-7f6cb06d12d4</guid>
+  <volgnummer></volgnummer>
+  <niveau>3</niveau>
+  <onderwerp>Database Transactions</onderwerp>
+  <header>
+    <regel>What is the purpose of a database transaction?</regel>
+  </header>
+  <keuzes>
+    <A>To perform backup of the database</A>
+    <B>To lock database tables for exclusive access</B>
+    <C>To group multiple database operations into an atomic unit</C>
+    <D>To optimize database indexing</D>
+  </keuzes>
+  <antwoord>C</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>A database transaction groups multiple operations into a single unit of work, ensuring that either all operations are completed successfully or none are applied.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>6e1e0c3e-643a-4ed7-a4e1-33aa1ee6f60c</guid>
+  <volgnummer></volgnummer>
+  <niveau>2</niveau>
+  <onderwerp>Load Balancing</onderwerp>
+  <header>
+    <regel>What is the purpose of a load balancer in a web application architecture?</regel>
+  </header>
+  <keuzes>
+    <A>To synchronize data across distributed nodes</A>
+    <B>To secure data during transmission</B>
+    <C>To evenly distribute incoming network traffic</C>
+    <D>To manage database transactions</D>
+  </keuzes>
+  <antwoord>C</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>A load balancer distributes incoming network traffic across multiple servers to ensure optimal resource utilization and prevent overloading.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>2bb7d00a-0b35-4173-8d77-9c0570e6c7d1</guid>
+  <volgnummer></volgnummer>
+  <niveau>4</niveau>
+  <onderwerp>Serverless Computing</onderwerp>
+  <header>
+    <regel>What is the primary advantage of serverless computing?</regel>
+  </header>
+  <keuzes>
+    <A>Lower security risks</A>
+    <B>Higher infrastructure management overhead</B>
+    <C>More control over the underlying hardware</C>
+    <D>Automatic scalability and reduced operational complexity</D>
+  </keuzes>
+  <antwoord>D</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Serverless computing provides automatic scalability and abstracts away operational complexity, allowing developers to focus on code.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>d792bcaa-502d-44ad-9267-b8ef9168cb18</guid>
+  <volgnummer></volgnummer>
+  <niveau>3</niveau>
+  <onderwerp>Software Design Patterns</onderwerp>
+  <header>
+    <regel>Which design pattern is used to ensure a single instance of a class is created throughout an application?</regel>
+  </header>
+  <keuzes>
+    <A>Singleton</A>
+    <B>Factory</B>
+    <C>Observer</C>
+    <D>Decorator</D>
+  </keuzes>
+  <antwoord>A</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>The Singleton pattern ensures a class has only one instance and provides a global point of access to that instance.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>332ebca6-45b7-4f22-b193-313d61ff6e23</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Server-Side Caching</onderwerp>
+  <header>
+    <regel>What is an advantage of using in-memory caching over disk-based caching?</regel>
+  </header>
+  <keuzes>
+    <A>Higher persistence</A>
+    <B>Faster access times</B>
+    <C>Lower memory consumption</C>
+    <D>More resilient to power failures</D>
+  </keuzes>
+  <antwoord>B</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>In-memory caching offers faster access times compared to disk-based caching due to the elimination of disk I/O operations.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>13af7ca0-b6ab-4210-84e1-94856432b45a</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Programming Languages</onderwerp>
+  <header>
+    <regel>Which programming language is often used for backend development?</regel>
+  </header>
+  <keuzes>
+    <A>HTML</A>
+    <B>CSS</B>
+    <C>JavaScript</C>
+    <D>Python</D>
+  </keuzes>
+  <antwoord>D</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Python is commonly used for backend development due to its simplicity and versatility.</uitleg>
+</vraag>
+
+	<vraag>
+  <disabled></disabled>
+  <guid>2515e8d7-5a6d-49a9-ae5c-2dd75d42b129</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>HTTP Status Codes</onderwerp>
+  <header>
+    <regel>What does a 404 HTTP status code indicate?</regel>
+  </header>
+  <keuzes>
+    <A>Server error</A>
+    <B>Forbidden access</B>
+    <C>Successful request</C>
+    <D>Resource not found</D>
+  </keuzes>
+  <antwoord>D</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>A 404 status code indicates that the requested resource could not be found on the server.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>e1e050ea-8693-4e47-a8bc-7ac7e06f7b33</guid>
+  <volgnummer></volgnummer>
+  <niveau>2</niveau>
+  <onderwerp>Server Deployment</onderwerp>
+  <header>
+    <regel>Which tool is commonly used for deploying web applications?</regel>
+  </header>
+  <keuzes>
+    <A>Git</A>
+    <B>VSCode</B>
+    <C>Docker</C>
+    <D>Heroku</D>
+  </keuzes>
+  <antwoord>D</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Heroku is a popular platform for deploying web applications.</uitleg>
+</vraag>
+	
+	<vraag>
+  <disabled></disabled>
+  <guid>36c03a85-45a6-4c51-aa1a-7852692490c2</guid>
+  <volgnummer></volgnummer>
+  <niveau>2</niveau>
+  <onderwerp>Backend Frameworks</onderwerp>
+  <header>
+    <regel>Which of the following is a popular backend framework for Python?</regel>
+  </header>
+  <keuzes>
+    <A>Angular</A>
+    <B>React</B>
+    <C>Express</C>
+    <D>Django</D>
+  </keuzes>
+  <antwoord>D</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Django is a widely used backend framework for Python, known for its simplicity and robustness.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>ea5a5bf2-65f2-44c6-8ab9-9385c6f55f63</guid>
+  <volgnummer></volgnummer>
+  <niveau>2</niveau>
+  <onderwerp>RESTful APIs</onderwerp>
+  <header>
+    <regel>What does REST stand for in the context of web services?</regel>
+  </header>
+  <keuzes>
+    <A>Remote Environment Service Technology</A>
+    <B>Representational State Transfer</B>
+    <C>Responsive Element Support Technique</C>
+    <D>Resource Extraction and State Transfer</D>
+  </keuzes>
+  <antwoord>B</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>REST stands for Representational State Transfer and is a set of architectural principles for designing networked applications.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>90eef89d-12d9-4cd3-bd02-1e78e5b1f0c1</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Backend Security</onderwerp>
+  <header>
+    <regel>What is SQL injection?</regel>
+  </header>
+  <keuzes>
+    <A>A technique to prevent unauthorized access</A>
+    <B>A method for encrypting data</B>
+    <C>An attack that manipulates a database query to access or modify data</C>
+    <D>A type of firewall</D>
+  </keuzes>
+  <antwoord>C</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>SQL injection is a type of cyber attack that involves inserting malicious SQL code into a query to access or manipulate a database.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>e065373a-82a1-4c3b-9f1b-c3304d2b711c</guid>
+  <volgnummer></volgnummer>
+  <niveau>2</niveau>
+  <onderwerp>Backend Scalability</onderwerp>
+  <header>
+    <regel>What does horizontal scaling refer to?</regel>
+  </header>
+  <keuzes>
+    <A>Increasing the size of a single server</A>
+    <B>Adding more servers to a system</B>
+    <C>Improving the efficiency of code</C>
+    <D>Optimizing network speed</D>
+  </keuzes>
+  <antwoord>B</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Horizontal scaling involves adding more servers to a system to distribute the load and enhance performance.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>be9408f7-3f1c-441f-9d12-1ff4a97e0e46</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Backend Databases</onderwerp>
+  <header>
+    <regel>Which type of database stores data in tables with rows and columns?</regel>
+  </header>
+  <keuzes>
+    <A>NoSQL database</A>
+    <B>Graph database</B>
+    <C>Document database</C>
+    <D>Relational database</D>
+  </keuzes>
+  <antwoord>D</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Relational databases store data in structured tables with rows and columns, enabling efficient querying.</uitleg>
+</vraag>
+
+
+<vraag>
+  <disabled></disabled>
+  <guid>923847bc-7a07-43f4-b0f6-ebdd0f9a95f4</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Server Requests</onderwerp>
+  <header>
+    <regel>What is the primary HTTP method used for sending data to a server?</regel>
+  </header>
+  <keuzes>
+    <A>GET</A>
+    <B>POST</B>
+    <C>PUT</C>
+    <D>DELETE</D>
+  </keuzes>
+  <antwoord>B</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>The POST method is commonly used for sending data to a server, often used for form submissions.</uitleg>
+</vraag>
+
+
+<vraag>
+  <disabled></disabled>
+  <guid>923847bc-7a07-43f4-b0f6-ebdd0f9a95f4</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Server Requests</onderwerp>
+  <header>
+    <regel>What is the primary HTTP method used for updating data to a server?</regel>
+  </header>
+  <keuzes>
+    <A>GET</A>
+    <B>POST</B>
+    <C>PUT</C>
+    <D>DELETE</D>
+  </keuzes>
+  <antwoord>C</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>The PUT method is commonly used for updating data to a server, often used for form submissions.</uitleg>
+</vraag>
+
+
+<vraag>
+  <disabled></disabled>
+  <guid>7981e021-2d96-4b59-8390-d21c08e5c58d</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>APIs and Web Services</onderwerp>
+  <header>
+    <regel>What does JSON stand for in web development?</regel>
+  </header>
+  <keuzes>
+    <A>JavaScript Orientation Notation</A>
+    <B>Java Structured Object Notation</B>
+    <C>JavaScript Object Notation</C>
+    <D>Java Online Networking</D>
+  </keuzes>
+  <antwoord>C</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>JSON stands for JavaScript Object Notation and is a widely used format for data exchange between a server and a web application.</uitleg>
+</vraag>
+
+
+<vraag>
+  <disabled></disabled>
+  <guid>cf47fdd7-7d8a-4d91-8a7e-d10c9f99c315</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Authentication and Security</onderwerp>
+  <header>
+    <regel>What is a common method used to secure sensitive information like passwords before storing them in a database?</regel>
+  </header>
+  <keuzes>
+    <A>Obfuscation</A>
+    <B>Compression</B>
+    <C>Encryption</C>
+    <D>Serialization</D>
+  </keuzes>
+  <antwoord>C</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Encryption is a process of converting data into a code to prevent unauthorized access.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>88c7fcca-365f-4011-9fc3-72d91ed86828</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Version Control</onderwerp>
+  <header>
+    <regel>What is the purpose of version control in software development?</regel>
+  </header>
+  <keuzes>
+    <A>To track changes to source code over time</A>
+    <B>To create different versions of a programming language</B>
+    <C>To automatically test code for bugs</C>
+    <D>To encrypt sensitive data in code</D>
+  </keuzes>
+  <antwoord>A</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Version control helps track changes made to source code, enabling collaboration and maintaining a history of modifications.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>25bf4d36-3b5b-4c87-bdb4-883ff5e39b5f</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Server Requests</onderwerp>
+  <header>
+    <regel>Which HTTP status code indicates a successful request?</regel>
+  </header>
+  <keuzes>
+    <A>200</A>
+    <B>404</B>
+    <C>500</C>
+    <D>301</D>
+  </keuzes>
+  <antwoord>A</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>The HTTP status code 200 indicates a successful response to a client's request.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>58a8b97c-5e48-4180-b7d1-507d3fe8a5db</guid>
+  <volgnummer></volgnummer>
+  <niveau>2</niveau>
+  <onderwerp>Web Servers</onderwerp>
+  <header>
+    <regel>Which web server is known for its speed and efficiency in serving static content?</regel>
+  </header>
+  <keuzes>
+    <A>Nginx</A>
+    <B>Apache</B>
+    <C>Tomcat</C>
+    <D>IIS</D>
+  </keuzes>
+  <antwoord>A</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Nginx is a high-performance web server often used for serving static content due to its efficient architecture.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>3db61e07-dc69-4b8e-b679-659b30d93ca5</guid>
+  <volgnummer></volgnummer>
+  <niveau>2</niveau>
+  <onderwerp>Backend Frameworks</onderwerp>
+  <header>
+    <regel>Which JavaScript framework is commonly used for building web servers and APIs?</regel>
+  </header>
+  <keuzes>
+    <A>React</A>
+    <B>Angular</B>
+    <C>Vue.js</C>
+    <D>Express.js</D>
+  </keuzes>
+  <antwoord>D</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Express.js is a popular backend framework for building web servers and APIs using JavaScript.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>de925d98-1f70-4db2-8984-7e5a236e50ed</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>API Authentication</onderwerp>
+  <header>
+    <regel>What is an API key used for?</regel>
+  </header>
+  <keuzes>
+    <A>To identify the client making a request to an API</A>
+    <B>To encrypt sensitive data in an API response</B>
+    <C>To generate automatic API documentation</C>
+    <D>To restrict access to APIs within a local network</D>
+  </keuzes>
+  <antwoord>A</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>An API key is used to identify the client making a request to an API and is often used for access control and tracking.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>23d33082-17b0-4d13-9f44-0a3eb9e9b4c7</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Database Querying</onderwerp>
+  <header>
+    <regel>Which language is commonly used to interact with relational databases?</regel>
+  </header>
+  <keuzes>
+    <A>JavaScript</A>
+    <B>Python</B>
+    <C>SQL</C>
+    <D>Java</D>
+  </keuzes>
+  <antwoord>C</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>SQL (Structured Query Language) is used to interact with relational databases for tasks such as querying and modifying data.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>3b1061d1-3d4c-4059-b006-bffca9f62e8f</guid>
+  <volgnummer></volgnummer>
+  <niveau>1</niveau>
+  <onderwerp>Web Hosting</onderwerp>
+  <header>
+    <regel>What is shared hosting in the context of web hosting?</regel>
+  </header>
+  <keuzes>
+    <A>Hosting a website on a single server with dedicated resources</A>
+    <B>Hosting multiple websites on a single server with shared resources</B>
+    <C>Hosting a website on a cloud-based server</C>
+    <D>Hosting a website on a virtual private server</D>
+  </keuzes>
+  <antwoord>B</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Shared hosting involves hosting multiple websites on a single server, sharing its resources among the hosted sites.</uitleg>
+</vraag>
+
+<vraag>
+  <disabled></disabled>
+  <guid>23ed3c6f-bf07-4c25-a23e-8b5c81e2ac64</guid>
+  <volgnummer></volgnummer>
+  <niveau>3</niveau>
+  <onderwerp>Backend Scalability</onderwerp>
+  <header>
+    <regel>What is vertical scaling in the context of backend infrastructure?</regel>
+  </header>
+  <keuzes>
+    <A>Adding more servers to a system</A>
+    <B>Increasing the size of a single server</B>
+    <C>Optimizing network speed</C>
+    <D>Implementing load balancing</D>
+  </keuzes>
+  <antwoord>B</antwoord>
+  <userantwoord></userantwoord>
+  <show>none</show>
+  <uitleg>Vertical scaling involves increasing the resources (such as RAM or CPU) of a single server to handle increased load.</uitleg>
+</vraag>
+
+</root>

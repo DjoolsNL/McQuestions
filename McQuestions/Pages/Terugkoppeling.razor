@@ -90,7 +90,15 @@
 			double fraction = (double)sumofscore / (double)sumofquestions;
 			double percentage = fraction * 100;
 			string result = $"{percentage:0.00}%";
-			<p><br /><b><span style="color:#4CAF50;">Average test score</span> @item - niveau @niveau: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+			if (niveau == "6")
+			{
+				<p><br /><b><span style="color:#4CAF50;">Average test score</span> @item - Niveaumix: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>	
+			}
+			else
+			{
+				<p><br /><b><span style="color:#4CAF50;">Average test score</span> @item - niveau @niveau: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+			}
+
 
 
 			<svg viewBox="0 0 580 210" xmlns="http://www.w3.org/2000/svg">

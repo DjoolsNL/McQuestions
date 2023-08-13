@@ -1,8 +1,52 @@
-﻿<style>
+﻿@using McQuestions.Shared.SvgComponents
+
+<style>
 	.nav-link {
-		/*padding-bottom: 0.2rem;*/
+		color: black;
+		padding: .2rem 1rem;
+		font-size: 0.88rem;
+		
+	}
+	#toplink{
+		padding-top: 16px;
+		padding-left: 10px;
+		font-size: 0.9rem;
 	}
 
+	a {
+		color: black;
+	}
+
+	.nav {
+		padding-left:10px;
+		/*font-size: 0.9rem;*/
+		
+        font-weight: 500;
+        
+	}
+
+	.oi.oi-home{
+		width: 2rem;
+		font-size: 0.91rem;
+		vertical-align: text-top;
+		top: 0px;
+	}
+
+	.oi.oi-plus {
+		width: 2rem;
+		font-size: 0.91rem;
+		vertical-align: text-top;
+		top: 0px;
+	}
+
+	.kopjenav {
+		font-size: 0.88rem; 
+		padding-left: 1.6rem;
+		padding-bottom: .6rem;
+		font-weight:600;
+	}
+
+	
 </style>
 
 <div class="top-row ps-3 navbar navbar-dark">
@@ -16,76 +60,96 @@
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
 	<nav class="flex-column">
-		<div class="nav-item px-3">
+		<div id="toplink">
 			<NavLink class="nav-link" href="" Match="NavLinkMatch.All">
 				<span class="oi oi-home" aria-hidden="true"></span>Verkooppraatje
 			</NavLink>
 		</div>
 
 		<hr />
-		<div class="nav-item px-3">
+
+		<div class="kopjenav">HR-sets</div>
+		<div class="nav">
 			<NavLink class="nav-link" href="selectienietkennistest/{Intake.xml}">
-				<span class="oi oi-plus" aria-hidden="true"></span>Intake Vragen
+				<Circle />Intake
 			</NavLink>
 		</div>
 
-		<div class="nav-item px-3">
+		<div class="nav">
 			<NavLink class="nav-link" href="selectienietkennistest/{NieuweBaan.xml}">
-				<span class="oi oi-plus" aria-hidden="true"></span>Nieuwe Baan
+				<Circle />Nieuwe Baan
 			</NavLink>
 		</div>
 
-		<div class="nav-item px-3">
-			<NavLink class="nav-link" href="selectie/{General.xml}">
-				<span class="oi oi-plus" aria-hidden="true"></span>Algemene ICT Vragen
-			</NavLink>
-		</div>
-
-		<div class="nav-item px-3">
-			<NavLink class="nav-link" href="selectie/{C-Sharp.xml}">
-				<span class="oi oi-plus" aria-hidden="true"></span>C-Sharp Vragen
-			</NavLink>
-		</div>
-
-		<div class="nav-item px-3">
-			<NavLink class="nav-link" href="selectie/{FrontEnd.xml}">
-				<span class="oi oi-plus" aria-hidden="true"></span>Front-end Vragen
-			</NavLink>
-		</div>
-
-		<div class="nav-item px-3">
-			<NavLink class="nav-link" href="selectie/{Javascript.xml}">
-				<span class="oi oi-plus" aria-hidden="true"></span>Javascript Vragen
-			</NavLink>
-		</div>
-
-		<div class="nav-item px-3">
-			<NavLink class="nav-link" href="selectie/{Python.xml}">
-				<span class="oi oi-plus" aria-hidden="true"></span>Python Vragen
-			</NavLink>
-		</div>
-
-		<div class="nav-item px-3">
-			<NavLink class="nav-link" href="selectie/{Scrum.xml}">
-				<span class="oi oi-plus" aria-hidden="true"></span>Scrum Vragen
-			</NavLink>
-		</div>
 		<hr />
-		<div class="nav-item px-3">
+
+		<div class="kopjenav">Kennissets</div>
+		<div class="nav">
+			<NavLink class="nav-link" href="selectie/{Scrum.xml}">
+				<ArrowGoesIn /> Scrum
+			</NavLink>
+		</div>
+
+		<div class="nav">
+			<NavLink class="nav-link" href="selectie/{General.xml}">
+				<Circle />Algemene ICT
+			</NavLink>
+		</div>
+
+		<div class="nav">
+			<NavLink class="nav-link" href="selectie/{FrontEnd.xml}">
+				<Circle />Front-end
+			</NavLink>
+		</div>
+
+		<div class="nav">
+			<NavLink class="nav-link" href="selectie/{BackEnd.xml}">
+				<Circle />Back-end
+			</NavLink>
+		</div>
+
+		<div class="nav">
+			<NavLink class="nav-link" href="selectie/{Javascript.xml}">
+				<Circle />Javascript
+			</NavLink>
+		</div>
+
+		<div class="nav">
+			<NavLink class="nav-link" href="selectie/{C-Sharp.xml}">
+				<Circle />C-Sharp
+			</NavLink>
+		</div>
+
+		<div class="nav">
+			<NavLink class="nav-link" href="selectie/{Python.xml}">
+				<Circle />Python
+			</NavLink>
+		</div>
+
+
+		<hr />
+
+
+		<div class="kopjenav">Admin</div>
+
+
+
+
+		<div class="nav">
 			<NavLink class="nav-link" href="McDevelopment">
-				<span class="oi oi-plus" aria-hidden="true"></span>McDev
+				<Circle />McDev
 			</NavLink>
 		</div>
 
-		<div class="nav-item px-3">
+		<div class="nav">
 			<NavLink class="nav-link" href="Create">
-				<span class="oi oi-plus" aria-hidden="true"></span>Maak Vragenset
+				<Circle />Maak Vragenset
 			</NavLink>
 		</div>
 
-		<div class="nav-item px-3">
+		<div class="nav">
 			<NavLink class="nav-link" href="Beheer">
-				<span class="oi oi-plus" aria-hidden="true"></span>Beheer Vragensets
+				<Circle />Beheer Vragensets
 			</NavLink>
 		</div>
 	</nav>
@@ -98,6 +162,10 @@
 
 	private void ToggleNavMenu()
 	{
+
 		collapseNavMenu = !collapseNavMenu;
 	}
+
+	string svgCircle = "<svg xmlns=\"http://www.w3.org/2000/svg/\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx = \"10\" cy=\"11\" r=\"5\"></circle></svg>";
+
 }
