@@ -1,12 +1,29 @@
 ﻿@using McQuestions.Shared.SvgComponents
 
+<Style />
 <style>
 	.nav-link {
 		color: black;
-		padding: .2rem 1rem;
+		padding: .2rem;
+		padding-left: 2.5rem;
 		font-size: 0.88rem;
-		
+		border: none;
+
 	}
+
+	.linkbutton {
+		color: black;
+		padding: .2rem;
+		padding-left: 2.5rem;
+		font-size: 0.88rem;
+		border: none;
+		width: 100%;
+		height: 100%;
+		text-align: left;
+		background-color: !important none;
+	}
+
+
 	#toplink{
 		padding-top: 16px;
 		padding-left: 10px;
@@ -18,11 +35,15 @@
 	}
 
 	.nav {
-		padding-left:10px;
+		/* padding-left:10px; */
 		/*font-size: 0.9rem;*/
 		
         font-weight: 500;
         
+	}
+
+	button {
+		background-color: none;
 	}
 
 	.oi.oi-home{
@@ -41,7 +62,7 @@
 
 	.kopjenav {
 		font-size: 0.88rem; 
-		padding-left: 1.6rem;
+		padding-left: 2rem;
 		padding-bottom: .6rem;
 		font-weight:600;
 	}
@@ -58,18 +79,52 @@
 	</div>
 </div>
 
+
+
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
 	<nav class="flex-column">
-		<div id="toplink">
-			<NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-				<span class="oi oi-home" aria-hidden="true"></span>Verkooppraatje
-			</NavLink>
-		</div>
+		@foreach (var link in Concept)
+		{
+			bool isClicked = ClickedLink == link; 
+			string text = "Concept";
+			<div class="nav">
+				<button class="choicenavbuttons" style="margin-top:2px" @onclick="() => Navigate(link)">
+					@if (isClicked)
+					{
+						<ArrowGoesIn />
+					}
+					else
+					{
+						<Circle />
+					}
+					@text
+				</button>
+			</div>
+		}
 
-		<hr />
 
-		<div class="kopjenav">HR-sets</div>
-		<div class="nav">
+
+		<div class="choicenavbuttonskopje">HR-sets</div>
+		@foreach (var link in NietKennislinks)
+		{
+			bool isClicked = ClickedLink == link; // selectienietkennistest/{NieuweBaan.xml}
+			string text = link.Replace("selectienietkennistest/{", "").Replace("}", "").Replace(".xml", "");
+			<div class="nav">
+				<button class="choicenavbuttons" @onclick="() => Navigate(link)">
+					@if (isClicked)
+					{
+						<ArrowGoesIn />
+					}
+					else
+					{
+						<Circle />
+					}
+					@text
+				</button>
+			</div>
+		}
+
+@* 		<div class="nav">
 			<NavLink class="nav-link" href="selectienietkennistest/{Intake.xml}">
 				<Circle />Intake
 			</NavLink>
@@ -79,79 +134,55 @@
 			<NavLink class="nav-link" href="selectienietkennistest/{NieuweBaan.xml}">
 				<Circle />Nieuwe Baan
 			</NavLink>
-		</div>
-
-		<hr />
-
-		<div class="kopjenav">Kennissets</div>
-		<div class="nav">
-			<NavLink class="nav-link" href="selectie/{Scrum.xml}">
-				<ArrowGoesIn /> Scrum
-			</NavLink>
-		</div>
-
-		<div class="nav">
-			<NavLink class="nav-link" href="selectie/{General.xml}">
-				<Circle />Algemene ICT
-			</NavLink>
-		</div>
-
-		<div class="nav">
-			<NavLink class="nav-link" href="selectie/{FrontEnd.xml}">
-				<Circle />Front-end
-			</NavLink>
-		</div>
-
-		<div class="nav">
-			<NavLink class="nav-link" href="selectie/{BackEnd.xml}">
-				<Circle />Back-end
-			</NavLink>
-		</div>
-
-		<div class="nav">
-			<NavLink class="nav-link" href="selectie/{Javascript.xml}">
-				<Circle />Javascript
-			</NavLink>
-		</div>
-
-		<div class="nav">
-			<NavLink class="nav-link" href="selectie/{C-Sharp.xml}">
-				<Circle />C-Sharp
-			</NavLink>
-		</div>
-
-		<div class="nav">
-			<NavLink class="nav-link" href="selectie/{Python.xml}">
-				<Circle />Python
-			</NavLink>
-		</div>
+		</div> *@
 
 
-		<hr />
+
+		<div class="choicenavbuttonskopje">Kennissets</div>
+
+		@{
+
+		}
 
 
-		<div class="kopjenav">Admin</div>
+
+		@foreach (var link in Kennislinks)
+		{
+			bool isClicked = ClickedLink == link; 
+			string text = link.Replace("selectie/{", "").Replace("}", "").Replace(".xml", "");
+			<div class="nav">
+				<button class="choicenavbuttons" @onclick="() => Navigate(link)">
+					@if (isClicked) { <ArrowGoesIn /> }
+					else { <Circle /> }
+					@text
+				</button>
+			</div>
+		}
 
 
 
 
-		<div class="nav">
-			<NavLink class="nav-link" href="McDevelopment">
-				<Circle />McDev
-			</NavLink>
-		</div>
 
-		<div class="nav">
-			<NavLink class="nav-link" href="Create">
-				<Circle />Maak Vragenset
-			</NavLink>
-		</div>
+		<div class="choicenavbuttonskopje">Admin</div>
+		@foreach (var link in Admin)
+		{
+			bool isClicked = ClickedLink == link;
+			string text = link;
+			<div class="nav">
+				<button class="choicenavbuttons" @onclick="() => Navigate(link)">
+					@if (isClicked)
+					{
+						<ArrowGoesIn />
+					}
+					else
+					{
+						<Circle />
+					}
+					@text
+				</button>
+			</div>
+		}
 
-		<div class="nav">
-			<NavLink class="nav-link" href="Beheer">
-				<Circle />Beheer Vragensets
-			</NavLink>
-		</div>
 	</nav>
 </div>
 
@@ -166,6 +197,51 @@
 		collapseNavMenu = !collapseNavMenu;
 	}
 
-	string svgCircle = "<svg xmlns=\"http://www.w3.org/2000/svg/\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx = \"10\" cy=\"11\" r=\"5\"></circle></svg>";
 
+	List<string> Concept = new()
+			{
+				"/"
+			};
+
+	List<string> Admin = new()
+			{
+				"Beheer",
+				"Create",
+				"McDevelopment"
+			};
+
+	List<string> NietKennislinks = new()
+			{
+				"selectienietkennistest/{Intake.xml}",
+				"selectienietkennistest/{NieuweBaan.xml"
+			};
+
+	List<string> Kennislinks = new()
+			{
+				"selectie/{Scrum.xml}",
+				"selectie/{General.xml}",
+				"selectie/{FrontEnd.xml}",
+				"selectie/{BackEnd.xml}",
+				"selectie/{Javascript.xml}",
+				"selectie/{C-Sharp.xml}",
+				"selectie/{Python.xml}"
+			};
+
+	private string ClickedLink = null;
+
+	[Inject] private NavigationManager NavigationManager { get; set; }
+
+	private void Navigate(string link)
+	{
+		NavigationManager.NavigateTo(link);
+		if (ClickedLink == link)
+		{
+			ClickedLink = null;
+		}
+		else
+		{
+			ClickedLink = link;
+		}
+
+	}
 }
