@@ -23,7 +23,6 @@
 		background-color: !important none;
 	}
 
-
 	#toplink{
 		padding-top: 16px;
 		padding-left: 10px;
@@ -67,7 +66,6 @@
 		font-weight:600;
 	}
 
-	
 </style>
 
 <div class="top-row ps-3 navbar navbar-dark">
@@ -79,8 +77,6 @@
 	</div>
 </div>
 
-
-
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
 	<nav class="flex-column">
 		@foreach (var link in Concept)
@@ -88,21 +84,15 @@
 			bool isClicked = ClickedLink == link; 
 			string text = "Concept";
 			<div class="nav">
-				<button class="choicenavbuttons" style="margin-top:2px" @onclick="() => Navigate(link)">
-					@if (isClicked)
-					{
-						<ArrowGoesIn />
-					}
-					else
-					{
-						<Circle />
-					}
+				<button class="choicenavbuttons" style="margin-top:18px" @onclick="() => Navigate(link)">
+					@if (isClicked) { <ArrowGoesIn /> }
+					else { <Circle /> }
 					@text
 				</button>
 			</div>
 		}
 
-
+		<hr />
 
 		<div class="choicenavbuttonskopje">HR-sets</div>
 		@foreach (var link in NietKennislinks)
@@ -111,40 +101,15 @@
 			string text = link.Replace("selectienietkennistest/{", "").Replace("}", "").Replace(".xml", "");
 			<div class="nav">
 				<button class="choicenavbuttons" @onclick="() => Navigate(link)">
-					@if (isClicked)
-					{
-						<ArrowGoesIn />
-					}
-					else
-					{
-						<Circle />
-					}
+					@if (isClicked) { <ArrowGoesIn /> }
+					else { <Circle /> }
 					@text
 				</button>
 			</div>
 		}
 
-@* 		<div class="nav">
-			<NavLink class="nav-link" href="selectienietkennistest/{Intake.xml}">
-				<Circle />Intake
-			</NavLink>
-		</div>
-
-		<div class="nav">
-			<NavLink class="nav-link" href="selectienietkennistest/{NieuweBaan.xml}">
-				<Circle />Nieuwe Baan
-			</NavLink>
-		</div> *@
-
-
-
+		<hr />
 		<div class="choicenavbuttonskopje">Kennissets</div>
-
-		@{
-
-		}
-
-
 
 		@foreach (var link in Kennislinks)
 		{
@@ -159,10 +124,7 @@
 			</div>
 		}
 
-
-
-
-
+		<hr />
 		<div class="choicenavbuttonskopje">Admin</div>
 		@foreach (var link in Admin)
 		{
@@ -196,7 +158,6 @@
 
 		collapseNavMenu = !collapseNavMenu;
 	}
-
 
 	List<string> Concept = new()
 			{
