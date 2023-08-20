@@ -1,4 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-
+	<test>
+		<datum>11-8-2023</datum>
+		<vragenset>Nieuwe baan</vragenset>
+		<aantal>10</aantal>
+		<onderwerpen>
+			<onderwerp>
+				<vraag>Wat is de maximale afstand die je wil reizen voor een nieuwe baan?</vraag>
+				<tag>afstand</tag>
+				<antwoord>tot 30 km</antwoord>
+			</onderwerp>
+			<onderwerp>
+				<vraag>Hoe ga je naar je volgende baan?</vraag>
+				<tag>vervoer</tag>
+				<antwoord>auto/motor</antwoord>
+			</onderwerp>
+			<onderwerp>
+				<vraag>Hoeveel uur per week wil je werken?</vraag>
+				<tag>uren p/w</tag>
+				<antwoord>24 - 32</antwoord>
+			</onderwerp>
+			<onderwerp>
+				<vraag>Werk je liever zelfstandig aan taken of in teamverband</vraag>
+				<tag>zelfstandig/teamverband</tag>
+				<antwoord>in teamverband</antwoord>
+			</onderwerp>
+			<onderwerp>
+				<vraag>Hoe belangrijk is de hoogte van het salaris</vraag>
+				<tag>salaris</tag>
+				<antwoord>belangrijk</antwoord>
+			</onderwerp>
+			<onderwerp>
+				<vraag>Hoe belangrijk vind je een goede werksfeer?</vraag>
+				<tag>werksfeer</tag>
+				<antwoord>erg belangrijk</antwoord>
+			</onderwerp>
+			<onderwerp>
+				<vraag>Routine of afwisseling?</vraag>
+				<tag>routine/afwisseling</tag>
+				<antwoord>afwisseling</antwoord>
+			</onderwerp>
+			<onderwerp>
+				<vraag>Hoe belangrijk vind je telewerken?</vraag>
+				<tag>telewerken</tag>
+				<antwoord>belangrijk</antwoord>
+			</onderwerp>
+			<onderwerp>
+				<vraag>Wil je in de nieuwe baan naar een hoger niveau doorgroeien?</vraag>
+				<tag>ambitie</tag>
+				<antwoord>Ja</antwoord>
+			</onderwerp>
+			<onderwerp>
+				<vraag>Hoe schat je nu je kansen in een baan te vinden binnen 1 jaar?</vraag>
+				<tag>kansinschatting</tag>
+				<antwoord>redelijk</antwoord>
+			</onderwerp>
+		</onderwerpen>
+	</test>
 </root>

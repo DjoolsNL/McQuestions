@@ -16,10 +16,11 @@
     <None Remove="XmlQuestions\BackEnd.xml" />
     <None Remove="XmlQuestions\C-Sharp.xml" />
     <None Remove="XmlQuestions\FrontEnd.xml" />
+    <None Remove="XmlQuestions\Gegevensbescherming.xml" />
     <None Remove="XmlQuestions\General.xml" />
     <None Remove="XmlQuestions\Intake.xml" />
     <None Remove="XmlQuestions\Javascript.xml" />
-    <None Remove="XmlQuestions\NieuweBaan.xml" />
+    <None Remove="XmlQuestions\Nieuwe Baan.xml" />
     <None Remove="XmlQuestions\Python.xml" />
     <None Remove="XmlQuestions\Scrum.xml" />
   </ItemGroup>
@@ -49,7 +50,10 @@
     <EmbeddedResource Include="XmlQuestions\Javascript.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="XmlQuestions\NieuweBaan.xml">
+    <EmbeddedResource Include="XmlQuestions\Gegevensbescherming.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\Nieuwe Baan.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="XmlQuestions\Python.xml">

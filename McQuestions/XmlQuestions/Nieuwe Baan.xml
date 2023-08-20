@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<vragenset>Nieuwe baan</vragenset>
+	<setinfo></setinfo>
+	<vraag>
+		<disabled>false</disabled>
+		<guid>22597137-de62-4662-8445-20ce1cc0b473</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>afstand</onderwerp>
+		<header>
+			<regel>Wat is de maximale afstand die je wil reizen voor een nieuwe baan?</regel>
+		</header>
+		<keuzes>
+			<A>tot 10 km</A>
+			<B>tot 20 km</B>
+			<C>tot 30 km</C>
+			<D>tot 40 km</D>
+			<E>tot 50 km</E>
+			<F>tot 75 km</F>
+			<G>tot 100 km</G>
+			<H>meer dan 100 km</H>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>5e78b300-7c30-4bb8-bd36-f766d114f180</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>vervoer</onderwerp>
+		<header>
+			<regel>Hoe ga je naar je volgende baan?</regel>
+		</header>
+		<keuzes>
+			<A>lopend/fiets/brommer</A>
+			<B>auto/motor</B>
+			<C>openbaar vervoer</C>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>ab7afe48-03d0-4b7b-9ce1-6427cc64ae40</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>uren p/w</onderwerp>
+		<header>
+			<regel>Hoeveel uur per week wil je werken?</regel>
+		</header>
+		<keuzes>
+			<A>24 of minder</A>
+			<B>24 - 32</B>
+			<C>32 - 36</C>
+			<D>36 - 40</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>99407053-8aee-4a9b-b2e8-1f7bbf47aee5</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>zelfstandig/teamverband</onderwerp>
+		<header>
+			<regel>Werk je liever zelfstandig aan taken of in teamverband</regel>
+		</header>
+		<keuzes>
+			<A>zelfstandig</A>
+			<B>in teamverband</B>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>78e306cd-fced-498c-9d4c-4cd418c72cbf</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>salaris</onderwerp>
+		<header>
+			<regel>Hoe belangrijk is de hoogte van het salaris</regel>
+		</header>
+		<keuzes>
+			<A>weinig</A>
+			<B>een beetje</B>
+			<C>matig</C>
+			<D>belangrijk</D>
+			<E>erg belangrijk</E>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>dfbfed96-cdaf-42ae-9661-ca98a34262c5</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>werksfeer</onderwerp>
+		<header>
+			<regel>Hoe belangrijk vind je een goede werksfeer?</regel>
+		</header>
+		<keuzes>
+			<A>weinig</A>
+			<B>een beetje</B>
+			<C>matig</C>
+			<D>belangrijk</D>
+			<E>erg belangrijk</E>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled>false</disabled>
+		<guid>f74aa83b-558c-42c8-a1b1-de74eb853fe1</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>routine/afwisseling</onderwerp>
+		<header>
+			<regel>Routine of afwisseling?</regel>
+		</header>
+		<keuzes>
+			<A>routine</A>
+			<B>afwisseling</B>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled>false</disabled>
+		<guid>f74a853b-553d-42c8-a1b1-de74eb853fe1</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>telewerken</onderwerp>
+		<header>
+			<regel>Hoe belangrijk vind je telewerken?</regel>
+		</header>
+		<keuzes>
+			<A>weinig belangrijk</A>
+			<B>belangrijk</B>
+			<C>zeer belangrijk</C>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled>false</disabled>
+		<guid>f74a853b-553d-42c8-a1b3-de74ad753fe1</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>ambitie</onderwerp>
+		<header>
+			<regel>Wil je in de nieuwe baan naar een hoger niveau doorgroeien?</regel>
+		</header>
+		<keuzes>
+			<A>Nee</A>
+			<B>Ja</B>
+			<C>ja maar</C>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+
+	<vraag>
+		<disabled>false</disabled>
+		<guid>f74a853b-553d-42d8-a1b3-de74ad733fe1</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>kansinschatting</onderwerp>
+		<header>
+			<regel>Hoe schat je nu je kansen in een baan te vinden binnen 1 jaar?</regel>
+		</header>
+		<keuzes>
+			<A>gering</A>
+			<B>redelijk</B>
+			<C>groot</C>
+		</keuzes>
+		<antwoord>C</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+</root>

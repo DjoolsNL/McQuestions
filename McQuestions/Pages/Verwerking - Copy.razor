@@ -1,0 +1,211 @@
+﻿@using System.Xml.Linq
+@using System.Linq
+@using System.Collections.Generic
+@using System.IO
+
+@code
+{
+	[CascadingParameter]
+	public List<XElement>? XmlQuestionsSelection { get; set; }
+	List<XElement> LocalxmlQuestionsSelection;
+
+	[Parameter]	public string NaamVragenSet { get; set; }
+
+	[Parameter] public string LevelQuestions { get; set; }
+
+	public int score = 0;
+
+	public string folderPath;
+	string pathToFile;
+	private List<XElement> testUitslagen;
+
+	public double fraction;
+	public double percentage;
+	public string result; 
+	public int sumofquestions;
+	public int sumofscore;
+
+	DateTime currentDate  = DateTime.Today;
+
+	public string textButton = "Engage your AI teacher";
+
+	protected override void OnInitialized()
+	{
+		@if (XmlQuestionsSelection.Count() != 0)
+		{
+			LocalxmlQuestionsSelection = XmlQuestionsSelection;
+			foreach (var question in XmlQuestionsSelection)
+			{
+				if (question.Element("antwoord").Value == question.Element("userantwoord").Value)
+				{ score++; }
+			}
+
+			Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlAccount\\");
+			folderPath = Directory.GetCurrentDirectory();
+			pathToFile = folderPath + "\\AccountResults.xml";
+
+			var xmlString = File.ReadAllText(pathToFile);
+			var rootElement = XElement.Parse(xmlString);
+			
+			XElement doc = new XElement("root");
+			testUitslagen = rootElement.Elements("test").ToList();		
+			XElement test = new XElement("test");
+			XElement datum = new XElement("datum", currentDate.ToString("d-M-yyyy"));
+			XElement vragenset = new XElement("vragenset", NaamVragenSet);
+			XElement niveau = new XElement("niveau", LevelQuestions);
+			XElement aantal = new XElement("aantal", XmlQuestionsSelection.Count().ToString());
+			XElement scoore = new XElement("score", score);
+
+			test.Add(datum, vragenset, niveau, aantal, scoore);
+			testUitslagen.Add(test);
+
+			foreach (var testt in testUitslagen)
+			{
+				XElement testtt = new XElement("test", testt.Elements());
+				doc.Add(testtt);
+			}
+
+			doc.Save(pathToFile);
+
+			if (LevelQuestions != "6")
+			{
+				// nu nog de gegevens uit xmlTests halen en weergeven 
+				var selectie = testUitslagen.FindAll(t => t.Element("vragenset").Value == NaamVragenSet && t.Element("niveau").Value == LevelQuestions);
+				sumofquestions = selectie.Sum(e => (int)e.Element("aantal"));
+		 
+				sumofscore = selectie.Sum(e => (int)e.Element("score"));
+			}
+		}
+	}
+
+	private bool IsContentVisible = false;
+
+    private void ToggleVisibility()
+    {
+        IsContentVisible = !IsContentVisible;
+    }
+
+	private void ShowAI(string volgnummer)
+	{
+		var q = LocalxmlQuestionsSelection.FirstOrDefault(g => g.Element("volgnummer").Value == volgnummer);
+		if (q.Element("show").Value == "none")
+		{
+			q.Element("show").Value = "flex";
+		}
+		else
+		{
+			q.Element("show").Value = "none";
+		}
+	}
+}
+
+@if (XmlQuestionsSelection.Count() != 0)
+{
+	fraction = (double)score / (double)XmlQuestionsSelection.Count();
+	percentage = fraction * 100;
+	result = $"{percentage:0.00}%";
+
+	if (LevelQuestions != "6")
+	{
+		<p><b>Score: @result</b> (@score / @XmlQuestionsSelection.Count) &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
+		fraction = (double)sumofscore / (double)sumofquestions;
+		percentage = fraction * 100;
+		result = $"{percentage:0.00}%";
+		<p><b>Total score @NaamVragenSet niveau @LevelQuestions: @result</b> (@sumofscore.ToString() / @sumofquestions.ToString())</p>
+
+		<hr />
+		<h2>Antwoorden</h2>
+		<hr />
+	}
+}
+
+<style>
+	@if (XmlQuestionsSelection.Count() != 0)
+	{
+		foreach (var question in XmlQuestionsSelection)
+		{
+			string volgnummer = question.Element("volgnummer").Value;
+			string identifier = $"#q{volgnummer}";
+			identifier += "{ display:" + question.Element("show").Value + "; flex-direction: column }";
+			<text>@identifier</text>
+		}
+	}
+</style>
+
+<!--   TESTUITSLAG VRAGEN EN ANTWOORDEN  -->
+@if (XmlQuestionsSelection.Count() != 0)
+{
+	foreach (var question in XmlQuestionsSelection)
+	{
+		var letterJuisteAntwoord = question.Element("antwoord").Value;
+		var letterGebruikersAntwoord = question.Element("userantwoord").Value;
+		var juisteAntwoord = question.Element("keuzes").Element(letterJuisteAntwoord).Value;
+		var fouteAntwoord = question.Element("keuzes").Element(letterGebruikersAntwoord).Value;
+
+		<div>
+			<p>@question.Element("header").Value</p>
+			<p class="inspringen">
+				<span class="blauw">
+					<span class="oi oi-circle-check"></span> Het juiste antwoord: @juisteAntwoord
+				</span>
+			</p>
+
+			@if (letterGebruikersAntwoord != null && letterGebruikersAntwoord != letterJuisteAntwoord)
+			{
+				<p class="inspringen">
+					<span style="color:red">
+						<span class="oi oi-circle-x"></span>&nbsp;Jouw antwoord was fout
+					</span>
+				</p>
+			}
+
+			@{ string volgnummer = question.Element("volgnummer").Value; }
+			<button @onclick="() => ShowAI(volgnummer)" class="choice">@textButton</button>
+			@{string identifier = "q" + volgnummer;	}
+
+			<!-- PROMPTS   PROMPTS dit zou je toggle baar moeten maken zodat je kunt togglen tussen een gesimuleerde geintegreerde ai en de plak en knip ai-->
+
+
+
+
+			<div id=@identifier>
+				<br />
+				<p><b>Copy the instructions and the question below and post them to your AI teacher.</b>
+					<br />
+					<b>Instructions</b>
+					<br />
+					I'm learning to code <span style="color:red">@NaamVragenSet</span>. Here is a multiple choice question about <span style="color:red">@NaamVragenSet</span>. On a scale from 1 to 5 (where 1 is beginner and 5 is senior) <span style="color:red">my level is @question.Element("niveau").Value</span>. Please consider my level when answering the question.
+					<br />
+					Tell me the correct answer and explain why it's correct.
+					<br />
+					Explain why the topic <span style="color:red">@question.Element("onderwerp").Value</span> is important in <span style="color:red">@NaamVragenSet</span>.
+					If possible provide a simple code example and explain the code.<br />
+					Give me a real-world scenario where such code could be useful.<br />
+					<b>Question</b><br />
+					@foreach (var regel in question.Element("header").Elements())
+					{
+						@regel.Value<br />
+					}
+					@foreach (XElement choice in question.Element("keuzes").Elements())
+					{
+						<span>@choice.Name.LocalName	&nbsp;@choice.Value</span> <br />
+					}
+
+					<br /><b>Possible prompts for further study</b><br />
+					<span><b>Instruction</b></span><br />
+					<span>Summarize your answer</span><br /><br />
+					<span><b>Instruction</b></span><br />
+					<span>Translate your answer in Dutch for a level @question.Element("niveau").Value student and explain like I'm 16 year old.</span>
+					<br /><br />
+					<span><b>Instruction</b></span><br />
+					Can you ask me another multiple choice question about <span style="color:red">@NaamVragenSet @question.Element("onderwerp").Value</span>
+				</p>
+			</div>
+			<hr />
+		</div>
+	}
+}
+
+
+
+

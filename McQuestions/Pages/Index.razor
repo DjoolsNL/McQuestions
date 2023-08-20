@@ -35,19 +35,76 @@
 		font-size:17px;
 		font-weight:600;
 	}
+
+	.svg-container {
+		display: inline-block;
+		width: 20%; /* Four SVGs in a row */
+		margin: 2%; /* Adjust spacing between SVGs */
+		border: 1px solid black;
+	}
+
 </style>
 
 <div class="indexdiv">
-	<h2>Interactief leren met AI</h2>
+    <h2>Interactief leren met AI</h2>
+	<hr />
+	<br />
+
+	<div style="width:75%">
+		<div class="svg-container">
+			<svg viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg">
+				<rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
+				<!-- Doorknob -->
+				<circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
+			</svg>
+		</div>
+
+
+
+		<div class="svg-container">
+			<svg viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg">
+				<rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
+				<!-- Door panels -->
+				<rect x="20%" y="10%" width="60%" height="80%" fill="#FFFFFF" />
+				<!-- Doorknob -->
+				<circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
+			</svg>
+		</div>
+
+		<div class="svg-container">
+			<svg viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg">
+				<!-- Doorknob -->
+				<circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
+			</svg>
+		</div>
+
+		<div class="svg-container">
+			<svg viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg">
+				<rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
+
+				<!-- Door panels -->
+				<rect x="20%" y="10%" width="60%" height="80%" fill="#FFFFFF" />
+				<rect x="40%" y="10%" width="20%" height="80%" fill="#8B4513" />
+
+				<!-- Doorknob -->
+				<circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
+			</svg>
+		</div>
+
+	</div>
+
 	<hr />
 	<p>
 		<ul>
 			<li>
-				<b>Artificial Intelligence / Large Language Models</b> zoals ChatGPT zijn game-changers. Ze gaan de manier waarop we leren en coderen radicaal veranderen.
+				<b>Artificial Intelligence / Large Language Models</b> zoals ChatGPT zijn game-changers. Elke vraag die we stellen kan een deur naar kennis openen. Met de juiste vragen kunnen we de kracht van AI maximaal benutten. 
+				<br /><br />	
+				<b>McQuestions</b> helpt de user met en van <i>AI</i> te leren. 
 				<br /><br />
-				Kennis en vaardigheden kunnen <b>gemeten</b> worden. In het onderwijs is dat de norm.
-				<br /><br />				
-				<b>McQuestions</b> is een <i>educatieve</i> app die de user/cursist in staat stelt om met behulp van <i>AI</i> te leren. Aan de basis ervan ligt een verzameling vragensets ontworpen om generieke en specialistische (ICT-)kennis empirisch in kaart te brengen. Elke specifieke set bestaat uit vragen van uiteenlopend kennisniveau. 
+				<b>Hoe?</b><br />
+				Wil je Java leren met Mc dan begin je met de Java Instap Test. Die bepaalt je instapniveau en het net iets pittiger niveau van je volgende Java Test. Elke fout beantwoorde vraag in een test wordt aan AI voorgelegd en het antwoord is je studiemoment.   
+				<b>Hoe werkt het onder de motorkap?</b><br />
+				Kennis en vaardigheden kunnen <b>gemeten</b> worden met meerkeuzevragen. Aan de basis ligt een database met meerkeuzevragen. Elke specifieke set bestaat uit vragen van uiteenlopend kennisniveau. Met deze vragen en AI bouwt de cursist zijn woordenschat op van de taal die hij leert. 
 				<br /><br />
 			</li>
 			<li>
@@ -135,43 +192,7 @@
 		Het slimme dient vooral in de vragen te zitten aangezien elke vraag icm AI een deur is naar kennis. Bijna alle tutorials die ik heb gezien, maken de fout om de cursist kennis aan te bieden die niet past bij zijn niveau. Een starter hoeft niet alle varianten te kennen waarop strings in C# geschreven kunnen worden. Hij hoeft niet aan het begin uitgelegd te krijgen dat er 36 verschillende types bestaan om getallen uit te drukken. De cursist is helemaal niet in staat om in te schatten wat wel en wat niet voor hem als starter de relevante informatie is die hij uit de brei dient te filteren. Dus biedt hem vooral deuren aan die toegang geven tot kennis die hij verwerken en toepassen kan. <br /><br />
 
 		De juiste vragen stellen. Vragen die een snelle kennisontwikkeling mogelijk maken.   
-		Begin met strings, getallen, bools en arrays. Daarna if-statements and foreach. Vraag ChatGPT om met die beperkte middelen een leuk programmatje te schrijven. Onderstaand de kracht van ChatGPT.
-		<pre>using System;
-
-class Program
-{
-	static void Main()
-	{
-		string[] subjects = { "Why did the chicken", "How does a programmer", "What did one ocean say to the other" };
-		string[] verbs = { "cross the road?", "solve a problem?", "Nothing, they just waved." };
-		string[] punchlines = { "To get to the other side!", "By debugging it!", "Sea you later!" };
-
-		Console.WriteLine("Welcome to the Joke Generator!");
-		Console.WriteLine("Press Enter to get a joke or type 'exit' to quit.");
-
-		Random random = new Random();
-
-		while (true)
-		{
-			string input = Console.ReadLine().ToLower();
-
-			if (input == "exit")
-				break;
-
-			int jokeIndex = random.Next(subjects.Length);
-
-			string subject = subjects[jokeIndex];
-			string verb = verbs[jokeIndex];
-			string punchline = punchlines[jokeIndex];
-
-			Console.WriteLine(subject + " " + verb);
-			Console.ReadLine(); // Pause before delivering the punchline
-			Console.WriteLine(punchline);
-			Console.WriteLine();
-		}
-	}
-}
-</pre>
+		Begin met strings, getallen, bools en arrays. Daarna if-statements and foreach. 
 		<hr />
 
 		<h5 class="bold">Leeropzet</h5>

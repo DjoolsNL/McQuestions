@@ -5,12 +5,10 @@
 
 @code
 {
-	[CascadingParameter]
-	public List<XElement>? XmlQuestionsSelection { get; set; }
+	[CascadingParameter] public List<XElement>? XmlQuestionsSelection { get; set; }
 	List<XElement> LocalxmlQuestionsSelection;
 
 	[Parameter]	public string NaamVragenSet { get; set; }
-
 	[Parameter] public string LevelQuestions { get; set; }
 
 	public int score = 0;
@@ -27,17 +25,35 @@
 
 	DateTime currentDate  = DateTime.Today;
 
-	public string textButton = "Engage your AI teacher";
+	public string textButtonStandAlone = "Stand-alone AI";
+	public string textButtonIntegrated = "Integrated AI";
+
+	private bool IsStandAloneVisible = false;
+	private bool IsIntegratedVisible = false;
+	private bool IsPrompt1Visible = false;
+
+
+	private string ClickedStandAlone = null;
+	private string ClickedIntegrated = null;
+	private string ClickedPrompt1 = null;
 
 	protected override void OnInitialized()
 	{
 		@if (XmlQuestionsSelection.Count() != 0)
 		{
 			LocalxmlQuestionsSelection = XmlQuestionsSelection;
+
+			XElement onderwerpen = new XElement("onderwerpen");
 			foreach (var question in XmlQuestionsSelection)
 			{
 				if (question.Element("antwoord").Value == question.Element("userantwoord").Value)
 				{ score++; }
+				else
+				{
+					XElement onderwerp = new XElement("onderwerp", question.Element("onderwerp").Value);
+					onderwerpen.Add(onderwerp);
+				}
+
 			}
 
 			Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlAccount\\");
@@ -56,7 +72,9 @@
 			XElement aantal = new XElement("aantal", XmlQuestionsSelection.Count().ToString());
 			XElement scoore = new XElement("score", score);
 
-			test.Add(datum, vragenset, niveau, aantal, scoore);
+			//question.Element("antwoord").Value == question.Element("userantwoord").Value
+
+			test.Add(datum, vragenset, niveau, aantal, scoore, onderwerpen);
 			testUitslagen.Add(test);
 
 			foreach (var testt in testUitslagen)
@@ -78,18 +96,42 @@
 		}
 	}
 
-	private void ShowAI(string volgnummer)
+	private void ShowStandAlone(string volgnummer)
 	{
-		var q = LocalxmlQuestionsSelection.FirstOrDefault(g => g.Element("volgnummer").Value == volgnummer);
-		if (q.Element("show").Value == "none")
+		if (ClickedStandAlone == volgnummer)
 		{
-			q.Element("show").Value = "flex";
+			ClickedStandAlone = null;
 		}
 		else
 		{
-			q.Element("show").Value = "none";
+			ClickedStandAlone = volgnummer;
 		}
 	}
+
+	private void ShowIntegrated(string volgnummer)
+	{
+		if (ClickedIntegrated == volgnummer)
+		{
+			ClickedIntegrated = null;
+		}
+		else
+		{
+			ClickedIntegrated = volgnummer;
+		}
+	}
+
+	private void ShowPrompt1(string volgnummer)
+	{
+		if (ClickedIntegrated == volgnummer)
+		{
+			ClickedIntegrated = null;
+		}
+		else
+		{
+			ClickedIntegrated = volgnummer;
+		}
+	}
+	
 }
 
 @if (XmlQuestionsSelection.Count() != 0)
@@ -112,20 +154,6 @@
 	}
 }
 
-<style>
-	@if (XmlQuestionsSelection.Count() != 0)
-	{
-		foreach (var question in XmlQuestionsSelection)
-		{
-			string volgnummer = question.Element("volgnummer").Value;
-			string identifier = $"#q{volgnummer}";
-			identifier += "{ display:" + question.Element("show").Value + "; flex-direction: column }";
-			<text>@identifier</text>
-		}
-	}
-
-</style>
-
 <!--   TESTUITSLAG VRAGEN EN ANTWOORDEN  -->
 @if (XmlQuestionsSelection.Count() != 0)
 {
@@ -134,7 +162,13 @@
 		var letterJuisteAntwoord = question.Element("antwoord").Value;
 		var letterGebruikersAntwoord = question.Element("userantwoord").Value;
 		var juisteAntwoord = question.Element("keuzes").Element(letterJuisteAntwoord).Value;
+		// niet gebruikt:
 		var fouteAntwoord = question.Element("keuzes").Element(letterGebruikersAntwoord).Value;
+
+		string volgnummer = question.Element("volgnummer").Value;
+		IsStandAloneVisible = ClickedStandAlone == volgnummer;
+		IsIntegratedVisible = ClickedIntegrated == volgnummer;
+		IsPrompt1Visible = ClickedPrompt1 == volgnummer;
 
 		<div>
 			<p>@question.Element("header").Value</p>
@@ -153,44 +187,75 @@
 				</p>
 			}
 
-			@{ string volgnummer = question.Element("volgnummer").Value; }
-			<button @onclick="() => ShowAI(volgnummer)" class="choice">@textButton</button>
-			@{string identifier = "q" + volgnummer;	}
+			<table style="display:inline; margin-left:25px; margin-top:30px">
+				<tr>
+					<td>
+						<button @onclick="() => ShowIntegrated(volgnummer)" class="choice">@textButtonIntegrated</button><span>&nbsp;&nbsp;</span>
+					</td>
+					<td>
+						<button @onclick="() => ShowStandAlone(volgnummer)" class="choice">@textButtonStandAlone</button><span>&nbsp;&nbsp;</span>
+					</td>
+				</tr>
+			</table>
 
-			<!-- PROMPTS   PROMPTS dit zou je toggle baar moeten maken zodat je kunt togglen tussen een gesimuleerde geintegreerde ai en de plak en knip ai-->
-			<div id=@identifier>
-				<br />
-				<p><b>Copy the instructions and the question below and post them to your AI teacher.</b>
-					<br />
-					<b>Instructions</b>
-					<br />
-					I'm learning to code <span style="color:red">@NaamVragenSet</span>. Here is a multiple choice question about <span style="color:red">@NaamVragenSet</span>. On a scale from 1 to 5 (where 1 is beginner and 5 is senior) <span style="color:red">my level is @question.Element("niveau").Value</span>. Please consider my level when answering the question.
-					<br />
-					Tell me the correct answer and explain why it's correct.
-					<br />
-					Explain why the topic <span style="color:red">@question.Element("onderwerp").Value</span> is important in <span style="color:red">@NaamVragenSet</span>.
-					If possible provide a simple code example and explain the code.<br />
-					Give me a real-world scenario where such code could be useful.<br />
-					<b>Question</b><br />
-					@foreach (var regel in question.Element("header").Elements())
-					{
-						@regel.Value<br />
-					}
-					@foreach (XElement choice in question.Element("keuzes").Elements())
-					{
-						<span>@choice.Name.LocalName	&nbsp;@choice.Value</span> <br />
-					}
+		<!-- PROMPTS   PROMPTS -->
+			@if (IsStandAloneVisible)
+			{
+				<div>
+					<p><b>Copy the instructions and the question below and post them to your AI teacher.</b>
+						<br />
+						<b>Instructions</b>
+						<br />
+						I'm learning to code <span style="color:red">@NaamVragenSet</span>. Here is a multiple choice question about <span style="color:red">@NaamVragenSet</span>. On a scale from 1 to 5 (where 1 is beginner and 5 is senior) <span style="color:red">my level is @question.Element("niveau").Value</span>. Please consider my level when answering the question.
+						<br />
+						Tell me the correct answer and explain why it's correct.
+						<br />
+						Explain why the topic <span style="color:red">@question.Element("onderwerp").Value</span> is important in <span style="color:red">@NaamVragenSet</span>.
+						If possible provide a simple code example and explain the code.<br />
+						Give me a real-world scenario where such code could be useful.<br />
+						<b>Question</b><br />
+						@foreach (var regel in question.Element("header").Elements())
+						{
+							@regel.Value<br />
+						}
+						@foreach (XElement choice in question.Element("keuzes").Elements())
+						{
+							<span>@choice.Name.LocalName	&nbsp;@choice.Value</span> <br />
+						}
 
-					<br /><b>Possible prompts for further study</b><br />
-					<span><b>Instruction</b></span><br />
-					<span>Summarize your answer</span><br /><br />
-					<span><b>Instruction</b></span><br />
-					<span>Translate your answer in Dutch for a level @question.Element("niveau").Value student and explain like I'm 16 year old.</span>
-					<br /><br />
-					<span><b>Instruction</b></span><br />
-					Can you ask me another multiple choice question about <span style="color:red">@NaamVragenSet @question.Element("onderwerp").Value</span>
-				</p>
-			</div>
+						<br /><b>Possible prompts for further study</b><br />
+						<span><b>Instruction</b></span><br />
+						<span>Summarize your answer</span><br /><br />
+						<span><b>Instruction</b></span><br />
+						<span>Translate your answer in Dutch for a level @question.Element("niveau").Value student and explain like I'm 16 year old.</span>
+						<br /><br />
+						<span><b>Instruction</b></span><br />
+						Can you ask me another multiple choice question about <span style="color:red">@NaamVragenSet @question.Element("onderwerp").Value</span>
+					</p>
+				</div>
+			}
+
+			@if (IsIntegratedVisible)
+			{
+				// hier dus de hele dialoog met AI inbouwen
+				<div>
+					AI:<br />
+					@question.Element("uitleg").Value
+				</div>
+				@* <button @onclick="() => ShowPrompt1(volgnummer)" class="choice">Vertaal in het Nederlands</button> *@
+
+				<span>&nbsp;&nbsp;</span>
+				// drie knoppen met prompt suggesties voor vervolgvragen
+				// per gebruikte suggestie antwoord ophalen en weergeven.
+			}
+
+			@if (IsPrompt1Visible)
+			{
+				<div>
+					AI:<br />
+					@question.Element("prompt1").Value
+				</div>
+			}
 			<hr />
 		</div>
 	}

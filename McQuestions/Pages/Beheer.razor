@@ -131,8 +131,9 @@
 		}
 		else
 		{
-			ReadyForBrowser = true;
-		}	
+			ReadyForBrowser = true; // bool is nodig maar code is 
+		}
+		
 	}
 
 	void OnSave(string fname)
@@ -275,16 +276,6 @@
 
 </div>
 
-@*<span>
-	Voeg guid toe:
-	<label>
-		<input type="radio" name="total" value="true" @onchange="OnChangeAddGuid" /> add guid
-	</label>
-	<label>
-		<input type="radio" name="total" value="false" @onchange="OnChangeAddGuid" /> don't add guid
-	</label>
-</span>*@
-
 @if (xmlQuestions != null && ReadyForBrowser)
 {
 	<span>&nbsp:</span>
@@ -412,26 +403,26 @@
 }
 
 @code{
-    public class Vraag
-    {
-        public Vraag()
-        {
-			Header = new();
-			Keuzes = new();
-        }
+  //   public class Vraag
+  //   {
+  //       public Vraag()
+  //       {
+		// 	Header = new();
+		// 	Keuzes = new();
+  //       }
 
-        public string guid { get; set; }
-		public string volgnummer { get; set; }
-        public string niveau { get; set; }
-        public string onderwerp { get; set; }
+  //       public string guid { get; set; }
+		// public string volgnummer { get; set; }
+  //       public string niveau { get; set; }
+  //       public string onderwerp { get; set; }
 
-		public List<string> Header;
-		public List<string> Keuzes;
+		// public List<string> Header;
+		// public List<string> Keuzes;
 
-		public string antwoord { get; set; }
-		public string show { get; set; }
-		public string uitleg { get; set; }
-    }
+		// public string antwoord { get; set; }
+		// public string show { get; set; }
+		// public string uitleg { get; set; }
+  //   }
 }
 
 
