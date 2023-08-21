@@ -7,7 +7,7 @@
     <guid>03ac5f2b-3483-488c-9efd-9cf64dc021e3</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>C#</onderwerp>
     <header>
       <regel>Beethoven's 5th symphony is written in the key of c# but what is C# in the IT world?</regel>
     </header>
@@ -27,7 +27,7 @@
     <guid>c597b890-0c4c-479e-975c-9f1ac8f38b07</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp>String</onderwerp>
+    <onderwerp>Strings</onderwerp>
     <header>
       <regel>What is a 'string' in C#?</regel>
     </header>
@@ -47,7 +47,7 @@
     <guid>e3bfc4ff-8512-4f46-946a-d39531ff83af</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp>variables: declaring, initializing, instanciating, assigning</onderwerp>
+    <onderwerp>Variables</onderwerp>
     <header>
       <regel>In C# to declare a variable means</regel>
     </header>
@@ -67,7 +67,7 @@
     <guid>6548b651-c54d-42f2-87d8-940f1d5bf49f</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp>int</onderwerp>
+    <onderwerp>Integers</onderwerp>
     <header>
       <regel>In C# an 'integer' is a whole number. How is it coded?</regel>
     </header>
@@ -87,7 +87,7 @@
     <guid>79b64fef-5222-4bda-8d8c-b376bcbea687</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Integers</onderwerp>
     <header>
       <regel>Suppose we have an int called 'count'. What is a correct way to convert it to a string?</regel>
     </header>
@@ -107,7 +107,7 @@
     <guid>3ca6a00e-49c2-4fe7-880c-1461fb3b5ed5</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp>variables: declaring, initializing, instanciating, assigning</onderwerp>
+    <onderwerp>Variables</onderwerp>
     <header>
       <regel>In C# to initialize a variable means</regel>
     </header>
@@ -127,7 +127,7 @@
     <guid>583bfd90-1639-4094-b1e3-08ce61e9abee</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Variables</onderwerp>
     <header>
       <regel>Which keyword is used to declare a unspecified variable in C#?</regel>
     </header>
@@ -149,7 +149,7 @@
     <guid>61649e04-ed80-4587-92dd-4bd1b6dc2e5a</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Access modifiers</onderwerp>
     <header>
       <regel>What is the default access modifier for class members in C#?</regel>
     </header>
@@ -169,7 +169,7 @@
     <guid>3a2a7864-8046-4cd3-99b3-274954212678</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Console</onderwerp>
     <header>
       <regel>What is the entry point method in a C# console application?</regel>
     </header>
@@ -189,7 +189,7 @@
     <guid>fe5b9bbb-d863-48ba-b3ac-b2a657c6fdf3</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Arrays</onderwerp>
     <header>
       <regel>Is the code below valid?</regel>
       <regel>int[ ] luckyNumbers = new int[ ];</regel>
@@ -210,7 +210,7 @@
     <guid>2059b898-b927-4b20-87fa-30d089e9c7cc</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Variables</onderwerp>
     <header>
       <regel>Which keyword is used to define a constant in C#?</regel>
     </header>
@@ -230,7 +230,7 @@
     <guid>8075694a-6074-47bd-96ed-f1e95896e701</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Code Files</onderwerp>
     <header>
       <regel>What is the extension for C# source code files?</regel>
     </header>
@@ -250,7 +250,7 @@
     <guid>19bd3eb6-fc82-4fae-9dbd-18776924a92a</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Using Statement</onderwerp>
     <header>
       <regel>What is the purpose of the 'using' statement in C#?</regel>
     </header>
@@ -270,7 +270,7 @@
     <guid>cbd80ec8-846b-4f38-a746-163f75094e21</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Loops</onderwerp>
     <header>
       <regel>Which loop is used to iterate a block of code a specific number of times in C#?</regel>
     </header>
@@ -290,7 +290,7 @@
     <guid>df9b1d4a-b1ad-43e0-9964-6b4b38431750</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Strings</onderwerp>
     <header>
       <regel>What is the correct way to declare a string variable in C#?</regel>
     </header>
@@ -310,7 +310,7 @@
     <guid>4bad5d49-3ec9-4a90-aa81-374af82042e6</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Comments</onderwerp>
     <header>
       <regel>Which of the following is a valid way to comment a single line of code in C#?</regel>
     </header>
@@ -330,7 +330,7 @@
     <guid>1c69ab6d-c8a3-460a-a544-f29d04ad6f2a</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Variables</onderwerp>
     <header>
       <regel>What is the default value of an uninitialized numeric variable in C#?</regel>
     </header>
@@ -350,7 +350,7 @@
     <guid>58207497-c978-4141-8de1-5b2124ff5c72</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Keywords</onderwerp>
     <header>
       <regel>Which keyword is used to exit from a loop in C#?</regel>
     </header>
@@ -370,7 +370,7 @@
     <guid>d92ca10f-00f0-4408-b93e-558db6d543c1</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>C#</onderwerp>
     <header>
       <regel>What does C# stand for?</regel>
     </header>
@@ -390,7 +390,7 @@
     <guid>490880d9-9888-487a-b3da-33f557200d29</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Variables</onderwerp>
     <header>
       <regel>Which data type is used to store whole numbers in C#?</regel>
     </header>
@@ -410,7 +410,7 @@
     <guid>d6dc8d47-769a-43d5-8e00-4ed8239d848f</guid>
     <volgnummer></volgnummer>
     <niveau>1</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Keywords</onderwerp>
     <header>
       <regel>What is a 'keyword' in C#?</regel>
     </header>
@@ -430,7 +430,7 @@
     <guid>c63f4e0f-1628-443b-893b-fff666022767</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Strings</onderwerp>
     <header>
       <regel>Which operator is used for string concatenation in C#?</regel>
     </header>
@@ -450,9 +450,9 @@
     <guid>b50ba6f8-e289-43f4-a228-34628d51843e</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Strings</onderwerp>
     <header>
-      <regel>Is this a valid way of </regel>
+      <regel>Is this a valid way of coding</regel>
       <regel>string name = "John Doe";</regel>
       <regel>string message = "Hello, " + name;</regel>
     </header>
@@ -471,7 +471,7 @@
     <guid>4b2e3554-49a1-441e-a239-8f37c9cb1044</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp>valuetype, referencetype, class, object</onderwerp>
+    <onderwerp>Null</onderwerp>
     <header>
       <regel>Is '0' the same as 'null'?</regel>
     </header>
@@ -491,7 +491,7 @@
     <guid>fc1fea0c-ec29-4a48-af5e-ac8bab52a61e</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Access Modifiers</onderwerp>
     <header>
       <regel>Which of the following is not a valid access modifier in C#?</regel>
     </header>
@@ -511,7 +511,7 @@
     <guid>798c3042-6ea7-4d2e-9546-ae29a7d1a014</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Classes</onderwerp>
     <header>
       <regel>What is the correct way to create an instance of the class MyClass?</regel>
     </header>
@@ -531,7 +531,7 @@
     <guid>fc825e0d-f7be-4f90-9125-d15295afa298</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Reference Types</onderwerp>
     <header>
       <regel>Which of the following is an example of a reference type?</regel>
     </header>
@@ -551,7 +551,7 @@
     <guid>23282afb-74bc-47e8-9a5f-6dd85710e8f0</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Interfaces</onderwerp>
     <header>
       <regel>Which of the following statements is true about interfaces?</regel>
     </header>
@@ -571,7 +571,7 @@
     <guid>e5ca838a-3660-41d0-ba67-1b84d7e541e3</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Using Directive</onderwerp>
     <header>
       <regel>What is the purpose of the 'using' directive in C#?</regel>
     </header>
@@ -591,7 +591,7 @@
     <guid>16627b2b-8cb6-4777-a519-f8d27610b88a</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Exception Handling</onderwerp>
     <header>
       <regel>What is the purpose of the 'try-catch' statement in C#?</regel>
     </header>
@@ -611,7 +611,7 @@
     <guid>90725dbf-3f0d-4cfb-b64c-56543d8444c4</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Asynchronous Programming</onderwerp>
     <header>
       <regel>What is the purpose of the 'async' and 'await' keywords in C#?</regel>
     </header>
@@ -631,7 +631,7 @@
     <guid>43d65ef4-f8ef-4003-9418-c14794850864</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Using Statement</onderwerp>
     <header>
       <regel>What is the purpose of the 'using' statement in C#?</regel>
     </header>
@@ -651,7 +651,7 @@
     <guid>5e5a5e96-5ddf-46e1-bbf5-1a096314badb</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Value types vs. reference types</onderwerp>
     <header>
       <regel>What is the difference between value types and reference types in C#?</regel>
     </header>
@@ -671,7 +671,7 @@
     <guid>67c072b5-b947-447a-ada0-f2789a70718f</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Exception Handling</onderwerp>
     <header>
       <regel>What is the purpose of the 'try-catch' statement in C#?</regel>
     </header>
@@ -691,7 +691,7 @@
     <guid>41005a27-8428-45c2-901a-a74934f6ef2c</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Access Modifiers</onderwerp>
     <header>
       <regel>What is the difference between 'public' and 'private' access modifiers in C#?</regel>
     </header>
@@ -711,7 +711,7 @@
     <guid>ed9908d8-060e-43fd-abc2-8b904479e064</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Exception Handling</onderwerp>
     <header>
       <regel>What is the purpose of the 'finally' block in C#?</regel>
     </header>
@@ -731,7 +731,7 @@
     <guid>bc704ae8-b423-4d3b-99a7-0a3c398c4b1e</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Classes</onderwerp>
     <header>
       <regel>What is the difference between a class and an object in C#?</regel>
     </header>
@@ -751,7 +751,7 @@
     <guid>efed243d-dd35-4b85-84f8-0b408ee3f0aa</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Keywords</onderwerp>
     <header>
       <regel>What is the purpose of the 'base' keyword in C#?</regel>
     </header>
@@ -771,7 +771,7 @@
     <guid>8a24cc11-79c5-42c6-bc1e-6b840dd28e1f</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Methods and Properties</onderwerp>
     <header>
       <regel>What is the difference between a method and a property in C#?</regel>
     </header>
@@ -791,7 +791,7 @@
     <guid>771cceaf-bcba-4e81-abb5-b868bc0795e8</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+	  <onderwerp>Keywords, Static</onderwerp>
     <header>
       <regel>What is the purpose of the 'static' keyword in C#?</regel>
     </header>
@@ -811,7 +811,7 @@
     <guid>e6a2c844-6724-4f2b-9691-26d523148c4f</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Loops</onderwerp>
     <header>
       <regel>What is the purpose of the 'foreach' loop in C#?</regel>
     </header>
@@ -831,7 +831,7 @@
     <guid>7ec49ffe-e25e-43c3-9996-8770615c6212</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Methods</onderwerp>
     <header>
       <regel>What is the correct syntax to declare a method in C#?</regel>
     </header>
@@ -851,7 +851,7 @@
     <guid>475155ca-5b50-4df0-8212-c2e54b4c7ac0</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Exception Handling</onderwerp>
     <header>
       <regel>What is the purpose of the 'finally' block in a 'try-catch-finally' statement?</regel>
     </header>
@@ -871,7 +871,7 @@
     <guid>4c12e3c9-a0e6-42e9-bb43-3e0a3f047370</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Using Statement</onderwerp>
     <header>
       <regel>What is the purpose of the 'using' statement in C#?</regel>
     </header>
@@ -891,7 +891,7 @@
     <guid>3b34e183-f577-48db-a4ce-5ffd273e6b2c</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Integers</onderwerp>
     <header>
       <regel>What is the output of the following code snippet?</regel>
       <regel>x = 5;</regel>
@@ -914,7 +914,7 @@
     <guid>ffb72535-fb36-4ad5-b172-ad2ff24d0a32</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Loops</onderwerp>
     <header>
       <regel>What is the purpose of the 'foreach' loop in C#?</regel>
     </header>
@@ -934,7 +934,7 @@
     <guid>1a01a67a-60ab-442d-abca-2fb49191bf6f</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Exception Handling</onderwerp>
     <header>
       <regel>What is the purpose of the 'finally' block in a 'try-catch-finally' statement in C#?</regel>
     </header>
@@ -954,7 +954,7 @@
     <guid>a04f4bb2-6638-4ace-bb34-e14e5e0da20b</guid>
     <volgnummer></volgnummer>
     <niveau>2</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Loops</onderwerp>
     <header>
       <regel>Which of the following is not a valid type of loop in C#?</regel>
     </header>
@@ -974,7 +974,7 @@
     <guid>a50b00a2-d5b2-467a-924a-a94df23a0bd5</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Reference Types</onderwerp>
     <header>
       <regel>Which of the following is an example of a reference type in C#?</regel>
     </header>
@@ -994,7 +994,7 @@
     <guid>a0fb0dc3-7093-4ed7-95eb-7fcb0334bf3f</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Keywords, Override</onderwerp>
     <header>
       <regel>What is the purpose of the 'override' keyword in C#?</regel>
     </header>
@@ -1014,7 +1014,7 @@
     <guid>c745cdd9-b6f9-4640-a200-d95401d238bf</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>Asynchronous Programming</onderwerp>
     <header>
       <regel>What is the purpose of the 'await' keyword in C#?</regel>
     </header>
@@ -1034,7 +1034,7 @@
     <guid>3ecd2fef-6fa1-4e6f-b4dd-bf03b9fc172a</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>strings stringbuilder</onderwerp>
     <header>
       <regel>What is the difference between 'StringBuilder' and 'String' in C#?</regel>
     </header>
@@ -1054,7 +1054,7 @@
     <guid>d97780e3-6f5a-452b-96b2-4e1393f2daa4</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keywords, readonly</onderwerp>
     <header>
       <regel>What is the difference between 'const' and 'readonly' in C#?</regel>
     </header>
@@ -1074,7 +1074,7 @@
     <guid>b5f9fcca-922c-4209-96d9-c4218c0182ff</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword yield</onderwerp>
     <header>
       <regel>What is the purpose of the 'yield' keyword in C#?</regel>
     </header>
@@ -1094,7 +1094,7 @@
     <guid>d0a895e6-0018-4169-87e5-53765c4cd45d</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>value types</onderwerp>
     <header>
       <regel>Which of the following is an example of a value type in C#?</regel>
     </header>
@@ -1114,7 +1114,7 @@
     <guid>c2ce218a-dec8-43cd-87fa-ab82a924ec8c</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>strings stringbuilder</onderwerp>
     <header>
       <regel>What is the difference between 'string' and 'StringBuilder' in C#?</regel>
     </header>
@@ -1134,7 +1134,7 @@
     <guid>40372e59-2875-4e5b-a89a-152b89e915ca</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword sealed</onderwerp>
     <header>
       <regel>What is the purpose of the 'sealed' keyword in C#?</regel>
     </header>
@@ -1154,7 +1154,7 @@
     <guid>50c69f40-5ab0-4b25-9a83-5a6f9b4a03fd</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>classes</onderwerp>
     <header>
       <regel>Which of the following statements about C# classes is true?</regel>
     </header>
@@ -1174,7 +1174,7 @@
     <guid>0eac5c65-1d16-4acf-9089-50d8b7ffb76c</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>access modifiers</onderwerp>
     <header>
       <regel>Which access modifier makes a member accessible only within the same class?</regel>
     </header>
@@ -1194,7 +1194,7 @@
     <guid>7c422a6d-9a34-483e-8ec9-6ec4b58afbea</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword static</onderwerp>
     <header>
       <regel>Which of the following is true about static members in C#?</regel>
     </header>
@@ -1214,7 +1214,7 @@
     <guid>386a6958-3680-4d75-86bc-2870be76b266</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>struct vs class</onderwerp>
     <header>
       <regel>What is the difference between 'struct' and 'class' in C#?</regel>
     </header>
@@ -1234,7 +1234,7 @@
     <guid>8e5a1e52-490f-4e4f-84a5-d009aab53bf7</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>interfaces</onderwerp>
     <header>
       <regel>Which of the following is true about C# interfaces?</regel>
     </header>
@@ -1254,7 +1254,7 @@
     <guid>f785247f-19bd-4619-b99a-a65d108d3c6f</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword out</onderwerp>
     <header>
       <regel>What is the purpose of the 'out' keyword in C#?</regel>
     </header>
@@ -1274,7 +1274,7 @@
     <guid>f1d7a2aa-e63d-4c85-b391-fa3561c91c52</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>variables</onderwerp>
     <header>
       <regel>What is the correct way to declare a constant in C#?</regel>
     </header>
@@ -1294,7 +1294,7 @@
     <guid>137052fa-d072-45eb-9b37-3829c36e8c5e</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>reference types</onderwerp>
     <header>
       <regel>Which of the following is an example of a reference type in C#?</regel>
     </header>
@@ -1314,7 +1314,7 @@
     <guid>90a0b912-c1a0-4d6a-af98-97f3b087ad76</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword virtual</onderwerp>
     <header>
       <regel>What is the purpose of the 'virtual' keyword in C#?</regel>
     </header>
@@ -1334,7 +1334,7 @@
     <guid>1e0c1ad8-51a8-41d0-a48b-1737500d1937</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>collections List&lt;T&gt;</onderwerp>
     <header>
       <regel>What does 'T' represent in List&lt;T&gt;</regel>
     </header>
@@ -1354,7 +1354,7 @@
     <guid>19b6f6d3-ce47-4844-ae3c-593461995685</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>type conversions</onderwerp>
     <header>
       <regel>Which of the following is an example of an implicit conversion in C#?</regel>
     </header>
@@ -1374,7 +1374,7 @@
     <guid>080c5047-d29f-4b96-9129-c1f28369cde2</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>exception handling</onderwerp>
     <header>
       <regel>What is the purpose of the 'finally' block in a try-catch-finally statement?</regel>
     </header>
@@ -1394,7 +1394,7 @@
     <guid>9a023d06-aea7-4bbf-a618-00990116de80</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>exception handling</onderwerp>
     <header>
       <regel>What is the purpose of the 'try-catch' statement in C#?</regel>
     </header>
@@ -1414,7 +1414,7 @@
     <guid>4713a0f3-23c5-4b4a-bc29-600e5e57270c</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword this</onderwerp>
     <header>
       <regel>What is the purpose of the 'this' keyword in C#?</regel>
     </header>
@@ -1434,7 +1434,7 @@
     <guid>417eeb46-697b-46dc-afe3-22d87bd7620b</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword async</onderwerp>
     <header>
       <regel>What is the purpose of the 'async' keyword in C#?</regel>
     </header>
@@ -1454,7 +1454,7 @@
     <guid>85b77e59-40e4-43df-a953-61fadfe98d57</guid>
     <volgnummer></volgnummer>
     <niveau>3</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>asynchronous programming</onderwerp>
     <header>
       <regel>What is the purpose of the 'ThreadPool' class in C#?</regel>
     </header>
@@ -1474,7 +1474,7 @@
     <guid>aa842a4d-9e23-4720-94b5-db3b3570d941</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>operators</onderwerp>
     <header>
       <regel>What is the difference between '== ' and 'Equals()' when comparing objects in C#?</regel>
     </header>
@@ -1494,7 +1494,7 @@
     <guid>21fcddeb-c16f-4609-900d-e7ccd8553da7</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>IEnumerable</onderwerp>
     <header>
       <regel>What is the difference between 'IEnumerable' and 'IQueryable' in C#?</regel>
     </header>
@@ -1514,7 +1514,7 @@
     <guid>759e51fd-f442-40d9-83b2-7926ec439bca</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword checked</onderwerp>
     <header>
       <regel>What is the purpose of the 'checked' keyword in C#?</regel>
     </header>
@@ -1534,7 +1534,7 @@
     <guid>48247a51-76e3-43d6-972a-8b1f97519397</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword unchecked</onderwerp>
     <header>
       <regel>What is the purpose of the 'unchecked' keyword in C#?</regel>
     </header>
@@ -1554,7 +1554,7 @@
     <guid>a3401962-8266-4285-a718-4b340adb7ac7</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>operators</onderwerp>
     <header>
       <regel>What is the purpose of the 'nameof' operator in C#?</regel>
     </header>
@@ -1574,7 +1574,7 @@
     <guid>3372581d-e90e-4ec8-8dd1-a3b8886c0e48</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword throw keyword throw ex</onderwerp>
     <header>
       <regel>What is the difference between 'throw' and 'throw ex' in C#?</regel>
     </header>
@@ -1594,7 +1594,7 @@
     <guid>16543a36-8463-4ca9-a3ec-e6dace8a2573</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword yield</onderwerp>
     <header>
       <regel>What is the purpose of the 'yield return' statement in C#?</regel>
     </header>
@@ -1614,7 +1614,7 @@
     <guid>68693797-aa93-47ee-b54b-76da9d0b69c0</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword yield</onderwerp>
     <header>
       <regel>What is the purpose of the 'yield break' statement in C#?</regel>
     </header>
@@ -1634,7 +1634,7 @@
     <guid>5cb53d03-d3c9-47fc-b651-f7cee27464b4</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>asynchronous programming</onderwerp>
     <header>
       <regel>What is the purpose of the 'Task' class in C#?</regel>
     </header>
@@ -1654,7 +1654,7 @@
     <guid>e56a4283-8616-456f-9ecc-7d851b3316ac</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>asynchronous programming</onderwerp>
     <header>
       <regel>What is the purpose of the 'Task.Run' method in C#?</regel>
     </header>
@@ -1674,7 +1674,7 @@
     <guid>6fc3519f-97d8-4f7b-b107-60867606bcf0</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>parallel programming</onderwerp>
     <header>
       <regel>What is the purpose of the 'Parallel' class in C#?</regel>
     </header>
@@ -1694,7 +1694,7 @@
     <guid>8316bd0a-6bad-4039-b379-0d0604629171</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>asynchronous programming</onderwerp>
     <header>
       <regel>What is the purpose of the 'TaskCompletionSource' class in C#?</regel>
     </header>
@@ -1714,7 +1714,7 @@
     <guid>7382cec4-db32-4eaf-a1a0-323bbf1615cf</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>struct vs class</onderwerp>
     <header>
       <regel>What is the difference between a struct and a class in C#?</regel>
     </header>
@@ -1734,7 +1734,7 @@
     <guid>cd6ef0bd-cffe-410b-a448-c81571626949</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword abstract</onderwerp>
     <header>
       <regel>What is the purpose of the 'abstract' keyword in C#?</regel>
     </header>
@@ -1754,7 +1754,7 @@
     <guid>cc62c29d-8fcc-4a06-8e48-a4077e7c60e9</guid>
     <volgnummer></volgnummer>
     <niveau>4</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>delegates</onderwerp>
     <header>
       <regel>What is the purpose of the 'delegate' keyword in C#?</regel>
     </header>
@@ -1774,7 +1774,7 @@
     <guid>fe742748-be3b-4af4-b92d-fce4df65f336</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>reference vs. value type</onderwerp>
     <header>
       <regel>What is the purpose of the 'ref' keyword in C#?</regel>
     </header>
@@ -1794,7 +1794,7 @@
     <guid>05b004a8-5a10-4fe4-bf76-9eee8427577f</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>asynchronous programming</onderwerp>
     <header>
       <regel>What is the purpose of the 'Action' delegate in C#?</regel>
     </header>
@@ -1814,7 +1814,7 @@
     <guid>42b0bd13-6f03-4fdb-b756-60bc3f679bc8</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword volatile</onderwerp>
     <header>
       <regel>What is the purpose of the 'volatile' keyword in C#?</regel>
     </header>
@@ -1834,7 +1834,7 @@
     <guid>60ecdaf1-bc9b-4faf-9c1b-1b07ab1e6537</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword sealed</onderwerp>
     <header>
       <regel>What is the purpose of the 'sealed' keyword in C#?</regel>
     </header>
@@ -1854,7 +1854,7 @@
     <guid>f2b16abe-c035-4aba-a877-eebafbcc6397</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>using statement</onderwerp>
     <header>
       <regel>What is the purpose of the 'using' statement in C#?</regel>
     </header>
@@ -1874,7 +1874,7 @@
     <guid>7ad49b5a-bb77-47c0-8509-e1f9f6c12202</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword this</onderwerp>
     <header>
       <regel>What is the purpose of the 'this' keyword in C#?</regel>
     </header>
@@ -1894,7 +1894,7 @@
     <guid>bad127c7-f1b8-44bf-b029-405bc622e93c</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>exception handling</onderwerp>
     <header>
       <regel>What is the purpose of the 'finally' block in a try-catch-finally statement in C#?</regel>
     </header>
@@ -1914,7 +1914,7 @@
     <guid>a70c2d34-6838-4c7e-8fdf-b64e9f0bb477</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>delegates</onderwerp>
     <header>
       <regel>What is the purpose of the 'delegate' keyword in C#?</regel>
     </header>
@@ -1934,7 +1934,7 @@
     <guid>63673a99-ae7c-47cb-888c-5113fc2cad09</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword out</onderwerp>
     <header>
       <regel>What is the purpose of the 'out' parameter modifier in C#?</regel>
     </header>
@@ -1954,7 +1954,7 @@
     <guid>23252a94-8462-4195-b663-fd58b6cd8411</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword yield</onderwerp>
     <header>
       <regel>What is the purpose of the 'yield' keyword in C#?</regel>
     </header>
@@ -1974,7 +1974,7 @@
     <guid>761fe3eb-f936-49a1-9ed3-d5d8959d2882</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword lock</onderwerp>
     <header>
       <regel>What is the purpose of the 'lock' statement in C#?</regel>
     </header>
@@ -1994,7 +1994,7 @@
     <guid>d9c31fde-085d-4f16-a5f4-76bef9bc8eda</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword throw</onderwerp>
     <header>
       <regel>What is the purpose of the 'throw' keyword in C#?</regel>
     </header>
@@ -2014,7 +2014,7 @@
     <guid>ed65acef-2e26-4954-ad52-bfc8943482fb</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>keyword checked keyword unchecked</onderwerp>
     <header>
       <regel>What is the purpose of the 'checked' and 'unchecked' keywords in C#?</regel>
     </header>
@@ -2034,7 +2034,7 @@
     <guid>d24fdc13-65cc-438c-81d9-f90db7b20c11</guid>
     <volgnummer></volgnummer>
     <niveau>5</niveau>
-    <onderwerp></onderwerp>
+    <onderwerp>operators</onderwerp>
     <header>
       <regel>What is the purpose of the 'nameof' operator in C#?</regel>
     </header>
