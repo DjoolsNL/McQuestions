@@ -23,6 +23,7 @@
     <None Remove="XmlQuestions\Nieuwe Baan.xml" />
     <None Remove="XmlQuestions\Python.xml" />
     <None Remove="XmlQuestions\Scrum.xml" />
+    <None Remove="XmlQuestions\TechBuzz.xml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,6 +58,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="XmlQuestions\Python.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlQuestions\TechBuzz.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="XmlQuestions\Scrum.xml">

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<vragenset>Tech Buzz</vragenset>
+	<setinfo></setinfo>
+	<vraag>
+		<disabled></disabled>
+		<guid>86cd0cc6-0fbe-4fe7-8b51-317d013d4edc</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity.</regel>
+			<regel opmaak="sss">private void HandleAnswerSelection(string choice)
+{
+answer = choice;
+submitButtonText = "Antwoord met: " + answer;
+}</regel>
+		</header>
+		<keuzes>
+			<A>The Developers may work with the Product Owner to add or remove work if they find themselves with more or less capacity than expected.</A>
+			<B>The Sprint Backlog is fully formulated in the Sprint Planning event and does not change during the Sprint.</B>
+			<C>As a decomposition of the selected Product Backlog items, the Sprint Backlog changes and may grow as the work emerges.</C>
+			<D>The Product Owner can help clarify or optimize the Sprint when asked by the Developers.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>86cd0cc6-0fbe-4fe7-8b51-317d013d4edc</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity.</regel>
+			<regel opmaak="sss">private void HandleAnswerSelection(string choice)
+{
+answer = choice;
+submitButtonText = "Antwoord met: " + answer;
+}
+			</regel>
+		</header>
+		<keuzes>
+			<A>The Developers may work with the Product Owner to add or remove work if they find themselves with more or less capacity than expected.</A>
+			<B>The Sprint Backlog is fully formulated in the Sprint Planning event and does not change during the Sprint.</B>
+			<C>As a decomposition of the selected Product Backlog items, the Sprint Backlog changes and may grow as the work emerges.</C>
+			<D>The Product Owner can help clarify or optimize the Sprint when asked by the Developers.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>86cd0cc6-0fbe-4fe7-8b51-317d013d4edc</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity.</regel>
+			<regel opmaak="sss">private void HandleAnswerSelection(string choice)
+{
+answer = choice;
+submitButtonText = "Antwoord met: " + answer;
+}
+			</regel>
+		</header>
+		<keuzes>
+			<A>The Developers may work with the Product Owner to add or remove work if they find themselves with more or less capacity than expected.</A>
+			<B>The Sprint Backlog is fully formulated in the Sprint Planning event and does not change during the Sprint.</B>
+			<C>As a decomposition of the selected Product Backlog items, the Sprint Backlog changes and may grow as the work emerges.</C>
+			<D>The Product Owner can help clarify or optimize the Sprint when asked by the Developers.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>86cd0cc6-0fbe-4fe7-8b51-317d013d4edc</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity.</regel>
+			<regel opmaak="sss">private void HandleAnswerSelection(string choice)
+{
+answer = choice;
+submitButtonText = "Antwoord met: " + answer;
+}
+			</regel>
+		</header>
+		<keuzes>
+			<A>The Developers may work with the Product Owner to add or remove work if they find themselves with more or less capacity than expected.</A>
+			<B>The Sprint Backlog is fully formulated in the Sprint Planning event and does not change during the Sprint.</B>
+			<C>As a decomposition of the selected Product Backlog items, the Sprint Backlog changes and may grow as the work emerges.</C>
+			<D>The Product Owner can help clarify or optimize the Sprint when asked by the Developers.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>86cd0cc6-0fbe-4fe7-8b51-317d013d4edc</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity.</regel>
+			<regel opmaak="sss">private void HandleAnswerSelection(string choice)
+{
+answer = choice;
+submitButtonText = "Antwoord met: " + answer;
+}
+			</regel>
+		</header>
+		<keuzes>
+			<A>The Developers may work with the Product Owner to add or remove work if they find themselves with more or less capacity than expected.</A>
+			<B>The Sprint Backlog is fully formulated in the Sprint Planning event and does not change during the Sprint.</B>
+			<C>As a decomposition of the selected Product Backlog items, the Sprint Backlog changes and may grow as the work emerges.</C>
+			<D>The Product Owner can help clarify or optimize the Sprint when asked by the Developers.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>86cd0cc6-0fbe-4fe7-8b51-317d013d4edc</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity.</regel>
+			<regel opmaak="sss">private void HandleAnswerSelection(string choice)
+{
+answer = choice;
+submitButtonText = "Antwoord met: " + answer;
+}
+			</regel>
+		</header>
+		<keuzes>
+			<A>The Developers may work with the Product Owner to add or remove work if they find themselves with more or less capacity than expected.</A>
+			<B>The Sprint Backlog is fully formulated in the Sprint Planning event and does not change during the Sprint.</B>
+			<C>As a decomposition of the selected Product Backlog items, the Sprint Backlog changes and may grow as the work emerges.</C>
+			<D>The Product Owner can help clarify or optimize the Sprint when asked by the Developers.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<vraag>
+		<disabled></disabled>
+		<guid>86cd0cc6-0fbe-4fe7-8b51-317d013d4edc</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp></onderwerp>
+		<header>
+			<regel>The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity.</regel>
+			<regel opmaak="sss">private void HandleAnswerSelection(string choice)
+{
+answer = choice;
+submitButtonText = "Antwoord met: " + answer;
+}
+			</regel>
+		</header>
+		<keuzes>
+			<A>The Developers may work with the Product Owner to add or remove work if they find themselves with more or less capacity than expected.</A>
+			<B>The Sprint Backlog is fully formulated in the Sprint Planning event and does not change during the Sprint.</B>
+			<C>As a decomposition of the selected Product Backlog items, the Sprint Backlog changes and may grow as the work emerges.</C>
+			<D>The Product Owner can help clarify or optimize the Sprint when asked by the Developers.</D>
+		</keuzes>
+		<antwoord>B</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>	
+</root>

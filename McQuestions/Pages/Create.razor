@@ -10,105 +10,189 @@
 <Style />
 
 <style>
-	.choice {
-		background-color: #4CAF50;
-		color: white;
-		padding: 10px 20px;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-	}
+    .choice {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
-	.submit {
-		width: 50%;
-		height: 10%;
-		background-color: lightgray;
-		color: black;
-		padding: 10px 20px;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-	}
+    .submit {
+        width: 50%;
+        height: 10%;
+        background-color: lightgray;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
-	h2 {
-		padding: 10px 20px;
-		padding-left: 0px;
-	}
+    h2 {
+        padding: 10px 20px;
+        padding-left: 0px;
+    }
+
+    .flexible-textarea {
+        width: 100%;
+        min-height: 2rem; /* Set a minimum height for the textarea */
+        resize: both;  /* Allow vertical and horizontal resizing of the textarea */
+    }
 </style>
 
-
+<h2>Nieuwe vraag</h2>
+<hr />
 <div class="indexdiv">
 
-<h3>Maak een vragenlijst</h3>
+    Toevoegen aan 
+    <select @onchange="SelecteerFile">
+        @foreach (var option in optionList)
+        {
+            <option value="@option.Value">@option.Label</option>
+        }
+    </select>
+    <br />&nbsp;<br />&nbsp;
+    <table>
+        <tr><td><label>Disabled:</label></td>
+            <td><input type="text" @bind="disabled" /></td>
+        </tr>
+        <tr>
+            <td><label>Niveau:</label></td>
+            <td><input type="text" @bind="niveau" /></td>
+        </tr>
+        <tr>
+            <td><label>Onderwerp:</label></td>
+            <td><input type="text" @bind="onderwerp" /></td>
+        </tr>
+        <tr>
+            <td><label>Regel:</label></td>
+            <td><input type="text" @bind="regel" /></td>
+        </tr>
+        <tr>
+            <td><label>regelCode:</label></td>
+            <td><input type="text" @bind="regelCode" /></td>
+        </tr>
+        <tr>
+            <td><label>A:</label></td>
+            <td><input type="text" @bind="choiceA" placeholder="Keuze A" /></td>
+        </tr>
+        <tr>
+            <td><label>B:</label></td>
+            <td><input type="text" @bind="choiceB" placeholder="Keuze B" /></td>
+        </tr>
+        <tr>
+            <td><label>C:</label></td>
+            <td><input type="text" @bind="choiceC" placeholder="Keuze C" /></td>
+        </tr>
+        <tr>
+            <td><label>D:</label></td>
+            <td><input type="text" @bind="choiceD" placeholder="Keuze D" /></td>
+        </tr>
+        <tr>
+            <td><label>Antwoord:</label></td>
+            <td><input type="text" @bind="antwoord" /></td>
+        </tr>
+        <tr>
+            <td><label>Uitleg:</label></td>
 
-<div>
-	<label>Niveau:</label>
-	<input type="number" @bind="niveau" />
+            <td><textarea class="flexible-textarea" wrap="hard" @bind="uitleg" /></td>
+        </tr>
+    </table>
+    <br />
+    <button @onclick="Toevoegen">Toevoegen</button>
 </div>
 
-<div>
-	<label>Header:</label>
-	<input type="text" @bind="header" />
-</div>
-
-<div>
-	<label>Keuzes:</label>
-	<div>
-		<input type="text" @bind="choiceA" placeholder="Keuze A" /><br />
-		<input type="text" @bind="choiceB" placeholder="Keuze B" /><br />
-		<input type="text" @bind="choiceC" placeholder="Keuze C" /><br />
-		<input type="text" @bind="choiceD" placeholder="Keuze D" />
-	</div>
-</div>
-
-<div>
-	<label>Antwoord:</label>
-	<input type="text" @bind="answer" />
-</div>
-
-<button @onclick="SaveQuestion">Save Question</button>
-
-@code {
-	private int niveau;
-	private string header;
-	private string choiceA;
-	private string choiceB;
-	private string choiceC;
-	private string choiceD;
-	private string answer;
-
-	private async Task SaveQuestion()
-	{
-		XDocument doc = new XDocument(
-			new XElement("vraag",
-				new XElement("guid", Guid.NewGuid()),
-				new XElement("niveau", niveau),
-				new XElement("header", header),
-				new XElement("keuzes",
-					new XElement("A", choiceA),
-					new XElement("B", choiceB),
-					new XElement("C", choiceC),
-					new XElement("D", choiceD)
-				),
-				new XElement("antwoord", answer)
-			)
-		);
-
-		string xmlString = doc.ToString();
-		byte[] xmlBytes = Encoding.UTF8.GetBytes(xmlString);
-
-		// Adjust the file path and name according to your server setup
-		string filePath = "wwwroot/questions/question.xml";
-
-		using (FileStream fileStream = File.Create(filePath))
-		{
-			await fileStream.WriteAsync(xmlBytes);
-		}
-	}
-}
-
-</div>
+    @code 
+{
+    string folderPath;
+    string[] fileNames;
+    private string disabled;
+    private string volgnummer;
+    private string niveau;
+    private string onderwerp;
+    private string regel;
+    private string regelCode;
+    private string choiceA;
+    private string choiceB;
+    private string choiceC;
+    private string choiceD;
+    private string antwoord;
+    private string userantwoord;
+    private string show;
+    private string uitleg;
+    private List<Option> optionList = new List<Option>();
+    private string selectedOption;
 
 
 
-@*<GenerateTest path="Data\\AI.xml" />*@
+    protected override void OnInitialized()
+    {
+        Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlQuestions\\");
+        folderPath = Directory.GetCurrentDirectory();
+        fileNames = Directory.GetFiles(folderPath);
+
+
+
+        foreach (var filename in fileNames)
+        {
+            optionList.Add(new Option(Path.GetFileName(filename), Path.GetFileName(filename)));
+        }
+    }
+
+    private void SelecteerFile(ChangeEventArgs e)
+    {
+        selectedOption = e.Value.ToString();
+    }
+
+    private async Task Toevoegen()
+    {
+        XElement newAddition = new XElement(
+        new XElement("vraag",
+            new XElement("disabled", disabled),
+            new XElement("guid", Guid.NewGuid()),
+            new XElement("volgnummer", volgnummer),
+            new XElement("niveau", niveau),
+            new XElement("onderwerp", onderwerp),
+            new XElement("header",
+                new XElement("regel", regel),
+                new XElement("regel", regelCode)
+                ),
+            new XElement("keuzes",
+                new XElement("A", choiceA),
+                new XElement("B", choiceB),
+                new XElement("C", choiceC),
+                new XElement("D", choiceD)
+                ),
+            new XElement("antwoord", antwoord),
+            new XElement("userantwoord", userantwoord),
+            new XElement("show", show),
+            new XElement("uitleg", uitleg)
+        )
+        );
+
+        // string xmlString = newAddition.ToString();
+        // byte[] xmlBytes = Encoding.UTF8.GetBytes(xmlString);
+
+        XElement doc = XElement.Load(folderPath + "\\" + selectedOption);
+        doc.Add(newAddition);
+        doc.Save(folderPath + "\\" + selectedOption);
+
+
+        selectedOption = "";
+
+    }
+
+        private class Option
+        {
+            public Option(string value, string label)
+            {
+                Value = value;
+                Label = label;
+            }
+
+            public string Value { get; }
+            public string Label { get; }
+        }
+    }

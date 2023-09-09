@@ -3,6 +3,22 @@
 @using System.Collections.Generic
 @using System.IO
 
+
+<style>
+    pre {
+        background-color: #272822;
+        border: 1px solid #444;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 20px 20px;
+        padding-left:30px;
+        color: white;
+        display: block;
+        width: auto;
+        font-size: .95rem;
+    }
+</style>
+
 @code {
     [Parameter] public string PathXmlFile { get; set; }
     [Parameter] public int TotalQuestions { get; set; }
@@ -73,9 +89,18 @@
             }
             else
             {
-                @regel.Value
+                if (regel.HasAttributes)
+                {
+                    <div style="display: flex; justify-content:flex-start; align-items: center;">
+                        <pre>@regel.Value</pre>
+                    </div>
+                }
+                else
+                {
+                    @regel.Value
+                    <br />
+                }
 
-                <br />
             }
             teller++;
         }

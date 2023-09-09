@@ -190,10 +190,10 @@
 			<table style="display:inline; margin-left:25px; margin-top:30px">
 				<tr>
 					<td>
-						<button @onclick="() => ShowIntegrated(volgnummer)" class="choice">@textButtonIntegrated</button><span>&nbsp;&nbsp;</span>
+                        <button @onclick="() => ShowStandAlone(volgnummer)" class="choice">@textButtonStandAlone</button><span>&nbsp;&nbsp;</span>
 					</td>
 					<td>
-						<button @onclick="() => ShowStandAlone(volgnummer)" class="choice">@textButtonStandAlone</button><span>&nbsp;&nbsp;</span>
+@* 						<button @onclick="() => ShowIntegrated(volgnummer)" class="choice">@textButtonIntegrated</button><span>&nbsp;&nbsp;</span> *@
 					</td>
 				</tr>
 			</table>
@@ -203,7 +203,7 @@
 			{
 				<div>
 					<p><b>Copy the instructions and the question below and post them to your AI teacher.</b>
-						<br />
+						<br /><br />
 						<b>Instructions</b>
 						<br />
 						I'm learning to code <span style="color:red">@NaamVragenSet</span>. Here is a multiple choice question about <span style="color:red">@NaamVragenSet</span>. On a scale from 1 to 5 (where 1 is beginner and 5 is senior) <span style="color:red">my level is @question.Element("niveau").Value</span>. Please consider my level when answering the question.
