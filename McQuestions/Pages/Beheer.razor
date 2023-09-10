@@ -38,10 +38,6 @@
 		border-radius: 4px;
 	}
 
-	td 
-	{
-	}
-
 </style>
 
 @code 
@@ -305,23 +301,6 @@
 					<td>Disabled&nbsp;</td>
 					<td><input @bind="@q.Element("disabled").Value" /></td>
 				</tr>
-				<tr>
-					<td>Guid&nbsp;</td>
-					<td><input @bind="@q.Element("guid").Value" /></td>
-				</tr>
-				<tr>
-					<td>Volgnummer</td>
-					<td>@*<input @bind="@q.Element("volgnummer").Value" />*@</td>
-				</tr>
-				<tr>
-					<td>Niveau</td>
-					<td><input @bind="@q.Element("niveau").Value" /></td>
-				</tr>
-
-				<tr>
-					<td>Onderwerp</td>
-					<td><input @bind="@q.Element("onderwerp").Value" /></td>
-				</tr>
 
 				@foreach (var item in q.Element("header").Elements())
 				{
@@ -342,7 +321,9 @@
 						}
 					</tr>
 				}
-				@{int teller = 1;}
+				@{
+					int teller = 1;
+				}
 				@foreach (var item in q.Element("keuzes").Elements())
 				{
 					<tr>
@@ -360,21 +341,35 @@
 						{
 							<td><input @bind="@item.Value" /></td>
 						}
-						
+
 					</tr>
 				}
 				<tr>
 					<td>Antwoord</td>
 					<td><input @bind="@q.Element("antwoord").Value" /></td>
 				</tr>
-
 				<tr>
 					<td>Userantwoord&nbsp</td>
 					<td>
 						@*<input @bind="@q.Element("userantwoord").Value" />*@
 					</td>
 				</tr>
-
+				<tr>
+					<td>Niveau</td>
+					<td><input @bind="@q.Element("niveau").Value" /></td>
+				</tr>
+				<tr>
+					<td>Onderwerp</td>
+					<td><input @bind="@q.Element("onderwerp").Value" /></td>
+				</tr>
+				<tr>
+					<td>Volgnummer</td>
+					<td>@*<input @bind="@q.Element("volgnummer").Value" />*@</td>
+				</tr>
+				<tr>
+					<td>Guid&nbsp;</td>
+					<td><input @bind="@q.Element("guid").Value" /></td>
+				</tr>
 				<tr>
 					<td>Show</td>
 					<td><input @bind="@q.Element("show").Value" /></td>

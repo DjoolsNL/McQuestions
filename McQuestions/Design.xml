@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<vraag>
+		<header>
+			<regel>What does HTML stand for?</regel>
+		</header>
+		<keuzes>
+			<A>HyperText Markup Language</A>
+			<B>Home Tool Markup Language</B>
+			<C>Hyperlink and Text Markup Language</C>
+			<D>High-Level Machine Language</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>		
+		<niveau>1</niveau>
+		<onderwerp>HTML</onderwerp>
+		<volgnummer></volgnummer>		
+		<disabled></disabled>
+		<uitleg>want dit element wordt nog niet echt gebruikt</uitleg>
+		<show>none</show>		
+		<guid>a91ab859-d674-43b5-a03d-db60aca22395</guid>
+	</vraag>
+
+	<vraag>
+		<disabled></disabled>
+		<guid>a91ab859-d674-43b5-a03d-db60aca22395</guid>
+		<volgnummer></volgnummer>
+		<niveau>1</niveau>
+		<onderwerp>HTML</onderwerp>
+		<header>
+			<regel>What does HTML stand for?</regel>
+		</header>
+		<keuzes>
+			<A>HyperText Markup Language</A>
+			<B>Home Tool Markup Language</B>
+			<C>Hyperlink and Text Markup Language</C>
+			<D>High-Level Machine Language</D>
+		</keuzes>
+		<antwoord>A</antwoord>
+		<userantwoord></userantwoord>
+		<show>none</show>
+		<uitleg></uitleg>
+	</vraag>
+	<ontwerp>dus buiten form een class maken voor gebruik in form. </ontwerp>
+</root>

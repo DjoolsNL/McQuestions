@@ -1,4 +1,30 @@
 ﻿@page "/"
+
+@code
+{
+	private void KnockOnDoor(int k)
+	{
+		if (k == 1)
+		{
+			//rand test
+		}
+
+		if (k == 4)
+		{
+			if (ShowOverMc)
+			{
+				ShowOverMc = false;
+			}
+			else
+			{
+				ShowOverMc = true;
+			}
+		}
+	}
+
+	private bool ShowOverMc;
+}	
+
 <PageTitle>McQuestions</PageTitle>
 <Style />
 <style>
@@ -37,10 +63,9 @@
 	}
 
 	.svg-container {
-		display: inline-block;
-		width: 20%; /* Four SVGs in a row */
-		margin: 2%; /* Adjust spacing between SVGs */
+		margin: 6%; /* Adjust spacing between SVGs */
 		border: 1px solid black;
+		cursor:pointer;
 	}
 
 </style>
@@ -50,212 +75,227 @@
 	<hr />
 	<br />
 
-	<div style="width:75%">
-		<div class="svg-container">
-			<svg viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg">
-				<rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
-				<!-- Doorknob -->
-				<circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
-			</svg>
-		</div>
-
-		<div class="svg-container">
-			<svg viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg">
-				<rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
-				<!-- Door panels -->
-				<rect x="20%" y="10%" width="60%" height="80%" fill="#FFFFFF" />
-				<!-- Doorknob -->
-				<circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
-			</svg>
-		</div>
-
-		<div class="svg-container">
-			<svg viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg">
-				<!-- Doorknob -->
-				<circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
-			</svg>
-		</div>
-
-		<div class="svg-container">
-			<svg viewBox="0 0 50 100" xmlns="http://www.w3.org/2000/svg">
-				<rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
-
-				<!-- Door panels -->
-				<rect x="20%" y="10%" width="60%" height="80%" fill="#FFFFFF" />
-				<rect x="40%" y="10%" width="20%" height="80%" fill="#8B4513" />
-
-				<!-- Doorknob -->
-				<circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
-			</svg>
-		</div>
-
-	</div>
-
-	<hr />
-	<p>
-		<ul>
-			<li>
-				<b>Artificial Intelligence / Large Language Models</b> zoals ChatGPT zijn game-changers. Elke vraag die we stellen kan een deur naar kennis openen. Met de juiste vragen kunnen we de kracht van AI maximaal benutten. 
-				<br /><br />	
-				<b>McQuestions</b> helpt de user met en van <i>AI</i> te leren. 
-				<br /><br />
-				<b>Hoe?</b><br />
-				Wil je Java leren? Dan begin je met de Java Instaptest. Die bepaalt je startniveau. Vervolgens wordt je elke volgende Java test die je doet uitgedaagd om je niveau omhoog te tillen. Naarmate je niveau omhoog gaat krijg je vragen aangeboden op een iets hoger niveau. Na elke test bekijk je samen met de AI je antwoorden en kun je met AI verder leren over het onderwerp.  
-				<br /><br />
-				<b>Hoe werkt het onder de motorkap?</b><br />
-				Kennis en vaardigheden kunnen <b>gemeten</b> worden. Aan de basis van de app ligt een database met meerkeuzevragen. Vragen die op één deelgebied betrekking hebben vormen specifieke vragensets met vragen van uiteenlopend kennisniveau. De tests en de interactie met AI brengen de cursist stap voor stap naar een hoger niveau: meten - leren - opnieuw meten.
-			</li>
-			<li>
-				<img src="procesmodel McQ.png" alt="My Image" />
-				<br /><br />
-				<img src="Interactief leren.png" alt="My Image" />
-				<br />
-			</li>
-			<li>
-				In de app wordt gamification gebruikt om zodat de cursist een extra prikkel krijgt om de app te blijven gebruiken.
-			</li>
-		</ul>
-
-	</p>
-	<hr />
-	<h2>Meerwaarde voor een opleider</h2>
-	<hr />
-
-	<table>
+	
+	<table style="width:100%">
 		<tr>
-			<td class="grotereletter" colspan="2">Objectieve screening aan de poort</td>
+			<td style="width:25%; text-align: center;">Random Test</td>
+			<td style="width:25%; text-align: center;">Profiel</td>
+			<td style="width:25%; text-align: center;">Admin</td>
+			<td style="width:25%; text-align: center;">Over Mc</td>
 		</tr>
 		<tr>
-			<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true">&nbsp;&nbsp;</span></td>
-			<td class="paddingtop">
-				Voor dit doel is een intake-vragenset beschikbaar.
-				<br />&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<td class="grotereletter" colspan="2">Maximale educatieve waardetoevoeging </td>
-		</tr>
-		<tr>
-			<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true"></span>&nbsp;&nbsp;</td>
-			<td class="paddingtop">
-				Met de specifieke technische vragensets kan heel gedetailleerd gemeten worden waar een cursist qua kennis staat (nulmeting). Bij het afsluiten van een test levert de app een gedetailleerd overzicht van leerpunten zodat de opleider gericht aan de slag kan gaan met de cursist. Met tussentijdse metingen kan de progressie heel nauw gemonitord worden.
-				<br />&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<td class="grotereletter" colspan="2">Effectieve en eigentijdse leermiddelen</td>
-		</tr>
-		<tr>
-			<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true"></span>&nbsp;&nbsp;</td>
-			<td class="paddingtop">
-				McQuestions biedt een innovatieve en effectieve manier van leren. De cursist die gebruik maakt van de app leert niet alleen bij op de specifieke technische onderdelen maar hij leert ook de kunst om het maximale uit de AI te halen (prompts formuleren).<br />
-				Om een voorbeeld te geven van de kracht van het leren met een AI: deze site en de meeste technische, multiple-choice vragen zijn tot stand gekomen in intensieve samenwerking met ChatGPT.
-				<br />&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<td class="grotereletter" colspan="2">Verantwoording richting opdrachtgevers met zo hard mogelijke data</td>
-		</tr>
-		<tr>
-			<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true"></span>&nbsp;&nbsp;</td>
-			<td class="paddingtop">
-				Individuele en collectieve progressie kan in de verantwoording gekwantificeerd worden (eindmetingen). Zo wordt de toegevoegde waarde van een traject meetbaar. 
-				<br />&nbsp;</td>
-		</tr>
-		<tr>
-			<td class="grotereletter" colspan="2">Een overtuigend verhaal voor potentiele werkgevers</td>
-		</tr>
-		<tr>
-			<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true"></span>&nbsp;&nbsp;</td>
-			<td class="paddingtop">McQuestions levert de jobbemiddelaar de informatie die nodig is om iemand aan een geschikte baan te helpen.</td>
+            <td>
+				<div @onclick="(e) => KnockOnDoor(1)" class="svg-container">
+					<svg viewBox="0 0 50 100"  xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
+                        <!-- Doorknob -->
+                        <circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
+                    </svg>
+                </div>
+            </td>
+            <td>
+				<div class="svg-container">
+					<NavLink href="/terugkoppeling">
+					<svg viewBox="0 0 50 100"  xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
+                        <!-- Door panels -->
+                        <rect x="20%" y="10%" width="60%" height="80%" fill="#FFFFFF" />
+                        <!-- Doorknob -->
+                        <circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
+                    </svg>
+					</NavLink>
+                </div>
+            </td>
+            <td>
+				<div class="svg-container">
+					<NavLink href="/beheer">
+					<svg viewBox="0 0 50 100"  xmlns="http://www.w3.org/2000/svg">
+                        <!-- Doorknob -->
+                        <circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
+                    </svg>
+					</NavLink>
+                </div>
+            </td>
+            <td>
+				<div @onclick="(e) => KnockOnDoor(4)" class="svg-container">
+					<svg viewBox="0 0 50 100"  xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
+
+                        <!-- Door panels -->
+                        <rect x="20%" y="10%" width="60%" height="80%" fill="#FFFFFF" />
+                        <rect x="40%" y="10%" width="20%" height="80%" fill="#8B4513" />
+
+                        <!-- Doorknob -->
+                        <circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
+                    </svg>
+                </div>
+            </td>
 		</tr>
 	</table>
 
-	<p>
+	<hr />
+	</div>
+	@if (ShowOverMc)
+	{
+		<div class="indexdiv">
+		<p>
+			<ul>
+				<li>
+					<b>Artificial Intelligence / Large Language Models</b> zoals ChatGPT zijn game-changers. Elke vraag die we stellen kan een deur naar kennis openen. Met de juiste vragen kunnen we de kracht van AI maximaal benutten.
+					<br /><br />
+					<b>McQuestions</b> helpt de user met en van <i>AI</i> te leren.
+					<br /><br />
+					<b>Hoe?</b><br />
+					Wil je Java leren? Dan begin je met de Java Instaptest. Die bepaalt je startniveau. Vervolgens wordt je elke volgende Java test die je doet uitgedaagd om je niveau omhoog te tillen. Naarmate je niveau omhoog gaat krijg je vragen aangeboden op een iets hoger niveau. Na elke test bekijk je samen met de AI je antwoorden en kun je met AI verder leren over het onderwerp.
+					<br /><br />
+					<b>Hoe werkt het onder de motorkap?</b><br />
+					Kennis en vaardigheden kunnen <b>gemeten</b> worden. Aan de basis van de app ligt een database met meerkeuzevragen. Vragen die op één deelgebied betrekking hebben vormen specifieke vragensets met vragen van uiteenlopend kennisniveau. De tests en de interactie met AI brengen de cursist stap voor stap naar een hoger niveau: meten - leren - opnieuw meten.
+				</li>
+				<li>
+					<img src="procesmodel McQ.png" alt="My Image" />
+					<br /><br />
+					<img src="Interactief leren.png" alt="My Image" />
+					<br />
+				</li>
+				<li>
+					In de app wordt gamification gebruikt om zodat de cursist een extra prikkel krijgt om de app te blijven gebruiken.
+				</li>
+			</ul>
+
+		</p>
 		<hr />
-		<h2>Educatieve focus</h2>
-		<hr />
-		<h5 class="bold">Focusgebied vragensets</h5>
-		<img src="McFocusgebied.png" alt="My Image" />		    
+		<h2>Meerwaarde voor een opleider</h2>
 		<hr />
 
-		<h5 class="bold">Essentieel is de kwaliteit van</h5>
-		<ol>
-			<li>de vragen en de tests die de cursist maakt</li>
-			<li>de testdata die daaruit volgen</li>
-			<li>de testevaluatie die daarop volgt</li>
-			<li>de prompts naar de AI</li>
-			<li>de interactieve leerstof</li>
-		</ol>
-		Het slimme dient vooral in de vragen te zitten aangezien elke vraag icm AI een deur is naar kennis. Bijna alle tutorials die ik heb gezien, maken de fout om de cursist kennis aan te bieden die niet past bij zijn niveau. Een starter hoeft niet alle varianten te kennen waarop strings in C# geschreven kunnen worden. Hij hoeft niet aan het begin uitgelegd te krijgen dat er 36 verschillende types bestaan om getallen uit te drukken. De cursist is helemaal niet in staat om in te schatten wat wel en wat niet voor hem als starter de relevante informatie is die hij uit de brei dient te filteren. Dus biedt hem vooral deuren aan die toegang geven tot kennis die hij verwerken en toepassen kan. <br /><br />
+		<table>
+			<tr>
+				<td class="grotereletter" colspan="2">Objectieve screening aan de poort</td>
+			</tr>
+			<tr>
+				<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true">&nbsp;&nbsp;</span></td>
+				<td class="paddingtop">
+					Voor dit doel is een intake-vragenset beschikbaar.
+					<br />&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td class="grotereletter" colspan="2">Maximale educatieve waardetoevoeging </td>
+			</tr>
+			<tr>
+				<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true"></span>&nbsp;&nbsp;</td>
+				<td class="paddingtop">
+					Met de specifieke technische vragensets kan heel gedetailleerd gemeten worden waar een cursist qua kennis staat (nulmeting). Bij het afsluiten van een test levert de app een gedetailleerd overzicht van leerpunten zodat de opleider gericht aan de slag kan gaan met de cursist. Met tussentijdse metingen kan de progressie heel nauw gemonitord worden.
+					<br />&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td class="grotereletter" colspan="2">Effectieve en eigentijdse leermiddelen</td>
+			</tr>
+			<tr>
+				<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true"></span>&nbsp;&nbsp;</td>
+				<td class="paddingtop">
+					McQuestions biedt een innovatieve en effectieve manier van leren. De cursist die gebruik maakt van de app leert niet alleen bij op de specifieke technische onderdelen maar hij leert ook de kunst om het maximale uit de AI te halen (prompts formuleren).<br />
+					Om een voorbeeld te geven van de kracht van het leren met een AI: deze site en de meeste technische, multiple-choice vragen zijn tot stand gekomen in intensieve samenwerking met ChatGPT.
+					<br />&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td class="grotereletter" colspan="2">Verantwoording richting opdrachtgevers met zo hard mogelijke data</td>
+			</tr>
+			<tr>
+				<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true"></span>&nbsp;&nbsp;</td>
+				<td class="paddingtop">
+					Individuele en collectieve progressie kan in de verantwoording gekwantificeerd worden (eindmetingen). Zo wordt de toegevoegde waarde van een traject meetbaar.
+					<br />&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td class="grotereletter" colspan="2">Een overtuigend verhaal voor potentiele werkgevers</td>
+			</tr>
+			<tr>
+				<td class="paddingtop1"><span class="oi oi-check" aria-hidden="true"></span>&nbsp;&nbsp;</td>
+				<td class="paddingtop">McQuestions levert de jobbemiddelaar de informatie die nodig is om iemand aan een geschikte baan te helpen.</td>
+			</tr>
+		</table>
 
-		De juiste vragen stellen. Vragen die een snelle kennisontwikkeling mogelijk maken.   
-		Begin met strings, getallen, bools en arrays. Daarna if-statements and foreach. 
-		<hr />
+		<p>
+			<hr />
+			<h2>Educatieve focus</h2>
+			<hr />
+			<h5 class="bold">Focusgebied vragensets</h5>
+			<img src="McFocusgebied.png" alt="My Image" />
+			<hr />
 
-		<h5 class="bold">Leeropzet</h5>
-		Eerst wordt een kleine theoretische basis gelegd die nodig is om hele simpele en korte programma's te schrijven. '
-		<hr />
+			<h5 class="bold">Essentieel is de kwaliteit van</h5>
+			<ol>
+				<li>de vragen en de tests die de cursist maakt</li>
+				<li>de testdata die daaruit volgen</li>
+				<li>de testevaluatie die daarop volgt</li>
+				<li>de prompts naar de AI</li>
+				<li>de interactieve leerstof</li>
+			</ol>
+			Het slimme dient vooral in de vragen te zitten aangezien elke vraag icm AI een deur is naar kennis. Bijna alle tutorials die ik heb gezien, maken de fout om de cursist kennis aan te bieden die niet past bij zijn niveau. Een starter hoeft niet alle varianten te kennen waarop strings in C# geschreven kunnen worden. Hij hoeft niet aan het begin uitgelegd te krijgen dat er 36 verschillende types bestaan om getallen uit te drukken. De cursist is helemaal niet in staat om in te schatten wat wel en wat niet voor hem als starter de relevante informatie is die hij uit de brei dient te filteren. Dus biedt hem vooral deuren aan die toegang geven tot kennis die hij verwerken en toepassen kan. <br /><br />
 
-		<h2>Soorten vragenlijsten</h2>
-		<hr />
-		<h5 class="bold">Algemene Technische Vragensets</h5>
-		<ol>
-			<li>Intake Vragenset</li>
-			<li>Software Architectuur</li>
-			<li>AI</li>
-			<li>Designpatterns</li>
-			<li>Front-end</li>
-			<li>Back-end</li>
-			<li>Databases</li>
-			<li>Etc.</li>
-		</ol>
+			De juiste vragen stellen. Vragen die een snelle kennisontwikkeling mogelijk maken.
+			Begin met strings, getallen, bools en arrays. Daarna if-statements and foreach.
+			<hr />
 
-		<h5 class="bold">Specifieke Technische Vragensets</h5>
-		<ol>
-			<li>C#</li>
-			<li>Javascript</li>
-			<li>Typescript</li>
-			<li>Python</li>
-			<li>PHP</li>
-			<li>CSS</li>
-			<li>Java</li>
-			<li>Entity Framework</li>
-			<li>Angular</li>
-			<li>React</li>
-			<li>Blazor</li>
-			<li>dot.net</li>
-			<li>Etc.</li>
-		</ol>
+			<h5 class="bold">Leeropzet</h5>
+			Eerst wordt een kleine theoretische basis gelegd die nodig is om hele simpele en korte programma's te schrijven. '
+			<hr />
 
-		<h5 class="bold">Bijzondere Vragensets</h5>
-		<ol>
-			<li>Ontdek je optimale werkomstandigheden</li>
-			<li>Ontdek welke richting, rol, en functie in de ict bij je past</li>
-			<li>Leer de verwachtingen, huisregels en organisatiecultuur van de organisatie kennen</li>
-			<li>Leer wat pesten en ongewenst gedrag is</li>
-			<li>Evaluatie vragenlijsten voor cursist en klanten</li>
-			<li>Etc.</li>
-		</ol>
+			<h2>Soorten vragenlijsten</h2>
+			<hr />
+			<h5 class="bold">Algemene Technische Vragensets</h5>
+			<ol>
+				<li>Intake Vragenset</li>
+				<li>Software Architectuur</li>
+				<li>AI</li>
+				<li>Designpatterns</li>
+				<li>Front-end</li>
+				<li>Back-end</li>
+				<li>Databases</li>
+				<li>Etc.</li>
+			</ol>
 
-		<hr />
-		<h2>AI Ontwikkeling</h2>
-		<hr />
-		Vooralsnog kan de AI naast McQuestions gebruikt worden. De volgende, logische stap is integratie in de app zodat de cursist niet met twee schermen hoeft te werken en omdat dan begonnen kan worden met het trainen van de AI zodat de AI steeds meer functies van McQuestions kan overnemen. Die functies hebben betrekking op het courant houden en het uitbouwen van de vragensets. AI die de leerapp continu vernieuwd en onder leiding van mensen ook verbetert en slimmer maakt.<br /><br />
+			<h5 class="bold">Specifieke Technische Vragensets</h5>
+			<ol>
+				<li>C#</li>
+				<li>Javascript</li>
+				<li>Typescript</li>
+				<li>Python</li>
+				<li>PHP</li>
+				<li>CSS</li>
+				<li>Java</li>
+				<li>Entity Framework</li>
+				<li>Angular</li>
+				<li>React</li>
+				<li>Blazor</li>
+				<li>dot.net</li>
+				<li>Etc.</li>
+			</ol>
 
-		<!--
-		iedereen die dagelijks met vs werkt heeft behoefte aan een functie waarmee het intypen van steeds dezelfde code kan worden geautomatiseerd. Als je 20 keer per dag <br /> moet typen of 100 keer dan wil je dit met een combinatie van 2 toetsen kunnen doen want dat werkt sneller. Dus als we dat kunnen automatiseren in VS heb je iets waar heel grote vraag naar is. a
+			<h5 class="bold">Bijzondere Vragensets</h5>
+			<ol>
+				<li>Ontdek je optimale werkomstandigheden</li>
+				<li>Ontdek welke richting, rol, en functie in de ict bij je past</li>
+				<li>Leer de verwachtingen, huisregels en organisatiecultuur van de organisatie kennen</li>
+				<li>Leer wat pesten en ongewenst gedrag is</li>
+				<li>Evaluatie vragenlijsten voor cursist en klanten</li>
+				<li>Etc.</li>
+			</ol>
+
+			<hr />
+			<h2>AI Ontwikkeling</h2>
+			<hr />
+			Vooralsnog kan de AI naast McQuestions gebruikt worden. De volgende, logische stap is integratie in de app zodat de cursist niet met twee schermen hoeft te werken en omdat dan begonnen kan worden met het trainen van de AI zodat de AI steeds meer functies van McQuestions kan overnemen. Die functies hebben betrekking op het courant houden en het uitbouwen van de vragensets. AI die de leerapp continu vernieuwd en onder leiding van mensen ook verbetert en slimmer maakt.<br /><br />
+
+			<!--
+			iedereen die dagelijks met vs werkt heeft behoefte aan een functie waarmee het intypen van steeds dezelfde code kan worden geautomatiseerd. Als je 20 keer per dag <br /> moet typen of 100 keer dan wil je dit met een combinatie van 2 toetsen kunnen doen want dat werkt sneller. Dus als we dat kunnen automatiseren in VS heb je iets waar heel grote vraag naar is. a
 
 
-		-->
-		
-		
-		
-
-		
-
-
-		@*		<hr />
+			-->
+			@*		<hr />
 		Dit is mijn visie en voorstel aan BEE.
 		<ul>
 		<li>vragenlijsten maken en bewerken</li>
@@ -270,10 +310,13 @@
 		</ul>
 
 		*@
-	</p>
+		</p>
+    </div>
+	}
 
 
 
 
 
-</div>
+
+

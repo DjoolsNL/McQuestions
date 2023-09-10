@@ -1,4 +1,4 @@
-﻿@page "/selectie/{fileName}"
+﻿@page "/selecti"
 @using System.Xml.Linq
 @using System.Linq
 @using System.Collections.Generic
@@ -18,7 +18,6 @@
     XElement root;
     bool ready;
     bool ClearRadioButtons { get; set; }
-    public string LevelQuestions { get; set; }
 
     //bool radiobuttonLevel;
 
@@ -88,6 +87,7 @@
             //count = 0;
             ready = true;
         }
+
     }
 
     private bool LevelSelected(string optionValue)
@@ -98,44 +98,6 @@
     private bool NumberOfQuestionsSelected(string optionValue)
     {
         return selectedNumberOption == optionValue;
-    }
-
-    private int currentQuestionIndex = 0;
-    private int score = 0;
-    private string answer = "";
-    private string submitButtonText = "Maak een keuze";
-
-    private void HandleAnswerSelection(string choice)
-    {
-        answer = choice;
-        submitButtonText = "Antwoord met: " + answer;
-    }
-
-    private void Submit(XElement xElementQuestion)
-    {
-        if (answer == "")
-        {
-            submitButtonText = "Maak een keuze";
-        }
-        else
-        {
-            // userantwoord wordt in de vraag gezet die naar AI gaat
-            xElementQuestion.Element("userantwoord").Value = answer;
-
-            submitButtonText = "Maak een keuze";
-            answer = "";
-
-            if (currentQuestionIndex < XmlQuestionsSelection.Count)
-            {
-                currentQuestionIndex++;
-            }
-        }
-    }
-
-    private void Exit(int number)
-    {
-        int c = XmlQuestionsSelection.Count();
-        XmlQuestionsSelection.RemoveRange(number, c - number);
     }
 }
 
@@ -188,6 +150,8 @@
             <span>&nbsp;- &nbsp;Aantal vragen:</span>
     }
 
+
+
 </span>
 <span>
 
@@ -232,94 +196,15 @@
 
 @if (ready)
 {
-    //ready = false;
+    ready = false;
     selectedNumberOption = null;
     selectedLevelOption = null;
     //StateHasChanged();
     
     <div class="indexdiv">
-        <h2>@NaamVragenSet Vragenset</h2>
-        <hr />
-
-        <!-- Creates a question -->
-        @if (XmlQuestionsSelection != null && currentQuestionIndex < XmlQuestionsSelection.Count)
-        {
-            var currentQuestion = XmlQuestionsSelection[currentQuestionIndex];
-            int teller = 0;
-
-            <p>@(currentQuestionIndex + 1)/@XmlQuestionsSelection.Count</p>
-            <div>
-                @foreach (var regel in currentQuestion.Element("header").Elements())
-                {
-                    if (teller == 0)
-                    {
-                        <h4>@regel.Value</h4>
-                    }
-                    else
-                    {
-                        if (regel.HasAttributes)
-                        {
-                            <div style="display: flex; justify-content:flex-start; align-items: center;">
-                                <pre>@regel.Value</pre>
-                            </div>
-                        }
-                        else
-                        {
-                            @regel.Value
-                            <br />
-                        }
-
-                    }
-                    teller++;
-                }
-            </div>
-
-            <div>
-                <br />
-                <table>
-                    @foreach (var choice in currentQuestion.Element("keuzes").Elements())
-                    {
-                        <tr>
-                            <td>@choice.Name&nbsp;&nbsp;</td>
-                            <td>
-                                <button @onclick="() => HandleAnswerSelection(choice.Name.LocalName)" class="choice">
-                                    @choice.Value
-                                </button>
-                            </td>
-                        </tr>
-                    }
-                    <tr>
-                        <td colspan="2">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <br />
-                            <button @onclick="(args) => Submit(currentQuestion)" class="submit">@submitButtonText</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <hr />
-            <!-- Tussentijds de vragenlijst afbreken met de exit knop -->
-            <p><button @onclick="(args) => Exit(currentQuestionIndex)" class="submit">Exit</button></p>
-        }
-
-
-
-        else if (currentQuestionIndex == XmlQuestionsSelection.Count)
-        {
-            currentQuestionIndex = 0;
-            <!--
-            <h2>@nameVragenSet</h2>
-            <hr />
-            -->
-            <CascadingValue Value="XmlQuestionsSelection">
-                <Verwerking NaamVragenSet="@NaamVragenSet" LevelQuestions="@LevelQuestions" />
-            </CascadingValue>
-        }
-
+        <CascadingValue Value="XmlQuestionsSelection">
+            <Uitvoering NaamVragenSet="@NaamVragenSet" LevelQuestions="@niveau" />
+        </CascadingValue>
     </div>
     
     

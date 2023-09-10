@@ -39,6 +39,7 @@
 
 	protected override void OnInitialized()
 	{
+
 		@if (XmlQuestionsSelection.Count() != 0)
 		{
 			LocalxmlQuestionsSelection = XmlQuestionsSelection;
@@ -53,7 +54,6 @@
 					XElement onderwerp = new XElement("onderwerp", question.Element("onderwerp").Value);
 					onderwerpen.Add(onderwerp);
 				}
-
 			}
 
 			Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory + "XmlAccount\\");

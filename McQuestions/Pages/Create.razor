@@ -37,7 +37,8 @@
 
     .flexible-textarea {
         width: 100%;
-        min-height: 2rem; /* Set a minimum height for the textarea */
+        height: 35px;
+        /* min-width: 8rem; */
         resize: both;  /* Allow vertical and horizontal resizing of the textarea */
     }
 </style>
@@ -54,54 +55,71 @@
         }
     </select>
     <br />&nbsp;<br />&nbsp;
-    <table>
-        <tr><td><label>Disabled:</label></td>
+
+    <table width="80%" name="formcreatequestion">
+        <tr>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Disabled:</label></td>
             <td><input type="text" @bind="disabled" /></td>
         </tr>
+
         <tr>
-            <td><label>Niveau:</label></td>
-            <td><input type="text" @bind="niveau" /></td>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Vraag:</label></td>
+            <td><textarea class="flexible-textarea" @bind="regel" /></td>
+        </tr>
+
+        <tr>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Over deze Code:</label></td>
+            <td><textarea class="flexible-textarea" @bind="regelCode" /></td>
         </tr>
         <tr>
-            <td><label>Onderwerp:</label></td>
-            <td><input type="text" @bind="onderwerp" /></td>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Antwoord A:</label></td>
+            <td><textarea class="flexible-textarea" type="text" @bind="choiceA" placeholder="Keuze A" /></td>
         </tr>
+
         <tr>
-            <td><label>Regel:</label></td>
-            <td><input type="text" @bind="regel" /></td>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Antwoord B:</label></td>
+            <td><textarea class="flexible-textarea" type="text" @bind="choiceB" placeholder="Keuze B" /></td>
         </tr>
+
         <tr>
-            <td><label>regelCode:</label></td>
-            <td><input type="text" @bind="regelCode" /></td>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Antwoord C:</label></td>
+            <td><textarea class="flexible-textarea" type="text" @bind="choiceC" placeholder="Keuze C" /></td>
         </tr>
+
         <tr>
-            <td><label>A:</label></td>
-            <td><input type="text" @bind="choiceA" placeholder="Keuze A" /></td>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Antwoord D:</label></td>
+            <td><textarea class="flexible-textarea" type="text" @bind="choiceD" placeholder="Keuze D" /></td>
         </tr>
+
         <tr>
-            <td><label>B:</label></td>
-            <td><input type="text" @bind="choiceB" placeholder="Keuze B" /></td>
-        </tr>
-        <tr>
-            <td><label>C:</label></td>
-            <td><input type="text" @bind="choiceC" placeholder="Keuze C" /></td>
-        </tr>
-        <tr>
-            <td><label>D:</label></td>
-            <td><input type="text" @bind="choiceD" placeholder="Keuze D" /></td>
-        </tr>
-        <tr>
-            <td><label>Antwoord:</label></td>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Juiste Antwoord:</label></td>
             <td><input type="text" @bind="antwoord" /></td>
         </tr>
+
+
         <tr>
-            <td><label>Uitleg:</label></td>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Niveau:</label></td>
+            <td><input type="text" @bind="niveau" /></td>
+        </tr>
+
+        <tr>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Onderwerp:</label></td>
+            <td><textarea class="flexible-textarea" type="text" @bind="onderwerp" /></td>
+        </tr>
+
+        <tr>
+            <td><label>&nbsp;&nbsp;&nbsp;&nbsp;Uitleg:</label></td>
 
             <td><textarea class="flexible-textarea" wrap="hard" @bind="uitleg" /></td>
         </tr>
+        <tr>
+            <td><br /><button @onclick="Toevoegen">Toevoegen</button></td>
+
+            <td></td>
+        </tr>
     </table>
-    <br />
-    <button @onclick="Toevoegen">Toevoegen</button>
+
+    
 </div>
 
     @code 
