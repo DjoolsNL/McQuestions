@@ -6,25 +6,36 @@
 
 @code {
     [Parameter] public string FileName { get; set; }
-    string pageTitle;
+    string paginaNaam;
     string niveau;
     string NaamVragenSet;
-    string selectedNumberOption;
-    string selectedLevelOption;
+    string gekozenAantalTestvragen;
+    string gekozenTestNiveau;
     int count = 0;
-    int randomNumber;
+    int randomIndex;
     List<XElement> XmlQuestionsSelection = new();
     List<XElement> xmlQuestions = new();
     XElement root;
-    bool ready;
+    bool NaarVerwerking { get; set; }
     bool ClearRadioButtons { get; set; }
-    public string LevelQuestions { get; set; }
+    public string NiveauTestvragen { get; set; }
+    private int currentQuestionIndex = 0;
+    private int score = 0;
+    private string answer = "";
+    private string submitButtonText = "Maak een keuze";
 
-    //bool radiobuttonLevel;
-
-    private void OnChangeLevel(ChangeEventArgs e)
+    private bool LevelSelected(string optionValue)
     {
-        selectedLevelOption = e.Value.ToString();
+        return gekozenTestNiveau == optionValue;
+    }
+    private bool NumberOfQuestionsSelected(string optionValue)
+    {
+        return gekozenAantalTestvragen == optionValue;
+    }
+
+    private void KeuzeTestNiveau(ChangeEventArgs e)
+    {
+        gekozenTestNiveau = e.Value.ToString();
         StateHasChanged();
         XmlQuestionsSelection.Clear();
         niveau = e.Value.ToString();
@@ -34,7 +45,7 @@
             .Where(e => e.Element("disabled").Value != "true")
             .ToList();
 
-        if (selectedLevelOption == "6")
+        if (gekozenTestNiveau == "6")
         {
             List<string> niveaus = allEnabledQuestions
                 .Select(vraag => vraag.Element("niveau").Value)
@@ -56,54 +67,53 @@
 
                 for (int i = 1; i <= totalsPerLevel.Min(); i++)
                 {
-                    randomNumber = RandomHelper.Next(0, enabledQuestionsLevelSpecific.Count());
-                    xmlQuestions.Add(enabledQuestionsLevelSpecific[randomNumber]);
-                    enabledQuestionsLevelSpecific.RemoveAt(randomNumber);
+                    randomIndex = RandomHelper.Next(0, enabledQuestionsLevelSpecific.Count());
+                    xmlQuestions.Add(enabledQuestionsLevelSpecific[randomIndex]);
+                    enabledQuestionsLevelSpecific.RemoveAt(randomIndex);
                 }
             }
 
             count = xmlQuestions.Count();
+            NiveauTestvragen = "mix";
         }
         else
         {
             xmlQuestions = allEnabledQuestions.FindAll(vraag => vraag.Element("niveau").Value == niveau);
             count = xmlQuestions.Count();
+            NiveauTestvragen = niveau;
         }
     }
 
-    private void OnChangeNumberOfQuestions(ChangeEventArgs e)
+    private void KeuzeAantalTestVragen(ChangeEventArgs e)
     {
-        selectedNumberOption = e.Value.ToString();
+        XmlQuestionsSelection.Clear();
+        currentQuestionIndex = 0;
+        gekozenAantalTestvragen = e.Value.ToString();
         StateHasChanged();
-        int choice;
-        if (int.TryParse(e.Value.ToString(), out choice))
+        int aantaltestvragen;
+        if (int.TryParse(e.Value.ToString(), out aantaltestvragen))
         {
-            for (int i = 0; i < choice; i++)
+            List<int> numbers = new();
+
+            for (int i = 0; i < xmlQuestions.Count(); i++)
             {
-                randomNumber = RandomHelper.Next(0, xmlQuestions.Count());
-                xmlQuestions[randomNumber].Element("volgnummer").Value = i.ToString();
-                XmlQuestionsSelection.Add(xmlQuestions[randomNumber]);
-                xmlQuestions.RemoveAt(randomNumber);
+                numbers.Add(i); 
+            }
+            for (int i = 0; i < aantaltestvragen; i++)
+            {
+                randomIndex = RandomHelper.Next(0, numbers.Count());
+
+                XmlQuestionsSelection.Add(xmlQuestions[randomIndex]);
+                XmlQuestionsSelection[i].Element("volgnummer").Value = i.ToString();
+                numbers.RemoveAt(randomIndex); // voorkomt dat vraag twee keer wordt getrokken
             }
             //count = 0;
-            ready = true;
+            
         }
+        currentQuestionIndex = 0;
+        gekozenAantalTestvragen = null;
+        NaarVerwerking = true;
     }
-
-    private bool LevelSelected(string optionValue)
-    {
-        return selectedLevelOption == optionValue;
-    }
-
-    private bool NumberOfQuestionsSelected(string optionValue)
-    {
-        return selectedNumberOption == optionValue;
-    }
-
-    private int currentQuestionIndex = 0;
-    private int score = 0;
-    private string answer = "";
-    private string submitButtonText = "Maak een keuze";
 
     private void HandleAnswerSelection(string choice)
     {
@@ -141,17 +151,20 @@
 
 @if (ClearRadioButtons)
 {
-    selectedLevelOption = null;
-    selectedNumberOption = null;
+    gekozenTestNiveau = null;
+    gekozenAantalTestvragen = null;
     StateHasChanged();
-
 }
 
-
+<!--parameter FileName wordt vanuit linkermenu met {} doorgegeven
+// om de FN te verwerken moet hij eerst worden gestript
+// als de user een nieuwe selectie binnen dezelfde vragenset maakt weten we dit omdat 
+// de FN niet met een { start -->
 @if (FileName.StartsWith('{'))
 {
-    selectedLevelOption = null;
-    selectedNumberOption = null;
+    // state vh object wordt gereset
+    gekozenTestNiveau = null;
+    gekozenAantalTestvragen = null;
     StateHasChanged();
 
     xmlQuestions.Clear();
@@ -162,10 +175,10 @@
     //var xmlString = File.ReadAllText(fullpath);
     root = XElement.Load(fullpath);
     NaamVragenSet = root.Element("vragenset").Value;
-    pageTitle = FileName.Replace(".xml", "");
+    paginaNaam = FileName.Replace(".xml", "");
 }
 
-<PageTitle>@pageTitle</PageTitle>
+<PageTitle>@paginaNaam</PageTitle>
 <Style />
 <div>
 <span>
@@ -173,72 +186,71 @@
 
 @if (true)
     {
-        <span>&nbsp;&nbsp; Niveau:</span>
+        <span>&nbsp;&nbsp; Niveau:&nbsp;</span>
         @for (int i = 1; i <= 5; i++)
         {
             <label>
-                <input type="radio" id="@i" name="level" value="@i" @onchange="OnChangeLevel" checked="@LevelSelected(i.ToString())" /> &nbsp;@i &nbsp;
+                    <input type="radio" id="@i" name="level" value="@i" @onchange="KeuzeTestNiveau" checked="@LevelSelected(i.ToString())" /> <span>&nbsp;@i&nbsp;</span>
             </label>
         }
-            <span>&nbsp;&nbsp; Niveau Mix:</span>
+            <span>&nbsp;&nbsp; Niveau Mix:&nbsp;</span>
                 
         <label>
-            <input type="radio" name="level" value="6" @onchange="OnChangeLevel" checked="@LevelSelected("6")" /> 1-5
+                <input type="radio" name="level" value="6" @onchange="KeuzeTestNiveau" checked="@LevelSelected("6")" /> mixed
         </label>
-            <span>&nbsp;- &nbsp;Aantal vragen:</span>
+            <span>&nbsp;&nbsp;Aantal vragen:&nbsp;</span>
     }
 
 </span>
 <span>
-
 
     @if (count >= 50)
     {
         @for (int i = 5; i <= 50; i += 10)
         {
             <label>
-                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" checked="@NumberOfQuestionsSelected(i.ToString())" /> @i &nbsp;
+                    <input type="radio" name="total" value="@i" @onchange="KeuzeAantalTestVragen" checked="@NumberOfQuestionsSelected(i.ToString())" /> @i &nbsp;
             </label>
         }
     }
     else if (count >= 25)
     {
-        @for (int i = 5; i <= 25; i += 10)
+        @for (int i = 5; i <= count; i += 5)
         {
             <label>
-                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" checked="@NumberOfQuestionsSelected(i.ToString())" /> @i &nbsp;
+                    <input type="radio" name="total" value="@i" @onchange="KeuzeAantalTestVragen" checked="@NumberOfQuestionsSelected(i.ToString())" /> @i &nbsp;
             </label>
         }
     }
     else if (count >= 10)
     {
-        @for (int i = 5; i <= 10; i += 5)
+        @for (int i = 5; i <= count; i += 5)
         {
             <label>
-                <input type="radio" name="total" value="@i" @onchange="OnChangeNumberOfQuestions" checked="@NumberOfQuestionsSelected(i.ToString())" /> @i &nbsp;
+                    <input type="radio" name="total" value="@i" @onchange="KeuzeAantalTestVragen" checked="@NumberOfQuestionsSelected(i.ToString())" /> @i &nbsp;
             </label>
         }
     }
     else if (count >= 5)
     {
         <label>
-            <input type="radio" name="total" value="5" @onchange="OnChangeNumberOfQuestions" checked="@NumberOfQuestionsSelected("5")" /> 5 &nbsp;
+                <input type="radio" name="total" value="5" @onchange="KeuzeAantalTestVragen" checked="@NumberOfQuestionsSelected("5")" /> 5 &nbsp;
         </label>
     }
+
 </span>
 </div>
 
 <hr />
 
-@if (ready)
+@if (NaarVerwerking)
 {
-    //ready = false;
-    selectedNumberOption = null;
-    selectedLevelOption = null;
+    gekozenAantalTestvragen = null;
+    gekozenTestNiveau = null;
     //StateHasChanged();
     
     <div class="indexdiv">
-        <h2>@NaamVragenSet Vragenset</h2>
+        <h2 style="display: inline">@NaamVragenSet Vragenset</h2> Niveau @NiveauTestvragen
         <hr />
 
         <!-- Creates a question -->
@@ -316,7 +328,7 @@
             <hr />
             -->
             <CascadingValue Value="XmlQuestionsSelection">
-                <Verwerking NaamVragenSet="@NaamVragenSet" LevelQuestions="@LevelQuestions" />
+                <Verwerking NaamVragenSet="@NaamVragenSet" NiveauTestvragen="@NiveauTestvragen" />
             </CascadingValue>
         }
 

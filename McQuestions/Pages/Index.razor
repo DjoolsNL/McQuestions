@@ -2,11 +2,13 @@
 
 @code
 {
+	[Inject] private NavigationManager NavigationManager { get; set; }
+
 	private void KnockOnDoor(int k)
 	{
 		if (k == 1)
 		{
-			//rand test
+			NavigationManager.NavigateTo("selectie/{General.xml}");
 		}
 
 		if (k == 4)
@@ -78,10 +80,10 @@
 	
 	<table style="width:100%">
 		<tr>
-			<td style="width:25%; text-align: center;">Random Test</td>
-			<td style="width:25%; text-align: center;">Profiel</td>
-			<td style="width:25%; text-align: center;">Admin</td>
-			<td style="width:25%; text-align: center;">Over Mc</td>
+			<td style="width:25%; text-align: center;">A. Random Test</td>
+			<td style="width:25%; text-align: center;">B. Profiel</td>
+			<td style="width:25%; text-align: center;">C. Admin</td>
+			<td style="width:25%; text-align: center;">D. Over Mc</td>
 		</tr>
 		<tr>
             <td>
@@ -149,7 +151,7 @@
 					Wil je Java leren? Dan begin je met de Java Instaptest. Die bepaalt je startniveau. Vervolgens wordt je elke volgende Java test die je doet uitgedaagd om je niveau omhoog te tillen. Naarmate je niveau omhoog gaat krijg je vragen aangeboden op een iets hoger niveau. Na elke test bekijk je samen met de AI je antwoorden en kun je met AI verder leren over het onderwerp.
 					<br /><br />
 					<b>Hoe werkt het onder de motorkap?</b><br />
-					Kennis en vaardigheden kunnen <b>gemeten</b> worden. Aan de basis van de app ligt een database met meerkeuzevragen. Vragen die op één deelgebied betrekking hebben vormen specifieke vragensets met vragen van uiteenlopend kennisniveau. De tests en de interactie met AI brengen de cursist stap voor stap naar een hoger niveau: meten - leren - opnieuw meten.
+					Kennis en vaardigheden kunnen <b>gemeten</b> worden en de meetresultaten worden gebruikt om het leerproces te sturen. Aan de basis van de app ligt een database met meerkeuzevragen. Vragen die op één deelgebied betrekking hebben vormen specifieke vragensets met vragen van uiteenlopend kennisniveau. De tests en de interactie met AI brengen de cursist stap voor stap naar een hoger niveau. Meten - leren - meten. Iteratief.
 				</li>
 				<li>
 					<img src="procesmodel McQ.png" alt="My Image" />
