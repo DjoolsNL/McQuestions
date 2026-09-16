@@ -10,11 +10,6 @@
 		<onderwerp></onderwerp>
 		<header>
 			<regel>The Developers should not be interrupted during the Sprint and the Sprint Goal should remain intact. These are conditions that foster creativity, quality and productivity.</regel>
-			<regel opmaak="sss">private void HandleAnswerSelection(string choice)
-{
-answer = choice;
-submitButtonText = "Antwoord met: " + answer;
-}</regel>
 		</header>
 		<keuzes>
 			<A>The Developers may work with the Product Owner to add or remove work if they find themselves with more or less capacity than expected.</A>

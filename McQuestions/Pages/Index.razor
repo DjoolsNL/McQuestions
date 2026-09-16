@@ -2,29 +2,7 @@
 
 @code
 {
-	[Inject] private NavigationManager NavigationManager { get; set; }
-
-	private void KnockOnDoor(int k)
-	{
-		if (k == 1)
-		{
-			NavigationManager.NavigateTo("selectie/{General.xml}");
-		}
-
-		if (k == 4)
-		{
-			if (ShowOverMc)
-			{
-				ShowOverMc = false;
-			}
-			else
-			{
-				ShowOverMc = true;
-			}
-		}
-	}
-
-	private bool ShowOverMc;
+	[Inject] private NavigationManager? NavigationManager { get; set; }
 }	
 
 <PageTitle>McQuestions</PageTitle>
@@ -66,146 +44,76 @@
 
 	.svg-container {
 		margin: 6%; /* Adjust spacing between SVGs */
-		border: 1px solid black;
+		/*border: 1px solid black;*/
 		cursor:pointer;
 	}
 
 </style>
 
 <div class="indexdiv">
-    <h2>Interactief leren met AI</h2>
+	<h2>Train je ICT kennis!</h2>
 	<hr />
 	<br />
-
-	
-	<table style="width:100%">
-		<tr>
-			<td style="width:25%; text-align: center;">A. Random Test</td>
-			<td style="width:25%; text-align: center;">B. Profiel</td>
-			<td style="width:25%; text-align: center;">C. Admin</td>
-			<td style="width:25%; text-align: center;">D. Over Mc</td>
-		</tr>
-		<tr>
-            <td>
-				<div @onclick="(e) => KnockOnDoor(1)" class="svg-container">
-					<svg viewBox="0 0 50 100"  xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
-                        <!-- Doorknob -->
-                        <circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
-                    </svg>
-                </div>
-            </td>
-            <td>
-				<div class="svg-container">
-					<NavLink href="/terugkoppeling">
-					<svg viewBox="0 0 50 100"  xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
-                        <!-- Door panels -->
-                        <rect x="20%" y="10%" width="60%" height="80%" fill="#FFFFFF" />
-                        <!-- Doorknob -->
-                        <circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
-                    </svg>
-					</NavLink>
-                </div>
-            </td>
-            <td>
-				<div class="svg-container">
-					<NavLink href="/beheer">
-					<svg viewBox="0 0 50 100"  xmlns="http://www.w3.org/2000/svg">
-                        <!-- Doorknob -->
-                        <circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
-                    </svg>
-					</NavLink>
-                </div>
-            </td>
-            <td>
-				<div @onclick="(e) => KnockOnDoor(4)" class="svg-container">
-					<svg viewBox="0 0 50 100"  xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0" y="0" width="100%" height="100%" fill="#8B4513" />
-
-                        <!-- Door panels -->
-                        <rect x="20%" y="10%" width="60%" height="80%" fill="#FFFFFF" />
-                        <rect x="40%" y="10%" width="20%" height="80%" fill="#8B4513" />
-
-                        <!-- Doorknob -->
-                        <circle cx="90%" cy="55%" r="3.4%" fill="#FFD700" />
-                    </svg>
-                </div>
-            </td>
-		</tr>
-	</table>
-
+	<p>
+		<ul>
+			<li>
+				De vragenlijsten zijn bedoeld om je kennis van bepaalde onderwerpen naar een hoger niveau te tillen.				
+			</li>
+			<li>
+				Wil je Javascript leren? Dan begin je met Javascript niveau 1. Zodra je vaak 
+				genoeg boven de 80% scoort kun je naar het volgende niveau gaan en ook daar weer oefen je totdat je 
+				rond de 80% zit.
+			</li>
+			<li>
+				Na elke test bekijk je samen met de AI je antwoorden en kun je met AI verder leren over het onderwerp.
+			</li>
+		</ul>
+	</p>
 	<hr />
-	</div>
-	@if (ShowOverMc)
-	{
-		<div class="indexdiv">
-		<p>
-			<ul>
-				<li>
-					<b>Artificial Intelligence / Large Language Models</b> zijn kunnen zeer handig zijn als je basiskennis wil verwerven. Elke vraag die we stellen kan een deur naar kennis openen. Met de juiste vragen kunnen we de kracht van AI maximaal benutten.
-					<br /><br />
-					<b>McQuestions</b> helpt de user met en van <i>AI</i> te leren.
-					<br /><br />
-					<b>Hoe?</b><br />
-					Wil je Javascript leren? Dan begin je met de Javascript test niveau 1. Die bepaalt je startniveau. Zodra je vaak genoeg boven de 80% scoort kun je 
-					naar het volgende niveau gaan en ook daar weer oefen je totdat je rond de 80% zit.
-					<br /><br />
-					Na elke test bekijk je samen met de AI je antwoorden en kun je met AI verder leren over het onderwerp.
-					<br /><br />
-					<b>Hoe werkt het onder de motorkap?</b><br />
-					Kennis en vaardigheden kunnen <b>gemeten</b> worden en de meetresultaten worden gebruikt om het leerproces te sturen. Aan de basis van de app ligt een database met meerkeuzevragen. Vragen die op één deelgebied betrekking hebben vormen specifieke vragensets met vragen van uiteenlopend kennisniveau. De tests en de interactie met AI brengen de cursist stap voor stap naar een hoger niveau. Meten - leren - meten. Iteratief.
-				</li>
-			</ul>
-
-		</p>
+	<p>
+		<h2>Soorten vragenlijsten</h2>
 		<hr />
+		<h5 class="bold">Algemene Technische Vragensets</h5>
+		<ol>
+			<li>Intake Vragenset</li>
+			<li>Software Architectuur</li>
+			<li>AI</li>
+			<li>Designpatterns</li>
+			<li>Front-end</li>
+			<li>Back-end</li>
+			<li>Databases</li>
+			<li>Etc.</li>
+		</ol>
 
-		<p>
-			<h2>Soorten vragenlijsten</h2>
-			<hr />
-			<h5 class="bold">Algemene Technische Vragensets</h5>
-			<ol>
-				<li>Intake Vragenset</li>
-				<li>Software Architectuur</li>
-				<li>AI</li>
-				<li>Designpatterns</li>
-				<li>Front-end</li>
-				<li>Back-end</li>
-				<li>Databases</li>
-				<li>Etc.</li>
-			</ol>
+		<h5 class="bold">Specifieke Technische Vragensets</h5>
+		<ol>
+			<li>C#</li>
+			<li>Javascript</li>
+			<li>Typescript</li>
+			<li>Python</li>
+			<li>PHP</li>
+			<li>CSS</li>
+			<li>Java</li>
+			<li>Entity Framework</li>
+			<li>Angular</li>
+			<li>React</li>
+			<li>Blazor</li>
+			<li>dot.net</li>
+			<li>Etc.</li>
+		</ol>
 
-			<h5 class="bold">Specifieke Technische Vragensets</h5>
-			<ol>
-				<li>C#</li>
-				<li>Javascript</li>
-				<li>Typescript</li>
-				<li>Python</li>
-				<li>PHP</li>
-				<li>CSS</li>
-				<li>Java</li>
-				<li>Entity Framework</li>
-				<li>Angular</li>
-				<li>React</li>
-				<li>Blazor</li>
-				<li>dot.net</li>
-				<li>Etc.</li>
-			</ol>
-
-			<h5 class="bold">Bijzondere Vragensets</h5>
-			<ol>
-				<li>Ontdek je optimale werkomstandigheden</li>
-				<li>Ontdek welke richting, rol, en functie in de ict bij je past</li>
-				<li>Leer de verwachtingen, huisregels en organisatiecultuur van de organisatie kennen</li>
-				<li>Leer wat pesten en ongewenst gedrag is</li>
-				<li>Evaluatie vragenlijsten voor cursist en klanten</li>
-				<li>Etc.</li>
-			</ol>
-		</p>
-    </div>
-	}
-
+		<h5 class="bold">Bijzondere Vragensets</h5>
+		<ol>
+			<li>Ontdek je optimale werkomstandigheden</li>
+			<li>Ontdek welke richting, rol, en functie in de ict bij je past</li>
+			<li>Leer de verwachtingen, huisregels en organisatiecultuur van de organisatie kennen</li>
+			<li>Leer wat pesten en ongewenst gedrag is</li>
+			<li>Evaluatie vragenlijsten voor cursist en klanten</li>
+			<li>Etc.</li>
+		</ol>
+	</p>
+</div>
+<hr />
 
 
 

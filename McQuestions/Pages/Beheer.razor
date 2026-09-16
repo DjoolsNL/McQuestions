@@ -42,18 +42,18 @@
 
 @code 
 {
-	private string selectedOption;
+	private string? selectedOption;
 
-	private List<XElement> xmlQuestions;
+	private List<XElement>? xmlQuestions;
 	private int currentQuestionIndex = 0;
 	private int score = 0;
 	private string answer = "";
 	private string submitButtonText = "Maak een keuze";
-	private string naamVragenSet;
-	string folderPath;
-	string[] fileNames;
-	string fileName;
-	private XElement xElement;
+	private string? naamVragenSet;
+	string? folderPath;
+	string[]? fileNames;
+	string? fileName;
+	private XElement? xElement;
 	//private List<Vraag> VragenLijst = new();
 	bool ReadyForBrowser;
 	bool AddGuid;
@@ -79,12 +79,12 @@
 		var xmlString = File.ReadAllText(fname);
 		xElement = XElement.Parse(xmlString);
 
-		naamVragenSet = xElement.Element("vragenset").Value + " Vragenset";
+		naamVragenSet = xElement.Element("vragenset")!.Value + " Vragenset";
 		List<XElement> elementsList = new();
 		elementsList = xElement.Elements("vraag").ToList();
 		
 		xmlQuestions = elementsList
-			.OrderBy(element => (string)element.Element("niveau"))
+			.OrderBy(element => (string)element.Element("niveau")!)
 			.ToList();
 
 		#region XML to OBJECT
@@ -120,7 +120,7 @@
 			foreach (var q in xElement.Elements("vraag"))
 			{
 				Guid g = Guid.NewGuid();
-				q.Element("guid").Value = g.ToString();
+				q.Element("guid")!.Value = g.ToString();
 			}
 
 			xElement.Save(fname);
@@ -135,11 +135,11 @@
 	void OnSave(string fname)
 	{
 		XElement doc = new XElement("root");
-		XElement vragenset = new XElement("vragenset", xElement.Element("vragenset").Value);
+		XElement vragenset = new XElement("vragenset", xElement!.Element("vragenset")!.Value);
 		doc.Add(vragenset);
 		//xmlQuestions.Elements().OrderBy(e => (int)e.Element("niveau"));
 
-		foreach (var item in xmlQuestions)
+		foreach (var item in xmlQuestions!)
 		{
 			XElement vraag = new XElement("vraag", item.Elements());
 			doc.Add(vraag);
@@ -150,50 +150,50 @@
 
 	void OnDisable(string guid)
 	{
-		var disable = xmlQuestions.FirstOrDefault(e => e.Element("guid").Value == guid);
+		var disable = xmlQuestions!.FirstOrDefault(e => e.Element("guid")!.Value == guid);
 
-		if (disable.Element("disabled").Value == "true")
+		if (disable!.Element("disabled")!.Value == "true")
 		{
-			disable.Element("disabled").Value = "false";
+			disable.Element("disabled")!.Value = "false";
 		}
 		else
 		{
-			disable.Element("disabled").Value = "true";
+			disable.Element("disabled")!.Value = "true";
 		}
 
 		XElement doc = new XElement("root");
-		XElement vragenset = new XElement("vragenset", xElement.Element("vragenset").Value);
+		XElement vragenset = new XElement("vragenset", xElement!.Element("vragenset")!.Value);
 		doc.Add(vragenset);
 
-		foreach (var item in xmlQuestions)
+		foreach (var item in xmlQuestions!)
 		{
 			XElement vraag = new XElement("vraag", item.Elements());
 			doc.Add(vraag);
 		}
 
-		doc.Save(fileName);
+		doc.Save(fileName!);
 	}
 
 	void OnDelete(string guid)
 	{
-		int del = xmlQuestions.FindIndex(e => e.Element("guid").Value == guid);
+		int del = xmlQuestions!.FindIndex(e => e.Element("guid")!.Value == guid);
 		xmlQuestions.RemoveAt(del);
 		XElement doc = new XElement("root");
-		XElement vragenset = new XElement("vragenset", xElement.Element("vragenset").Value);
+		XElement vragenset = new XElement("vragenset", xElement!.Element("vragenset")!.Value);
 		doc.Add(vragenset);
 
-		foreach (var item in xmlQuestions)
+		foreach (var item in xmlQuestions!)
 		{
 			XElement vraag = new XElement("vraag", item.Elements());
 			doc.Add(vraag);
 		}
 
-		doc.Save(fileName);
+		doc.Save(fileName!);
 	}
 
 	void OnChangeAddGuid(ChangeEventArgs e)
 	{
-		if (e.Value.ToString() == "true")
+		if (e.Value!.ToString() == "true")
 		{
 			AddGuid = true;
 		}
@@ -204,7 +204,7 @@
 <hr />
 <div class="indexdiv">
 
-	@foreach (var filename in fileNames)
+	@foreach (var filename in fileNames!)
 	{
 		using (XmlReader reader = XmlReader.Create(filename))
 		{
@@ -278,11 +278,11 @@
 	<hr />
 	foreach (var q in xmlQuestions)
 	{
-		string guid = q.Element("guid").Value;
+		string guid = q.Element("guid")!.Value;
 		<div class="indexdiv">
-			<button id="" @onclick="() => OnSave(fileName)">Save</button>&nbsp;
+			<button id="" @onclick="() => OnSave(fileName!)">Save</button>&nbsp;
 
-			@if (q.Element("disabled").Value == "true")
+			@if (q.Element("disabled")!.Value == "true")
 			{
 				<button id="" @onclick="() => OnDisable(guid)">Enable</button>
 				<span>&nbsp;</span>
@@ -299,10 +299,10 @@
 			<table>
 				<tr>
 					<td>Disabled&nbsp;</td>
-					<td><input @bind="@q.Element("disabled").Value" /></td>
+					<td><input @bind="@q.Element("disabled")!.Value" /></td>
 				</tr>
 
-				@foreach (var item in q.Element("header").Elements())
+				@foreach (var item in q.Element("header")!.Elements())
 				{
 					<tr>
 						<td>Vraag</td>
@@ -322,9 +322,9 @@
 					</tr>
 				}
 				@{
-					int teller = 1;
+					//int teller = 1;
 				}
-				@foreach (var item in q.Element("keuzes").Elements())
+				@foreach (var item in q.Element("keuzes")!.Elements())
 				{
 					<tr>
 						<td>&nbsp;&nbsp;Optie</td>
@@ -346,49 +346,49 @@
 				}
 				<tr>
 					<td>Antwoord</td>
-					<td><input @bind="@q.Element("antwoord").Value" /></td>
+					<td><input @bind="@q.Element("antwoord")!.Value" /></td>
 				</tr>
 				<tr>
 					<td>Userantwoord&nbsp</td>
 					<td>
-						@*<input @bind="@q.Element("userantwoord").Value" />*@
+						@*<input @bind="@q.Element("userantwoord")!.Value" />*@
 					</td>
 				</tr>
 				<tr>
 					<td>Niveau</td>
-					<td><input @bind="@q.Element("niveau").Value" /></td>
+					<td><input @bind="@q.Element("niveau")!.Value" /></td>
 				</tr>
 				<tr>
 					<td>Onderwerp</td>
-					<td><input @bind="@q.Element("onderwerp").Value" /></td>
+					<td><input @bind="@q.Element("onderwerp")!.Value" /></td>
 				</tr>
 				<tr>
 					<td>Volgnummer</td>
-					<td>@*<input @bind="@q.Element("volgnummer").Value" />*@</td>
+					<td>@*<input @bind="@q.Element("volgnummer")!.Value" />*@</td>
 				</tr>
 				<tr>
 					<td>Guid&nbsp;</td>
-					<td><input @bind="@q.Element("guid").Value" /></td>
+					<td><input @bind="@q.Element("guid")!.Value" /></td>
 				</tr>
 				<tr>
 					<td>Show</td>
-					<td><input @bind="@q.Element("show").Value" /></td>
+					<td><input @bind="@q.Element("show")!.Value" /></td>
 				</tr>
 
 				<tr>
 					<td>Uitleg</td>
-					@if (q.Element("uitleg").Value.ToString().Length > 40)
+					@if (q.Element("uitleg")!.Value.ToString().Length > 40)
 					{
 						int cols = 80;
-						int rows = q.Element("uitleg").Value.ToString().Length/60;
+						int rows = q.Element("uitleg")!.Value.ToString().Length/60;
 
 						<td>
-							<textarea wrap="hard" cols="@(cols)" rows="@rows" @bind="@q.Element("uitleg").Value" />
+							<textarea wrap="hard" cols="@(cols)" rows="@rows" @bind="@q.Element("uitleg")!.Value" />
 						</td>
 					}
 					else
 					{
-						<td><input @bind="@q.Element("uitleg").Value" /></td>
+						<td><input @bind="@q.Element("uitleg")!.Value" /></td>
 					}
 				</tr>
 			</table>

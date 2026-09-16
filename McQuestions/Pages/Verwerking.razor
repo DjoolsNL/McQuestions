@@ -6,20 +6,20 @@
 @code
 {
 	[CascadingParameter] public List<XElement>? XmlQuestionsSelection { get; set; }
-	List<XElement> LocalxmlQuestionsSelection;
+	List<XElement>? LocalxmlQuestionsSelection;
 
-	[Parameter]	public string NaamVragenSet { get; set; }
-	[Parameter] public string NiveauTestvragen { get; set; }
+	[Parameter]	public string? NaamVragenSet { get; set; }
+	[Parameter] public string? NiveauTestvragen { get; set; }
 
 	public int score = 0;
 
-	public string folderPath;
-	string pathToFile;
-	private List<XElement> testUitslagen;
+	public string? folderPath;
+	string? pathToFile;
+	private List<XElement>? testUitslagen;
 
 	public double fraction;
 	public double percentage;
-	public string result; 
+	public string? result; 
 	public int sumofquestions;
 	public int sumofscore;
 
@@ -32,26 +32,24 @@
 	private bool IsIntegratedVisible = false;
 	private bool IsPrompt1Visible = false;
 
-
-	private string ClickedStandAlone = null;
-	private string ClickedIntegrated = null;
-	private string ClickedPrompt1 = null;
-
+	private string? ClickedStandAlone = null;
+	private string? ClickedIntegrated = null;
+	private string? ClickedPrompt1 = null;
 	protected override void OnInitialized()
 	{
 
-		@if (XmlQuestionsSelection.Count() != 0)
+		@if (XmlQuestionsSelection!.Count() != 0)
 		{
 			LocalxmlQuestionsSelection = XmlQuestionsSelection;
 
 			XElement onderwerpen = new XElement("onderwerpen");
-			foreach (var question in XmlQuestionsSelection)
+			foreach (var question in XmlQuestionsSelection!)
 			{
-				if (question.Element("antwoord").Value == question.Element("userantwoord").Value)
+				if (question.Element("antwoord")!.Value == question.Element("userantwoord")!.Value)
 				{ score++; }
 				else
 				{
-					XElement onderwerp = new XElement("onderwerp", question.Element("onderwerp").Value);
+					XElement onderwerp = new XElement("onderwerp", question.Element("onderwerp")!.Value);
 					onderwerpen.Add(onderwerp);
 				}
 			}
@@ -88,10 +86,10 @@
 			if (NiveauTestvragen != "6")
 			{
 				// nu nog de gegevens uit xmlTests halen en weergeven 
-				var selectie = testUitslagen.FindAll(t => t.Element("vragenset").Value == NaamVragenSet && t.Element("niveau").Value == NiveauTestvragen);
-				sumofquestions = selectie.Sum(e => (int)e.Element("aantal"));
+				var selectie = testUitslagen.FindAll(t => t.Element("vragenset")!.Value == NaamVragenSet && t.Element("niveau")!.Value == NiveauTestvragen);
+				sumofquestions = selectie.Sum(e => (int)e.Element("aantal")!);
 		 
-				sumofscore = selectie.Sum(e => (int)e.Element("score"));
+				sumofscore = selectie.Sum(e => (int)e.Element("score")!);
 			}
 		}
 	}
@@ -134,15 +132,15 @@
 	
 }
 
-@if (XmlQuestionsSelection.Count() != 0)
+@if (XmlQuestionsSelection!.Count() != 0)
 {
-	fraction = (double)score / (double)XmlQuestionsSelection.Count();
+	fraction = (double)score / (double)XmlQuestionsSelection!.Count();
 	percentage = fraction * 100;
 	result = $"{percentage:0.00}%";
 
 	if (NiveauTestvragen != "6")
 	{
-		<p><b>Score: @result</b> (@score / @XmlQuestionsSelection.Count) &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
+		<p><b>Score: @result</b> (@score / @XmlQuestionsSelection!.Count) &nbsp;&nbsp;/&nbsp;&nbsp; foute antwoorden zijn in <span style="color:red">rood</span> weergegeven.</p>
 		fraction = (double)sumofscore / (double)sumofquestions;
 		percentage = fraction * 100;
 		result = $"{percentage:0.00}%";
@@ -155,23 +153,23 @@
 }
 
 <!--   TESTUITSLAG VRAGEN EN ANTWOORDEN  -->
-@if (XmlQuestionsSelection.Count() != 0)
+@if (XmlQuestionsSelection!.Count() != 0)
 {
-	foreach (var question in XmlQuestionsSelection)
+	foreach (var question in XmlQuestionsSelection!)
 	{
-		var letterJuisteAntwoord = question.Element("antwoord").Value;
-		var letterGebruikersAntwoord = question.Element("userantwoord").Value;
-		var juisteAntwoord = question.Element("keuzes").Element(letterJuisteAntwoord).Value;
+		var letterJuisteAntwoord = question.Element("antwoord")!.Value;
+		var letterGebruikersAntwoord = question.Element("userantwoord")!.Value;
+		var juisteAntwoord = question.Element("keuzes")!.Element(letterJuisteAntwoord)!.Value;
 		// niet gebruikt:
-		var fouteAntwoord = question.Element("keuzes").Element(letterGebruikersAntwoord).Value;
+		var fouteAntwoord = question.Element("keuzes")!.Element(letterGebruikersAntwoord)!.Value;
 
-		string volgnummer = question.Element("volgnummer").Value;
+		string volgnummer = question.Element("volgnummer")!.Value;
 		IsStandAloneVisible = ClickedStandAlone == volgnummer;
 		IsIntegratedVisible = ClickedIntegrated == volgnummer;
 		IsPrompt1Visible = ClickedPrompt1 == volgnummer;
 
 		<div>
-			<p>@question.Element("header").Value</p>
+			<p>@question.Element("header")!.Value</p>
 			<p class="inspringen">
 				<span class="blauw">
 					<span class="oi oi-circle-check"></span> Het juiste antwoord: @juisteAntwoord
@@ -206,19 +204,19 @@
 						<br /><br />
 						<b>Instructions</b>
 						<br />
-						I'm learning to code <span style="color:red">@NaamVragenSet</span>. Here is a multiple choice question about <span style="color:red">@NaamVragenSet</span>. On a scale from 1 to 5 (where 1 is beginner and 5 is senior) <span style="color:red">my level is @question.Element("niveau").Value</span>. Please consider my level when answering the question.
+						I'm learning to code <span style="color:red">@NaamVragenSet</span>. Here is a multiple choice question about <span style="color:red">@NaamVragenSet</span>. On a scale from 1 to 5 (where 1 is beginner and 5 is senior) <span style="color:red">my level is @question.Element("niveau")!.Value</span>. Please consider my level when answering the question.
 						<br />
 						Tell me the correct answer and explain why it's correct.
 						<br />
-						Explain why the topic <span style="color:red">@question.Element("onderwerp").Value</span> is important in <span style="color:red">@NaamVragenSet</span>.
+						Explain why the topic <span style="color:red">@question.Element("onderwerp")!.Value</span> is important in <span style="color:red">@NaamVragenSet</span>.
 						If possible provide a simple code example and explain the code.<br />
 						Give me a real-world scenario where such code could be useful.<br />
 						<b>Question</b><br />
-						@foreach (var regel in question.Element("header").Elements())
+						@foreach (var regel in question.Element("header")!.Elements())
 						{
 							@regel.Value<br />
 						}
-						@foreach (XElement choice in question.Element("keuzes").Elements())
+						@foreach (XElement choice in question.Element("keuzes")!.Elements())
 						{
 							<span>@choice.Name.LocalName	&nbsp;@choice.Value</span> <br />
 						}
@@ -227,10 +225,10 @@
 						<span><b>Instruction</b></span><br />
 						<span>Summarize your answer</span><br /><br />
 						<span><b>Instruction</b></span><br />
-						<span>Translate your answer in Dutch for a level @question.Element("niveau").Value student and explain like I'm 16 year old.</span>
+						<span>Translate your answer in Dutch for a level @question.Element("niveau")!.Value student and explain like I'm 16 year old.</span>
 						<br /><br />
 						<span><b>Instruction</b></span><br />
-						Can you ask me another multiple choice question about <span style="color:red">@NaamVragenSet @question.Element("onderwerp").Value</span>
+						Can you ask me another multiple choice question about <span style="color:red">@NaamVragenSet @question.Element("onderwerp")!.Value</span>
 					</p>
 				</div>
 			}
@@ -240,7 +238,7 @@
 				// hier dus de hele dialoog met AI inbouwen
 				<div>
 					AI:<br />
-					@question.Element("uitleg").Value
+					@question.Element("uitleg")!.Value
 				</div>
 				@* <button @onclick="() => ShowPrompt1(volgnummer)" class="choice">Vertaal in het Nederlands</button> *@
 
@@ -253,7 +251,7 @@
 			{
 				<div>
 					AI:<br />
-					@question.Element("prompt1").Value
+					@question.Element("prompt1")!.Value
 				</div>
 			}
 			<hr />

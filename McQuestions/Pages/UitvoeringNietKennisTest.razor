@@ -5,7 +5,7 @@
 
 @code {
     [Parameter] public int TotalQuestions { get; set; }
-    [Parameter] public string NaamVragenSet { get; set; }
+    [Parameter] public string? NaamVragenSet { get; set; }
 
     [CascadingParameter]
     public List<XElement>? XmlQuestions { get; set; }
@@ -35,12 +35,12 @@
         else
         {
             // userantwoord wordt in de vraag gezet die naar AI gaat
-            xElementQuestion.Element("userantwoord").Value = answer;
+            xElementQuestion.Element("userantwoord")!.Value = answer!;
 
             submitButtonText = "Maak een keuze";
             answer = "";
 
-            if (currentQuestionIndex < XmlQuestions.Count)
+            if (currentQuestionIndex < XmlQuestions!.Count)
             {
                 currentQuestionIndex++;
             }
@@ -49,8 +49,8 @@
 
     private void Exit(int number)
     {
-        int c = XmlQuestions.Count();
-        XmlQuestions.RemoveRange(number, c - number);
+        int c = XmlQuestions!.Count();
+        XmlQuestions!.RemoveRange(number, c - number);
     }
 }
 
@@ -65,7 +65,7 @@
 
     <p>@(currentQuestionIndex + 1)/@XmlQuestions.Count</p>
     <div>
-        @foreach (var regel in currentQuestion.Element("header").Elements())
+        @foreach (var regel in currentQuestion.Element("header")!.Elements())
         {
             if (teller == 0)
             {
@@ -84,7 +84,7 @@
     <div>
         <br />
         <table>
-            @foreach (var choice in currentQuestion.Element("keuzes").Elements())
+            @foreach (var choice in currentQuestion.Element("keuzes")!.Elements())
             {
                 <tr>
                     <td>@choice.Name&nbsp;&nbsp;</td>
@@ -113,7 +113,7 @@
     @*<p><button @onclick="(args) => Exit(currentQuestionIndex)" class="submit">Exit</button></p>*@
 }
 
-else if (currentQuestionIndex == XmlQuestions.Count)
+else if (currentQuestionIndex == XmlQuestions!.Count)
 {
     currentQuestionIndex = 0;
     <!--

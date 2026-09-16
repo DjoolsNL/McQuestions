@@ -113,7 +113,7 @@
             <td><textarea class="flexible-textarea" wrap="hard" @bind="uitleg" /></td>
         </tr>
         <tr>
-            <td><br /><button @onclick="Toevoegen">Toevoegen</button></td>
+            <td><br /><button @onclick="async () => await Toevoegen()">Toevoegen</button></td>
 
             <td></td>
         </tr>
@@ -124,24 +124,24 @@
 
     @code 
 {
-    string folderPath;
-    string[] fileNames;
-    private string disabled;
-    private string volgnummer;
-    private string niveau;
-    private string onderwerp;
-    private string regel;
-    private string regelCode;
-    private string choiceA;
-    private string choiceB;
-    private string choiceC;
-    private string choiceD;
-    private string antwoord;
-    private string userantwoord;
-    private string show;
-    private string uitleg;
+    string? folderPath;
+    string[]? fileNames;
+    private string? disabled;
+    private string? volgnummer;
+    private string? niveau;
+    private string? onderwerp;
+    private string? regel;
+    private string? regelCode;
+    private string? choiceA;
+    private string? choiceB;
+    private string? choiceC;
+    private string? choiceD;
+    private string? antwoord;
+    private string? userantwoord;
+    private string? show;
+    private string? uitleg;
     private List<Option> optionList = new List<Option>();
-    private string selectedOption;
+    private string? selectedOption;
 
 
 
@@ -161,7 +161,7 @@
 
     private void SelecteerFile(ChangeEventArgs e)
     {
-        selectedOption = e.Value.ToString();
+        selectedOption = e.Value?.ToString();
     }
 
     private async Task Toevoegen()

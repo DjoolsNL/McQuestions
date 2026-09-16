@@ -5,23 +5,23 @@
 @using System.IO
 
 @code {
-    [Parameter] public string FileName { get; set; }
-    string paginaNaam;
-    string niveau;
-    string NaamVragenSet;
-    string gekozenAantalTestvragen;
-    string gekozenTestNiveau;
+    [Parameter] public string? FileName { get; set; }
+    string? paginaNaam;
+    string? niveau;
+    string? NaamVragenSet;
+    string? gekozenAantalTestvragen;
+    string? gekozenTestNiveau;
     int count = 0;
     int randomIndex;
     List<XElement> XmlQuestionsSelection = new();
     List<XElement> xmlQuestions = new();
-    XElement root;
+    XElement? root;
     bool NaarVerwerking { get; set; }
     bool ClearRadioButtons { get; set; }
-    public string NiveauTestvragen { get; set; }
+    public string? NiveauTestvragen { get; set; }
     private int currentQuestionIndex = 0;
     private int score = 0;
-    private string answer = "";
+    private string? answer = "";
     private string submitButtonText = "Maak een keuze";
 
     private bool LevelSelected(string optionValue)
@@ -35,34 +35,34 @@
 
     private void KeuzeTestNiveau(ChangeEventArgs e)
     {
-        gekozenTestNiveau = e.Value.ToString();
+        gekozenTestNiveau = e.Value?.ToString();
         StateHasChanged();
         XmlQuestionsSelection.Clear();
-        niveau = e.Value.ToString();
+        niveau = e.Value?.ToString();
 
-        var allEnabledQuestions = root.Elements("vraag")
+        var allEnabledQuestions = root!.Elements("vraag")
             .Distinct()
-            .Where(e => e.Element("disabled").Value != "true")
+            .Where(e => e.Element("disabled")!.Value != "true")
             .ToList();
 
         if (gekozenTestNiveau == "6")
         {
             List<string> niveaus = allEnabledQuestions
-                .Select(vraag => vraag.Element("niveau").Value)
+                .Select(vraag => vraag.Element("niveau")!.Value)
                 .Distinct()
                 .ToList();
 
             List<int> totalsPerLevel = new List<int>();
             foreach (var niveau in niveaus)
             {
-                var totalPerLevel = allEnabledQuestions.Count(vraag => vraag.Element("niveau").Value == niveau);
+                var totalPerLevel = allEnabledQuestions.Count(vraag => vraag.Element("niveau")!.Value == niveau);
                 totalsPerLevel.Add(totalPerLevel);
             }
 
             foreach (var niveau in niveaus)
             {
                 var enabledQuestionsLevelSpecific = allEnabledQuestions
-                    .Where(vraag => vraag.Element("niveau").Value == niveau)
+                    .Where(vraag => vraag.Element("niveau")!.Value == niveau)
                     .ToList();
 
                 for (int i = 1; i <= totalsPerLevel.Min(); i++)
@@ -78,7 +78,7 @@
         }
         else
         {
-            xmlQuestions = allEnabledQuestions.FindAll(vraag => vraag.Element("niveau").Value == niveau);
+            xmlQuestions = allEnabledQuestions.FindAll(vraag => vraag.Element("niveau")!.Value == niveau);
             count = xmlQuestions.Count();
             NiveauTestvragen = niveau;
         }
@@ -88,10 +88,10 @@
     {
         XmlQuestionsSelection.Clear();
         currentQuestionIndex = 0;
-        gekozenAantalTestvragen = e.Value.ToString();
+        gekozenAantalTestvragen = e.Value?.ToString();
         StateHasChanged();
         int aantaltestvragen;
-        if (int.TryParse(e.Value.ToString(), out aantaltestvragen))
+        if (int.TryParse(e.Value?.ToString(), out aantaltestvragen))
         {
             List<int> numbers = new();
 
@@ -104,7 +104,7 @@
                 randomIndex = RandomHelper.Next(0, numbers.Count());
 
                 XmlQuestionsSelection.Add(xmlQuestions[randomIndex]);
-                XmlQuestionsSelection[i].Element("volgnummer").Value = i.ToString();
+                XmlQuestionsSelection[i].Element("volgnummer")!.Value = i.ToString();
                 numbers.RemoveAt(randomIndex); // voorkomt dat vraag twee keer wordt getrokken
             }
             //count = 0;
@@ -125,12 +125,12 @@
     {
         if (answer == "")
         {
-            submitButtonText = "Maak een keuze";
+            submitButtonText = "Klik op een van bovenstaande opties";
         }
         else
         {
             // userantwoord wordt in de vraag gezet die naar AI gaat
-            xElementQuestion.Element("userantwoord").Value = answer;
+            xElementQuestion.Element("userantwoord")!.Value = answer!;
 
             submitButtonText = "Maak een keuze";
             answer = "";
@@ -160,7 +160,7 @@
 // om de FN te verwerken moet hij eerst worden gestript
 // als de user een nieuwe selectie binnen dezelfde vragenset maakt weten we dit omdat 
 // de FN niet met een { start -->
-@if (FileName.StartsWith('{'))
+@if (FileName!.StartsWith('{'))
 {
     // state vh object wordt gereset
     gekozenTestNiveau = null;
@@ -174,7 +174,7 @@
     string fullpath = Path.Combine(Directory.GetCurrentDirectory() + "\\XmlQuestions\\", FileName);
     //var xmlString = File.ReadAllText(fullpath);
     root = XElement.Load(fullpath);
-    NaamVragenSet = root.Element("vragenset").Value;
+    NaamVragenSet = root.Element("vragenset")!.Value;
     paginaNaam = FileName.Replace(".xml", "");
 }
 
@@ -261,7 +261,7 @@
 
             <p>@(currentQuestionIndex + 1)/@XmlQuestionsSelection.Count</p>
             <div>
-                @foreach (var regel in currentQuestion.Element("header").Elements())
+                @foreach (var regel in currentQuestion.Element("header")!.Elements())
                 {
                     if (teller == 0)
                     {
@@ -289,7 +289,7 @@
             <div>
                 <br />
                 <table>
-                    @foreach (var choice in currentQuestion.Element("keuzes").Elements())
+                    @foreach (var choice in currentQuestion.Element("keuzes")!.Elements())
                     {
                         <tr>
                             <td>@choice.Name&nbsp;&nbsp;</td>
@@ -320,7 +320,7 @@
 
 
 
-        else if (currentQuestionIndex == XmlQuestionsSelection.Count)
+        else if (currentQuestionIndex == XmlQuestionsSelection!.Count)
         {
             currentQuestionIndex = 0;
             <!--

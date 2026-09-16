@@ -190,13 +190,13 @@
 				"selectie/{TechBuzz.xml}"
 			};
 
-	private string ClickedLink = null;
+	private string? ClickedLink = null;
 
-	[Inject] private NavigationManager NavigationManager { get; set; }
+	[Inject] private NavigationManager? NavigationManager { get; set; }
 
 	private void Navigate(string link)
 	{
-		NavigationManager.NavigateTo(link);
+		NavigationManager!.NavigateTo(link);
 		if (ClickedLink == link)
 		{
 			ClickedLink = null;

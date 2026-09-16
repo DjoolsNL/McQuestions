@@ -9,18 +9,18 @@
 
 @code 
 {
-	private string name;
-	string folderPath;
-	string pathToaccountResults;
-	string pathToAccountResultsNietKennisTests;
-	private List<XElement> xmlTests;
-	private List<XElement> xmlTestsNietKennisTests;
-	private List<string> distinctSetNames;
-	private List<string> distinctSetNamesNietKennisTests;
+	private string? name;
+	string? folderPath;
+	string? pathToaccountResults;
+	string? pathToAccountResultsNietKennisTests;
+	private List<XElement>? xmlTests;
+	private List<XElement>? xmlTestsNietKennisTests;
+	private List<string>? distinctSetNames;
+	private List<string>? distinctSetNamesNietKennisTests;
 	private bool accountResultsIsEmpty = true;
 	private bool accountResultsNietKennisTestsIsEmpty = true;
 	private bool IsStudyAdviceVisible = false;
-	private string ClickedStudyAdvice = null;
+	private string? ClickedStudyAdvice = null;
 
 	protected override void OnInitialized()
 	{		
@@ -36,21 +36,21 @@
 
 	void Tests(string path)
 	{
-		var xmlString = File.ReadAllText(pathToaccountResults);
+		var xmlString = File.ReadAllText(pathToaccountResults!);
 		var rootElement = XElement.Parse(xmlString);
 		xmlTests = rootElement.Elements("test").ToList();
 
-		distinctSetNames = xmlTests.Select(element => element.Element("vragenset").Value).Distinct().ToList();
+		distinctSetNames = xmlTests.Select(element => element.Element("vragenset")!.Value).Distinct().ToList();
 		accountResultsIsEmpty = false;
 	}
 
 	void TestsNietKennis(string path)
 	{
-		var xmlStringNietKennis = File.ReadAllText(pathToAccountResultsNietKennisTests);
+		var xmlStringNietKennis = File.ReadAllText(pathToAccountResultsNietKennisTests!);
 		var rootElementNietKennis = XElement.Parse(xmlStringNietKennis);
 		xmlTestsNietKennisTests = rootElementNietKennis.Elements("test").ToList();
 
-		distinctSetNamesNietKennisTests = xmlTestsNietKennisTests.Select(element => element.Element("vragenset").Value).Distinct().ToList();
+		distinctSetNamesNietKennisTests = xmlTestsNietKennisTests.Select(element => element.Element("vragenset")!.Value).Distinct().ToList();
 		accountResultsNietKennisTestsIsEmpty = false;		
 	}
 
@@ -75,15 +75,14 @@
 - C Sharp Nivo 2<br />
 <hr />
 <div class="indexdiv">
-	@foreach (var distinct in distinctSetNames)
+	@foreach (var distinct in distinctSetNames!)
 	{
-		var distinctSet = xmlTests.FindAll(t => t.Element("vragenset").Value == distinct); // bijv. alle tests JavaScript
+		var distinctSet = xmlTests!.FindAll(t => t.Element("vragenset")!.Value == distinct); // bijv. alle tests JavaScript
 
-		var distinctNiveaus = distinctSet.Select(element => element.Element("niveau").Value).Distinct().ToList();
-
+		var distinctNiveaus = distinctSet.Select(element => element.Element("niveau")!.Value).Distinct().ToList();
 		foreach (var distinctNiveau in distinctNiveaus)
 		{
-			var distinctNivo = distinctSet.FindAll(t => t.Element("niveau").Value == distinctNiveau); // bijv. alle tests JavaScript niveau 1 
+			var distinctNivo = distinctSet.FindAll(t => t.Element("niveau")!.Value == distinctNiveau); // bijv. alle tests JavaScript niveau 1 
 			
 			int aantaltests = distinctNivo.Count();
 			List<(string date, string score, string totalq)> tupleList = new List<(string, string, string)>() ;
@@ -92,17 +91,17 @@
 			string pair = "";
 			for (int i = 0; i < aantaltests; i++)
 			{
-				int sc = Convert.ToInt32(distinctNivo[i].Element("score").Value);
-				int antal = Convert.ToInt32(distinctNivo[i].Element("aantal").Value);
+				int sc = Convert.ToInt32(distinctNivo[i].Element("score")!.Value);
+				int antal = Convert.ToInt32(distinctNivo[i].Element("aantal")!.Value);
 
 				int perc = 100 * sc/antal;
 				int y = 210 - perc * 2;
 
 				int x = 30 + i * afstandx;
 				pair += $"{x},{y} ";
-				tupleList.Add((distinctNivo[i].Element("datum").Value, distinctNivo[i].Element("score").Value, distinctNivo[i].Element("aantal").Value));
+				tupleList.Add((distinctNivo[i].Element("datum")!.Value, distinctNivo[i].Element("score")!.Value, distinctNivo[i].Element("aantal")!.Value));
 
-				var shshs = distinctNivo[i].Element("onderwerpen").Elements("onderwerp").ToList();
+				var shshs = distinctNivo[i].Element("onderwerpen")!.Elements("onderwerp").ToList();
 				foreach (var item in shshs)
 				{
 					onderwerpen.Add(item.Value);
@@ -111,8 +110,8 @@
 			}
 			pair = pair.TrimEnd();
 
-			var sumofquestions = distinctNivo.Sum(e => (int)e.Element("aantal"));
-			var sumofscore = distinctNivo.Sum(e => (int)e.Element("score"));
+			var sumofquestions = distinctNivo.Sum(e => (int)e.Element("aantal")!);
+			var sumofscore = distinctNivo.Sum(e => (int)e.Element("score")!);	
 			double fraction = (double)sumofscore / (double)sumofquestions;
 			double percentage = fraction * 100;
 			string result = $"{percentage:0.00}%";
@@ -208,9 +207,9 @@
 	}		
 
 <div>
-	@foreach (var distinct in distinctSetNamesNietKennisTests)
+	@foreach (var distinct in distinctSetNamesNietKennisTests!)
 	{
-		var distinctSet = xmlTestsNietKennisTests.FindAll(t => t.Element("vragenset").Value == distinct);
+		var distinctSet = xmlTestsNietKennisTests!.FindAll(t => t.Element("vragenset")!.Value == distinct);
 		//.OrderBy(d => d.Element("datum")
 
 		int teller = 0;
@@ -225,10 +224,10 @@
 					<tr>
 						<td><b>Onderwerpen</b></td>
 					</tr>
-				@foreach (var itemmm in itemm.Element("onderwerpen").Elements())
+				@foreach (var itemmm in itemm.Element("onderwerpen")!.Elements())
 				{
 					<tr>
-						<td><b>@itemmm.Element("tag").Value</b></td>
+						<td><b>@itemmm.Element("tag")!.Value</b></td>
 					</tr>
 						
 				}
@@ -237,12 +236,12 @@
 				teller++;
 				<table style="display:inline; margin-left:25px; margin-top:30px">
 				<tr>
-					<td><b>@itemm.Element("datum").Value</b></td>
+					<td><b>@itemm.Element("datum")!.Value</b></td>
 				</tr>
-			@foreach (var itemmm in itemm.Element("onderwerpen").Elements())
+			@foreach (var itemmm in itemm.Element("onderwerpen")!.Elements())
 			{
 				<tr>
-					<td>@itemmm.Element("antwoord").Value</td>
+					<td>@itemmm.Element("antwoord")!.Value</td>
 				</tr>
 						
 			}

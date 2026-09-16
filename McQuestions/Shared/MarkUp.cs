@@ -28,7 +28,7 @@ namespace McQuestions.Shared
             var xmlString = File.ReadAllText(fullpath);
             Root = XElement.Parse(xmlString);
             
-            NaamVragenSet = Root.Element("vragenset").Value;
+            NaamVragenSet = Root.Element("vragenset")!.Value;
 			
         }
 
@@ -47,24 +47,20 @@ namespace McQuestions.Shared
 		public void SetLevelTestQuestions(string niveau)
 		{
 			Niveau = niveau;
-			var allEnabledQuestions = Root.Elements("vraag").Distinct().Where(e => e.Element("disabled").Value != "true").ToList();
-			XmlQuestionsLevelSpecified = allEnabledQuestions.FindAll(l => l.Element("niveau").Value == niveau);
+			var allEnabledQuestions = Root.Elements("vraag").Distinct().Where(e => e.Element("disabled")!.Value != "true").ToList();
+			XmlQuestionsLevelSpecified = allEnabledQuestions.FindAll(l => l.Element("niveau")!.Value == niveau);
 		}
 
 		public int TotalQuestionsLevelSpecified()
 		{
-			return XmlQuestionsLevelSpecified.Count();
+			return XmlQuestionsLevelSpecified!.Count();
 		}
-
-
-
-
 
 	}
 
     public class DataPoint
     {
-        public string X { get; set; }
+        public string? X { get; set; }
         public int Y { get; set; }
     }
 }
