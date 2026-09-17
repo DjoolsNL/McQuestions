@@ -5,16 +5,16 @@
 @using System.IO
 
 @code {
-    [Parameter] public string FileName { get; set; }
-    string pageTitle;
-    string NaamVragenSet;
+    [Parameter] public string? FileName { get; set; }
+    string? pageTitle;
+    string? NaamVragenSet;
     int count = 0;
     List<XElement> XmlQuestionsSelection = new();
     List<XElement> XmlQuestions = new();
-    XElement root;
+    XElement? root;
 }
 
-@if (FileName.StartsWith('{'))
+@if (FileName != null && FileName.StartsWith('{'))
 {
     XmlQuestions.Clear();
     XmlQuestionsSelection.Clear();
@@ -23,20 +23,16 @@
     string fullpath = Path.Combine(Directory.GetCurrentDirectory() + "\\XmlQuestions\\", FileName);
     var xmlString = File.ReadAllText(fullpath);
     root = XElement.Parse(xmlString);
-    NaamVragenSet = root.Element("vragenset").Value;
+    NaamVragenSet = root.Element("vragenset")!.Value;
     pageTitle = FileName.Replace(".xml", "");
     XmlQuestions = root.Elements("vraag")
         .Distinct()
-        .Where(e => e.Element("disabled").Value != "true")
+        .Where(e => e.Element("disabled")!.Value != "true")
         .ToList();
     count = XmlQuestions.Count();
-
-
-
 }
 
 <PageTitle>@pageTitle</PageTitle>
-<Style />
 
 <hr />
 
